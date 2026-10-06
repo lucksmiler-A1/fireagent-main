@@ -1,0 +1,2882 @@
+[
+  {
+    "name": "e_bike_hallway_charging",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "HMBF-22",
+      "FIRELAW-21",
+      "FIRELAW-28"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 8829.53,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\",\"FIRELAW-28\"],\"should_refuse\":false,\"answer\":\"不行。依据：HMBF-37明确规定，电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电；宿舍楼道属于公共疏散通道。另依据FIRELAW-28，禁止占用、堵塞疏散通道和安全出口。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37",
+        "FIRELAW-28"
+      ],
+      "should_refuse": false,
+      "answer": "不行。依据：HMBF-37明确规定，电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电；宿舍楼道属于公共疏散通道。另依据FIRELAW-28，禁止占用、堵塞疏散通道和安全出口。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_hallway_charging_hard",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "DORM-4",
+      "RESP-7",
+      "GB50016-6.4.11",
+      "DORM-7"
+    ],
+    "returned_ids": [
+      "HMBF-37"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 10305.91,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\"],\"should_refuse\":false,\"answer\":\"不行。依据 HMBF-37：①电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放；②不得在上述区域充电。宿舍楼道属于走道/公共疏散区域，因此在宿舍楼道给电动车充电属于禁止行为。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37"
+      ],
+      "should_refuse": false,
+      "answer": "不行。依据 HMBF-37：①电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放；②不得在上述区域充电。宿舍楼道属于走道/公共疏散区域，因此在宿舍楼道给电动车充电属于禁止行为。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_stairwell_parking",
+    "scene": "dormitory",
+    "query": "电动自行车停在楼梯间门口算违法吗？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "EVCHARGE-4.1",
+      "GB50016-5.5.13",
+      "HMBF-33"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "HMBF-33"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 11150.02,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\"],\"should_refuse\":false,\"answer\":\"算违规。依据 HMBF-37，电动自行车不得停放或充电在楼梯间、走道或门厅等公共疏散区域；楼梯间门口通常属于这类区域，会妨碍疏散、增加火灾风险，应立即移走。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37"
+      ],
+      "should_refuse": false,
+      "answer": "算违规。依据 HMBF-37，电动自行车不得停放或充电在楼梯间、走道或门厅等公共疏散区域；楼梯间门口通常属于这类区域，会妨碍疏散、增加火灾风险，应立即移走。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_stairwell_parking_hard",
+    "scene": "dormitory",
+    "query": "电动自行车停在楼梯间门口算违法吗？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "DORM-7",
+      "HOTEL-1",
+      "HOSPITAL-3",
+      "DORM-4"
+    ],
+    "returned_ids": [
+      "HMBF-37"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 18263.48,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\"],\"should_refuse\":false,\"answer\":\"是，按所给依据可认定为违规。关键依据：1）HMBF-37规定：电动自行车不得停放或充电于楼梯间、走道或门厅；2）因此，停在楼梯间门口属于占用/临近公共疏散区域，不允许。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37"
+      ],
+      "should_refuse": false,
+      "answer": "是，按所给依据可认定为违规。关键依据：1）HMBF-37规定：电动自行车不得停放或充电于楼梯间、走道或门厅；2）因此，停在楼梯间门口属于占用/临近公共疏散区域，不允许。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_penalty",
+    "scene": "residential",
+    "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "EVCHARGE-4.1",
+      "HMBF-36",
+      "FIRELAW-60"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "HMBF-36",
+      "FIRELAW-60"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 8955.95,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\",\"HMBF-36\",\"FIRELAW-60\"],\"should_refuse\":false,\"answer\":\"高层住宅公共门厅属于禁止停放、充电电瓶车的区域。发现此类火灾隐患后应当及时整改；如果在责令整改期限内仍不整改，可能被依法处罚，包括罚款，以及其他行政处罚。现有证据未提供具体罚款金额。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37",
+        "HMBF-36",
+        "FIRELAW-60"
+      ],
+      "should_refuse": false,
+      "answer": "高层住宅公共门厅属于禁止停放、充电电瓶车的区域。发现此类火灾隐患后应当及时整改；如果在责令整改期限内仍不整改，可能被依法处罚，包括罚款，以及其他行政处罚。现有证据未提供具体罚款金额。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_penalty_hard",
+    "scene": "residential",
+    "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ],
+    "evidence_ids": [
+      "EVCHARGE-4.1",
+      "FIRELAW-34",
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "HMBF-36"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "HMBF-36"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 9476.6,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\",\"HMBF-36\"],\"should_refuse\":true,\"answer\":\"依据现有证据，只能确认该行为属于禁止情形并应立即整改，无法据此得出具体“怎么处罚”的结论，因为提供的证据中没有处罚条款。最关键依据：1. HMBF-37：电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电。2. HMBF-36：发现的火灾隐患应当及时整改并落实责任措施。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37",
+        "HMBF-36"
+      ],
+      "should_refuse": true,
+      "answer": "依据现有证据，只能确认该行为属于禁止情形并应立即整改，无法据此得出具体“怎么处罚”的结论，因为提供的证据中没有处罚条款。最关键依据：1. HMBF-37：电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电。2. HMBF-36：发现的火灾隐患应当及时整改并落实责任措施。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_lane_parking",
+    "scene": "campus",
+    "query": "消防车通道被汽车占了，违反什么规定？",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-22",
+      "FIRELAW-21",
+      "FIRELAW-28",
+      "GB50016-6.4.11",
+      "GB50016-7.1.5"
+    ],
+    "returned_ids": [
+      "FIRELAW-21",
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 9589.2,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-21\",\"HMBF-22\",\"FIRELAW-28\"],\"should_refuse\":false,\"answer\":\"违反了消防车通道不得被占用、堵塞的规定。依据包括：FIRELAW-21（消防车通道不得占用、堵塞、封闭），HMBF-22（消防车通道和灭火救援场地不得被占用或堵塞），以及 FIRELAW-28（禁止占用、堵塞消防车通道）。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-21",
+        "HMBF-22",
+        "FIRELAW-28"
+      ],
+      "should_refuse": false,
+      "answer": "违反了消防车通道不得被占用、堵塞的规定。依据包括：FIRELAW-21（消防车通道不得占用、堵塞、封闭），HMBF-22（消防车通道和灭火救援场地不得被占用或堵塞），以及 FIRELAW-28（禁止占用、堵塞消防车通道）。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_lane_parking_hard",
+    "scene": "campus",
+    "query": "消防车通道被汽车占了，违反什么规定？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "FIRELAW-21",
+      "GB50016-7.1.5",
+      "DORM-4",
+      "DORM-7",
+      "SCHOOL-1"
+    ],
+    "returned_ids": [
+      "FIRELAW-21",
+      "GB50016-7.1.5"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 7276.17,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-21\",\"GB50016-7.1.5\"],\"should_refuse\":false,\"answer\":\"属于违反消防车通道管理规定，关键依据可引用：1. FIRELAW-21：消防车通道不得被占用、堵塞或者封闭，违法停车持续存在的，可依法处罚。2. GB50016-7.1.5：消防车道的净宽、净高均不应小于4.0m，车辆不得侵占该通行净空。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-21",
+        "GB50016-7.1.5"
+      ],
+      "should_refuse": false,
+      "answer": "属于违反消防车通道管理规定，关键依据可引用：1. FIRELAW-21：消防车通道不得被占用、堵塞或者封闭，违法停车持续存在的，可依法处罚。2. GB50016-7.1.5：消防车道的净宽、净高均不应小于4.0m，车辆不得侵占该通行净空。"
+    },
+    "error": ""
+  },
+  {
+    "name": "rescue_access_blocked",
+    "scene": "office",
+    "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-22",
+      "FIRELAW-21",
+      "FIRELAW-28",
+      "GB50016-7.1.5",
+      "GB50016-7.1.8"
+    ],
+    "returned_ids": [
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 7763.05,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-22\"],\"should_refuse\":false,\"answer\":\"对应条款主要是 HMBF-22：消防车通道和灭火救援操作场地不得被占用、堵塞。登高消防车操作场地堆放杂物，属于占用/堵塞灭火救援操作场地。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-22"
+      ],
+      "should_refuse": false,
+      "answer": "对应条款主要是 HMBF-22：消防车通道和灭火救援操作场地不得被占用、堵塞。登高消防车操作场地堆放杂物，属于占用/堵塞灭火救援操作场地。"
+    },
+    "error": ""
+  },
+  {
+    "name": "rescue_access_blocked_hard",
+    "scene": "office",
+    "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "GB50016-7.1.5",
+      "FIRELAW-21",
+      "HOSPITAL-3",
+      "RESP-7",
+      "HOTEL-2"
+    ],
+    "returned_ids": [
+      "GB50016-7.1.5",
+      "FIRELAW-21"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 18372.99,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-7.1.5\",\"FIRELAW-21\"],\"should_refuse\":true,\"answer\":\"现有证据中没有直接针对“登高消防车操作场地不得堆放杂物”的专门条款，因此不能仅凭这些证据作出精确对应。若该处属于消防车通道或其净空范围，最接近的依据是：1. GB50016-7.1.5：消防车道的净宽、净高均不应小于4.0m，且不得被车辆、植物、构筑物侵占。2. FIRELAW-21：消防车通道不得占用、堵塞、封闭。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-7.1.5",
+        "FIRELAW-21"
+      ],
+      "should_refuse": true,
+      "answer": "现有证据中没有直接针对“登高消防车操作场地不得堆放杂物”的专门条款，因此不能仅凭这些证据作出精确对应。若该处属于消防车通道或其净空范围，最接近的依据是：1. GB50016-7.1.5：消防车道的净宽、净高均不应小于4.0m，且不得被车辆、植物、构筑物侵占。2. FIRELAW-21：消防车通道不得占用、堵塞、封闭。"
+    },
+    "error": ""
+  },
+  {
+    "name": "extinguisher_blocked",
+    "scene": "campus",
+    "query": "灭火器被箱子挡住了算不算违规，怎么整改？",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "returned_ids": [
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 7376.99,
+    "raw_content": "{\"risk_level\":\"medium\",\"rule_ids\":[\"GB50016-8.4.1\",\"HMBF-36\"],\"should_refuse\":false,\"answer\":\"算违规。依据 GB50016-8.4.1，灭火器应设置在明显、便于取用的位置，且不得被物品遮挡。整改建议：立即移开挡住灭火器的箱子，恢复其明显、可直接取用状态；如现位置不合适，应调整到醒目、便于取用的位置，并按 HMBF-36 要求及时落实整改责任。\"}",
+    "parsed": {
+      "risk_level": "medium",
+      "rule_ids": [
+        "GB50016-8.4.1",
+        "HMBF-36"
+      ],
+      "should_refuse": false,
+      "answer": "算违规。依据 GB50016-8.4.1，灭火器应设置在明显、便于取用的位置，且不得被物品遮挡。整改建议：立即移开挡住灭火器的箱子，恢复其明显、可直接取用状态；如现位置不合适，应调整到醒目、便于取用的位置，并按 HMBF-36 要求及时落实整改责任。"
+    },
+    "error": ""
+  },
+  {
+    "name": "extinguisher_blocked_hard",
+    "scene": "campus",
+    "query": "灭火器被箱子挡住了算不算违规，怎么整改？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "returned_ids": [
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 17742.75,
+    "raw_content": "{\"risk_level\":\"中\",\"rule_ids\":[\"GB50016-8.4.1\",\"HMBF-36\"],\"should_refuse\":false,\"answer\":\"算违规。依据：1) GB50016-8.4.1：灭火器应设置在明显、便于取用的地点，且不得影响安全疏散；对有视线障碍的灭火器设置点，应设置指示其位置的发光标志；手提式灭火器宜设置在灭火器箱内或挂钩、托架上，其顶部离地面高度不应大于1.50m，底部离地面高度不宜小于0.08m。箱子挡住灭火器，已不符合“明显、便于取用、不得被遮挡”的要求。2) HMBF-36：发现的火灾隐患应及时整改并落实责任。整改建议：立即移开挡住灭火器的箱子，恢复灭火器前方和周边无阻挡、可直接取用；同时明确责任人，防止再次堆放遮挡。\"}",
+    "parsed": {
+      "risk_level": "中",
+      "rule_ids": [
+        "GB50016-8.4.1",
+        "HMBF-36"
+      ],
+      "should_refuse": false,
+      "answer": "算违规。依据：1) GB50016-8.4.1：灭火器应设置在明显、便于取用的地点，且不得影响安全疏散；对有视线障碍的灭火器设置点，应设置指示其位置的发光标志；手提式灭火器宜设置在灭火器箱内或挂钩、托架上，其顶部离地面高度不应大于1.50m，底部离地面高度不宜小于0.08m。箱子挡住灭火器，已不符合“明显、便于取用、不得被遮挡”的要求。2) HMBF-36：发现的火灾隐患应及时整改并落实责任。整改建议：立即移开挡住灭火器的箱子，恢复灭火器前方和周边无阻挡、可直接取用；同时明确责任人，防止再次堆放遮挡。"
+    },
+    "error": ""
+  },
+  {
+    "name": "extinguisher_invalid",
+    "scene": "office",
+    "query": "灭火器压力表不在绿区还能继续放着吗？",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "GB50016-8.4.1",
+      "GB50084-5.0.4"
+    ],
+    "returned_ids": [
+      "GA95-7.5",
+      "GB50140-3.1.2"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 7159.86,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GA95-7.5\",\"GB50140-3.1.2\"],\"should_refuse\":false,\"answer\":\"不能继续放着正常使用。灭火器压力表如果不在绿区（红区或黄区），应立即退出使用并送修；灭火器应保持有效状态，压力指示必须符合要求。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GA95-7.5",
+        "GB50140-3.1.2"
+      ],
+      "should_refuse": false,
+      "answer": "不能继续放着正常使用。灭火器压力表如果不在绿区（红区或黄区），应立即退出使用并送修；灭火器应保持有效状态，压力指示必须符合要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "extinguisher_invalid_hard",
+    "scene": "office",
+    "query": "灭火器压力表不在绿区还能继续放着吗？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GB50016-10.2.7",
+      "IND-POWER-001",
+      "GA95-7.5",
+      "GB50016-10.1.5"
+    ],
+    "returned_ids": [
+      "GA95-7.5",
+      "GB50140-3.1.2"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 18797.23,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GA95-7.5\",\"GB50140-3.1.2\"],\"should_refuse\":false,\"answer\":\"不能继续放着当作有效灭火器使用。依据：1) GA95-7.5：压力指示器指向红区或黄区的灭火器，应立即退出使用并送修；2) GB50140-3.1.2：手提式灭火器应保持在有效状态，压力指示和维修期限应符合要求。结论：压力表不在绿区，不能继续按合格器材留置，应立即更换或送修。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GA95-7.5",
+        "GB50140-3.1.2"
+      ],
+      "should_refuse": false,
+      "answer": "不能继续放着当作有效灭火器使用。依据：1) GA95-7.5：压力指示器指向红区或黄区的灭火器，应立即退出使用并送修；2) GB50140-3.1.2：手提式灭火器应保持在有效状态，压力指示和维修期限应符合要求。结论：压力表不在绿区，不能继续按合格器材留置，应立即更换或送修。"
+    },
+    "error": ""
+  },
+  {
+    "name": "hydrant_blocked",
+    "scene": "office",
+    "query": "室内消火栓前面堆了东西，这种情况对应什么条款？",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "GB50016-8.2.7",
+      "GB50140-3.1.2",
+      "GB50016-10.1.5",
+      "GA95-7.5",
+      "GB50016-8.4.1"
+    ],
+    "returned_ids": [
+      "GB50016-10.1.5"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 16787.18,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-10.1.5\"],\"should_refuse\":false,\"answer\":\"对应条款为 GB50016-10.1.5：室内消火栓应有明显标志，且不得被遮挡、圈占。室内消火栓前堆放物品属于被遮挡/圈占的情形。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-10.1.5"
+      ],
+      "should_refuse": false,
+      "answer": "对应条款为 GB50016-10.1.5：室内消火栓应有明显标志，且不得被遮挡、圈占。室内消火栓前堆放物品属于被遮挡/圈占的情形。"
+    },
+    "error": ""
+  },
+  {
+    "name": "hydrant_blocked_hard",
+    "scene": "office",
+    "query": "室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "GB50016-8.2.7",
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "FIRELAW-34"
+    ],
+    "returned_ids": [
+      "GB50016-10.1.5"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 16969.02,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-10.1.5\"],\"should_refuse\":false,\"answer\":\"对应的最直接条款是 GB50016-10.1.5：‘室内消火栓应设置明显标志，且不得被遮挡、圈占。’ 室内消火栓前面堆放物品，导致其被遮挡或影响取用，属于不符合该条的情形。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-10.1.5"
+      ],
+      "should_refuse": false,
+      "answer": "对应的最直接条款是 GB50016-10.1.5：‘室内消火栓应设置明显标志，且不得被遮挡、圈占。’ 室内消火栓前面堆放物品，导致其被遮挡或影响取用，属于不符合该条的情形。"
+    },
+    "error": ""
+  },
+  {
+    "name": "signage_blocked",
+    "scene": "campus",
+    "query": "安全出口指示标志被海报遮住了怎么办？",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ],
+    "evidence_ids": [
+      "FIRELAW-28",
+      "GB50016-6.4.11",
+      "HMBF-22",
+      "FIRELAW-21",
+      "GB50016-6.4.10"
+    ],
+    "returned_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 11586.64,
+    "raw_content": "{\"risk_level\":\"unknown\",\"rule_ids\":[\"GB50016-6.4.10\",\"FIRELAW-28\"],\"should_refuse\":true,\"answer\":\"现有证据没有直接规定“安全出口指示标志被海报遮挡”这一情形。证据只明确要求疏散通道和安全出口保持畅通、不得堵塞。若海报同时影响了疏散出口或疏散路线的正常识别与通行，应立即移除；但仅就“遮住指示标志”本身，依据所给证据无法作出更具体结论。\"}",
+    "parsed": {
+      "risk_level": "unknown",
+      "rule_ids": [
+        "GB50016-6.4.10",
+        "FIRELAW-28"
+      ],
+      "should_refuse": true,
+      "answer": "现有证据没有直接规定“安全出口指示标志被海报遮挡”这一情形。证据只明确要求疏散通道和安全出口保持畅通、不得堵塞。若海报同时影响了疏散出口或疏散路线的正常识别与通行，应立即移除；但仅就“遮住指示标志”本身，依据所给证据无法作出更具体结论。"
+    },
+    "error": ""
+  },
+  {
+    "name": "signage_blocked_hard",
+    "scene": "campus",
+    "query": "安全出口指示标志被海报遮住了怎么办？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ],
+    "evidence_ids": [
+      "FIRELAW-15",
+      "FIRELAW-28",
+      "GB50016-6.4.11",
+      "GB50016-12.0.6",
+      "GB13495-4.1"
+    ],
+    "returned_ids": [
+      "GB13495-4.1"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 14020.6,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB13495-4.1\"],\"should_refuse\":false,\"answer\":\"应立即移除遮挡海报，恢复安全出口指示标志完整、清晰可见。法规依据：GB13495-4.1 规定，消防安全标志应满足最小可视尺寸要求；标志被遮挡或低于最小尺寸均属不符合要求。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB13495-4.1"
+      ],
+      "should_refuse": false,
+      "answer": "应立即移除遮挡海报，恢复安全出口指示标志完整、清晰可见。法规依据：GB13495-4.1 规定，消防安全标志应满足最小可视尺寸要求；标志被遮挡或低于最小尺寸均属不符合要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "evacuation_route_goods",
+    "scene": "office",
+    "query": "疏散通道堆满快递箱，这个算什么隐患？",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "FIRELAW-21",
+      "HMBF-36",
+      "HMBF-22",
+      "FIRELAW-28",
+      "GB50016-6.4.11"
+    ],
+    "returned_ids": [
+      "FIRELAW-28",
+      "HMBF-36",
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 6911.12,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-28\",\"HMBF-36\"],\"should_refuse\":false,\"answer\":\"算消防安全隐患，属于占用、堵塞疏散通道/安全出口的情形，法律明确禁止。应立即清理，及时整改。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-28",
+        "HMBF-36"
+      ],
+      "should_refuse": false,
+      "answer": "算消防安全隐患，属于占用、堵塞疏散通道/安全出口的情形，法律明确禁止。应立即清理，及时整改。"
+    },
+    "error": ""
+  },
+  {
+    "name": "evacuation_route_goods_hard",
+    "scene": "office",
+    "query": "疏散通道堆满快递箱，这个算什么隐患？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "FIRELAW-21",
+      "HMBF-36",
+      "HMBF-22",
+      "FIRELAW-28",
+      "GB50016-6.4.11"
+    ],
+    "returned_ids": [
+      "FIRELAW-28",
+      "HMBF-36",
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 11201.67,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-28\",\"HMBF-36\"],\"should_refuse\":false,\"answer\":\"算“堵塞疏散通道”的消防安全隐患。依据：1.《消防法》FIRELAW-28：禁止占用、堵塞疏散通道、疏散出口或者消防车通道。2. HMBF-36：发现火灾隐患后，应当及时整改并落实责任措施。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-28",
+        "HMBF-36"
+      ],
+      "should_refuse": false,
+      "answer": "算“堵塞疏散通道”的消防安全隐患。依据：1.《消防法》FIRELAW-28：禁止占用、堵塞疏散通道、疏散出口或者消防车通道。2. HMBF-36：发现火灾隐患后，应当及时整改并落实责任措施。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_door_open",
+    "scene": "office",
+    "query": "防火门长期敞开不关有没有问题？",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ],
+    "evidence_ids": [
+      "GB50016-5.5.8",
+      "GB25506-2010-5.1",
+      "WAREHOUSE-1",
+      "GB50016-6.7.2",
+      "GB50016-3.6.1"
+    ],
+    "returned_ids": [
+      "GB50016-5.5.8",
+      "GB25506-2010-5.1"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 10013.62,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-5.5.8\",\"GB25506-2010-5.1\"],\"should_refuse\":false,\"answer\":\"有问题。常闭式防火门应保持关闭，自闭装置应保持有效；A、B类防火分区门应能自行关闭，不得被长期固定在开启状态或楔住不关。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-5.5.8",
+        "GB25506-2010-5.1"
+      ],
+      "should_refuse": false,
+      "answer": "有问题。常闭式防火门应保持关闭，自闭装置应保持有效；A、B类防火分区门应能自行关闭，不得被长期固定在开启状态或楔住不关。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_door_open_hard",
+    "scene": "office",
+    "query": "防火门长期敞开不关有没有问题？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ],
+    "evidence_ids": [
+      "GB50016-5.5.8",
+      "HOSPITAL-3",
+      "RESP-7",
+      "HMBF-43",
+      "HMBF-44"
+    ],
+    "returned_ids": [
+      "GB50016-5.5.8"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 7843.96,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-5.5.8\"],\"should_refuse\":false,\"answer\":\"有问题。防火门长期敞开不关会削弱防火分隔作用，属于明显消防隐患。\\n法规依据（关键条款）：\\n1. GB50016-5.5.8：甲、乙类防火门应保持自行关闭状态。\\n2. GB50016-5.5.8：闭门器不得拆除，防火门不得被楔住常开。\\n结论：如果现场存在防火门长期敞开、不具备自行关闭功能或被人为固定常开，均不符合上述要求，应立即整改。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-5.5.8"
+      ],
+      "should_refuse": false,
+      "answer": "有问题。防火门长期敞开不关会削弱防火分隔作用，属于明显消防隐患。\n法规依据（关键条款）：\n1. GB50016-5.5.8：甲、乙类防火门应保持自行关闭状态。\n2. GB50016-5.5.8：闭门器不得拆除，防火门不得被楔住常开。\n结论：如果现场存在防火门长期敞开、不具备自行关闭功能或被人为固定常开，均不符合上述要求，应立即整改。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_door_closer_broken",
+    "scene": "campus",
+    "query": "防火门闭门器坏了，门关不上，这违反什么要求？",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ],
+    "evidence_ids": [
+      "GB50016-5.5.8",
+      "GB25506-2010-5.1",
+      "GB50016-6.7.2",
+      "EBIKE-7.1",
+      "FIRELAW-17"
+    ],
+    "returned_ids": [
+      "GB25506-2010-5.1",
+      "GB50016-5.5.8"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 10084.8,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB25506-2010-5.1\",\"GB50016-5.5.8\"],\"should_refuse\":false,\"answer\":\"这违反了防火门应保持常闭、闭门器/自闭装置应保持完好的要求。闭门器坏了导致门不能自行关闭，不符合“常闭防火门应保持关闭，自动关闭装置应保持功能正常”的规定；甲、乙类防火分区门还应保持自闭，闭门器不得拆除。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB25506-2010-5.1",
+        "GB50016-5.5.8"
+      ],
+      "should_refuse": false,
+      "answer": "这违反了防火门应保持常闭、闭门器/自闭装置应保持完好的要求。闭门器坏了导致门不能自行关闭，不符合“常闭防火门应保持关闭，自动关闭装置应保持功能正常”的规定；甲、乙类防火分区门还应保持自闭，闭门器不得拆除。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_door_closer_broken_hard",
+    "scene": "campus",
+    "query": "防火门闭门器坏了，门关不上，这违反什么要求？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ],
+    "evidence_ids": [
+      "GB50016-5.5.8",
+      "HMBF-43",
+      "DORM-4",
+      "RESP-7",
+      "SCHOOL-1"
+    ],
+    "returned_ids": [
+      "GB50016-5.5.8"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 10261.5,
+    "raw_content": "{\n  \"risk_level\": \"high\",\n  \"rule_ids\": [\"GB50016-5.5.8\"],\n  \"should_refuse\": false,\n  \"answer\": \"若该门属于甲、乙类防火分区门，闭门器损坏导致门无法自行关闭，违反了以下关键要求：1. 防火分区门应保持自行关闭状态。2. 闭门器不得拆除，门不得被固定在常开状态。也就是说，门关不上会破坏防火分隔功能，属于明显不符合要求。\"\n}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-5.5.8"
+      ],
+      "should_refuse": false,
+      "answer": "若该门属于甲、乙类防火分区门，闭门器损坏导致门无法自行关闭，违反了以下关键要求：1. 防火分区门应保持自行关闭状态。2. 闭门器不得拆除，门不得被固定在常开状态。也就是说，门关不上会破坏防火分隔功能，属于明显不符合要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "sprinkler_blocked",
+    "scene": "office",
+    "query": "喷淋头被装饰物挡住了，这属于什么隐患？",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GB50016-10.1.5",
+      "GA95-7.5",
+      "GB50084-10.1.1",
+      "GB50084-5.0.4"
+    ],
+    "returned_ids": [
+      "GB50084-10.1.1"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 16906.36,
+    "raw_content": "{\"risk_level\":\"unspecified\",\"rule_ids\":[\"GB50084-10.1.1\"],\"should_refuse\":false,\"answer\":\"属于自动喷水灭火系统喷头被遮挡的消防隐患。根据GB50084-10.1.1，喷淋头不得被遮挡，否则会影响有效喷洒灭火。\"}",
+    "parsed": {
+      "risk_level": "unspecified",
+      "rule_ids": [
+        "GB50084-10.1.1"
+      ],
+      "should_refuse": false,
+      "answer": "属于自动喷水灭火系统喷头被遮挡的消防隐患。根据GB50084-10.1.1，喷淋头不得被遮挡，否则会影响有效喷洒灭火。"
+    },
+    "error": ""
+  },
+  {
+    "name": "sprinkler_blocked_hard",
+    "scene": "office",
+    "query": "喷淋头被装饰物挡住了，这属于什么隐患？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "FIRELAW-34",
+      "GB50016-10.1.5",
+      "GB50084-10.1.1"
+    ],
+    "returned_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 12460.38,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50084-10.1.1\",\"FIRELAW-34\"],\"should_refuse\":false,\"answer\":\"这属于“自动喷淋系统喷头被遮挡、影响有效喷水”的消防设施隐患。法规依据：1. GB50084-10.1.1：自动喷水灭火系统喷头不得被遮挡、涂覆或损坏，并应保持有效喷放。2. FIRELAW-34：消防设施必须维护保养，存在故障应及时修复。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50084-10.1.1",
+        "FIRELAW-34"
+      ],
+      "should_refuse": false,
+      "answer": "这属于“自动喷淋系统喷头被遮挡、影响有效喷水”的消防设施隐患。法规依据：1. GB50084-10.1.1：自动喷水灭火系统喷头不得被遮挡、涂覆或损坏，并应保持有效喷放。2. FIRELAW-34：消防设施必须维护保养，存在故障应及时修复。"
+    },
+    "error": ""
+  },
+  {
+    "name": "sprinkler_painted",
+    "scene": "office",
+    "query": "喷淋喷头刷漆了还能正常使用吗？",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GB50016-10.1.5",
+      "GA95-7.5",
+      "GB50084-10.1.1",
+      "GB50084-5.0.4"
+    ],
+    "returned_ids": [
+      "GB50084-10.1.1"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 8653.26,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50084-10.1.1\"],\"should_refuse\":false,\"answer\":\"不能。自动喷淋喷头不得被刷漆；规范要求喷头不得被涂漆、堵塞或损坏，并应保持有效喷水状态。喷头刷漆后不能视为正常可用，属于不符合要求。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50084-10.1.1"
+      ],
+      "should_refuse": false,
+      "answer": "不能。自动喷淋喷头不得被刷漆；规范要求喷头不得被涂漆、堵塞或损坏，并应保持有效喷水状态。喷头刷漆后不能视为正常可用，属于不符合要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "sprinkler_painted_hard",
+    "scene": "office",
+    "query": "喷淋喷头刷漆了还能正常使用吗？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ],
+    "evidence_ids": [
+      "HOSPITAL-3",
+      "RESP-7",
+      "ITROOM-1",
+      "HMBF-43",
+      "FIRELAW-16"
+    ],
+    "returned_ids": [
+      "FIRELAW-16"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 11928.87,
+    "raw_content": "{\"risk_level\":\"unknown\",\"rule_ids\":[\"FIRELAW-16\"],\"should_refuse\":true,\"answer\":\"基于当前提供的证据，无法直接得出“喷淋喷头刷漆后还能正常使用吗”的法规结论。现有最相关依据仅说明：单位应当进行“火灾隐患整改和消防设施维护”（FIRELAW-16），但没有提供关于“喷头被刷漆是否应报废、更换或禁止使用”的具体条款。因此，我不能仅凭这些证据给出确定性判断。\"}",
+    "parsed": {
+      "risk_level": "unknown",
+      "rule_ids": [
+        "FIRELAW-16"
+      ],
+      "should_refuse": true,
+      "answer": "基于当前提供的证据，无法直接得出“喷淋喷头刷漆后还能正常使用吗”的法规结论。现有最相关依据仅说明：单位应当进行“火灾隐患整改和消防设施维护”（FIRELAW-16），但没有提供关于“喷头被刷漆是否应报废、更换或禁止使用”的具体条款。因此，我不能仅凭这些证据给出确定性判断。"
+    },
+    "error": ""
+  },
+  {
+    "name": "electrical_overload",
+    "scene": "campus",
+    "query": "插线板接了很多大功率设备，这样用电是否违规？",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "SCHOOL-3",
+      "DORM-2",
+      "GB50016-10.2.7",
+      "DORM-1",
+      "IND-POWER-001"
+    ],
+    "returned_ids": [
+      "SCHOOL-3",
+      "DORM-1",
+      "DORM-2",
+      "GB50016-10.2.7"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.25,
+    "latency_ms": 14922.64,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"SCHOOL-3\",\"DORM-1\",\"DORM-2\",\"GB50016-10.2.7\"],\"should_refuse\":false,\"answer\":\"有违规风险。根据现有证据，在校园教室内不得串接多个插线板，且大功率设备不得接入教室插座；在学生宿舍内，禁止多级插线板和私拉乱接，且电炉、取暖器、电磁炉等大功率电器属禁用品。即使不明确是教室还是宿舍，这种“插线板接很多大功率设备”的用法也容易导致过热、短路，违反电气防火安全要求。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "SCHOOL-3",
+        "DORM-1",
+        "DORM-2",
+        "GB50016-10.2.7"
+      ],
+      "should_refuse": false,
+      "answer": "有违规风险。根据现有证据，在校园教室内不得串接多个插线板，且大功率设备不得接入教室插座；在学生宿舍内，禁止多级插线板和私拉乱接，且电炉、取暖器、电磁炉等大功率电器属禁用品。即使不明确是教室还是宿舍，这种“插线板接很多大功率设备”的用法也容易导致过热、短路，违反电气防火安全要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "electrical_overload_hard",
+    "scene": "campus",
+    "query": "插线板接了很多大功率设备，这样用电是否违规？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "DORM-2",
+      "SCHOOL-3",
+      "DORM-1",
+      "DORM-7",
+      "RESP-7"
+    ],
+    "returned_ids": [
+      "DORM-2",
+      "SCHOOL-3"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 22899.97,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"DORM-2\",\"SCHOOL-3\"],\"should_refuse\":true,\"answer\":\"仅凭“校园”这一场景，现有证据不足以对所有场所一概认定违规；证据只明确覆盖宿舍和教室。可依据最关键的两条作条件判断：1. 宿舍内：DORM-2 规定，电炉、取暖器、电磁炉等大功率电器禁止使用。2. 教室内：SCHOOL-3 规定，不得串接多个插线板，且电热水壶等大功率设备不得接入教室插座。若该情况发生在宿舍或教室，通常可认定为违规。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "DORM-2",
+        "SCHOOL-3"
+      ],
+      "should_refuse": true,
+      "answer": "仅凭“校园”这一场景，现有证据不足以对所有场所一概认定违规；证据只明确覆盖宿舍和教室。可依据最关键的两条作条件判断：1. 宿舍内：DORM-2 规定，电炉、取暖器、电磁炉等大功率电器禁止使用。2. 教室内：SCHOOL-3 规定，不得串接多个插线板，且电热水壶等大功率设备不得接入教室插座。若该情况发生在宿舍或教室，通常可认定为违规。"
+    },
+    "error": ""
+  },
+  {
+    "name": "aging_wire",
+    "scene": "office",
+    "query": "电线外皮老化破损还在继续使用，这个风险依据是什么？",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50016-10.2.7",
+      "IND-POWER-001",
+      "SCHOOL-3",
+      "WAREHOUSE-4",
+      "HMBF-29"
+    ],
+    "returned_ids": [
+      "HMBF-29",
+      "GB50016-10.2.7"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 8326.47,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-29\",\"GB50016-10.2.7\"],\"should_refuse\":false,\"answer\":\"依据是：1) HMBF-29 明确要求对老化电气线路进行维修；电线外皮老化破损仍继续使用，属于未整改的电气火灾隐患。2) GB50016-10.2.7 要求电气线路的安装和使用应符合安全要求，防止过热和短路。外皮破损会降低绝缘性能，增加短路、过热和引发电气火灾的风险。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-29",
+        "GB50016-10.2.7"
+      ],
+      "should_refuse": false,
+      "answer": "依据是：1) HMBF-29 明确要求对老化电气线路进行维修；电线外皮老化破损仍继续使用，属于未整改的电气火灾隐患。2) GB50016-10.2.7 要求电气线路的安装和使用应符合安全要求，防止过热和短路。外皮破损会降低绝缘性能，增加短路、过热和引发电气火灾的风险。"
+    },
+    "error": ""
+  },
+  {
+    "name": "aging_wire_hard",
+    "scene": "office",
+    "query": "电线外皮老化破损还在继续使用，这个风险依据是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50016-10.2.7",
+      "IND-POWER-001",
+      "SCHOOL-3",
+      "WAREHOUSE-4",
+      "HMBF-29"
+    ],
+    "returned_ids": [
+      "GB50016-10.2.7",
+      "HMBF-29"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 12562.45,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-10.2.7\",\"HMBF-29\"],\"should_refuse\":false,\"answer\":\"法规依据可优先引用以下2条：1. GB50016-10.2.7：电气线路的安装和使用应符合安全要求，防止过热、短路。电线外皮老化、破损后继续使用，明显增加短路和电气火灾风险。2. HMBF-29：高层建筑应每年开展电气火灾安全检测，发现老化线路、插座超负荷、私拉乱接等问题应及时整改。即“老化线路”属于应维修整改的问题，不能继续带病使用。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-10.2.7",
+        "HMBF-29"
+      ],
+      "should_refuse": false,
+      "answer": "法规依据可优先引用以下2条：1. GB50016-10.2.7：电气线路的安装和使用应符合安全要求，防止过热、短路。电线外皮老化、破损后继续使用，明显增加短路和电气火灾风险。2. HMBF-29：高层建筑应每年开展电气火灾安全检测，发现老化线路、插座超负荷、私拉乱接等问题应及时整改。即“老化线路”属于应维修整改的问题，不能继续带病使用。"
+    },
+    "error": ""
+  },
+  {
+    "name": "alarm_detector_shielded",
+    "scene": "office",
+    "query": "火灾探测器被遮挡了，法规上怎么要求？",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-34",
+      "GB50016-10.1.5",
+      "GA95-7.5",
+      "GB50016-8.4.1"
+    ],
+    "returned_ids": [
+      "FIRELAW-34"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 15038.5,
+    "raw_content": "{\"risk_level\":\"unknown\",\"rule_ids\":[\"FIRELAW-34\"],\"should_refuse\":true,\"answer\":\"现有证据没有直接给出“火灾探测器不得被遮挡”的具体条文。仅能依据 FIRELAW-34 说明：消防设施必须维护保养，发现故障应及时修复。关于探测器被遮挡的明确法规要求，现有证据不足，不能直接下结论。\"}",
+    "parsed": {
+      "risk_level": "unknown",
+      "rule_ids": [
+        "FIRELAW-34"
+      ],
+      "should_refuse": true,
+      "answer": "现有证据没有直接给出“火灾探测器不得被遮挡”的具体条文。仅能依据 FIRELAW-34 说明：消防设施必须维护保养，发现故障应及时修复。关于探测器被遮挡的明确法规要求，现有证据不足，不能直接下结论。"
+    },
+    "error": ""
+  },
+  {
+    "name": "alarm_detector_shielded_hard",
+    "scene": "office",
+    "query": "火灾探测器被遮挡了，法规上怎么要求？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34"
+    ],
+    "evidence_ids": [
+      "GB50016-10.2.7",
+      "GB50140-3.1.2",
+      "IND-POWER-001",
+      "EVCHARGE-4.1",
+      "FIRELAW-34"
+    ],
+    "returned_ids": [
+      "FIRELAW-34"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 10024.61,
+    "raw_content": "{\"risk_level\":\"medium\",\"rule_ids\":[\"FIRELAW-34\"],\"should_refuse\":true,\"answer\":\"现有证据不足以直接支持“火灾探测器被遮挡”的具体法规条款。基于已提供证据，最多只能援引：1. FIRELAW-34：消防设施必须保持完好有效，发现故障应及时修复。若探测器被遮挡并影响其正常功能，通常不符合该一般性维护要求。若需“不得遮挡火灾探测器”的直接条文依据，请补充更具体的探测/报警系统规范证据。\"}",
+    "parsed": {
+      "risk_level": "medium",
+      "rule_ids": [
+        "FIRELAW-34"
+      ],
+      "should_refuse": true,
+      "answer": "现有证据不足以直接支持“火灾探测器被遮挡”的具体法规条款。基于已提供证据，最多只能援引：1. FIRELAW-34：消防设施必须保持完好有效，发现故障应及时修复。若探测器被遮挡并影响其正常功能，通常不符合该一般性维护要求。若需“不得遮挡火灾探测器”的直接条文依据，请补充更具体的探测/报警系统规范证据。"
+    },
+    "error": ""
+  },
+  {
+    "name": "alarm_device_fault",
+    "scene": "office",
+    "query": "火灾报警设备一直故障不修，管理上有什么要求？",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "FIRELAW-34",
+      "GB50016-10.1.5",
+      "GB50016-8.4.1"
+    ],
+    "returned_ids": [
+      "FIRELAW-34"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 6165.99,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-34\"],\"should_refuse\":false,\"answer\":\"要求对火灾报警设备履行维护保养义务，发现故障应及时修复，不得长期带故障运行。依据是消防设施必须保持完好有效，发生故障应当及时维修。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-34"
+      ],
+      "should_refuse": false,
+      "answer": "要求对火灾报警设备履行维护保养义务，发现故障应及时修复，不得长期带故障运行。依据是消防设施必须保持完好有效，发生故障应当及时维修。"
+    },
+    "error": ""
+  },
+  {
+    "name": "alarm_device_fault_hard",
+    "scene": "office",
+    "query": "火灾报警设备一直故障不修，管理上有什么要求？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "FIRELAW-34",
+      "GB50116-12.4.1",
+      "GB50016-10.1.5"
+    ],
+    "returned_ids": [
+      "FIRELAW-34",
+      "GB50116-12.4.1"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 9975.5,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-34\",\"GB50116-12.4.1\"],\"should_refuse\":false,\"answer\":\"管理上可先抓两条：1. 依据《FIRELAW-34》：消防设施必须维护保养，发现故障应及时修复；“一直故障不修”不符合该要求。2. 依据《GB50116-12.4.1》：火灾报警系统至少每年应进行一次全面功能测试，且测试记录保存3年；若系统长期故障，也应从年度检测和档案管理上及时发现并整改。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-34",
+        "GB50116-12.4.1"
+      ],
+      "should_refuse": false,
+      "answer": "管理上可先抓两条：1. 依据《FIRELAW-34》：消防设施必须维护保养，发现故障应及时修复；“一直故障不修”不符合该要求。2. 依据《GB50116-12.4.1》：火灾报警系统至少每年应进行一次全面功能测试，且测试记录保存3年；若系统长期故障，也应从年度检测和档案管理上及时发现并整改。"
+    },
+    "error": ""
+  },
+  {
+    "name": "kitchen_exhaust",
+    "scene": "dormitory",
+    "query": "厨房排油烟管道长期不清洗会违反哪条规定？",
+    "expected_ids": [
+      "HMBF-23"
+    ],
+    "evidence_ids": [
+      "HMBF-23",
+      "KITCHEN-1",
+      "GB50166-3.4.4",
+      "GB50016-11.0.1",
+      "KITCHEN-2"
+    ],
+    "returned_ids": [
+      "HMBF-23",
+      "KITCHEN-1"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 15224.76,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-23\",\"KITCHEN-1\"],\"should_refuse\":false,\"answer\":\"长期不清洗厨房排油烟管道，至少违反 HMBF-23（排油烟管道应定期清洗，以防油脂火灾风险）。若该场所属于商业厨房，还违反 KITCHEN-1（排油烟管道至少每季度清洗一次，并保留至少1年的清洗记录）。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-23",
+        "KITCHEN-1"
+      ],
+      "should_refuse": false,
+      "answer": "长期不清洗厨房排油烟管道，至少违反 HMBF-23（排油烟管道应定期清洗，以防油脂火灾风险）。若该场所属于商业厨房，还违反 KITCHEN-1（排油烟管道至少每季度清洗一次，并保留至少1年的清洗记录）。"
+    },
+    "error": ""
+  },
+  {
+    "name": "kitchen_exhaust_hard",
+    "scene": "dormitory",
+    "query": "厨房排油烟管道长期不清洗会违反哪条规定？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ],
+    "evidence_ids": [
+      "FIRELAW-15",
+      "HMBF-23",
+      "FIRELAW-17",
+      "GB50016-11.0.1",
+      "DORM-7"
+    ],
+    "returned_ids": [
+      "HMBF-23"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 8058.32,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-23\"],\"should_refuse\":false,\"answer\":\"长期不清洗厨房排油烟管道，违反了以下关键规定：1. HMBF-23：厨房排油烟管道应当定期清洗，以防止油污积聚引发火灾。长期不清洗即属于未按要求定期清洗。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-23"
+      ],
+      "should_refuse": false,
+      "answer": "长期不清洗厨房排油烟管道，违反了以下关键规定：1. HMBF-23：厨房排油烟管道应当定期清洗，以防止油污积聚引发火灾。长期不清洗即属于未按要求定期清洗。"
+    },
+    "error": ""
+  },
+  {
+    "name": "combustible_near_heat_source",
+    "scene": "warehouse",
+    "query": "可燃纸箱堆在配电箱旁边，这样存放合规吗？",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ],
+    "evidence_ids": [
+      "IND-POWER-001",
+      "GB50016-10.2.7",
+      "SCHOOL-3",
+      "DORM-1",
+      "PROD-01"
+    ],
+    "returned_ids": [
+      "GB50016-10.2.7"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 11632.69,
+    "raw_content": "{\"risk_level\":\"unknown\",\"rule_ids\":[\"GB50016-10.2.7\"],\"should_refuse\":true,\"answer\":\"根据现有证据，无法直接判断“可燃纸箱堆在配电箱旁”是否合规。已提供的最相关条文仅要求电气线路安装和使用应防止过热、短路引发火灾，但没有给出配电箱周边禁止堆放可燃物或安全间距的明确规定。\"}",
+    "parsed": {
+      "risk_level": "unknown",
+      "rule_ids": [
+        "GB50016-10.2.7"
+      ],
+      "should_refuse": true,
+      "answer": "根据现有证据，无法直接判断“可燃纸箱堆在配电箱旁”是否合规。已提供的最相关条文仅要求电气线路安装和使用应防止过热、短路引发火灾，但没有给出配电箱周边禁止堆放可燃物或安全间距的明确规定。"
+    },
+    "error": ""
+  },
+  {
+    "name": "combustible_near_heat_source_hard",
+    "scene": "warehouse",
+    "query": "可燃纸箱堆在配电箱旁边，这样存放合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ],
+    "evidence_ids": [
+      "IND-POWER-001",
+      "GB50016-10.2.7",
+      "SCHOOL-3",
+      "DORM-1",
+      "PROD-01"
+    ],
+    "returned_ids": [
+      "GB50016-10.2.7"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 12144.46,
+    "raw_content": "{\"risk_level\":\"unknown\",\"rule_ids\":[\"GB50016-10.2.7\"],\"should_refuse\":true,\"answer\":\"基于现有证据，不能直接认定“可燃纸箱堆在配电箱旁边”是否合规，因为提供的条款中没有明确规定配电箱周边可燃物的堆放距离或禁放要求。最接近的依据只有：1）GB50016-10.2.7：电气线路的安装和使用应符合安全要求，防止过热、短路等引发火灾。依据这条，只能说明该情形存在电气火灾风险，应避免形成火灾隐患，但不足以仅凭本证据作出明确合规/不合规结论。\"}",
+    "parsed": {
+      "risk_level": "unknown",
+      "rule_ids": [
+        "GB50016-10.2.7"
+      ],
+      "should_refuse": true,
+      "answer": "基于现有证据，不能直接认定“可燃纸箱堆在配电箱旁边”是否合规，因为提供的条款中没有明确规定配电箱周边可燃物的堆放距离或禁放要求。最接近的依据只有：1）GB50016-10.2.7：电气线路的安装和使用应符合安全要求，防止过热、短路等引发火灾。依据这条，只能说明该情形存在电气火灾风险，应避免形成火灾隐患，但不足以仅凭本证据作出明确合规/不合规结论。"
+    },
+    "error": ""
+  },
+  {
+    "name": "gas_cylinder_indoor",
+    "scene": "residential",
+    "query": "高层住宅里长期放瓶装液化气合不合规？",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ],
+    "evidence_ids": [
+      "HMBF-18",
+      "HMBF-17",
+      "GASREG-31",
+      "GB50016-7.3.5",
+      "GB50016-6.4.5"
+    ],
+    "returned_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 6706.41,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-17\",\"HMBF-18\"],\"should_refuse\":false,\"answer\":\"不合规。依据证据，高层建筑内不得违规室内存放液化石油气钢瓶；瓶装液化气属于易燃危险品，长期放置在高层住宅内存在明显火灾爆炸风险。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-17",
+        "HMBF-18"
+      ],
+      "should_refuse": false,
+      "answer": "不合规。依据证据，高层建筑内不得违规室内存放液化石油气钢瓶；瓶装液化气属于易燃危险品，长期放置在高层住宅内存在明显火灾爆炸风险。"
+    },
+    "error": ""
+  },
+  {
+    "name": "gas_cylinder_indoor_hard",
+    "scene": "residential",
+    "query": "高层住宅里长期放瓶装液化气合不合规？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ],
+    "evidence_ids": [
+      "HMBF-18",
+      "HMBF-17",
+      "DORM-2",
+      "RESP-7",
+      "RESP-4"
+    ],
+    "returned_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 10297.11,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-17\",\"HMBF-18\"],\"should_refuse\":false,\"answer\":\"不合规。就你先问的前一个问题，高层住宅内长期存放瓶装液化气，依据现有证据可直接认定为禁止情形：1. HMBF-17：明确规定“高层建筑室内不得违规存放液化石油气钢瓶”。2. HMBF-18：明确规定“高层建筑未经授权区域不得存放危险、易燃物品”。因此，高层住宅内长期放置瓶装液化气属于高风险、禁止性行为。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-17",
+        "HMBF-18"
+      ],
+      "should_refuse": false,
+      "answer": "不合规。就你先问的前一个问题，高层住宅内长期存放瓶装液化气，依据现有证据可直接认定为禁止情形：1. HMBF-17：明确规定“高层建筑室内不得违规存放液化石油气钢瓶”。2. HMBF-18：明确规定“高层建筑未经授权区域不得存放危险、易燃物品”。因此，高层住宅内长期放置瓶装液化气属于高风险、禁止性行为。"
+    },
+    "error": ""
+  },
+  {
+    "name": "hazardous_goods_storage",
+    "scene": "office",
+    "query": "高层办公楼里存放易燃易爆化学品，这条法规怎么说？",
+    "expected_ids": [
+      "HMBF-18"
+    ],
+    "evidence_ids": [
+      "HMBF-18",
+      "HMBF-17",
+      "SCHOOL-2",
+      "HOSPITAL-2",
+      "GASREG-31"
+    ],
+    "returned_ids": [
+      "HMBF-18",
+      "HMBF-17"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 7867.89,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-18\"],\"should_refuse\":false,\"answer\":\"法规要点：高层建筑内未经许可的区域，不得存放危险品、易燃易爆物品。用于办公的高层楼内存放此类化学品，属于明令禁止的情形。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-18"
+      ],
+      "should_refuse": false,
+      "answer": "法规要点：高层建筑内未经许可的区域，不得存放危险品、易燃易爆物品。用于办公的高层楼内存放此类化学品，属于明令禁止的情形。"
+    },
+    "error": ""
+  },
+  {
+    "name": "hazardous_goods_storage_hard",
+    "scene": "office",
+    "query": "高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ],
+    "evidence_ids": [
+      "HMBF-43",
+      "HMBF-18",
+      "HOSPITAL-3",
+      "RESP-7",
+      "HOSPITAL-2"
+    ],
+    "returned_ids": [
+      "HMBF-18",
+      "HMBF-43"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 10512.15,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-18\"],\"should_refuse\":false,\"answer\":\"法规依据：HMBF-18。\\n1. 高层区域不得擅自存放危险品、易燃品（Hazardous and flammable goods shall not be stored in unauthorized high-rise areas）。\\n2. 因此，高层办公楼内存放易燃易爆化学品属于重点火灾/爆炸风险情形，原则上不得在未获授权的高层区域存放。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-18"
+      ],
+      "should_refuse": false,
+      "answer": "法规依据：HMBF-18。\n1. 高层区域不得擅自存放危险品、易燃品（Hazardous and flammable goods shall not be stored in unauthorized high-rise areas）。\n2. 因此，高层办公楼内存放易燃易爆化学品属于重点火灾/爆炸风险情形，原则上不得在未获授权的高层区域存放。"
+    },
+    "error": ""
+  },
+  {
+    "name": "shaft_clutter",
+    "scene": "office",
+    "query": "电缆井门口堆了很多可燃杂物，这个问题对应什么规定？",
+    "expected_ids": [
+      "HMBF-20"
+    ],
+    "evidence_ids": [
+      "HMBF-20",
+      "GB50028-10.5.1",
+      "GB50016-3.3.8",
+      "GB50016-5.4.10",
+      "WAREHOUSE-5"
+    ],
+    "returned_ids": [
+      "HMBF-20",
+      "GB50016-3.3.8"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 11885.08,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-20\",\"GB50016-3.3.8\"],\"should_refuse\":false,\"answer\":\"最相关的是 HMBF-20：电缆井、竖井内不得存放可燃物，应保持无可燃物堆放。电缆井门口堆放大量可燃杂物，属于该类问题。可补充参照 GB50016-3.3.8：可燃物应分区管理，并远离火源、热源。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-20",
+        "GB50016-3.3.8"
+      ],
+      "should_refuse": false,
+      "answer": "最相关的是 HMBF-20：电缆井、竖井内不得存放可燃物，应保持无可燃物堆放。电缆井门口堆放大量可燃杂物，属于该类问题。可补充参照 GB50016-3.3.8：可燃物应分区管理，并远离火源、热源。"
+    },
+    "error": ""
+  },
+  {
+    "name": "shaft_clutter_hard",
+    "scene": "office",
+    "query": "电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "GB50028-10.5.1",
+      "HMBF-20",
+      "EVCHARGE-4.1",
+      "HMBF-49"
+    ],
+    "returned_ids": [
+      "HMBF-20",
+      "HMBF-49"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 11763.87,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-20\"],\"should_refuse\":false,\"answer\":\"最直接对应的规定是 HMBF-20：\\n1. 电缆井、竖井内必须保持不得存放可燃物。\\n2. 电缆井门口堆放大量可燃杂物，会增加井内及竖向空间火灾蔓延风险，应立即清理并保持周边无可燃物堆放。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-20"
+      ],
+      "should_refuse": false,
+      "answer": "最直接对应的规定是 HMBF-20：\n1. 电缆井、竖井内必须保持不得存放可燃物。\n2. 电缆井门口堆放大量可燃杂物，会增加井内及竖向空间火灾蔓延风险，应立即清理并保持周边无可燃物堆放。"
+    },
+    "error": ""
+  },
+  {
+    "name": "window_escape_obstacle",
+    "scene": "residential",
+    "query": "高层住宅外窗装了影响逃生的防盗网，是否违规？",
+    "expected_ids": [
+      "HMBF-21"
+    ],
+    "evidence_ids": [
+      "HMBF-21",
+      "GB50016-7.3.5",
+      "HMBF-17",
+      "GB50016-6.4.5",
+      "HMBF-18"
+    ],
+    "returned_ids": [
+      "HMBF-21",
+      "HMBF-17",
+      "HMBF-18"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 6671.53,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-21\"],\"should_refuse\":false,\"answer\":\"是，违规。高层住宅外窗加装影响逃生或救援的防盗网/窗栏，属于阻碍逃生和救援的情形，不应设置为妨碍开启、通行或破拆救援。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-21"
+      ],
+      "should_refuse": false,
+      "answer": "是，违规。高层住宅外窗加装影响逃生或救援的防盗网/窗栏，属于阻碍逃生和救援的情形，不应设置为妨碍开启、通行或破拆救援。"
+    },
+    "error": ""
+  },
+  {
+    "name": "window_escape_obstacle_hard",
+    "scene": "residential",
+    "query": "高层住宅外窗装了影响逃生的防盗网，是否违规？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-21"
+    ],
+    "evidence_ids": [
+      "DORM-2",
+      "RESP-7",
+      "RESP-4",
+      "HMBF-21",
+      "HMBF-43"
+    ],
+    "returned_ids": [
+      "HMBF-21",
+      "HMBF-43"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 13575.82,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-21\"],\"should_refuse\":false,\"answer\":\"是，若高层住宅外窗安装的防盗网/窗栅影响人员逃生或灭火救援，属于违规并构成较高火灾风险。关键依据：1. HMBF-21：外窗设置的防护栏、窗栅等障碍物不得妨碍逃生和救援。依据该条，凡“影响逃生”的防盗网均不符合要求，应及时整改。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-21"
+      ],
+      "should_refuse": false,
+      "answer": "是，若高层住宅外窗安装的防盗网/窗栅影响人员逃生或灭火救援，属于违规并构成较高火灾风险。关键依据：1. HMBF-21：外窗设置的防护栏、窗栅等障碍物不得妨碍逃生和救援。依据该条，凡“影响逃生”的防盗网均不符合要求，应及时整改。"
+    },
+    "error": ""
+  },
+  {
+    "name": "equipment_room_storage",
+    "scene": "office",
+    "query": "配电室被拿来堆纸箱和杂物，这样行吗？",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ],
+    "evidence_ids": [
+      "HMBF-25",
+      "GB25506-5.1",
+      "ITROOM-2",
+      "GB50016-5.4.10",
+      "HMBF-26"
+    ],
+    "returned_ids": [
+      "HMBF-25",
+      "GB50016-5.4.10",
+      "HMBF-26"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 7205.66,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-25\",\"GB50016-5.4.10\"],\"should_refuse\":false,\"answer\":\"不行。配电室/电气设备用房不得作为储物间使用，室内禁止堆放纸箱等可燃物和与设备无关的杂物，应立即清理。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-25",
+        "GB50016-5.4.10"
+      ],
+      "should_refuse": false,
+      "answer": "不行。配电室/电气设备用房不得作为储物间使用，室内禁止堆放纸箱等可燃物和与设备无关的杂物，应立即清理。"
+    },
+    "error": ""
+  },
+  {
+    "name": "equipment_room_storage_hard",
+    "scene": "office",
+    "query": "配电室被拿来堆纸箱和杂物，这样行吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ],
+    "evidence_ids": [
+      "ITROOM-2",
+      "HOSPITAL-3",
+      "ITROOM-3",
+      "HOSPITAL-2",
+      "RESP-7"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 9235.56,
+    "raw_content": "{\"risk_level\":\"unknown\",\"rule_ids\":[],\"should_refuse\":true,\"answer\":\"现有证据不足以直接判断“配电室堆放纸箱和杂物”是否合法，也无法据此给出针对配电室的法规依据。你提供的条款仅涉及机房、UPS电池间、医院场所及单位消防责任，未包含配电室禁止堆放可燃物或杂物的直接规定。请补充与配电室消防管理相关的证据后再判断。\"}",
+    "parsed": {
+      "risk_level": "unknown",
+      "rule_ids": [],
+      "should_refuse": true,
+      "answer": "现有证据不足以直接判断“配电室堆放纸箱和杂物”是否合法，也无法据此给出针对配电室的法规依据。你提供的条款仅涉及机房、UPS电池间、医院场所及单位消防责任，未包含配电室禁止堆放可燃物或杂物的直接规定。请补充与配电室消防管理相关的证据后再判断。"
+    },
+    "error": ""
+  },
+  {
+    "name": "control_room_staffing",
+    "scene": "office",
+    "query": "消防控制室只有一个人值班，是否符合要求？",
+    "expected_ids": [
+      "HMBF-26"
+    ],
+    "evidence_ids": [
+      "GB50116-3.4.1",
+      "GB25506-5.1",
+      "HMBF-26",
+      "HMBF-25",
+      "GB25506-5.6"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 848.45,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065086 (request id: 2026050900365787049431301258169)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "control_room_staffing_hard",
+    "scene": "office",
+    "query": "消防控制室只有一个人值班，是否符合要求？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-26"
+    ],
+    "evidence_ids": [
+      "GB50116-3.4.1",
+      "GB25506-5.1",
+      "HMBF-26",
+      "HMBF-25",
+      "GB25506-5.6"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 888.77,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065212 (request id: 2026050900365876444048555474391)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "daily_patrol_missing",
+    "scene": "office",
+    "query": "高层办公楼没有做日常防火巡查记录，违反哪条规定？",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "FIRELAW-17",
+      "HOSPITAL-3",
+      "RESP-7",
+      "HOTEL-2",
+      "RESP-4"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 852.72,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065154 (request id: 2026050900365963397624738297705)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "daily_patrol_missing_hard",
+    "scene": "office",
+    "query": "高层办公楼没有做日常防火巡查记录，违反哪条规定？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50016-10.2.7",
+      "HOSPITAL-3",
+      "RESP-7",
+      "RESP-3",
+      "ORDER61-13"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 907.7,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065324 (request id: 2026050900370054890204364388203)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "periodic_inspection_missing",
+    "scene": "office",
+    "query": "单位长期不做定期防火检查，这个管理要求在哪条？",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "HMBF-35",
+      "FIRELAW-17",
+      "FIRELAW-16",
+      "HMBF-34",
+      "GB50116-12.4.1"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 923.57,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.064982 (request id: 2026050900370147235065451292377)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "periodic_inspection_missing_hard",
+    "scene": "office",
+    "query": "单位长期不做定期防火检查，这个管理要求在哪条？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "GB50116-12.4.1",
+      "HMBF-35",
+      "FIRELAW-17",
+      "GB50016-10.1.5"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1052.14,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065106 (request id: 2026050900370253458380570119524)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "hazard_rectification_delay",
+    "scene": "campus",
+    "query": "发现火灾隐患后一直不整改，制度上有什么要求？",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "HMBF-36",
+      "FIRELAW-60",
+      "FIRELAW-16",
+      "RESP-3",
+      "RESP-7"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 950.02,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065092 (request id: 2026050900370349333645110833200)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "hazard_rectification_delay_hard",
+    "scene": "campus",
+    "query": "发现火灾隐患后一直不整改，制度上有什么要求？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "FIRELAW-15",
+      "HMBF-36",
+      "FIRELAW-60",
+      "FIRELAW-16",
+      "FIRELAW-17"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 894.61,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065160 (request id: 2026050900370440027283521766606)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "training_missing",
+    "scene": "office",
+    "query": "单位从来不做消防宣传教育培训，这合规吗？",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "HOSPITAL-3",
+      "RESP-7",
+      "HMBF-43",
+      "FIRELAW-16",
+      "HOTEL-2"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 830.65,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065056 (request id: 2026050900370523943428392705960)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "training_missing_hard",
+    "scene": "office",
+    "query": "单位从来不做消防宣传教育培训，这合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "HOSPITAL-3",
+      "HOTEL-2",
+      "RESP-7",
+      "FIRELAW-60",
+      "HOSPITAL-1"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 955.27,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065310 (request id: 2026050900370620087165661498632)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "evacuation_map_missing",
+    "scene": "residential",
+    "query": "高层楼层里没有张贴疏散示意图，这种情况依据是什么？",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ],
+    "evidence_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1",
+      "GB17945-5.2",
+      "GB50016-6.4.10",
+      "GB50016-10.3.4"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 837.06,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065034 (request id: 202605090037074443156200995304)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "evacuation_map_missing_hard",
+    "scene": "residential",
+    "query": "高层楼层里没有张贴疏散示意图，这种情况依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ],
+    "evidence_ids": [
+      "HMBF-42",
+      "RESP-7",
+      "HMBF-43",
+      "HMBF-44",
+      "FIRELAW-16"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 952.16,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065100 (request id: 2026050900370793241196275725336)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "emergency_plan_missing",
+    "scene": "office",
+    "query": "单位没有灭火和应急疏散预案，违反什么规定？",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "HMBF-43",
+      "GB50016-10.3.1",
+      "GB50116-6.2.7",
+      "HMBF-44",
+      "FIRELAW-44"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 984.31,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.064994 (request id: 2026050900370899724131560490404)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "emergency_plan_missing_hard",
+    "scene": "office",
+    "query": "单位没有灭火和应急疏散预案，违反什么规定？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "HMBF-43",
+      "HOSPITAL-3",
+      "RESP-7",
+      "HOTEL-2",
+      "RESP-4"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1038.0,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065212 (request id: 202605090037104483874953865626)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "drill_missing",
+    "scene": "office",
+    "query": "高层公共建筑一年都不组织消防演练，可以吗？",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "HOSPITAL-3",
+      "RESP-7",
+      "HMBF-43",
+      "HMBF-44",
+      "FIRELAW-16"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 921.04,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065006 (request id: 2026050900371096446184220202701)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "drill_missing_hard",
+    "scene": "office",
+    "query": "高层公共建筑一年都不组织消防演练，可以吗？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "HOSPITAL-3",
+      "RESP-7",
+      "FIRELAW-16",
+      "HMBF-43"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 922.01,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065160 (request id: 2026050900371189728841446012015)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "hot_work_without_approval",
+    "scene": "office",
+    "query": "高层建筑里电焊动火没有审批和监护，会触犯哪条？",
+    "expected_ids": [
+      "HMBF-47-1"
+    ],
+    "evidence_ids": [
+      "HMBF-47-1",
+      "JGJ46-9.7.3",
+      "ORDER61-22",
+      "SEVERE-4.1",
+      "GAFAC-8"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 839.1,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065136 (request id: 2026050900371274965626334915462)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "hot_work_without_approval_hard",
+    "scene": "office",
+    "query": "高层建筑里电焊动火没有审批和监护，会触犯哪条？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ],
+    "evidence_ids": [
+      "HOTEL-2",
+      "HOSPITAL-3",
+      "RESP-7",
+      "HOTEL-1",
+      "HMBF-43"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 937.01,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065194 (request id: 2026050900371368614230533090675)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "public_venue_opening_check",
+    "scene": "office",
+    "query": "公众聚集场所开业前没做消防安全检查可以营业吗？",
+    "expected_ids": [
+      "FIRELAW-15"
+    ],
+    "evidence_ids": [
+      "FIRELAW-15",
+      "ORDER61-13",
+      "RESP-4",
+      "RESP-7",
+      "RESP-3"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 887.97,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065150 (request id: 2026050900371458153994918572003)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "public_venue_opening_check_hard",
+    "scene": "office",
+    "query": "公众聚集场所开业前没做消防安全检查可以营业吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ],
+    "evidence_ids": [
+      "RESP-7",
+      "ORDER61-13",
+      "HOSPITAL-3",
+      "RESP-4",
+      "HOTEL-2"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 982.5,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065310 (request id: 2026050900371553404983202094556)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "facility_maintenance_missing",
+    "scene": "campus",
+    "query": "建筑消防设施长期不检测维护，这个法律依据是什么？",
+    "expected_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "EVCHARGE-4.1",
+      "GB50028-10.5.1",
+      "GB15630-5.1",
+      "GA95-2015-7.2"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 944.71,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065056 (request id: 2026050900371652959860166874606)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "facility_maintenance_missing_hard",
+    "scene": "campus",
+    "query": "建筑消防设施长期不检测维护，这个法律依据是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "EVCHARGE-4.1",
+      "GB50028-10.5.1",
+      "GB15630-5.1",
+      "GA95-2015-7.2"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1005.21,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065182 (request id: 2026050900371754450580225215292)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "daily_patrol_missing_hard_aug_1",
+    "scene": "office",
+    "query": "请进行法规核查：高层办公楼没有做日常防火巡查记录，违反哪条规定？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50016-10.2.7",
+      "RESP-3",
+      "RESP-7",
+      "HOSPITAL-3",
+      "ORDER61-13"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 935.73,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065416 (request id: 2026050900371848002062512897885)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "sprinkler_blocked_hard_aug_0",
+    "scene": "office",
+    "query": "请用审计视角回答：喷淋头被装饰物挡住了，这属于什么隐患？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "FIRELAW-34",
+      "GB50016-10.1.5",
+      "GB50084-10.1.1"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 886.62,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065246 (request id: 2026050900371938301408878360384)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_IND-POWER-001_2_v1",
+    "scene": "industrial",
+    "query": "在工业现场场景，同一开关箱控制多台设备是否违规？请列出关键条款。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ],
+    "evidence_ids": [
+      "IND-POWER-001",
+      "HMBF-36",
+      "FIRELAW-60",
+      "PROD-03",
+      "FIRELAW-16"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 900.23,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065100 (request id: 2026050900372028900750657386352)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-44_3_v1",
+    "scene": "office",
+    "query": "你是消防审查员。图像描述显示Regular emergency drills required，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "RESP-7",
+      "HMBF-36",
+      "HMBF-44",
+      "FIRELAW-16"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 918.77,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065106 (request id: 2026050900372120997899597972448)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "extinguisher_invalid_aug_0",
+    "scene": "office",
+    "query": "请进行法规核查：灭火器压力表不在绿区还能继续放着吗？ 并给出最小整改动作。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 965.05,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065084 (request id: 2026050900372218291010266446647)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rescue_access_blocked_hard_aug_0",
+    "scene": "office",
+    "query": "请进行法规核查：登高消防车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "GB50016-7.1.5",
+      "FIRELAW-21",
+      "RESP-7",
+      "HOSPITAL-3",
+      "RESP-3"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1221.34,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065370 (request id: 2026050900372334011033081143639)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_GB50016-3.3.8_4_v0",
+    "scene": "factory",
+    "query": "Risk check for factory: combustible materials near heat source. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ],
+    "evidence_ids": [
+      "IND-POWER-001",
+      "PROD-03",
+      "FIRELAW-34",
+      "PROD-06",
+      "PROD-02"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1001.83,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065140 (request id: 2026050900372439989791360862503)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "hazardous_goods_storage_aug_0",
+    "scene": "office",
+    "query": "请进行法规核查：高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 并给出最小整改动作。",
+    "expected_ids": [
+      "HMBF-18"
+    ],
+    "evidence_ids": [
+      "HMBF-18",
+      "HMBF-36",
+      "FIRELAW-60",
+      "HMBF-17",
+      "SCHOOL-2"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 895.64,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065100 (request id: 2026050900372532406903628546879)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "kitchen_exhaust_aug_0",
+    "scene": "dormitory",
+    "query": "请进行法规核查：厨房排油烟管道长期不清洗会违反哪条规定？ 并给出最小整改动作。",
+    "expected_ids": [
+      "HMBF-23"
+    ],
+    "evidence_ids": [
+      "HMBF-23",
+      "KITCHEN-1",
+      "HMBF-36",
+      "FIRELAW-60",
+      "HMBF-47-7"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 903.09,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065120 (request id: 2026050900372623418322540293247)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-34_3_v1",
+    "scene": "office",
+    "query": "你是消防审查员。图像描述显示Daily fire patrol requirement，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "HMBF-34"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16",
+      "HMBF-36",
+      "FIRELAW-60",
+      "GB50116-3.4.7"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 892.26,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065172 (request id: 2026050900372714338565152699425)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-43_4_v0",
+    "scene": "office",
+    "query": "Risk check for office: emergency plan. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [
+      "HMBF-43"
+    ],
+    "evidence_ids": [
+      "HMBF-43",
+      "FIRELAW-34",
+      "FIRELAW-16",
+      "HMBF-48",
+      "FIRELAW-18"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 825.57,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065082 (request id: 2026050900372797794729638890424)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_GB50016-10.1.5_1_v1",
+    "scene": "factory",
+    "query": "请按法规审查：工厂里消火栓前方被堆物占用，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ],
+    "evidence_ids": [
+      "HMBF-36",
+      "GB50016-10.1.5",
+      "HMBF-22",
+      "FIRELAW-28",
+      "GB50016-8.4.1"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 878.33,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065046 (request id: 2026050900372885611379219327753)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_GA95-2015-7.2_5_v1",
+    "scene": "campus",
+    "query": "请先给结论再给依据：校园出现报警，该如何整改？ 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-34",
+      "GB50016-10.1.5",
+      "GA95-7.5",
+      "HMBF-36"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1034.19,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065064 (request id: 2026050900372990349816183848243)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-34_4_v0",
+    "scene": "office",
+    "query": "Risk check for office: daily patrol. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [
+      "HMBF-34"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16",
+      "HMBF-48",
+      "HMBF-34",
+      "HMBF-30"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 931.81,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065072 (request id: 2026050900373083956777361922986)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "public_venue_opening_check_hard_aug_1",
+    "scene": "office",
+    "query": "请用审计视角回答：公众聚集场所开业前没做消防安全检查可以营业吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.",
+    "expected_ids": [
+      "FIRELAW-15"
+    ],
+    "evidence_ids": [
+      "RESP-3",
+      "RESP-7",
+      "ORDER61-13",
+      "HOSPITAL-3",
+      "RESP-4"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1020.27,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065416 (request id: 2026050900373187487350837751407)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-17_2_v1",
+    "scene": "office",
+    "query": "在办公楼场景，No gas cylinders in high-rise indoor areas是否违规？请列出关键条款。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ],
+    "evidence_ids": [
+      "HMBF-36",
+      "FIRELAW-60",
+      "HMBF-18",
+      "HMBF-17",
+      "GB50016-6.4.5"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 872.02,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065116 (request id: 2026050900373274434569819540346)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_IND-POWER-001_1_v0",
+    "scene": "construction",
+    "query": "请按法规审查：工地里同一开关箱控制多台设备，给出依据。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ],
+    "evidence_ids": [
+      "IND-POWER-001",
+      "PROD-03",
+      "RESP-7",
+      "GB50116-6.2.7",
+      "RESP-4"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 894.34,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065180 (request id: 2026050900373365360332966182882)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_FIRELAW-28_3_v1",
+    "scene": "campus",
+    "query": "你是消防审查员。图像描述显示No blocking evacuation exits and fire lanes，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "FIRELAW-21",
+      "FIRELAW-34",
+      "FIRELAW-28",
+      "GB50016-7.1.5",
+      "FIRELAW-16"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 893.48,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065216 (request id: 2026050900373454923422635698879)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-47-7_2_v1",
+    "scene": "dormitory",
+    "query": "在宿舍场景，Penalty for refusing rectification of e-bike charging hazards是否违规？请列出关键条款。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ],
+    "evidence_ids": [
+      "HMBF-47-7",
+      "HMBF-37",
+      "FIRELAW-60",
+      "GB50016-6.4.11",
+      "HMBF-36"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 895.65,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065200 (request id: 2026050900373545040207414381991)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_FIRELAW-34_3_v1",
+    "scene": "campus",
+    "query": "你是消防审查员。图像描述显示Fire facility maintenance obligation，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ],
+    "evidence_ids": [
+      "FIRELAW-34",
+      "HMBF-36",
+      "FIRELAW-16",
+      "FIRELAW-60",
+      "RESP-7"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1003.97,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065190 (request id: 2026050900373646720855613709710)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "training_missing_aug_1",
+    "scene": "office",
+    "query": "请按隐患闭环管理要求判断：单位从来不做消防宣传教育培训，这合规吗？ 请只输出最关键的1-2条依据。 Also include one short English rationale.",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "RESP-3",
+      "HOTEL-2",
+      "RESP-7",
+      "HOSPITAL-3",
+      "ORDER61-13"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1050.29,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065300 (request id: 2026050900373752373388665647379)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_GB50016-10.1.5_4_v0",
+    "scene": "campus",
+    "query": "Risk check for campus: hydrant access blocked. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ],
+    "evidence_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-34",
+      "FIRELAW-28",
+      "FIRELAW-16",
+      "GB50016-8.4.1"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 949.81,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065046 (request id: 2026050900373848402844937129786)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "hydrant_blocked_hard_aug_0",
+    "scene": "office",
+    "query": "请进行法规核查：室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "GB50016-8.2.7",
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "FIRELAW-34"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 909.6,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065272 (request id: 2026050900373940916971804761893)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_FIRELAW-15_3_v0",
+    "scene": "factory",
+    "query": "你是消防审查员。图像描述显示Public venue opening fire safety check，请返回法规依据与处置建议。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ],
+    "evidence_ids": [
+      "FIRELAW-15",
+      "RESP-4",
+      "ORDER61-13",
+      "RESP-7",
+      "RESP-3"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 881.21,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065200 (request id: 2026050900374028952681392052687)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-44_1_v0",
+    "scene": "campus",
+    "query": "请按法规审查：校园里Regular emergency drills required，给出依据。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [
+      "HMBF-44"
+    ],
+    "evidence_ids": [
+      "HMBF-43",
+      "HMBF-44",
+      "RESP-7",
+      "DORM-4",
+      "SCHOOL-1"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 883.33,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065094 (request id: 2026050900374119061752501080802)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_GB50140-3.1.2_0_v1",
+    "scene": "office",
+    "query": "办公楼现场发现灭火器压力异常或失效，对应哪些消防条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ],
+    "evidence_ids": [
+      "FIRELAW-16",
+      "HMBF-36",
+      "FIRELAW-60",
+      "RESP-7",
+      "RESP-3"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 963.73,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065190 (request id: 2026050900374215575186137980693)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-35_1_v0",
+    "scene": "campus",
+    "query": "请按法规审查：校园里Periodic fire inspection requirement，给出依据。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [
+      "HMBF-35"
+    ],
+    "evidence_ids": [
+      "HMBF-43",
+      "HMBF-35",
+      "DORM-4",
+      "RESP-7",
+      "SCHOOL-1"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 944.46,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065092 (request id: 202605090037436811973894699049)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  },
+  {
+    "name": "rule_HMBF-18_0_v0",
+    "scene": "office",
+    "query": "办公楼现场发现No hazardous goods storage in high-rise public areas，对应哪些消防条款？",
+    "expected_ids": [
+      "HMBF-18"
+    ],
+    "evidence_ids": [
+      "HMBF-18",
+      "HMBF-17",
+      "GB50016-6.4.5",
+      "GB50016-6.4.11",
+      "HMBF-45"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 957.29,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"error\":{\"message\":\"user quota is not enough, quota: ＄0.060838, need: ＄0.065162 (request id: 202605090037447994670852114377)\",\"type\":\"v_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+  }
+]

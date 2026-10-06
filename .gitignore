@@ -1,0 +1,68 @@
+# Root-level ignore rules for publishing this project safely.
+
+# Python / virtual env
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+
+# Backend local state
+backend/.env
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/cache/
+backend/uploads/
+
+# IDE / editor
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+
+# WeChat local/private config
+project.private.config.json
+
+# Logs / OS
+*.log
+.DS_Store
+Thumbs.db
+~$*.docx
+~$*
+
+# Personal documents / paper artifacts
+*.docx
+*.doc
+*.pdf
+*.pptx
+*.ppt
+*_comments.json
+defense_questions.md
+risk_report.md
+doc_compare/
+docs/render_check*/
+docs/tmp_*
+docs/BUPT*
+docs/*论文*
+docs/*thesis*
+docs/*guide*
+
+# Local scratch and generated files
+_tmp*
+_diag*.py
+_apply_*.py
+_thesis_*.py
+_v*_plain.txt
+_v*_unpacked/
+_cmp/
+_review_comments.txt
+AI-Agent*.md
+results/image_baseline_existing_photos_*
+results/existing_photo_cached_analysis_summary.md
+
+# Local debug screenshots
+agent-submit-fixed*.png
+web-blank-boxes*.png

@@ -1,0 +1,4260 @@
+{
+  "knowledge_base": {
+    "name": "fire_regulations_core",
+    "version": "v2.2.0",
+    "language": "zh-CN/en",
+    "built_at": "2026-04-27",
+    "chunk_policy": {
+      "method": "manual_article_chunk",
+      "target_chars": "200-500",
+      "overlap_chars": 50
+    },
+    "sources": [
+      {
+        "code": "Emergency Response Regulation 2019"
+      },
+      {
+        "code": "Fire Law of PRC"
+      },
+      {
+        "code": "GA 95-2015"
+      },
+      {
+        "code": "GB 13495.1-2015"
+      },
+      {
+        "code": "GB 15630-1995"
+      },
+      {
+        "code": "GB 17945-2010"
+      },
+      {
+        "code": "GB 25506-2010"
+      },
+      {
+        "code": "GB 42295-2022"
+      },
+      {
+        "code": "GB 50016-2014(2018)"
+      },
+      {
+        "code": "GB 50028-2006"
+      },
+      {
+        "code": "GB 50084-2017"
+      },
+      {
+        "code": "GB 50098-2009"
+      },
+      {
+        "code": "GB 50116-2013"
+      },
+      {
+        "code": "GB 50140-2005"
+      },
+      {
+        "code": "GB 50157-2013"
+      },
+      {
+        "code": "GB 50166-2019"
+      },
+      {
+        "code": "GB 50261-2017"
+      },
+      {
+        "code": "GB 50354-2005"
+      },
+      {
+        "code": "GB 50966-2014 / 电动汽车充电基础设施"
+      },
+      {
+        "code": "GB 51251-2017"
+      },
+      {
+        "code": "HMBF"
+      },
+      {
+        "code": "Hazardous Chemicals Regulation 2013"
+      },
+      {
+        "code": "Industrial Fire Safety Practice (factory floor)"
+      },
+      {
+        "code": "JGJ 46-2005"
+      },
+      {
+        "code": "Major Hazard Determination 2017 (工贸)"
+      },
+      {
+        "code": "Order 61 / 公安部令第61号"
+      },
+      {
+        "code": "中小学幼儿园消防安全管理"
+      },
+      {
+        "code": "仓库防火安全管理规则"
+      },
+      {
+        "code": "公消[2010]136号"
+      },
+      {
+        "code": "医疗机构消防安全管理"
+      },
+      {
+        "code": "城镇燃气管理条例 (国务院令)"
+      },
+      {
+        "code": "安全用电管理要点(工业/工地)"
+      },
+      {
+        "code": "宾馆酒店消防安全管理"
+      },
+      {
+        "code": "数据中心机房消防安全 (GB 50174)"
+      },
+      {
+        "code": "消防安全责任制实施办法 (国办发[2017]87号)"
+      },
+      {
+        "code": "高校学生宿舍消防安全管理规定"
+      }
+    ],
+    "expansion_note": "Round-3 expansion: gas, EV, hospital, school, hotel, data center."
+  },
+  "rules": [
+    {
+      "id": "GB50016-8.4.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "8.4.1",
+      "title": "Fire extinguisher accessibility",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential"
+      ],
+      "hazard_type": "extinguisher_blocked",
+      "tags": [
+        "fire extinguisher",
+        "blocked",
+        "accessibility",
+        "obstruction",
+        "灭火器",
+        "遮挡"
+      ],
+      "text": "Fire extinguishers shall be placed at obvious and accessible positions, and must not be blocked by objects."
+    },
+    {
+      "id": "GB50016-6.4.10",
+      "source": "GB 50016-2014(2018)",
+      "article": "6.4.10",
+      "title": "Evacuation route clearance",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential"
+      ],
+      "hazard_type": "evacuation_obstructed",
+      "tags": [
+        "evacuation",
+        "route",
+        "blocked",
+        "corridor",
+        "疏散",
+        "通道",
+        "堵塞"
+      ],
+      "text": "Evacuation routes and exits shall be kept unobstructed and shall not be occupied by goods or equipment."
+    },
+    {
+      "id": "GB50016-10.3.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "10.3.1",
+      "title": "Emergency signage visibility",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential"
+      ],
+      "hazard_type": "signage_missing_or_blocked",
+      "tags": [
+        "emergency sign",
+        "evacuation sign",
+        "visibility",
+        "应急标志",
+        "疏散指示"
+      ],
+      "text": "Emergency evacuation signs shall be continuously visible and shall not be covered or damaged."
+    },
+    {
+      "id": "GB50140-3.1.2",
+      "source": "GB 50140-2005",
+      "article": "3.1.2",
+      "title": "Extinguisher maintenance status",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential"
+      ],
+      "hazard_type": "extinguisher_invalid",
+      "tags": [
+        "extinguisher",
+        "pressure gauge",
+        "maintenance",
+        "inspection",
+        "灭火器",
+        "压力表"
+      ],
+      "text": "Portable extinguishers shall be maintained in valid status; pressure indicator and service period shall meet requirements."
+    },
+    {
+      "id": "GB50016-10.2.7",
+      "source": "GB 50016-2014(2018)",
+      "article": "10.2.7",
+      "title": "Electrical fire prevention",
+      "scene": [
+        "campus",
+        "office",
+        "factory"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "wire",
+        "aging",
+        "overload",
+        "power strip",
+        "电线",
+        "老化",
+        "过载"
+      ],
+      "text": "Electrical wiring shall be installed and used in compliance with safety requirements to prevent overheating and short circuits."
+    },
+    {
+      "id": "IND-POWER-001",
+      "source": "安全用电管理要点(工业/工地)",
+      "article": "临电-01",
+      "title": "Dedicated switch box per equipment",
+      "scene": [
+        "industrial",
+        "construction",
+        "factory"
+      ],
+      "hazard_type": "multi_device_one_box",
+      "tags": [
+        "switch box",
+        "distribution box",
+        "temporary power",
+        "multi-device",
+        "plug overload",
+        "开关箱",
+        "配电箱",
+        "临时用电",
+        "一箱多机",
+        "多个插头",
+        "两台设备"
+      ],
+      "text": "严禁用同一个开关箱直接控制2台及2台以上的用电设备。"
+    },
+    {
+      "id": "GB50016-3.3.8",
+      "source": "GB 50016-2014(2018)",
+      "article": "3.3.8",
+      "title": "Combustible storage management",
+      "scene": [
+        "factory",
+        "office",
+        "campus",
+        "residential"
+      ],
+      "hazard_type": "combustible_near_heat_source",
+      "tags": [
+        "combustible",
+        "storage",
+        "heat source",
+        "stacking",
+        "可燃物",
+        "堆放"
+      ],
+      "text": "Combustible materials shall be managed by zoning and shall be kept away from ignition and heating sources."
+    },
+    {
+      "id": "GB50084-10.1.1",
+      "source": "GB 50084-2017",
+      "article": "10.1.1",
+      "title": "Sprinkler nozzle condition",
+      "scene": [
+        "office",
+        "factory",
+        "campus"
+      ],
+      "hazard_type": "sprinkler_blocked_or_damaged",
+      "tags": [
+        "sprinkler",
+        "nozzle",
+        "blocked",
+        "damaged",
+        "喷淋",
+        "喷头"
+      ],
+      "text": "Automatic sprinkler nozzles shall not be blocked, painted, or damaged, and shall remain effective for discharge."
+    },
+    {
+      "id": "GB25506-2010-5.1",
+      "source": "GB 25506-2010",
+      "article": "5.1",
+      "title": "Fire door closing state",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential"
+      ],
+      "hazard_type": "fire_door_abnormal",
+      "tags": [
+        "fire door",
+        "normally closed",
+        "door closer",
+        "防火门",
+        "常闭"
+      ],
+      "text": "Normally closed fire doors shall be kept closed, and self-closing devices shall remain functional."
+    },
+    {
+      "id": "GB50016-10.1.5",
+      "source": "GB 50016-2014(2018)",
+      "article": "10.1.5",
+      "title": "Fire hydrant accessibility",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential"
+      ],
+      "hazard_type": "hydrant_blocked",
+      "tags": [
+        "hydrant",
+        "blocked",
+        "occupied",
+        "消火栓",
+        "遮挡"
+      ],
+      "text": "Indoor fire hydrants shall be clearly marked and shall not be blocked or occupied."
+    },
+    {
+      "id": "GA95-2015-7.2",
+      "source": "GA 95-2015",
+      "article": "7.2",
+      "title": "Alarm equipment availability",
+      "scene": [
+        "campus",
+        "office",
+        "factory"
+      ],
+      "hazard_type": "alarm_device_abnormal",
+      "tags": [
+        "alarm",
+        "maintenance",
+        "inspection",
+        "报警",
+        "维保"
+      ],
+      "text": "Fire alarm systems shall be maintained in normal working status and inspected regularly."
+    },
+    {
+      "id": "FIRELAW-15",
+      "source": "Fire Law of PRC",
+      "article": "Art.15",
+      "title": "Public venue opening fire safety check",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "public_venue_opening_check",
+      "tags": [
+        "public venue",
+        "opening",
+        "fire safety check",
+        "inspection before operation"
+      ],
+      "text": "Public gathering venues must pass fire safety inspection before operation."
+    },
+    {
+      "id": "FIRELAW-16",
+      "source": "Fire Law of PRC",
+      "article": "Art.16",
+      "title": "Unit fire safety responsibilities",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "management_responsibility",
+      "tags": [
+        "responsibility",
+        "patrol",
+        "inspection",
+        "training",
+        "rectification",
+        "maintenance"
+      ],
+      "text": "Organizations must perform patrol, inspection, hazard rectification and facility maintenance."
+    },
+    {
+      "id": "FIRELAW-28",
+      "source": "Fire Law of PRC",
+      "article": "Art.28",
+      "title": "No blocking evacuation exits and fire lanes",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "evacuation_or_lane_blocked",
+      "tags": [
+        "evacuation route",
+        "safety exit",
+        "fire lane",
+        "blocked",
+        "occupied"
+      ],
+      "text": "It is prohibited to occupy or block evacuation routes, exits or fire access lanes."
+    },
+    {
+      "id": "FIRELAW-34",
+      "source": "Fire Law of PRC",
+      "article": "Art.34",
+      "title": "Fire facility maintenance obligation",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "facility_maintenance_missing",
+      "tags": [
+        "facility maintenance",
+        "alarm fault",
+        "repair",
+        "detection"
+      ],
+      "text": "Fire protection facilities must be maintained and faults shall be repaired promptly."
+    },
+    {
+      "id": "HMBF-17",
+      "source": "HMBF",
+      "article": "Art.17",
+      "title": "No gas cylinders in high-rise indoor areas",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "gas_cylinder_indoor",
+      "tags": [
+        "gas cylinder",
+        "LPG",
+        "indoor storage",
+        "high-rise"
+      ],
+      "text": "Improper indoor storage of LPG cylinders in high-rise buildings is prohibited."
+    },
+    {
+      "id": "HMBF-18",
+      "source": "HMBF",
+      "article": "Art.18",
+      "title": "No hazardous goods storage in high-rise public areas",
+      "scene": [
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "hazardous_goods_storage",
+      "tags": [
+        "hazardous goods",
+        "flammable",
+        "explosive",
+        "chemical storage"
+      ],
+      "text": "Hazardous and flammable goods shall not be stored in unauthorized high-rise areas."
+    },
+    {
+      "id": "HMBF-20",
+      "source": "HMBF",
+      "article": "Art.20",
+      "title": "No combustibles in cable shafts",
+      "scene": [
+        "office",
+        "residential",
+        "campus"
+      ],
+      "hazard_type": "shaft_clutter",
+      "tags": [
+        "cable shaft",
+        "pipe shaft",
+        "combustibles",
+        "clutter"
+      ],
+      "text": "Cable shafts and vertical shafts must be kept free of combustible storage."
+    },
+    {
+      "id": "HMBF-21",
+      "source": "HMBF",
+      "article": "Art.21",
+      "title": "Window barriers must not block escape and rescue",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "window_escape_obstacle",
+      "tags": [
+        "window escape",
+        "anti-theft grill",
+        "rescue obstacle"
+      ],
+      "text": "External barriers such as window grills must not obstruct escape or rescue."
+    },
+    {
+      "id": "HMBF-22",
+      "source": "HMBF",
+      "article": "Art.22",
+      "title": "Fire lane and rescue operation ground must be clear",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "fire_lane_parking",
+      "tags": [
+        "fire lane",
+        "rescue access",
+        "operation ground",
+        "occupied parking"
+      ],
+      "text": "Fire lanes and rescue operation areas shall not be occupied or blocked."
+    },
+    {
+      "id": "HMBF-23",
+      "source": "HMBF",
+      "article": "Art.23",
+      "title": "Kitchen exhaust ducts require periodic cleaning",
+      "scene": [
+        "dormitory",
+        "residential",
+        "office"
+      ],
+      "hazard_type": "kitchen_exhaust",
+      "tags": [
+        "kitchen",
+        "exhaust duct",
+        "grease",
+        "periodic cleaning"
+      ],
+      "text": "Kitchen exhaust ducts shall be cleaned periodically to prevent grease fire risk."
+    },
+    {
+      "id": "HMBF-25",
+      "source": "HMBF",
+      "article": "Art.25",
+      "title": "Equipment rooms cannot be used as storage",
+      "scene": [
+        "office",
+        "campus",
+        "factory"
+      ],
+      "hazard_type": "equipment_room_storage",
+      "tags": [
+        "equipment room",
+        "distribution room",
+        "combustible storage",
+        "misuse"
+      ],
+      "text": "Control rooms and electrical rooms must not be repurposed for combustible storage."
+    },
+    {
+      "id": "HMBF-26",
+      "source": "HMBF",
+      "article": "Art.26",
+      "title": "Fire control room staffing requirement",
+      "scene": [
+        "office",
+        "campus",
+        "residential"
+      ],
+      "hazard_type": "control_room_staffing",
+      "tags": [
+        "control room",
+        "staffing",
+        "duty",
+        "certified operators"
+      ],
+      "text": "Fire control rooms must maintain compliant duty staffing and certified operators."
+    },
+    {
+      "id": "HMBF-34",
+      "source": "HMBF",
+      "article": "Art.34",
+      "title": "Daily fire patrol requirement",
+      "scene": [
+        "office",
+        "campus",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "daily_patrol_missing",
+      "tags": [
+        "daily patrol",
+        "inspection log",
+        "routine patrol"
+      ],
+      "text": "Management entities shall perform daily fire patrols and keep records."
+    },
+    {
+      "id": "HMBF-35",
+      "source": "HMBF",
+      "article": "Art.35",
+      "title": "Periodic fire inspection requirement",
+      "scene": [
+        "office",
+        "campus",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "periodic_inspection_missing",
+      "tags": [
+        "periodic inspection",
+        "scheduled check",
+        "fire inspection"
+      ],
+      "text": "Periodic fire inspections must be organized and documented."
+    },
+    {
+      "id": "HMBF-36",
+      "source": "HMBF",
+      "article": "Art.36",
+      "title": "Hazard rectification timeline",
+      "scene": [
+        "office",
+        "campus",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "hazard_rectification_delay",
+      "tags": [
+        "hazard rectification",
+        "deadline",
+        "corrective action"
+      ],
+      "text": "Detected fire hazards must be rectified promptly with accountable measures."
+    },
+    {
+      "id": "HMBF-37",
+      "source": "HMBF",
+      "article": "Art.37",
+      "title": "No e-bike parking/charging in public evacuation areas",
+      "scene": [
+        "dormitory",
+        "residential",
+        "campus"
+      ],
+      "hazard_type": "e_bike_charging_in_public_area",
+      "tags": [
+        "e-bike",
+        "electric bicycle",
+        "charging",
+        "stairwell",
+        "corridor",
+        "public lobby"
+      ],
+      "text": "Electric bicycles shall not be parked or charged in stairwells, corridors or lobbies."
+    },
+    {
+      "id": "HMBF-41",
+      "source": "HMBF",
+      "article": "Art.41",
+      "title": "Fire safety training and education",
+      "scene": [
+        "office",
+        "campus",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "training_missing",
+      "tags": [
+        "training",
+        "education",
+        "fire safety awareness"
+      ],
+      "text": "Organizations shall conduct regular fire safety training and education."
+    },
+    {
+      "id": "HMBF-42",
+      "source": "HMBF",
+      "article": "Art.42",
+      "title": "Evacuation signage and floor maps",
+      "scene": [
+        "office",
+        "campus",
+        "residential"
+      ],
+      "hazard_type": "evacuation_map_missing",
+      "tags": [
+        "evacuation map",
+        "exit signage",
+        "wayfinding"
+      ],
+      "text": "Buildings shall provide clear evacuation signage and posted evacuation maps."
+    },
+    {
+      "id": "HMBF-43",
+      "source": "HMBF",
+      "article": "Art.43",
+      "title": "Emergency response and evacuation plan",
+      "scene": [
+        "office",
+        "campus",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "emergency_plan_missing",
+      "tags": [
+        "emergency plan",
+        "fire response plan",
+        "evacuation plan"
+      ],
+      "text": "A documented fire emergency and evacuation plan is required."
+    },
+    {
+      "id": "HMBF-44",
+      "source": "HMBF",
+      "article": "Art.44",
+      "title": "Regular emergency drills required",
+      "scene": [
+        "office",
+        "campus",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "drill_missing",
+      "tags": [
+        "drill",
+        "evacuation drill",
+        "fire drill"
+      ],
+      "text": "Regular fire and evacuation drills shall be organized and reviewed."
+    },
+    {
+      "id": "HMBF-47-1",
+      "source": "HMBF",
+      "article": "Art.47(1)",
+      "title": "Hot work requires approval and onsite supervision",
+      "scene": [
+        "office",
+        "factory",
+        "campus",
+        "construction"
+      ],
+      "hazard_type": "hot_work_without_approval",
+      "tags": [
+        "hot work",
+        "welding",
+        "approval",
+        "onsite guard"
+      ],
+      "text": "Welding and other hot work must follow permit approval and onsite fire watch."
+    },
+    {
+      "id": "HMBF-47-7",
+      "source": "HMBF",
+      "article": "Art.47(7)",
+      "title": "Penalty for refusing rectification of e-bike charging hazards",
+      "scene": [
+        "dormitory",
+        "residential",
+        "campus"
+      ],
+      "hazard_type": "e_bike_penalty",
+      "tags": [
+        "e-bike",
+        "illegal charging",
+        "penalty",
+        "refusal to rectify"
+      ],
+      "text": "Illegal e-bike charging in public areas that is not rectified is subject to penalties."
+    },
+    {
+      "id": "GB50016-5.5.8",
+      "source": "GB 50016-2014(2018)",
+      "article": "5.5.8",
+      "title": "Fire compartment door closing",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "fire_door_abnormal",
+      "tags": [
+        "fire door",
+        "closer",
+        "wedge",
+        "防火门",
+        "闭门器",
+        "常闭"
+      ],
+      "text": "Class A and B fire compartment doors shall remain self-closing; door closers shall not be removed and doors shall not be wedged open."
+    },
+    {
+      "id": "GB50016-5.5.13",
+      "source": "GB 50016-2014(2018)",
+      "article": "5.5.13",
+      "title": "Stairwell smoke barrier",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "stairwell_smoke_intrusion",
+      "tags": [
+        "stairwell",
+        "smoke",
+        "positive pressure",
+        "楼梯间",
+        "正压送风"
+      ],
+      "text": "Pressurized stairwells shall maintain positive pressure; doors shall be kept closed and pressure relief vents kept clear."
+    },
+    {
+      "id": "GB50016-6.4.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "6.4.1",
+      "title": "Evacuation stair clearance",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "evacuation_obstructed",
+      "tags": [
+        "stair",
+        "evacuation",
+        "clearance",
+        "width",
+        "疏散楼梯",
+        "净宽"
+      ],
+      "text": "Evacuation stairs shall have continuous railings and the clear width shall not be reduced by stored items, advertising boards, or temporary partitions."
+    },
+    {
+      "id": "GB50016-6.4.5",
+      "source": "GB 50016-2014(2018)",
+      "article": "6.4.5",
+      "title": "Refuge story features",
+      "scene": [
+        "office",
+        "residential"
+      ],
+      "hazard_type": "refuge_story_misuse",
+      "tags": [
+        "refuge floor",
+        "high-rise",
+        "避难层"
+      ],
+      "text": "Refuge stories of high-rise buildings shall not be occupied by storage, offices, or residential use, and access shall remain unblocked."
+    },
+    {
+      "id": "GB50016-6.4.11",
+      "source": "GB 50016-2014(2018)",
+      "article": "6.4.11",
+      "title": "Exit door direction and locking",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "exit_door_wrong",
+      "tags": [
+        "exit door",
+        "outward",
+        "public",
+        "安全出口",
+        "外开",
+        "上锁"
+      ],
+      "text": "Public building exit doors shall open in the direction of evacuation flow and shall not be locked, chained, or fitted with single-direction latches during use."
+    },
+    {
+      "id": "GB50016-6.7.4",
+      "source": "GB 50016-2014(2018)",
+      "article": "6.7.4",
+      "title": "Insulation material combustibility",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "combustible_insulation",
+      "tags": [
+        "insulation",
+        "exterior wall",
+        "flammable",
+        "外墙保温",
+        "B级"
+      ],
+      "text": "Combustible insulation materials on exterior walls shall meet the building height and fire-rating requirements; B3 grade materials shall not be used on populated buildings."
+    },
+    {
+      "id": "GB50016-7.1.5",
+      "source": "GB 50016-2014(2018)",
+      "article": "7.1.5",
+      "title": "Fire access road clearance",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "fire_lane_parking",
+      "tags": [
+        "fire lane",
+        "access",
+        "width",
+        "消防车道",
+        "净宽"
+      ],
+      "text": "The clear width of fire access roads shall be at least 4.0 m and the clear height at least 4.0 m; vehicles, plants, or structures shall not encroach on this clearance."
+    },
+    {
+      "id": "GB50016-7.1.8",
+      "source": "GB 50016-2014(2018)",
+      "article": "7.1.8",
+      "title": "Fire access turning area",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "fire_lane_parking",
+      "tags": [
+        "fire lane",
+        "turning",
+        "回车场",
+        "消防车道"
+      ],
+      "text": "Dead-end fire access roads shall provide a turning area not smaller than 12 m x 12 m, kept clear of any objects."
+    },
+    {
+      "id": "GB50016-8.1.6",
+      "source": "GB 50016-2014(2018)",
+      "article": "8.1.6",
+      "title": "Fire pump room availability",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "pump_room_unusable",
+      "tags": [
+        "fire pump",
+        "pump room",
+        "valve",
+        "消防泵",
+        "阀门"
+      ],
+      "text": "Fire pump rooms shall be unobstructed; valves on supply pipelines shall be in the normally-open position with clear status indication and tags."
+    },
+    {
+      "id": "GB50016-8.1.10",
+      "source": "GB 50016-2014(2018)",
+      "article": "8.1.10",
+      "title": "Fire water tank capacity",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "water_tank_insufficient",
+      "tags": [
+        "fire water tank",
+        "reserve",
+        "消防水箱",
+        "储水量"
+      ],
+      "text": "Rooftop fire water tanks shall be filled to the design level; no other materials may be stored in the water tank room."
+    },
+    {
+      "id": "GB50016-8.2.4",
+      "source": "GB 50016-2014(2018)",
+      "article": "8.2.4",
+      "title": "Outdoor hydrant access",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "hydrant_blocked",
+      "tags": [
+        "outdoor hydrant",
+        "spacing",
+        "室外消火栓",
+        "间距"
+      ],
+      "text": "Outdoor fire hydrants shall be installed at agreed spacing along fire access roads, and access within 1.5 m around them must remain clear."
+    },
+    {
+      "id": "GB50016-8.2.7",
+      "source": "GB 50016-2014(2018)",
+      "article": "8.2.7",
+      "title": "Indoor hydrant cabinet",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "hydrant_blocked",
+      "tags": [
+        "indoor hydrant",
+        "cabinet",
+        "hose",
+        "室内消火栓",
+        "水带"
+      ],
+      "text": "Indoor fire hydrant cabinets shall be unlocked or have visible glass-break openers; hoses, nozzles, and valves shall be intact and not removed for other use."
+    },
+    {
+      "id": "GB50016-8.3.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "8.3.1",
+      "title": "Sprinkler installation scope",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "sprinkler_missing",
+      "tags": [
+        "sprinkler",
+        "installation",
+        "自动喷水",
+        "设置范围"
+      ],
+      "text": "Buildings exceeding the prescribed scale shall install automatic sprinkler systems covering all required spaces; partial omission for cost reasons is not permitted."
+    },
+    {
+      "id": "GB50016-8.5.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "8.5.1",
+      "title": "Smoke detection installation",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "detector_missing",
+      "tags": [
+        "smoke detector",
+        "installation",
+        "烟感",
+        "设置"
+      ],
+      "text": "Smoke detectors shall be installed where required by the design; spacing and ceiling clearance shall meet code, and detectors must not be removed or covered."
+    },
+    {
+      "id": "GB50016-8.5.4",
+      "source": "GB 50016-2014(2018)",
+      "article": "8.5.4",
+      "title": "Manual call point reachability",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "alarm_device_abnormal",
+      "tags": [
+        "manual call point",
+        "reach",
+        "手报",
+        "报警按钮"
+      ],
+      "text": "Manual fire call points shall be installed at evacuation routes within 30 m walking distance and shall not be obscured by decoration, posters, or equipment."
+    },
+    {
+      "id": "GB50016-9.1.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "9.1.1",
+      "title": "Heating room safety",
+      "scene": [
+        "factory",
+        "campus",
+        "office"
+      ],
+      "hazard_type": "heating_room_unsafe",
+      "tags": [
+        "boiler",
+        "heating",
+        "ventilation",
+        "锅炉房",
+        "通风"
+      ],
+      "text": "Boiler rooms and heating equipment rooms shall have independent ventilation, and combustible materials shall not be stored within."
+    },
+    {
+      "id": "GB50016-9.3.6",
+      "source": "GB 50016-2014(2018)",
+      "article": "9.3.6",
+      "title": "Generator room separation",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "generator_room_unsafe",
+      "tags": [
+        "generator",
+        "fuel",
+        "separation",
+        "柴油机",
+        "油箱"
+      ],
+      "text": "Backup diesel generator rooms shall be separated from other rooms by Class A fire walls, and day-tank fuel volume shall meet code limits."
+    },
+    {
+      "id": "GB50016-11.0.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "11.0.1",
+      "title": "Cooking source separation",
+      "scene": [
+        "campus",
+        "residential",
+        "office"
+      ],
+      "hazard_type": "kitchen_exhaust",
+      "tags": [
+        "kitchen",
+        "stove",
+        "exhaust",
+        "厨房",
+        "炉灶"
+      ],
+      "text": "Commercial cooking facilities shall be separated from residential or public use spaces by Class B fire walls and have independent exhaust ducts."
+    },
+    {
+      "id": "GB50016-12.0.6",
+      "source": "GB 50016-2014(2018)",
+      "article": "12.0.6",
+      "title": "Mass-gathering venue exits",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "venue_exit_insufficient",
+      "tags": [
+        "mass gathering",
+        "exits",
+        "capacity",
+        "人员密集",
+        "出口数量"
+      ],
+      "text": "Public assembly venues shall provide at least two exits, with total exit width sized for the maximum occupancy and equipped with directional signage."
+    },
+    {
+      "id": "GB50140-5.2.1",
+      "source": "GB 50140-2005",
+      "article": "5.2.1",
+      "title": "Extinguisher protection radius",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "extinguisher_coverage_low",
+      "tags": [
+        "extinguisher",
+        "protection radius",
+        "walking distance",
+        "保护距离",
+        "步行距离"
+      ],
+      "text": "For Class A hazards of medium severity, the maximum walking distance from any point to the nearest extinguisher shall not exceed 20 m."
+    },
+    {
+      "id": "GB50140-5.2.5",
+      "source": "GB 50140-2005",
+      "article": "5.2.5",
+      "title": "Minimum extinguisher count per box",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "extinguisher_count_low",
+      "tags": [
+        "extinguisher count",
+        "box",
+        "灭火器箱",
+        "数量"
+      ],
+      "text": "Each extinguisher placement point shall hold at least two units; a single unit at a point is not compliant for Class A or B hazard areas."
+    },
+    {
+      "id": "GB50140-6.1.1",
+      "source": "GB 50140-2005",
+      "article": "6.1.1",
+      "title": "Extinguisher mounting height",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "extinguisher_height_wrong",
+      "tags": [
+        "extinguisher",
+        "mounting",
+        "height",
+        "悬挂",
+        "安装高度"
+      ],
+      "text": "Hand-held extinguishers shall be mounted with the top no higher than 1.5 m and the bottom no lower than 0.08 m above the floor."
+    },
+    {
+      "id": "GB50140-7.0.2",
+      "source": "GB 50140-2005",
+      "article": "7.0.2",
+      "title": "Extinguisher visible signage",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "extinguisher_signage_missing",
+      "tags": [
+        "extinguisher",
+        "sign",
+        "location",
+        "灭火器标志",
+        "位置标识"
+      ],
+      "text": "Extinguisher locations shall be marked with conspicuous signs; signs shall not be obscured by decoration, posters, or stored items."
+    },
+    {
+      "id": "GB50084-5.0.4",
+      "source": "GB 50084-2017",
+      "article": "5.0.4",
+      "title": "Sprinkler clearance",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "sprinkler_blocked_or_damaged",
+      "tags": [
+        "sprinkler",
+        "clearance",
+        "obstruction",
+        "喷头",
+        "遮挡"
+      ],
+      "text": "Stored items shall be at least 0.45 m below sprinkler heads to ensure spray pattern coverage; closer placement is treated as obstruction."
+    },
+    {
+      "id": "GB50084-6.1.4",
+      "source": "GB 50084-2017",
+      "article": "6.1.4",
+      "title": "Sprinkler valve open status",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "sprinkler_valve_closed",
+      "tags": [
+        "sprinkler",
+        "valve",
+        "signal",
+        "信号阀",
+        "常开"
+      ],
+      "text": "Main control valves of sprinkler systems shall be normally open with monitored signals; closing for maintenance requires explicit work permits and immediate restoration."
+    },
+    {
+      "id": "GB50084-8.0.2",
+      "source": "GB 50084-2017",
+      "article": "8.0.2",
+      "title": "Sprinkler pressure check",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "sprinkler_pressure_low",
+      "tags": [
+        "sprinkler",
+        "pressure",
+        "gauge",
+        "压力",
+        "表"
+      ],
+      "text": "Operational pressure of automatic sprinkler systems shall be within design range; pressure gauges shall be checked at least monthly and recorded."
+    },
+    {
+      "id": "GB50116-3.4.1",
+      "source": "GB 50116-2013",
+      "article": "3.4.1",
+      "title": "Fire control room staffing",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "control_room_staffing",
+      "tags": [
+        "fire control room",
+        "staffing",
+        "duty",
+        "消防控制室",
+        "值班"
+      ],
+      "text": "Fire control rooms shall be staffed 24 hours by at least two trained operators per shift, holding valid certificates."
+    },
+    {
+      "id": "GB50116-3.4.7",
+      "source": "GB 50116-2013",
+      "article": "3.4.7",
+      "title": "Fire control room logbook",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "daily_patrol_missing",
+      "tags": [
+        "logbook",
+        "fault",
+        "fire control",
+        "控制室",
+        "台账"
+      ],
+      "text": "Fire control rooms shall keep duty logs, fault logs, and signal logs; faults shall be acknowledged and rectified within 24 hours."
+    },
+    {
+      "id": "GB50116-4.4.1",
+      "source": "GB 50116-2013",
+      "article": "4.4.1",
+      "title": "Detector spacing in flat ceiling",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "detector_missing",
+      "tags": [
+        "smoke detector",
+        "spacing",
+        "ceiling",
+        "烟感",
+        "间距"
+      ],
+      "text": "Point smoke detectors on flat ceilings shall not exceed the maximum protection radius and shall not be installed within 0.5 m of walls or partitions."
+    },
+    {
+      "id": "GB50116-6.2.7",
+      "source": "GB 50116-2013",
+      "article": "6.2.7",
+      "title": "Linkage of evacuation broadcast",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "alarm_linkage_missing",
+      "tags": [
+        "broadcast",
+        "linkage",
+        "evacuation",
+        "应急广播",
+        "联动"
+      ],
+      "text": "Emergency broadcast and evacuation lighting shall be linked to fire alarm signals; linkage logic shall be tested at least once per year."
+    },
+    {
+      "id": "GB50116-12.4.1",
+      "source": "GB 50116-2013",
+      "article": "12.4.1",
+      "title": "Annual full system test",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "periodic_inspection_missing",
+      "tags": [
+        "annual test",
+        "linkage",
+        "报警系统",
+        "年度测试"
+      ],
+      "text": "Fire alarm systems shall undergo a full functional test at least once per year; results shall be archived for three years."
+    },
+    {
+      "id": "GB51251-3.1.5",
+      "source": "GB 51251-2017",
+      "article": "3.1.5",
+      "title": "Mechanical exhaust capacity",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "smoke_control_damaged",
+      "tags": [
+        "mechanical exhaust",
+        "capacity",
+        "机械排烟",
+        "风量"
+      ],
+      "text": "Mechanical smoke exhaust systems shall meet the design air flow; permanent reductions in capacity due to obstructions or fan failure shall be rectified."
+    },
+    {
+      "id": "GB51251-4.4.10",
+      "source": "GB 51251-2017",
+      "article": "4.4.10",
+      "title": "Smoke vent inspection",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "smoke_vent_blocked",
+      "tags": [
+        "smoke vent",
+        "inspection",
+        "排烟口",
+        "检查"
+      ],
+      "text": "Smoke vents and dampers shall be inspected at least quarterly; dust accumulation, paint over, or sealing shall be removed promptly."
+    },
+    {
+      "id": "GB51251-5.1.6",
+      "source": "GB 51251-2017",
+      "article": "5.1.6",
+      "title": "Pressurized air-supply integrity",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "smoke_control_damaged",
+      "tags": [
+        "pressurized air",
+        "stairwell",
+        "正压",
+        "加压送风"
+      ],
+      "text": "Pressurized air-supply ducts and equipment shall remain intact; modifications affecting air-tightness require formal approval and re-testing."
+    },
+    {
+      "id": "GB50354-3.0.4",
+      "source": "GB 50354-2005",
+      "article": "3.0.4",
+      "title": "Decoration combustibility limits",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "combustible_decoration",
+      "tags": [
+        "decoration",
+        "ceiling",
+        "wall",
+        "B1",
+        "装修材料",
+        "燃烧性能"
+      ],
+      "text": "Interior ceiling materials of public spaces shall meet at least Class A combustibility, and wall materials shall meet at least Class B1; lower grades require special approval."
+    },
+    {
+      "id": "GB50354-4.0.5",
+      "source": "GB 50354-2005",
+      "article": "4.0.5",
+      "title": "Curtain combustibility",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "combustible_decoration",
+      "tags": [
+        "curtain",
+        "fabric",
+        "B1",
+        "窗帘",
+        "布艺"
+      ],
+      "text": "Curtains, drapes, and fabric partitions in public spaces shall be made of fire-retardant material; untreated combustible fabric shall not be installed."
+    },
+    {
+      "id": "GB25506-5.1",
+      "source": "GB 25506-2010",
+      "article": "5.1",
+      "title": "Control room independence",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "control_room_unsafe",
+      "tags": [
+        "control room",
+        "separation",
+        "wall",
+        "控制室",
+        "隔墙"
+      ],
+      "text": "Fire control rooms shall be enclosed with Class A walls and Class A doors; storage of unrelated equipment or materials inside is prohibited."
+    },
+    {
+      "id": "GB25506-5.6",
+      "source": "GB 25506-2010",
+      "article": "5.6",
+      "title": "Control room equipment list",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "control_room_equipment_missing",
+      "tags": [
+        "control room",
+        "equipment",
+        "graphic display",
+        "控制室",
+        "图形显示"
+      ],
+      "text": "Fire control rooms shall provide alarm controllers, linkage controllers, graphic display units, recording devices, and communication links to fire dispatch centers."
+    },
+    {
+      "id": "GB25506-6.3",
+      "source": "GB 25506-2010",
+      "article": "6.3",
+      "title": "Operator certification",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "control_room_staffing",
+      "tags": [
+        "certification",
+        "training",
+        "control room",
+        "培训",
+        "证书"
+      ],
+      "text": "Fire control room operators shall hold valid building fire facility operator certificates issued under national vocational standards."
+    },
+    {
+      "id": "GA95-7.2",
+      "source": "GA 95-2015",
+      "article": "7.2",
+      "title": "Extinguisher service interval",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "extinguisher_invalid",
+      "tags": [
+        "extinguisher",
+        "service",
+        "interval",
+        "送修",
+        "维修周期"
+      ],
+      "text": "Dry-powder extinguishers shall be sent for full inspection at most every 5 years; CO2 extinguishers at most every 5 years; service tags shall be attached after maintenance."
+    },
+    {
+      "id": "GA95-7.5",
+      "source": "GA 95-2015",
+      "article": "7.5",
+      "title": "Extinguisher pressure indicator",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "extinguisher_invalid",
+      "tags": [
+        "pressure indicator",
+        "green",
+        "red",
+        "压力表",
+        "失效"
+      ],
+      "text": "Extinguishers with pressure indicators showing red or yellow zone or with damaged seals shall be removed from service immediately and sent for repair."
+    },
+    {
+      "id": "GA95-9.4",
+      "source": "GA 95-2015",
+      "article": "9.4",
+      "title": "Service-tag information",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "extinguisher_signage_missing",
+      "tags": [
+        "service tag",
+        "records",
+        "维修标签",
+        "记录"
+      ],
+      "text": "Each serviced extinguisher shall carry a tag stating service date, next service date, and service company; tags missing or illegible disqualify the unit from service."
+    },
+    {
+      "id": "JGJ46-3.1.4",
+      "source": "JGJ 46-2005",
+      "article": "3.1.4",
+      "title": "TN-S system requirement",
+      "scene": [
+        "construction",
+        "factory"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "TN-S",
+        "earthing",
+        "construction",
+        "TN-S",
+        "保护接零"
+      ],
+      "text": "Construction-site temporary electricity shall use the TN-S three-phase five-wire system with dedicated PE conductor; mixing TT and TN systems is not permitted."
+    },
+    {
+      "id": "JGJ46-3.1.6",
+      "source": "JGJ 46-2005",
+      "article": "3.1.6",
+      "title": "Three-tier protection",
+      "scene": [
+        "construction",
+        "factory"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "distribution box",
+        "leakage protector",
+        "三级配电",
+        "漏电保护"
+      ],
+      "text": "Construction-site distribution shall follow three-tier configuration (main, sub, terminal box) with each tier protected by a residual-current device meeting code."
+    },
+    {
+      "id": "JGJ46-3.1.10",
+      "source": "JGJ 46-2005",
+      "article": "3.1.10",
+      "title": "Distribution box conditions",
+      "scene": [
+        "construction",
+        "factory"
+      ],
+      "hazard_type": "distribution_box_unsafe",
+      "tags": [
+        "distribution box",
+        "door",
+        "label",
+        "配电箱",
+        "门"
+      ],
+      "text": "Distribution boxes shall be locked, labeled, and dry; one-box-multiple-equipment use, doors left open, or boxes exposed to rain are not compliant."
+    },
+    {
+      "id": "JGJ46-7.2.4",
+      "source": "JGJ 46-2005",
+      "article": "7.2.4",
+      "title": "Cable burying / suspension",
+      "scene": [
+        "construction",
+        "factory"
+      ],
+      "hazard_type": "cable_unsafe_routing",
+      "tags": [
+        "cable",
+        "routing",
+        "support",
+        "电缆",
+        "布线"
+      ],
+      "text": "Outdoor temporary cables shall be buried, suspended, or routed in trays with safe height clearance; laying directly on the ground or across roads without protection is prohibited."
+    },
+    {
+      "id": "JGJ46-9.7.3",
+      "source": "JGJ 46-2005",
+      "article": "9.7.3",
+      "title": "Welding hot-work approval",
+      "scene": [
+        "construction",
+        "factory"
+      ],
+      "hazard_type": "hot_work_without_approval",
+      "tags": [
+        "hot work",
+        "welding",
+        "permit",
+        "动火",
+        "审批"
+      ],
+      "text": "Welding, cutting, and other hot work on construction sites require approved hot-work permits; on-site fire watchers and extinguishers shall be assigned."
+    },
+    {
+      "id": "FIRELAW-17",
+      "source": "Fire Law of PRC",
+      "article": "Art.17",
+      "title": "Public assembly daily duties",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "daily_patrol_missing",
+      "tags": [
+        "daily duty",
+        "public assembly",
+        "日常防火检查"
+      ],
+      "text": "Public assembly venues shall conduct daily fire safety patrols and keep records; absence of records is treated as patrol missing."
+    },
+    {
+      "id": "FIRELAW-18",
+      "source": "Fire Law of PRC",
+      "article": "Art.18",
+      "title": "Shared use building coordination",
+      "scene": [
+        "office",
+        "residential",
+        "campus"
+      ],
+      "hazard_type": "shared_facility_unmanaged",
+      "tags": [
+        "shared",
+        "property management",
+        "共用",
+        "物业"
+      ],
+      "text": "In buildings shared by multiple users, the property manager is responsible for shared evacuation routes, hydrants, and fire facilities."
+    },
+    {
+      "id": "FIRELAW-19",
+      "source": "Fire Law of PRC",
+      "article": "Art.19",
+      "title": "Manufacturing site separation",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "production_combination_unsafe",
+      "tags": [
+        "combined building",
+        "production",
+        "storage",
+        "厂房",
+        "组合"
+      ],
+      "text": "Production facilities, warehouses, residential and dormitory functions shall be physically separated; mixed use within one fire compartment is prohibited."
+    },
+    {
+      "id": "FIRELAW-21",
+      "source": "Fire Law of PRC",
+      "article": "Art.21",
+      "title": "No occupation of fire lanes",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "fire_lane_parking",
+      "tags": [
+        "fire lane",
+        "blocked",
+        "消防车通道",
+        "占用"
+      ],
+      "text": "Fire lanes shall not be occupied, blocked, or closed off; persistent illegal parking is subject to penalty under the Fire Law."
+    },
+    {
+      "id": "FIRELAW-44",
+      "source": "Fire Law of PRC",
+      "article": "Art.44",
+      "title": "Mass-gathering crowd duty",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "mass_gathering_unsafe",
+      "tags": [
+        "mass gathering",
+        "crowd",
+        "duty",
+        "大型活动",
+        "人员密集"
+      ],
+      "text": "Mass gatherings shall undergo fire safety review with crowd capacity, exit count, evacuation plan, and on-site duty arrangement."
+    },
+    {
+      "id": "FIRELAW-60",
+      "source": "Fire Law of PRC",
+      "article": "Art.60",
+      "title": "Penalty for hazard non-rectification",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "hazard_rectification_delay",
+      "tags": [
+        "penalty",
+        "rectification",
+        "处罚",
+        "整改"
+      ],
+      "text": "Failure to rectify ordered hazards within the deadline may incur fines, business suspension, or other administrative penalties under the Fire Law."
+    },
+    {
+      "id": "HMBF-29",
+      "source": "HMBF",
+      "article": "Art.29",
+      "title": "Annual electrical inspection",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "electrical",
+        "inspection",
+        "annual",
+        "电气",
+        "年检"
+      ],
+      "text": "High-rise buildings shall conduct an annual electrical fire safety inspection; aged wiring, overloaded sockets, and improper additions shall be repaired."
+    },
+    {
+      "id": "HMBF-30",
+      "source": "HMBF",
+      "article": "Art.30",
+      "title": "Property fire facility maintenance",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "facility_maintenance_missing",
+      "tags": [
+        "property",
+        "maintenance",
+        "物业",
+        "维保"
+      ],
+      "text": "Property managers shall sign maintenance contracts for fire facilities and retain inspection records for at least three years."
+    },
+    {
+      "id": "HMBF-31",
+      "source": "HMBF",
+      "article": "Art.31",
+      "title": "Decoration permit",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "renovation_unauthorized",
+      "tags": [
+        "renovation",
+        "permit",
+        "装修",
+        "报备"
+      ],
+      "text": "Decoration that may affect fire compartments, evacuation, or fixed fire facilities requires fire safety review and approval."
+    },
+    {
+      "id": "HMBF-32",
+      "source": "HMBF",
+      "article": "Art.32",
+      "title": "Lobby furniture limits",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "evacuation_obstructed",
+      "tags": [
+        "lobby",
+        "furniture",
+        "门厅",
+        "堆物"
+      ],
+      "text": "Building lobbies and shared corridors shall not be used to store furniture or non-essential items that reduce the evacuation width."
+    },
+    {
+      "id": "HMBF-33",
+      "source": "HMBF",
+      "article": "Art.33",
+      "title": "E-bike charging station design",
+      "scene": [
+        "residential"
+      ],
+      "hazard_type": "e_bike_charging_in_public_area",
+      "tags": [
+        "e-bike",
+        "centralized",
+        "充电桩",
+        "集中"
+      ],
+      "text": "Residential complexes shall set up centralized charging stations for electric bicycles, separated from main buildings with overcurrent and short-circuit protection."
+    },
+    {
+      "id": "HMBF-38",
+      "source": "HMBF",
+      "article": "Art.38",
+      "title": "Owner education",
+      "scene": [
+        "residential"
+      ],
+      "hazard_type": "training_missing",
+      "tags": [
+        "education",
+        "resident",
+        "居民",
+        "宣传"
+      ],
+      "text": "Property managers and owners' committees shall organize fire safety education for residents at least twice per year."
+    },
+    {
+      "id": "HMBF-39",
+      "source": "HMBF",
+      "article": "Art.39",
+      "title": "Hazard reporting channel",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "hazard_report_channel_missing",
+      "tags": [
+        "report",
+        "hazard",
+        "channel",
+        "举报",
+        "渠道"
+      ],
+      "text": "Buildings shall provide a clear hazard reporting channel for residents and employees; reported hazards shall be acknowledged within 24 hours."
+    },
+    {
+      "id": "HMBF-45",
+      "source": "HMBF",
+      "article": "Art.45",
+      "title": "Tenant change reporting",
+      "scene": [
+        "office",
+        "residential"
+      ],
+      "hazard_type": "tenant_change_unreported",
+      "tags": [
+        "tenant",
+        "reporting",
+        "承租",
+        "报备"
+      ],
+      "text": "Changes of tenant or use type in high-rise buildings shall be reported to the fire safety responsible person and may require additional fire safety review."
+    },
+    {
+      "id": "HMBF-46",
+      "source": "HMBF",
+      "article": "Art.46",
+      "title": "Special area handover",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "area_handover_unclear",
+      "tags": [
+        "handover",
+        "责任移交",
+        "管理交接"
+      ],
+      "text": "Fire safety responsibility for shared facilities shall not lapse during property handover; written handover records shall be kept."
+    },
+    {
+      "id": "ORDER61-13",
+      "source": "Order 61 / 公安部令第61号",
+      "article": "Art.13",
+      "title": "Fire safety responsible person duties",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "management_responsibility",
+      "tags": [
+        "responsible person",
+        "duty",
+        "消防安全责任人"
+      ],
+      "text": "Fire safety responsible persons shall organize the formulation of fire safety systems, the implementation of fire safety duties, and the rectification of hazards."
+    },
+    {
+      "id": "ORDER61-19",
+      "source": "Order 61 / 公安部令第61号",
+      "article": "Art.19",
+      "title": "Patrol records",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "daily_patrol_missing",
+      "tags": [
+        "patrol",
+        "record",
+        "巡查",
+        "台账"
+      ],
+      "text": "Units shall conduct daily patrols of public areas, with patrol records identifying the inspector, time, and findings."
+    },
+    {
+      "id": "ORDER61-20",
+      "source": "Order 61 / 公安部令第61号",
+      "article": "Art.20",
+      "title": "Annual self-examination",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "periodic_inspection_missing",
+      "tags": [
+        "self-examination",
+        "annual",
+        "自查",
+        "年度"
+      ],
+      "text": "Units shall conduct comprehensive self-examination of fire safety at least once per year, archiving findings and rectification status."
+    },
+    {
+      "id": "ORDER61-22",
+      "source": "Order 61 / 公安部令第61号",
+      "article": "Art.22",
+      "title": "Hot-work registration",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "hot_work_without_approval",
+      "tags": [
+        "hot work",
+        "registration",
+        "动火"
+      ],
+      "text": "Hot-work activities within unit premises shall be registered, with site protective measures and authorized supervisors named."
+    },
+    {
+      "id": "ORDER61-25",
+      "source": "Order 61 / 公安部令第61号",
+      "article": "Art.25",
+      "title": "Personnel training records",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "training_missing",
+      "tags": [
+        "training",
+        "record",
+        "培训",
+        "记录"
+      ],
+      "text": "Units shall arrange fire safety training for new employees and refresher training for existing employees, with attendance records preserved."
+    },
+    {
+      "id": "ORDER61-31",
+      "source": "Order 61 / 公安部令第61号",
+      "article": "Art.31",
+      "title": "Volunteer fire team",
+      "scene": [
+        "factory",
+        "construction",
+        "campus"
+      ],
+      "hazard_type": "volunteer_team_missing",
+      "tags": [
+        "volunteer team",
+        "initial response",
+        "志愿消防队",
+        "义务"
+      ],
+      "text": "Larger units shall establish volunteer fire teams, equip basic firefighting tools, and organize at least one drill per year."
+    },
+    {
+      "id": "EMERG-5",
+      "source": "Emergency Response Regulation 2019",
+      "article": "Art.5",
+      "title": "Emergency response system",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "emergency_plan_missing",
+      "tags": [
+        "emergency",
+        "plan",
+        "duty",
+        "应急",
+        "指挥"
+      ],
+      "text": "Production units shall establish an emergency response system covering early warning, response procedures, on-site command, and post-event review."
+    },
+    {
+      "id": "EMERG-7",
+      "source": "Emergency Response Regulation 2019",
+      "article": "Art.7",
+      "title": "Plan filing",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "emergency_plan_missing",
+      "tags": [
+        "plan",
+        "filing",
+        "local authority",
+        "预案",
+        "备案"
+      ],
+      "text": "Emergency plans of high-risk units shall be filed with local emergency management authorities and reviewed at least every three years."
+    },
+    {
+      "id": "EMERG-22",
+      "source": "Emergency Response Regulation 2019",
+      "article": "Art.22",
+      "title": "Initial response duty",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "emergency_response_delay",
+      "tags": [
+        "initial response",
+        "first hour",
+        "first responder",
+        "初期处置",
+        "到场"
+      ],
+      "text": "Production units shall ensure first-responder presence and isolation of the incident scene; reports to the responsible authority shall be filed without delay."
+    },
+    {
+      "id": "EMERG-28",
+      "source": "Emergency Response Regulation 2019",
+      "article": "Art.28",
+      "title": "Post-event review",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "post_event_review_missing",
+      "tags": [
+        "post-event",
+        "review",
+        "记录",
+        "事后回顾"
+      ],
+      "text": "After emergency incidents, units shall complete post-event reviews documenting causes, response performance, and improvement actions."
+    },
+    {
+      "id": "SEVERE-2.1",
+      "source": "Major Hazard Determination 2017 (工贸)",
+      "article": "Sec.2.1",
+      "title": "Workshop dormitory mixed use",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "production_combination_unsafe",
+      "tags": [
+        "dormitory",
+        "workshop",
+        "mixed",
+        "三合一",
+        "混用"
+      ],
+      "text": "Industrial workshops combined with dormitories or canteens within the same fire compartment constitute a major hazard requiring immediate rectification."
+    },
+    {
+      "id": "SEVERE-2.4",
+      "source": "Major Hazard Determination 2017 (工贸)",
+      "article": "Sec.2.4",
+      "title": "Locked exits in production",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "exit_door_wrong",
+      "tags": [
+        "exit",
+        "locked",
+        "factory",
+        "厂房",
+        "上锁"
+      ],
+      "text": "Locked or blocked safety exits in factory production areas during operation are classified as major fire hazards under workplace safety rules."
+    },
+    {
+      "id": "SEVERE-3.6",
+      "source": "Major Hazard Determination 2017 (工贸)",
+      "article": "Sec.3.6",
+      "title": "Combustible dust collector position",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "dust_explosion_risk",
+      "tags": [
+        "dust",
+        "explosion",
+        "collector",
+        "粉尘",
+        "除尘器"
+      ],
+      "text": "Dust collectors handling combustible dust shall be installed outdoors or separated; indoor placement near fire sources or non-explosion-proof equipment is a major hazard."
+    },
+    {
+      "id": "SEVERE-4.1",
+      "source": "Major Hazard Determination 2017 (工贸)",
+      "article": "Sec.4.1",
+      "title": "Hot-work supervisor missing",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "hot_work_without_approval",
+      "tags": [
+        "hot work",
+        "supervisor",
+        "动火",
+        "监护"
+      ],
+      "text": "Hot work in flammable workshops without on-site supervisors and approved permits is classified as a major hazard subject to immediate suspension."
+    },
+    {
+      "id": "SEVERE-5.2",
+      "source": "Major Hazard Determination 2017 (工贸)",
+      "article": "Sec.5.2",
+      "title": "Spray painting room ventilation",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "spray_room_unsafe",
+      "tags": [
+        "spray painting",
+        "ventilation",
+        "喷漆房",
+        "通风"
+      ],
+      "text": "Spray painting rooms shall have explosion-proof ventilation and exhaust systems with regular cleaning records; failure constitutes a major fire/explosion hazard."
+    },
+    {
+      "id": "HAZCHEM-22",
+      "source": "Hazardous Chemicals Regulation 2013",
+      "article": "Art.22",
+      "title": "Dangerous chemical separation",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "hazardous_goods_storage",
+      "tags": [
+        "dangerous chemicals",
+        "storage",
+        "separation",
+        "危化品",
+        "隔离"
+      ],
+      "text": "Dangerous chemicals incompatible by hazard category shall be stored separately; mixed storage of acid and alkali, oxidizer and combustible is prohibited."
+    },
+    {
+      "id": "HAZCHEM-25",
+      "source": "Hazardous Chemicals Regulation 2013",
+      "article": "Art.25",
+      "title": "Storage labeling",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "hazardous_signage_missing",
+      "tags": [
+        "labeling",
+        "SDS",
+        "危化品",
+        "标签"
+      ],
+      "text": "Each dangerous chemical container shall be labeled with chemical name, GHS warnings, and emergency contact; missing labels are non-compliant."
+    },
+    {
+      "id": "HAZCHEM-30",
+      "source": "Hazardous Chemicals Regulation 2013",
+      "article": "Art.30",
+      "title": "Transportation safety",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "hazardous_transport_unsafe",
+      "tags": [
+        "transport",
+        "license",
+        "危化品",
+        "运输"
+      ],
+      "text": "Vehicles transporting dangerous chemicals shall hold valid permits, follow approved routes, and be operated by qualified drivers and escorts."
+    },
+    {
+      "id": "KITCHEN-1",
+      "source": "公消[2010]136号",
+      "article": "Sec.1",
+      "title": "Kitchen exhaust cleaning interval",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "kitchen_exhaust",
+      "tags": [
+        "kitchen",
+        "exhaust",
+        "cleaning",
+        "油烟道",
+        "清洗"
+      ],
+      "text": "Commercial kitchen exhaust ducts shall be cleaned at least once every quarter; cleaning records shall be kept for at least one year."
+    },
+    {
+      "id": "KITCHEN-2",
+      "source": "公消[2010]136号",
+      "article": "Sec.2",
+      "title": "Kitchen extinguishing system",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "kitchen_extinguish_missing",
+      "tags": [
+        "kitchen",
+        "extinguishing",
+        "exhaust hood",
+        "厨房",
+        "灶台灭火"
+      ],
+      "text": "Commercial kitchen exhaust hoods serving multiple stoves shall install dedicated kitchen extinguishing systems with monthly inspection."
+    },
+    {
+      "id": "EBIKE-7.1",
+      "source": "GB 42295-2022",
+      "article": "Sec.7.1",
+      "title": "Centralized charging area design",
+      "scene": [
+        "residential",
+        "campus"
+      ],
+      "hazard_type": "e_bike_charging_in_public_area",
+      "tags": [
+        "centralized",
+        "charging",
+        "fire compartment",
+        "集中充电",
+        "防火分区"
+      ],
+      "text": "Centralized e-bike charging areas in residential or campus complexes shall be separated from main buildings by fire walls or open-air structures with monitoring."
+    },
+    {
+      "id": "EBIKE-8.3",
+      "source": "GB 42295-2022",
+      "article": "Sec.8.3",
+      "title": "Battery indoor charging prohibition",
+      "scene": [
+        "residential",
+        "campus"
+      ],
+      "hazard_type": "e_bike_charging_in_public_area",
+      "tags": [
+        "battery",
+        "indoor",
+        "住宅",
+        "电池",
+        "充电"
+      ],
+      "text": "Removing the e-bike battery for indoor charging in residential dwellings is prohibited unless using an enclosed fire-resistant cabinet."
+    },
+    {
+      "id": "PROD-01",
+      "source": "安全用电管理要点(工业/工地)",
+      "article": "临电-01",
+      "title": "Site temporary electrical practice",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "temporary",
+        "electrical",
+        "industrial",
+        "临电",
+        "工业"
+      ],
+      "text": "Industrial and construction sites using temporary electricity shall maintain protective earthing, leakage protection, and weatherproof distribution boxes."
+    },
+    {
+      "id": "PROD-02",
+      "source": "安全用电管理要点(工业/工地)",
+      "article": "临电-02",
+      "title": "Cable damage rectification",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "cable_damaged",
+      "tags": [
+        "cable",
+        "damage",
+        "insulation",
+        "破损",
+        "绝缘"
+      ],
+      "text": "Cables with damaged insulation, exposed copper, or scorched surfaces shall be replaced before continued use; tape patches are not a permanent fix."
+    },
+    {
+      "id": "PROD-03",
+      "source": "安全用电管理要点(工业/工地)",
+      "article": "临电-03",
+      "title": "One-box-one-machine",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "multi_device_one_box",
+      "tags": [
+        "one machine",
+        "one switch",
+        "一机一闸",
+        "开关箱"
+      ],
+      "text": "Construction-site terminal switch boxes shall serve a single piece of equipment; multiple machines sharing one terminal box is prohibited."
+    },
+    {
+      "id": "PROD-04",
+      "source": "安全用电管理要点(工业/工地)",
+      "article": "临电-04",
+      "title": "Box position",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "distribution_box_unsafe",
+      "tags": [
+        "distribution box",
+        "position",
+        "安装位置",
+        "配电箱"
+      ],
+      "text": "Distribution boxes shall not be placed under direct rain, in flammable storage areas, or where rescue access is blocked."
+    },
+    {
+      "id": "PROD-05",
+      "source": "安全用电管理要点(工业/工地)",
+      "article": "临电-05",
+      "title": "Earthing test",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "earthing_unmaintained",
+      "tags": [
+        "earthing",
+        "resistance",
+        "test",
+        "接地电阻"
+      ],
+      "text": "PE conductor and earthing resistance shall be tested at site startup and periodically; resistance exceeding 4 ohm requires immediate rectification."
+    },
+    {
+      "id": "PROD-06",
+      "source": "安全用电管理要点(工业/工地)",
+      "article": "临电-06",
+      "title": "Welding gas-cylinder spacing",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "welding_unsafe",
+      "tags": [
+        "welding",
+        "oxygen",
+        "acetylene",
+        "spacing",
+        "氧气",
+        "乙炔"
+      ],
+      "text": "During welding, oxygen and acetylene cylinders shall be at least 5 m apart and at least 10 m from open flame or heat source."
+    },
+    {
+      "id": "GB50016-3.5.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "3.5.1",
+      "title": "Workshop fire-resistance class",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "workshop_fire_class_low",
+      "tags": [
+        "workshop",
+        "fire resistance",
+        "厂房",
+        "耐火等级"
+      ],
+      "text": "Workshops handling Class A or B production hazards shall meet at least Grade II fire resistance; lower grades require approved special design."
+    },
+    {
+      "id": "GB50016-3.6.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "3.6.1",
+      "title": "Warehouse compartment area",
+      "scene": [
+        "factory",
+        "construction",
+        "office"
+      ],
+      "hazard_type": "warehouse_compartment_oversized",
+      "tags": [
+        "warehouse",
+        "fire compartment",
+        "仓库",
+        "防火分区"
+      ],
+      "text": "Warehouse fire compartments shall not exceed code-prescribed area limits; conversion of single-story to multi-story without re-zoning is non-compliant."
+    },
+    {
+      "id": "GB50016-5.4.10",
+      "source": "GB 50016-2014(2018)",
+      "article": "5.4.10",
+      "title": "Equipment-room separation",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "equipment_room_storage",
+      "tags": [
+        "equipment room",
+        "separation",
+        "设备间"
+      ],
+      "text": "Equipment rooms (transformer, switch, refrigeration) shall be separated from adjacent spaces by Class A fire walls; storage of unrelated combustibles inside is prohibited."
+    },
+    {
+      "id": "GB50016-6.2.4",
+      "source": "GB 50016-2014(2018)",
+      "article": "6.2.4",
+      "title": "Combustible duct lining",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "combustible_decoration",
+      "tags": [
+        "duct",
+        "lining",
+        "B1",
+        "风管",
+        "内衬"
+      ],
+      "text": "Internal linings of HVAC ducts that pass through fire compartments shall use non-combustible materials."
+    },
+    {
+      "id": "GB50016-6.4.4",
+      "source": "GB 50016-2014(2018)",
+      "article": "6.4.4",
+      "title": "Open external stair",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "evacuation_route_unsafe",
+      "tags": [
+        "external stair",
+        "外部楼梯",
+        "疏散"
+      ],
+      "text": "Open external stairs used as evacuation routes shall be free of combustible cladding and shall not have wall openings within 2 m of stair flights."
+    },
+    {
+      "id": "GB50016-6.7.2",
+      "source": "GB 50016-2014(2018)",
+      "article": "6.7.2",
+      "title": "Fire-rated windows location",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "fire_window_missing",
+      "tags": [
+        "fire window",
+        "防火窗"
+      ],
+      "text": "Windows opening into stairwells, refuge floors, or shared shafts shall be Class C or higher fire-rated and shall not be replaced with regular glazing."
+    },
+    {
+      "id": "GB50016-7.3.5",
+      "source": "GB 50016-2014(2018)",
+      "article": "7.3.5",
+      "title": "Helipad clearance",
+      "scene": [
+        "office",
+        "residential"
+      ],
+      "hazard_type": "helipad_obstruction",
+      "tags": [
+        "helipad",
+        "rooftop",
+        "高层",
+        "直升机"
+      ],
+      "text": "Helipads on super high-rise rooftops shall be kept clear of antennas, signs, or stored items that obstruct landing."
+    },
+    {
+      "id": "GB50016-7.4.1",
+      "source": "GB 50016-2014(2018)",
+      "article": "7.4.1",
+      "title": "Underground evacuation",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "underground_evacuation_unsafe",
+      "tags": [
+        "underground",
+        "evacuation",
+        "地下",
+        "疏散"
+      ],
+      "text": "Underground spaces deeper than 10 m or containing 50+ persons shall provide independent evacuation routes leading directly outdoors."
+    },
+    {
+      "id": "GB50016-10.3.4",
+      "source": "GB 50016-2014(2018)",
+      "article": "10.3.4",
+      "title": "Evacuation lighting illuminance",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "emergency_lighting_failure",
+      "tags": [
+        "evacuation lighting",
+        "illuminance",
+        "疏散照明",
+        "照度"
+      ],
+      "text": "Floor illuminance of evacuation routes shall be at least 1 lx; refuge floors and exit corridors shall be at least 5 lx."
+    },
+    {
+      "id": "GB50016-11.0.5",
+      "source": "GB 50016-2014(2018)",
+      "article": "11.0.5",
+      "title": "Hazardous storage indoor limit",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "hazardous_goods_storage",
+      "tags": [
+        "flammable",
+        "indoor",
+        "storage",
+        "limit",
+        "可燃液体",
+        "限量"
+      ],
+      "text": "Indoor storage of flammable liquids in workshops shall not exceed daily-usage quantity; bulk storage shall be relocated to dedicated rooms."
+    },
+    {
+      "id": "GB17945-4.1",
+      "source": "GB 17945-2010",
+      "article": "Sec.4.1",
+      "title": "Emergency lamp battery test",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "emergency_lighting_failure",
+      "tags": [
+        "emergency lamp",
+        "battery",
+        "test",
+        "应急灯",
+        "蓄电池"
+      ],
+      "text": "Emergency lighting batteries shall undergo monthly self-test and quarterly discharge tests with results logged."
+    },
+    {
+      "id": "GB17945-5.2",
+      "source": "GB 17945-2010",
+      "article": "Sec.5.2",
+      "title": "Sign luminance",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "signage_missing_or_blocked",
+      "tags": [
+        "sign",
+        "luminance",
+        "疏散指示",
+        "亮度"
+      ],
+      "text": "Evacuation signs shall maintain a minimum luminance after 30 minutes of battery operation; faded or dimmed signs shall be replaced."
+    },
+    {
+      "id": "GB17945-7.3",
+      "source": "GB 17945-2010",
+      "article": "Sec.7.3",
+      "title": "Illumination installation height",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "signage_missing_or_blocked",
+      "tags": [
+        "installation height",
+        "sight line",
+        "安装高度",
+        "视线"
+      ],
+      "text": "Wall-mounted evacuation signs shall be installed at 1.0 m to 1.5 m height; ceiling signs shall be visible from any position in the route."
+    },
+    {
+      "id": "GB50166-3.1.5",
+      "source": "GB 50166-2019",
+      "article": "3.1.5",
+      "title": "Acceptance test responsibility",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "acceptance_test_missing",
+      "tags": [
+        "acceptance",
+        "test",
+        "验收",
+        "责任"
+      ],
+      "text": "Fire alarm system acceptance tests shall be conducted jointly by installer, owner, and qualified third-party agency before handover."
+    },
+    {
+      "id": "GB50166-3.4.4",
+      "source": "GB 50166-2019",
+      "article": "3.4.4",
+      "title": "Periodic detector cleaning",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "detector_dirty",
+      "tags": [
+        "detector",
+        "cleaning",
+        "烟感清洁"
+      ],
+      "text": "Smoke detectors and beam detectors shall be cleaned at least annually; dust and grease accumulation shall not be allowed."
+    },
+    {
+      "id": "GB50166-7.6.1",
+      "source": "GB 50166-2019",
+      "article": "7.6.1",
+      "title": "Linkage test record",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "alarm_linkage_missing",
+      "tags": [
+        "linkage",
+        "test record",
+        "联动",
+        "记录"
+      ],
+      "text": "Linkage tests for sprinklers, smoke control, evacuation broadcast, and door release shall be performed annually with documented results."
+    },
+    {
+      "id": "GB50261-5.0.4",
+      "source": "GB 50261-2017",
+      "article": "5.0.4",
+      "title": "Sprinkler nozzle replacement",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "sprinkler_blocked_or_damaged",
+      "tags": [
+        "sprinkler",
+        "damaged",
+        "replacement",
+        "喷头"
+      ],
+      "text": "Damaged, painted-over, or corroded sprinkler nozzles shall be replaced; on-site repainting that obstructs the heat-sensing bulb is prohibited."
+    },
+    {
+      "id": "GB50261-5.2.3",
+      "source": "GB 50261-2017",
+      "article": "5.2.3",
+      "title": "Storage area sprinkler density",
+      "scene": [
+        "factory",
+        "construction",
+        "office"
+      ],
+      "hazard_type": "sprinkler_density_low",
+      "tags": [
+        "storage",
+        "sprinkler density",
+        "储存",
+        "喷水强度"
+      ],
+      "text": "Storage areas exceeding rack height limits require enhanced sprinkler density and in-rack sprinklers; otherwise sprinkler protection is treated as inadequate."
+    },
+    {
+      "id": "GB50157-7.5.4",
+      "source": "GB 50157-2013",
+      "article": "7.5.4",
+      "title": "Metro evacuation platform",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "evacuation_obstructed",
+      "tags": [
+        "metro",
+        "platform",
+        "subway",
+        "站台",
+        "疏散"
+      ],
+      "text": "Metro and underground transit station platforms shall maintain unobstructed evacuation aisles with width meeting peak-hour design occupancy."
+    },
+    {
+      "id": "GB50098-5.2.1",
+      "source": "GB 50098-2009",
+      "article": "5.2.1",
+      "title": "Underground assembly fire compartment",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "warehouse_compartment_oversized",
+      "tags": [
+        "underground",
+        "civil defense",
+        "fire compartment",
+        "人防",
+        "防火分区"
+      ],
+      "text": "Underground civil air defense projects used for assembly or commerce shall have fire compartments not exceeding 1000 m^2; sprinkler installation may double this limit."
+    },
+    {
+      "id": "GB13495-4.1",
+      "source": "GB 13495.1-2015",
+      "article": "Sec.4.1",
+      "title": "Safety sign minimum size",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "signage_missing_or_blocked",
+      "tags": [
+        "safety sign",
+        "size",
+        "安全标志",
+        "尺寸"
+      ],
+      "text": "Fire safety signs shall meet minimum visibility size requirements based on viewing distance; signs covered or below the minimum size are non-compliant."
+    },
+    {
+      "id": "GB13495-5.2",
+      "source": "GB 13495.1-2015",
+      "article": "Sec.5.2",
+      "title": "Hazard warning placement",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "signage_missing_or_blocked",
+      "tags": [
+        "warning",
+        "placement",
+        "警示",
+        "张贴"
+      ],
+      "text": "Hazard warning signs shall be placed near the entry to the hazard zone and shall not be hidden by stored items, doors, or movable equipment."
+    },
+    {
+      "id": "GB15630-5.1",
+      "source": "GB 15630-1995",
+      "article": "Sec.5.1",
+      "title": "Fire equipment sign visibility",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "signage_missing_or_blocked",
+      "tags": [
+        "fire equipment",
+        "sign",
+        "消防设备",
+        "标志"
+      ],
+      "text": "Fire equipment locations shall be marked with red-on-white international fire signs and kept visible from primary corridors."
+    },
+    {
+      "id": "DORM-1",
+      "source": "高校学生宿舍消防安全管理规定",
+      "article": "Sec.1",
+      "title": "Dormitory power outlet limit",
+      "scene": [
+        "campus",
+        "residential"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "dormitory",
+        "power outlet",
+        "宿舍",
+        "插座"
+      ],
+      "text": "Each student dormitory bed area shall have at most one regulated power outlet; multi-stage power strips and unauthorized rewiring are prohibited."
+    },
+    {
+      "id": "DORM-2",
+      "source": "高校学生宿舍消防安全管理规定",
+      "article": "Sec.2",
+      "title": "Dormitory high-power appliance ban",
+      "scene": [
+        "campus",
+        "residential"
+      ],
+      "hazard_type": "high_power_appliance_in_dorm",
+      "tags": [
+        "high-power",
+        "appliance",
+        "heater",
+        "kettle",
+        "违章电器",
+        "大功率"
+      ],
+      "text": "Use of high-power appliances such as electric stoves, heaters, and induction cookers in dormitories is prohibited; campus inspections may seize such devices."
+    },
+    {
+      "id": "DORM-3",
+      "source": "高校学生宿舍消防安全管理规定",
+      "article": "Sec.3",
+      "title": "Dormitory smoking ban",
+      "scene": [
+        "campus",
+        "residential"
+      ],
+      "hazard_type": "smoking_in_dorm",
+      "tags": [
+        "smoking",
+        "cigarette",
+        "dormitory",
+        "吸烟",
+        "宿舍"
+      ],
+      "text": "Smoking in student dormitories and connected corridors is prohibited; unattended smoldering items are treated as serious fire hazards."
+    },
+    {
+      "id": "DORM-4",
+      "source": "高校学生宿舍消防安全管理规定",
+      "article": "Sec.4",
+      "title": "Dormitory evacuation drill",
+      "scene": [
+        "campus"
+      ],
+      "hazard_type": "drill_missing",
+      "tags": [
+        "dormitory",
+        "drill",
+        "semester",
+        "宿舍",
+        "演练"
+      ],
+      "text": "Universities shall organize fire evacuation drills in student dormitory blocks at least once per semester with attendance recorded."
+    },
+    {
+      "id": "DORM-5",
+      "source": "高校学生宿舍消防安全管理规定",
+      "article": "Sec.5",
+      "title": "Dormitory open flame ban",
+      "scene": [
+        "campus",
+        "residential"
+      ],
+      "hazard_type": "open_flame_in_dorm",
+      "tags": [
+        "open flame",
+        "candle",
+        "incense",
+        "明火",
+        "蜡烛"
+      ],
+      "text": "Use of candles, incense, alcohol stoves, and similar open flames in student dormitories is prohibited."
+    },
+    {
+      "id": "DORM-6",
+      "source": "高校学生宿舍消防安全管理规定",
+      "article": "Sec.6",
+      "title": "Dormitory storage limit",
+      "scene": [
+        "campus"
+      ],
+      "hazard_type": "combustible_storage",
+      "tags": [
+        "dormitory",
+        "clutter",
+        "storage",
+        "堆放",
+        "宿舍"
+      ],
+      "text": "Student dormitories shall not store flammable solvents, large amounts of paper or fabric, or unused appliances above safe capacity."
+    },
+    {
+      "id": "DORM-7",
+      "source": "高校学生宿舍消防安全管理规定",
+      "article": "Sec.7",
+      "title": "Common-area patrol",
+      "scene": [
+        "campus"
+      ],
+      "hazard_type": "daily_patrol_missing",
+      "tags": [
+        "dormitory",
+        "patrol",
+        "rounds",
+        "查寝",
+        "巡查"
+      ],
+      "text": "Dormitory administrators shall conduct daily fire safety patrols of corridors, stairwells, and common rooms with logged inspections."
+    },
+    {
+      "id": "DORM-8",
+      "source": "高校学生宿舍消防安全管理规定",
+      "article": "Sec.8",
+      "title": "Dormitory exit door state",
+      "scene": [
+        "campus",
+        "residential"
+      ],
+      "hazard_type": "exit_door_wrong",
+      "tags": [
+        "dormitory",
+        "exit",
+        "lock",
+        "宿舍",
+        "上锁"
+      ],
+      "text": "Dormitory exit doors shall remain unlocked from the inside during occupancy; chains, padlocks, or wedges that block egress are prohibited."
+    },
+    {
+      "id": "RESP-3",
+      "source": "消防安全责任制实施办法 (国办发[2017]87号)",
+      "article": "Sec.3",
+      "title": "Government responsibility",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "management_responsibility",
+      "tags": [
+        "government",
+        "responsibility",
+        "政府",
+        "责任"
+      ],
+      "text": "Local governments shall include fire safety in performance evaluation and ensure dedicated personnel and budget for hazard rectification."
+    },
+    {
+      "id": "RESP-4",
+      "source": "消防安全责任制实施办法 (国办发[2017]87号)",
+      "article": "Sec.4",
+      "title": "Department joint duty",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "management_responsibility",
+      "tags": [
+        "joint duty",
+        "department",
+        "部门",
+        "联合"
+      ],
+      "text": "Public security, emergency management, education, and housing departments shall coordinate fire safety inspections and information sharing."
+    },
+    {
+      "id": "RESP-7",
+      "source": "消防安全责任制实施办法 (国办发[2017]87号)",
+      "article": "Sec.7",
+      "title": "Unit responsibility scope",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "management_responsibility",
+      "tags": [
+        "unit",
+        "fire responsible",
+        "scope",
+        "责任范围"
+      ],
+      "text": "Each unit shall implement the fire safety responsible person system covering planning, training, drills, hazard rectification, and emergency response."
+    },
+    {
+      "id": "WAREHOUSE-1",
+      "source": "仓库防火安全管理规则",
+      "article": "Sec.1",
+      "title": "Warehouse separation distance",
+      "scene": [
+        "factory",
+        "construction",
+        "office"
+      ],
+      "hazard_type": "warehouse_separation_low",
+      "tags": [
+        "warehouse",
+        "separation",
+        "仓库",
+        "防火间距"
+      ],
+      "text": "Warehouses shall maintain code-required separation from production buildings, residences, and ignition sources; reductions require fire safety review."
+    },
+    {
+      "id": "WAREHOUSE-2",
+      "source": "仓库防火安全管理规则",
+      "article": "Sec.2",
+      "title": "Warehouse smoking ban",
+      "scene": [
+        "factory",
+        "construction",
+        "office"
+      ],
+      "hazard_type": "smoking_in_warehouse",
+      "tags": [
+        "warehouse",
+        "smoking",
+        "ban",
+        "仓库",
+        "禁烟"
+      ],
+      "text": "Smoking, hot work, and open flame use inside warehouses are prohibited; designated smoking areas shall be located outside the warehouse."
+    },
+    {
+      "id": "WAREHOUSE-3",
+      "source": "仓库防火安全管理规则",
+      "article": "Sec.3",
+      "title": "Warehouse stack height",
+      "scene": [
+        "factory",
+        "construction",
+        "office"
+      ],
+      "hazard_type": "warehouse_stack_unsafe",
+      "tags": [
+        "stack",
+        "height",
+        "spacing",
+        "堆垛",
+        "间距"
+      ],
+      "text": "Stored goods shall maintain at least 0.5 m from walls, 0.3 m from ceilings, and 0.5 m from light fixtures; aisles shall be at least 1.5 m wide."
+    },
+    {
+      "id": "WAREHOUSE-4",
+      "source": "仓库防火安全管理规则",
+      "article": "Sec.4",
+      "title": "Warehouse electrical operation",
+      "scene": [
+        "factory",
+        "construction",
+        "office"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "warehouse",
+        "electrical",
+        "power off",
+        "仓库",
+        "断电"
+      ],
+      "text": "Power to warehouse lighting and equipment shall be shut off at end of work day; permanent live lighting requires explosion-proof or anti-fire design."
+    },
+    {
+      "id": "WAREHOUSE-5",
+      "source": "仓库防火安全管理规则",
+      "article": "Sec.5",
+      "title": "Warehouse ventilation",
+      "scene": [
+        "factory",
+        "construction",
+        "office"
+      ],
+      "hazard_type": "ventilation_inadequate",
+      "tags": [
+        "warehouse",
+        "ventilation",
+        "通风",
+        "仓库"
+      ],
+      "text": "Warehouses storing volatile combustibles shall have adequate ventilation; mechanical ventilation systems shall be inspected at least quarterly."
+    },
+    {
+      "id": "HMBF-48",
+      "source": "HMBF",
+      "article": "Art.48",
+      "title": "Owner responsibility for sub-tenants",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "management_responsibility",
+      "tags": [
+        "sub-tenant",
+        "owner",
+        "出租"
+      ],
+      "text": "Building owners renting space to sub-tenants remain responsible for fire compartment integrity and shared facility maintenance."
+    },
+    {
+      "id": "HMBF-49",
+      "source": "HMBF",
+      "article": "Art.49",
+      "title": "Fire facility upgrade",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "facility_maintenance_missing",
+      "tags": [
+        "upgrade",
+        "facility",
+        "升级",
+        "改造"
+      ],
+      "text": "Existing buildings undergoing major refurbishment shall upgrade fire facilities to current code where reasonably practicable."
+    },
+    {
+      "id": "HMBF-50",
+      "source": "HMBF",
+      "article": "Art.50",
+      "title": "Tenant fire training",
+      "scene": [
+        "residential",
+        "office"
+      ],
+      "hazard_type": "training_missing",
+      "tags": [
+        "tenant",
+        "training",
+        "承租",
+        "培训"
+      ],
+      "text": "Tenants of high-rise buildings shall receive fire safety training annually, including evacuation routes and hydrant operation."
+    },
+    {
+      "id": "GAFAC-1",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.1",
+      "title": "Production area smoking",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "smoking_in_workshop",
+      "tags": [
+        "smoking",
+        "workshop",
+        "车间",
+        "禁烟"
+      ],
+      "text": "Smoking is prohibited in production workshops, warehouses, and adjacent fire-isolation zones; designated areas shall be at least 10 m away."
+    },
+    {
+      "id": "GAFAC-2",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.2",
+      "title": "Lithium battery storage",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "lithium_battery_storage",
+      "tags": [
+        "lithium battery",
+        "storage",
+        "锂电池",
+        "存储"
+      ],
+      "text": "Lithium battery storage shall use dedicated rooms with thermal sensors, separation walls, and capacity limits; mixing with combustible materials is prohibited."
+    },
+    {
+      "id": "GAFAC-3",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.3",
+      "title": "Conveyor belt cleaning",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "dust_explosion_risk",
+      "tags": [
+        "conveyor",
+        "dust",
+        "cleaning",
+        "传送带",
+        "粉尘"
+      ],
+      "text": "Conveyor belts handling combustible dust shall be cleaned daily; accumulated dust thicker than 5 mm requires immediate cleanup."
+    },
+    {
+      "id": "GAFAC-4",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.4",
+      "title": "Mobile equipment fueling",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "fueling_unsafe",
+      "tags": [
+        "fueling",
+        "forklift",
+        "加油",
+        "叉车"
+      ],
+      "text": "Diesel and LPG fueling of forklifts and on-site vehicles shall be performed at designated outdoor stations with portable extinguisher within 5 m."
+    },
+    {
+      "id": "GAFAC-5",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.5",
+      "title": "Painting booth interlock",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "spray_room_unsafe",
+      "tags": [
+        "spray booth",
+        "interlock",
+        "喷漆",
+        "联锁"
+      ],
+      "text": "Spray paint booths shall interlock spray-gun trigger with exhaust ventilation; painting with disabled or bypassed interlocks is prohibited."
+    },
+    {
+      "id": "GAFAC-6",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.6",
+      "title": "Hot oil cooking limit",
+      "scene": [
+        "factory",
+        "campus"
+      ],
+      "hazard_type": "kitchen_exhaust",
+      "tags": [
+        "hot oil",
+        "cooking",
+        "limit",
+        "食堂",
+        "油锅"
+      ],
+      "text": "Cafeteria hot-oil cookers shall not be left unattended; on-site fire blanket and Class K extinguisher shall be in reach."
+    },
+    {
+      "id": "GAFAC-7",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.7",
+      "title": "Equipment grounding test",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "earthing_unmaintained",
+      "tags": [
+        "grounding",
+        "static",
+        "test",
+        "防静电",
+        "接地"
+      ],
+      "text": "Anti-static grounding for equipment handling flammable liquids shall be tested at least every six months with results recorded."
+    },
+    {
+      "id": "GAFAC-8",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.8",
+      "title": "Hot work isolation distance",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "hot_work_without_approval",
+      "tags": [
+        "hot work",
+        "isolation",
+        "distance",
+        "动火",
+        "隔离"
+      ],
+      "text": "Hot work shall maintain at least 10 m horizontal isolation from combustible storage; combustibles within range shall be removed or covered."
+    },
+    {
+      "id": "GAFAC-9",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.9",
+      "title": "Worker PPE requirement",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "ppe_missing",
+      "tags": [
+        "PPE",
+        "helmet",
+        "gloves",
+        "劳保"
+      ],
+      "text": "Production workers in fire-prone or hot-work areas shall wear flame-resistant PPE; cotton work clothes are insufficient for welding tasks."
+    },
+    {
+      "id": "GAFAC-10",
+      "source": "Industrial Fire Safety Practice (factory floor)",
+      "article": "Sec.10",
+      "title": "Compressor room ventilation",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "ventilation_inadequate",
+      "tags": [
+        "compressor",
+        "ventilation",
+        "空压机",
+        "通风"
+      ],
+      "text": "Air compressor and gas compressor rooms shall have continuous ventilation; oil mist accumulation shall be cleaned at least monthly."
+    },
+    {
+      "id": "JGJ46-3.2.6",
+      "source": "JGJ 46-2005",
+      "article": "3.2.6",
+      "title": "Outdoor lighting",
+      "scene": [
+        "construction"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "outdoor",
+        "lighting",
+        "weatherproof",
+        "户外照明"
+      ],
+      "text": "Outdoor temporary lighting on construction sites shall be weatherproof, with cables raised at least 2.5 m above pedestrian walkways."
+    },
+    {
+      "id": "JGJ46-5.2.1",
+      "source": "JGJ 46-2005",
+      "article": "5.2.1",
+      "title": "Earth-leakage detector",
+      "scene": [
+        "construction"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "RCD",
+        "leakage",
+        "trip",
+        "漏电保护"
+      ],
+      "text": "Each terminal switch box shall have a residual-current device with rated trip current ≤ 30 mA and trip time ≤ 0.1 s."
+    },
+    {
+      "id": "JGJ46-7.6.1",
+      "source": "JGJ 46-2005",
+      "article": "7.6.1",
+      "title": "Tower crane power supply",
+      "scene": [
+        "construction"
+      ],
+      "hazard_type": "crane_power_unsafe",
+      "tags": [
+        "tower crane",
+        "power",
+        "塔吊",
+        "供电"
+      ],
+      "text": "Tower crane power supply shall use a dedicated cable and isolation switch; sharing with other site loads is prohibited."
+    },
+    {
+      "id": "JGJ46-9.2.4",
+      "source": "JGJ 46-2005",
+      "article": "9.2.4",
+      "title": "Wood/scaffold fire risk",
+      "scene": [
+        "construction"
+      ],
+      "hazard_type": "combustible_storage",
+      "tags": [
+        "wood",
+        "scaffold",
+        "fire risk",
+        "脚手架",
+        "木方"
+      ],
+      "text": "Combustible scaffolding boards and wood pallets shall be stored at least 5 m from hot-work areas and covered with fire-retardant tarpaulins."
+    },
+    {
+      "id": "SEVERE-2.7",
+      "source": "Major Hazard Determination 2017 (工贸)",
+      "article": "Sec.2.7",
+      "title": "Mezzanine residential ban",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "production_combination_unsafe",
+      "tags": [
+        "mezzanine",
+        "living quarter",
+        "三合一",
+        "夹层"
+      ],
+      "text": "Building mezzanine living quarters above production lines is prohibited and constitutes a major hazard regardless of partition material."
+    },
+    {
+      "id": "SEVERE-3.2",
+      "source": "Major Hazard Determination 2017 (工贸)",
+      "article": "Sec.3.2",
+      "title": "Powder handling control",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "dust_explosion_risk",
+      "tags": [
+        "powder",
+        "control",
+        "ATEX",
+        "粉尘控制"
+      ],
+      "text": "Workshops handling combustible powder shall have explosion-proof equipment, anti-static grounding, and dust suppression; absence is a major hazard."
+    },
+    {
+      "id": "SEVERE-4.5",
+      "source": "Major Hazard Determination 2017 (工贸)",
+      "article": "Sec.4.5",
+      "title": "Confined space hot work",
+      "scene": [
+        "factory",
+        "construction"
+      ],
+      "hazard_type": "hot_work_without_approval",
+      "tags": [
+        "confined space",
+        "hot work",
+        "受限空间",
+        "动火"
+      ],
+      "text": "Hot work in confined spaces without approved permit, ventilation, and on-site monitoring is a major hazard."
+    },
+    {
+      "id": "GB50016-12.0.7",
+      "source": "GB 50016-2014(2018)",
+      "article": "12.0.7",
+      "title": "Theater backstage egress",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "venue_exit_insufficient",
+      "tags": [
+        "theater",
+        "backstage",
+        "stage",
+        "剧场",
+        "后台"
+      ],
+      "text": "Theater backstage and stage areas shall have direct evacuation routes independent of audience exits; both shall be free of stored props."
+    },
+    {
+      "id": "GB50016-12.0.9",
+      "source": "GB 50016-2014(2018)",
+      "article": "12.0.9",
+      "title": "Mall public area decoration",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "combustible_decoration",
+      "tags": [
+        "mall",
+        "decoration",
+        "公共",
+        "装修"
+      ],
+      "text": "Shopping malls shall use Class A or B1 decoration materials in public corridors and atriums; flammable holiday decorations require fire safety review."
+    },
+    {
+      "id": "KITCHEN-3",
+      "source": "公消[2010]136号",
+      "article": "Sec.3",
+      "title": "Gas pipeline maintenance",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "gas_pipeline_unsafe",
+      "tags": [
+        "gas pipeline",
+        "leak",
+        "燃气管道",
+        "泄漏"
+      ],
+      "text": "Commercial kitchen gas pipelines shall be inspected at least annually for corrosion and joint leakage; gas leak alarms required for piped LPG/natural gas."
+    },
+    {
+      "id": "KITCHEN-4",
+      "source": "公消[2010]136号",
+      "article": "Sec.4",
+      "title": "Cooker shut-off",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "cooker_unattended",
+      "tags": [
+        "cooker",
+        "shut-off",
+        "close",
+        "燃气",
+        "闭阀"
+      ],
+      "text": "Gas valves of cooking equipment shall be closed at end of business; pilot flame-only operation overnight is not permitted."
+    },
+    {
+      "id": "GASREG-25",
+      "source": "城镇燃气管理条例 (国务院令)",
+      "article": "Art.25",
+      "title": "User gas pipeline maintenance",
+      "scene": [
+        "campus",
+        "office",
+        "residential"
+      ],
+      "hazard_type": "gas_pipeline_unsafe",
+      "tags": [
+        "gas",
+        "user",
+        "pipeline",
+        "燃气",
+        "用户"
+      ],
+      "text": "Gas users shall not modify, conceal, or block gas pipelines and gas meters; modifications shall be conducted by qualified suppliers."
+    },
+    {
+      "id": "GASREG-31",
+      "source": "城镇燃气管理条例 (国务院令)",
+      "article": "Art.31",
+      "title": "LPG cylinder filling",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "lpg_cylinder_unsafe",
+      "tags": [
+        "LPG",
+        "cylinder",
+        "filling",
+        "液化气",
+        "充装"
+      ],
+      "text": "LPG cylinders shall only be filled at licensed stations; private decanting between cylinders is prohibited and constitutes a major hazard."
+    },
+    {
+      "id": "GB50028-10.2.6",
+      "source": "GB 50028-2006",
+      "article": "10.2.6",
+      "title": "Gas-room ventilation",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "ventilation_inadequate",
+      "tags": [
+        "gas room",
+        "ventilation",
+        "燃气",
+        "通风"
+      ],
+      "text": "Indoor gas equipment rooms shall have natural ventilation openings at high and low levels; mechanical ventilation shall use explosion-proof fans."
+    },
+    {
+      "id": "GB50028-10.5.1",
+      "source": "GB 50028-2006",
+      "article": "10.5.1",
+      "title": "Gas leak alarm",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "alarm_device_abnormal",
+      "tags": [
+        "gas leak",
+        "alarm",
+        "可燃气体探测器"
+      ],
+      "text": "Locations using piped fuel gas indoors shall install combustible-gas leak detectors with audible alarm and shutoff valve linkage."
+    },
+    {
+      "id": "EVCHARGE-3.2",
+      "source": "GB 50966-2014 / 电动汽车充电基础设施",
+      "article": "Sec.3.2",
+      "title": "EV charging station fire compartment",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "ev_charging_compartment_unsafe",
+      "tags": [
+        "EV",
+        "charging",
+        "compartment",
+        "电动汽车",
+        "充电桩"
+      ],
+      "text": "Indoor EV charging stations shall be located in dedicated fire compartments with sprinklers and combustible-gas detectors."
+    },
+    {
+      "id": "EVCHARGE-4.1",
+      "source": "GB 50966-2014 / 电动汽车充电基础设施",
+      "article": "Sec.4.1",
+      "title": "Charger maintenance",
+      "scene": [
+        "campus",
+        "office",
+        "residential",
+        "factory"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "charger",
+        "maintenance",
+        "充电桩",
+        "维护"
+      ],
+      "text": "EV chargers shall be inspected quarterly for cable abrasion, plug melting, and ventilation; faulty units shall be removed from service."
+    },
+    {
+      "id": "HOSPITAL-1",
+      "source": "医疗机构消防安全管理",
+      "article": "Sec.1",
+      "title": "Hospital escape assistance",
+      "scene": [
+        "office",
+        "campus"
+      ],
+      "hazard_type": "venue_exit_insufficient",
+      "tags": [
+        "hospital",
+        "escape",
+        "stretcher",
+        "医院",
+        "担架"
+      ],
+      "text": "Hospitals shall keep evacuation corridors at least 2.4 m wide for stretcher passage; storing trolleys, equipment, or chairs in the corridor is prohibited."
+    },
+    {
+      "id": "HOSPITAL-2",
+      "source": "医疗机构消防安全管理",
+      "article": "Sec.2",
+      "title": "Oxygen storage",
+      "scene": [
+        "office",
+        "campus"
+      ],
+      "hazard_type": "oxygen_storage_unsafe",
+      "tags": [
+        "oxygen",
+        "cylinder",
+        "氧气",
+        "储存"
+      ],
+      "text": "Hospital oxygen cylinder rooms shall be separated from heat sources, with cylinders chained vertically and separated from full and empty stock."
+    },
+    {
+      "id": "HOSPITAL-3",
+      "source": "医疗机构消防安全管理",
+      "article": "Sec.3",
+      "title": "Operating-room emergency",
+      "scene": [
+        "office"
+      ],
+      "hazard_type": "emergency_plan_missing",
+      "tags": [
+        "operating room",
+        "emergency",
+        "手术室",
+        "应急"
+      ],
+      "text": "Operating rooms shall have emergency power within 15 seconds of mains failure and clearly marked manual disconnection of medical-gas valves."
+    },
+    {
+      "id": "SCHOOL-1",
+      "source": "中小学幼儿园消防安全管理",
+      "article": "Sec.1",
+      "title": "Childcare evacuation drill",
+      "scene": [
+        "campus"
+      ],
+      "hazard_type": "drill_missing",
+      "tags": [
+        "childcare",
+        "drill",
+        "幼儿园",
+        "演练"
+      ],
+      "text": "Kindergartens and primary schools shall conduct fire evacuation drills at least once per term, including escape routes from upper floors."
+    },
+    {
+      "id": "SCHOOL-2",
+      "source": "中小学幼儿园消防安全管理",
+      "article": "Sec.2",
+      "title": "Lab chemical storage",
+      "scene": [
+        "campus"
+      ],
+      "hazard_type": "hazardous_goods_storage",
+      "tags": [
+        "lab",
+        "chemical",
+        "学校",
+        "实验室"
+      ],
+      "text": "School laboratory chemicals shall be stored by category in dedicated cabinets; flammables and oxidizers shall not share the same cabinet."
+    },
+    {
+      "id": "SCHOOL-3",
+      "source": "中小学幼儿园消防安全管理",
+      "article": "Sec.3",
+      "title": "Classroom power outlet limit",
+      "scene": [
+        "campus"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "classroom",
+        "power",
+        "教室",
+        "插座"
+      ],
+      "text": "Classrooms shall not chain multiple power strips; high-power equipment such as electric kettles shall not be plugged into classroom outlets."
+    },
+    {
+      "id": "HOTEL-1",
+      "source": "宾馆酒店消防安全管理",
+      "article": "Sec.1",
+      "title": "Guest evacuation map",
+      "scene": [
+        "office"
+      ],
+      "hazard_type": "evacuation_map_missing",
+      "tags": [
+        "hotel",
+        "map",
+        "guest",
+        "酒店",
+        "疏散图"
+      ],
+      "text": "Hotel guest rooms shall have an evacuation map showing the exit route to the nearest stairwell on the back of the door."
+    },
+    {
+      "id": "HOTEL-2",
+      "source": "宾馆酒店消防安全管理",
+      "article": "Sec.2",
+      "title": "Hotel front-desk emergency duty",
+      "scene": [
+        "office"
+      ],
+      "hazard_type": "emergency_response_delay",
+      "tags": [
+        "hotel",
+        "front desk",
+        "duty",
+        "酒店",
+        "值班"
+      ],
+      "text": "Hotels shall maintain 24-hour front-desk emergency duty with at least one staff trained in fire suppression and evacuation."
+    },
+    {
+      "id": "ITROOM-1",
+      "source": "数据中心机房消防安全 (GB 50174)",
+      "article": "Sec.1",
+      "title": "Server-room fire suppression",
+      "scene": [
+        "office",
+        "factory"
+      ],
+      "hazard_type": "server_room_unprotected",
+      "tags": [
+        "data center",
+        "gas suppression",
+        "机房",
+        "气体灭火"
+      ],
+      "text": "Data centers and primary server rooms shall use approved gas suppression systems (FM-200, IG541, or equivalent), not water sprinklers."
+    },
+    {
+      "id": "ITROOM-2",
+      "source": "数据中心机房消防安全 (GB 50174)",
+      "article": "Sec.2",
+      "title": "Server-room access control",
+      "scene": [
+        "office",
+        "factory"
+      ],
+      "hazard_type": "control_room_staffing",
+      "tags": [
+        "server room",
+        "access control",
+        "机房",
+        "门禁"
+      ],
+      "text": "Server room access shall be restricted; combustible packaging materials inside the room are prohibited."
+    },
+    {
+      "id": "ITROOM-3",
+      "source": "数据中心机房消防安全 (GB 50174)",
+      "article": "Sec.3",
+      "title": "UPS battery room ventilation",
+      "scene": [
+        "office",
+        "factory"
+      ],
+      "hazard_type": "ventilation_inadequate",
+      "tags": [
+        "UPS",
+        "battery",
+        "ventilation",
+        "UPS",
+        "电池室"
+      ],
+      "text": "UPS battery rooms shall have continuous ventilation to disperse hydrogen; battery storage above safe SOC limits is prohibited."
+    },
+    {
+      "id": "JGJ46-3.3.4",
+      "source": "JGJ 46-2005",
+      "article": "3.3.4",
+      "title": "Site temp dorm fire requirement",
+      "scene": [
+        "construction"
+      ],
+      "hazard_type": "temporary_dorm_unsafe",
+      "tags": [
+        "temporary dorm",
+        "site",
+        "板房",
+        "工地宿舍"
+      ],
+      "text": "On-site temporary dormitories shall be constructed of non-combustible or B1 panels with separation from material storage and welding zones."
+    },
+    {
+      "id": "JGJ46-3.3.6",
+      "source": "JGJ 46-2005",
+      "article": "3.3.6",
+      "title": "Site fire facility provisioning",
+      "scene": [
+        "construction"
+      ],
+      "hazard_type": "extinguisher_count_low",
+      "tags": [
+        "site",
+        "extinguisher",
+        "sand bucket",
+        "灭火器",
+        "沙桶"
+      ],
+      "text": "Construction sites shall provide adequate portable extinguishers, sand buckets, and water tanks based on construction scale; missing facilities are non-compliant."
+    },
+    {
+      "id": "JGJ46-9.4.2",
+      "source": "JGJ 46-2005",
+      "article": "9.4.2",
+      "title": "Welder qualification",
+      "scene": [
+        "construction",
+        "factory"
+      ],
+      "hazard_type": "hot_work_without_approval",
+      "tags": [
+        "welder",
+        "qualification",
+        "焊工",
+        "资格"
+      ],
+      "text": "Welding and cutting work on sites shall be performed by personnel holding valid special-operation certificates; uncertified hot work is prohibited."
+    },
+    {
+      "id": "EBIKE-9.1",
+      "source": "GB 42295-2022",
+      "article": "Sec.9.1",
+      "title": "Charging socket overcurrent",
+      "scene": [
+        "residential",
+        "campus"
+      ],
+      "hazard_type": "electrical_overload_or_aging",
+      "tags": [
+        "e-bike",
+        "socket",
+        "overcurrent",
+        "充电",
+        "过流"
+      ],
+      "text": "E-bike charging sockets shall have individual overcurrent and short-circuit protection that automatically disconnects on fault."
+    },
+    {
+      "id": "EBIKE-10.2",
+      "source": "GB 42295-2022",
+      "article": "Sec.10.2",
+      "title": "Charging time control",
+      "scene": [
+        "residential",
+        "campus"
+      ],
+      "hazard_type": "e_bike_charging_in_public_area",
+      "tags": [
+        "e-bike",
+        "time",
+        "control",
+        "充电时长"
+      ],
+      "text": "E-bike charging stations shall provide automatic time-limit and overcharge protection; uncontrolled overnight charging is treated as a hazard."
+    },
+    {
+      "id": "FIRELAW-22",
+      "source": "Fire Law of PRC",
+      "article": "Art.22",
+      "title": "Building owner record",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "management_responsibility",
+      "tags": [
+        "record",
+        "building",
+        "信息",
+        "台账"
+      ],
+      "text": "Building owners shall keep an up-to-date fire safety record including layout, facility status, and inspection log accessible to fire authorities."
+    },
+    {
+      "id": "FIRELAW-31",
+      "source": "Fire Law of PRC",
+      "article": "Art.31",
+      "title": "Government supervision",
+      "scene": [
+        "campus",
+        "office",
+        "factory",
+        "residential",
+        "construction"
+      ],
+      "hazard_type": "government_supervision",
+      "tags": [
+        "supervision",
+        "government",
+        "监督",
+        "执法"
+      ],
+      "text": "Public security and emergency authorities are authorized to conduct unannounced inspections of fire safety; obstruction is subject to penalty."
+    }
+  ]
+}

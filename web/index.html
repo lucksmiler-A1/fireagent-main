@@ -1,0 +1,397 @@
+﻿﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>消防隐患 AI Agent</title>
+    <link rel="stylesheet" href="./styles.css?v=20260525-memory-p1" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="title">消防隐患 AI Agent</div>
+        <div class="subtitle">支持识图、法规问答、历史洞察与整改建议的网页工作台</div>
+        <div class="hero-tags">
+          <span class="hero-tag">Agentic Workflow</span>
+          <span class="hero-tag">Knowledge-Enhanced LLM</span>
+          <span class="hero-tag">RAG</span>
+          <span class="hero-tag">Multimodal</span>
+        </div>
+      </header>
+
+      <main class="layout">
+        <div class="control-stack">
+          <section class="card">
+            <div class="card-title">后端地址</div>
+            <div class="row">
+              <label class="label" for="baseUrl">BASE_URL</label>
+              <input id="baseUrl" class="input" type="text" />
+              <button id="saveConfig" class="btn">保存</button>
+            </div>
+            <div id="configStatus" class="hint"></div>
+          </section>
+
+          <section class="card agent-card">
+            <div class="agent-card-header">
+              <div>
+                <div class="agent-eyebrow">Frontier Agent Console</div>
+                <div class="card-title agent-card-title">消防智能助手</div>
+              </div>
+              <div id="agentLiveBadge" class="agent-live-badge">Ready</div>
+            </div>
+            <div class="agent-toolbar">
+              <div class="agent-scene-wrap">
+                <label class="label" for="agentSceneSelect">场景</label>
+                <select id="agentSceneSelect">
+                  <option value="campus">校园</option>
+                  <option value="dormitory">宿舍</option>
+                  <option value="residential">居民区</option>
+                  <option value="office">办公</option>
+                  <option value="warehouse">仓储</option>
+                  <option value="industrial">工业</option>
+                  <option value="construction">工地</option>
+                </select>
+              </div>
+              <button id="clearAgentChat" class="btn" type="button">清空对话</button>
+            </div>
+            <!-- Recurrence warning bar: long-term recurring hazards -->
+            <div id="recurrenceAlert" class="recurrence-alert hidden" role="status">
+              <div class="recurrence-alert-row">
+                <span class="recurrence-alert-icon">⚠️</span>
+                <div class="recurrence-alert-text">
+                  <div id="recurrenceAlertTitle" class="recurrence-alert-title">复发预警</div>
+                  <div id="recurrenceAlertBody" class="recurrence-alert-body"></div>
+                </div>
+                <button id="recurrenceAlertDismiss" class="recurrence-alert-dismiss" type="button" aria-label="关闭">×</button>
+              </div>
+            </div>
+
+            <div id="sceneGuidePanel" class="scene-guide">
+              <div class="scene-guide-header">
+                <div class="scene-guide-title">场景巡查指引</div>
+                <div id="sceneGuideScene" class="scene-guide-scene">校园</div>
+              </div>
+              <div id="sceneGuidePoem" class="scene-guide-poem"></div>
+              <div id="sceneGuideFocus" class="scene-guide-focus"></div>
+              <ul id="sceneGuideList" class="scene-guide-list"></ul>
+              <div id="sceneGuideTips" class="scene-guide-tips"></div>
+            </div>
+            <div class="quick-prompts">
+              <button class="quick-prompt" type="button" data-prompt="最近的高风险隐患主要是什么？">最近的高风险隐患主要是什么？</button>
+              <button class="quick-prompt" type="button" data-prompt="根据现有记录给我一份整改优先级建议">整改优先级建议</button>
+              <button class="quick-prompt" type="button" data-prompt="消防通道堆放杂物违反了哪些规定？">消防通道法规依据</button>
+              <button class="quick-prompt" type="button" data-prompt="帮我总结近 7 天风险趋势">近 7 天风险趋势</button>
+            </div>
+            <div class="agent-status-panel" data-state="ready">
+              <div class="agent-status-copy">
+                <div id="agentStatus" class="agent-status-text">助手已就绪</div>
+                <div id="agentSubstatus" class="agent-status-subtext">支持法规检索、趋势复盘和整改建议生成</div>
+              </div>
+              <div class="agent-status-orb" aria-hidden="true"></div>
+            </div>
+            <div id="agentContextPanel" class="agent-context-panel hidden">
+              <div class="agent-context-header">
+                <div>
+                  <div class="agent-context-eyebrow">Follow-up Hub</div>
+                  <div class="agent-context-title">当前识别结果已接入对话</div>
+                </div>
+                <label class="agent-context-toggle">
+                  <input id="agentUseCurrentRecord" type="checkbox" checked />
+                  <span>提问时带上当前识图结果</span>
+                </label>
+              </div>
+              <div id="agentContextMeta" class="agent-context-meta"></div>
+              <div id="agentContextSummary" class="agent-context-summary"></div>
+              <div id="agentFollowupPrompts" class="agent-followup-prompts">
+                <button class="agent-followup-prompt" type="button" data-template="这次识别结果违反了什么规定？">这违反了什么规定</button>
+                <button class="agent-followup-prompt" type="button" data-template="基于这次识别结果，先整改什么？">先整改什么</button>
+                <button class="agent-followup-prompt" type="button" data-template="围绕这次识别结果，给我一个复查清单。">怎么复查</button>
+                <button class="agent-followup-prompt" type="button" data-template="根据这次识别结果，帮我生成一段整改通知。">生成整改通知</button>
+              </div>
+            </div>
+            <div id="agentToolRail" class="agent-tool-rail hidden"></div>
+            <div id="agentMessages" class="agent-messages"></div>
+
+            <!-- Memory Inspector: four-layer memory observability panel -->
+            <section id="agentMemoryInspector" class="memory-inspector">
+              <div class="memory-inspector-header">
+                <div>
+                  <div class="memory-inspector-eyebrow">Memory Inspector</div>
+                  <div class="memory-inspector-title">四层记忆状态</div>
+                </div>
+                <div class="memory-inspector-actions">
+                  <span id="memoryInspectorStatus" class="memory-inspector-status">尚未发起对话</span>
+                  <button id="refreshMemorySnapshot" class="btn" type="button">刷新快照</button>
+                  <button id="exportMemorySnapshot" class="btn" type="button" title="把当前四层记忆原始 JSON 复制到剪贴板">导出 JSON</button>
+                  <button id="openAdminDrawer" class="btn" type="button" title="Core Memory 编辑与清空记忆 (需 ADMIN_TOKEN)">⚙ 管理</button>
+                </div>
+              </div>
+
+              <details class="memory-layer" data-layer="core" open>
+                <summary>
+                  <span class="memory-layer-name">① Core · 系统宪法</span>
+                  <span id="memoryCoreBadge" class="memory-layer-badge">--</span>
+                </summary>
+                <div class="memory-layer-body">
+                  <div class="memory-layer-hint">每次推理前自动注入，写入需 ADMIN_TOKEN。</div>
+                  <ul id="memoryCoreRules" class="memory-rule-list"></ul>
+                </div>
+              </details>
+
+              <details class="memory-layer" data-layer="task">
+                <summary>
+                  <span class="memory-layer-name">② Task · 任务记忆</span>
+                  <span id="memoryTaskBadge" class="memory-layer-badge">--</span>
+                </summary>
+                <div class="memory-layer-body">
+                  <div class="memory-layer-hint">由 Planner 生成；场景或目标变化时由系统主动重置。</div>
+                  <div id="memoryTaskDetail" class="memory-task-detail"></div>
+                </div>
+              </details>
+
+              <details class="memory-layer" data-layer="short">
+                <summary>
+                  <span class="memory-layer-name">③ Short-term · 短期记忆</span>
+                  <span id="memoryShortBadge" class="memory-layer-badge">--</span>
+                </summary>
+                <div class="memory-layer-body">
+                  <div class="memory-layer-hint">三段式：原文 + 摘要 + 元数据（检索路径 / 证据 ID / 守护状态）。</div>
+                  <div id="memoryShortSummary" class="memory-short-summary"></div>
+                  <div id="memoryShortMeta" class="memory-short-meta"></div>
+                </div>
+              </details>
+
+              <!-- Remediation tasks for closed-loop governance -->
+              <div id="memoryTasksCard" class="memory-tasks-card">
+                <div class="memory-tasks-header">
+                  <div>
+                    <div class="memory-tasks-eyebrow">Remediation Loop</div>
+                    <div class="memory-tasks-title">整改任务</div>
+                  </div>
+                  <div class="memory-tasks-actions">
+                    <span id="memoryTasksStatus" class="memory-tasks-status">--</span>
+                    <button id="refreshMemoryTasks" class="btn" type="button">刷新</button>
+                  </div>
+                </div>
+                <ul id="memoryTasksList" class="memory-tasks-list"></ul>
+              </div>
+
+              <details class="memory-layer" data-layer="long">
+                <summary>
+                  <span class="memory-layer-name">④ Long-term · 长期记忆</span>
+                  <span id="memoryLongBadge" class="memory-layer-badge">--</span>
+                </summary>
+                <div class="memory-layer-body">
+                  <div class="memory-layer-hint">跨会话风险画像 + 复发预警 + 相似案例（μ 加权混合检索）。</div>
+                  <div id="memoryLongMode" class="memory-long-mode"></div>
+                  <div id="memoryLongRecurring" class="memory-long-section"></div>
+                  <div id="memoryLongSimilar" class="memory-long-section"></div>
+                  <div id="memoryLongTasks" class="memory-long-section"></div>
+                </div>
+              </details>
+            </section>
+            <form id="agentForm" class="agent-form">
+              <div class="agent-composer-shell">
+                <textarea id="agentInput" class="agent-input" placeholder="直接问法规、历史隐患、趋势分析或整改建议..." rows="1"></textarea>
+                <div class="agent-composer-bar">
+                  <div class="agent-composer-hints">
+                    <span class="agent-hint-pill">Enter 发送</span>
+                    <span class="agent-hint-pill">Shift + Enter 换行</span>
+                  </div>
+                  <div class="agent-composer-actions">
+                    <div id="agentCharCount" class="agent-char-count">0 / 600</div>
+                    <div id="agentSubmit" class="agent-submit" role="button" tabindex="0" aria-label="发送给 Agent">发送给 Agent</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="card">
+            <div class="card-title">上传并识别</div>
+            <form id="uploadForm" class="form">
+              <input id="fileInput" class="file-input" type="file" accept="image/*" required />
+              <label for="fileInput" class="btn file-trigger">选择图片</label>
+              <div id="fileName" class="file-name">未选择图片</div>
+              <select id="sceneSelect">
+                <option value="campus">campus</option>
+                <option value="office">office</option>
+                <option value="factory">factory</option>
+                <option value="industrial">industrial</option>
+                <option value="construction">construction</option>
+                <option value="residential">residential</option>
+              </select>
+              <button id="startAnalyze" class="btn primary" type="submit">开始识别</button>
+            </form>
+            <div id="uploadStatus" class="hint"></div>
+            <div id="progressWrap" class="progress-wrap hidden" aria-live="polite">
+              <div class="progress-steps" id="progressSteps">
+                <div class="progress-step" data-progress-step="0">上传中</div>
+                <div class="progress-step" data-progress-step="1">Stage1</div>
+                <div class="progress-step" data-progress-step="2">检索条款</div>
+                <div class="progress-step" data-progress-step="3">Stage2</div>
+                <div class="progress-step" data-progress-step="4">完成</div>
+              </div>
+            </div>
+            <div id="loadingFacts" class="loading-facts hidden" aria-live="polite">
+              <div class="loading-facts-title">消防小知识</div>
+              <div id="loadingFactText" class="loading-facts-text"></div>
+            </div>
+            <div class="row action-row">
+              <button id="openHistory" class="btn" type="button">查看历史</button>
+              <button id="refreshHistory" class="btn" type="button">同步后端历史</button>
+              <button id="rethinkAnalyze" class="btn" type="button">重新思考</button>
+              <button id="clearRemoteHistory" class="btn danger-outline" type="button">清空后端历史</button>
+              <button id="clearLocalHistory" class="btn danger-outline" type="button">清空本地历史</button>
+            </div>
+          </section>
+
+          <section class="card" id="insightsCard">
+            <div class="card-title">本周综合建议</div>
+            <div class="row action-row">
+              <button id="refreshInsights" class="btn" type="button">刷新建议</button>
+              <button id="toggleInsights" class="btn" type="button">折叠建议</button>
+            </div>
+            <div id="insightBody">
+              <div id="insightStatus" class="hint">加载中...</div>
+              <div id="insightMetrics" class="insight-metrics"></div>
+              <div id="insightAlerts" class="insight-alerts"></div>
+              <div id="insightRecommendations" class="items"></div>
+            </div>
+          </section>
+
+          <section class="card" id="historyCard">
+            <div class="card-title">历史记录</div>
+            <div id="historyStatus" class="hint">加载中...</div>
+            <div id="historyList" class="history-list"></div>
+          </section>
+        </div>
+
+        <section class="card result-card">
+          <div class="card-title">识别结果</div>
+          <div id="resultEmpty" class="result-empty">
+            <div class="result-empty-badge">Ready</div>
+            <div class="result-empty-title">等待识别结果</div>
+            <div class="result-empty-text">上传一张图片后，这里会显示风险等级、结构化隐患项、法规依据和模型调试信息。</div>
+            <div class="result-empty-tips">
+              <div class="result-empty-tip">建议上传清晰、主体明确的消防场景图片</div>
+              <div class="result-empty-tip">识别结果会同步写入历史记录与综合建议</div>
+            </div>
+          </div>
+
+          <div id="resultPanel" class="result hidden">
+            <img id="resultImage" class="result-image" alt="上传图片" />
+
+            <div class="result-info">
+              <div id="resultRisk" class="badge"></div>
+              <div id="resultSummary" class="summary"></div>
+            </div>
+
+            <div>
+              <div class="debug-title">风险项</div>
+              <div id="resultItems" class="items"></div>
+            </div>
+
+            <div>
+              <div class="debug-title">法规依据</div>
+              <div id="resultCitations" class="items"></div>
+            </div>
+
+            <div class="debug-section">
+              <div class="debug-title">Stage1 初判结果</div>
+              <pre id="resultStage1" class="debug-content"></pre>
+            </div>
+
+            <div class="debug-section">
+              <div class="debug-title">AI 原始输出</div>
+              <pre id="resultRaw" class="debug-content"></pre>
+            </div>
+
+            <div class="debug-section">
+              <div class="debug-title">调试信息</div>
+              <pre id="resultDebug" class="debug-content"></pre>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Admin drawer: Core Memory CRUD + clear-all -->
+    <div id="adminDrawerBackdrop" class="admin-drawer-backdrop hidden"></div>
+    <aside id="adminDrawer" class="admin-drawer hidden" aria-hidden="true">
+      <header class="admin-drawer-header">
+        <div>
+          <div class="admin-eyebrow">Memory Admin</div>
+          <div class="admin-title">记忆系统管理</div>
+        </div>
+        <button id="closeAdminDrawer" class="admin-close" type="button" aria-label="关闭">×</button>
+      </header>
+
+      <section class="admin-section">
+        <h3 class="admin-section-title">管理员令牌</h3>
+        <p class="admin-section-hint">
+          后端通过 <code>ADMIN_TOKEN</code> 环境变量启用写入；未设置时所有写入端点返回 503。
+          令牌本地保存于浏览器，不会上传。
+        </p>
+        <div class="admin-token-row">
+          <input id="adminTokenInput" class="admin-input" type="password" placeholder="X-Admin-Token 值" autocomplete="off" />
+          <button id="saveAdminToken" class="btn primary" type="button">保存</button>
+          <button id="clearAdminToken" class="btn" type="button">清除</button>
+        </div>
+        <div id="adminTokenStatus" class="admin-status"></div>
+      </section>
+
+      <section class="admin-section">
+        <div class="admin-section-row">
+          <h3 class="admin-section-title">Core Memory 规则</h3>
+          <div class="admin-section-actions">
+            <select id="adminCoreScopeFilter" class="admin-input">
+              <option value="">所有 scope</option>
+              <option value="global">global</option>
+              <option value="campus">campus</option>
+              <option value="dormitory">dormitory</option>
+              <option value="residential">residential</option>
+              <option value="office">office</option>
+              <option value="warehouse">warehouse</option>
+              <option value="industrial">industrial</option>
+              <option value="construction">construction</option>
+            </select>
+            <button id="refreshAdminCore" class="btn" type="button">刷新</button>
+          </div>
+        </div>
+        <ul id="adminCoreList" class="admin-core-list"></ul>
+        <details class="admin-create">
+          <summary>＋ 新增规则</summary>
+          <div class="admin-create-form">
+            <select id="adminCoreNewScope" class="admin-input">
+              <option value="global">global</option>
+              <option value="campus">campus</option>
+              <option value="dormitory">dormitory</option>
+              <option value="residential">residential</option>
+              <option value="office">office</option>
+              <option value="warehouse">warehouse</option>
+              <option value="industrial">industrial</option>
+              <option value="construction">construction</option>
+            </select>
+            <input id="adminCoreNewPriority" class="admin-input admin-input-small" type="number" min="1" max="10" value="5" title="优先级 1-10，数值越小越靠前" />
+            <textarea id="adminCoreNewText" class="admin-input admin-input-textarea" rows="3" placeholder="新规则文本，例如：受限空间作业需办理审批与监护人到场" maxlength="600"></textarea>
+            <button id="adminCoreCreate" class="btn primary" type="button">提交</button>
+          </div>
+        </details>
+        <div id="adminCoreStatus" class="admin-status"></div>
+      </section>
+
+      <section class="admin-section danger-zone">
+        <h3 class="admin-section-title">危险操作</h3>
+        <p class="admin-section-hint">
+          清空将删除所有会话、消息、整改任务、风险画像以及长期记忆向量缓存。
+          识别历史（records）由 <code>/records/clear</code> 单独管理，不在此处。
+        </p>
+        <button id="adminClearAll" class="btn danger" type="button">清空全部记忆</button>
+        <div id="adminClearStatus" class="admin-status"></div>
+      </section>
+    </aside>
+
+    <script src="./app.js?v=20260525-memory-p2"></script>
+  </body>
+</html>

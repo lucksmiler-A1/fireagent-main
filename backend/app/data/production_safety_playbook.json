@@ -1,0 +1,141 @@
+{
+  "updated_at": "2026-04-19",
+  "version": "v1.0.0",
+  "topics": [
+    {
+      "id": "PS-TEMP-001",
+      "domain": "temporary_power",
+      "scene": ["construction", "industrial"],
+      "title": "Temporary power: one machine one box one leak protector",
+      "keywords": ["temporary power", "distribution box", "switch box", "one machine one box", "plug", "socket", "cable", "电箱", "开关箱", "插头", "临时用电"],
+      "risk_signal": [
+        "multiple plugs in one switch box",
+        "open distribution box door",
+        "cable on ground",
+        "damaged insulation"
+      ],
+      "qa_points": [
+        "Each electrical equipment should be controlled by a dedicated switch box.",
+        "Do not use one switch box to directly control two or more equipment.",
+        "Temporary cables should be routed overhead or protected against mechanical damage.",
+        "Distribution boxes should be closed and locked with clear labels."
+      ],
+      "actions": [
+        "Split shared circuits into dedicated switch boxes.",
+        "Remove temporary multi-plug adapters in distribution area.",
+        "Inspect cable insulation and replace damaged wires immediately."
+      ]
+    },
+    {
+      "id": "PS-HOT-001",
+      "domain": "hot_work",
+      "scene": ["construction", "industrial"],
+      "title": "Hot work permit and fire watch",
+      "keywords": ["hot work", "welding", "cutting", "spark", "permit", "fire watch", "动火", "电焊", "气割"],
+      "risk_signal": [
+        "no permit display",
+        "combustibles around hot work point",
+        "no extinguisher nearby"
+      ],
+      "qa_points": [
+        "Hot work should be approved before operation in risk zones.",
+        "A dedicated fire watcher should be assigned during and after hot work.",
+        "Combustibles should be removed or isolated before operation."
+      ],
+      "actions": [
+        "Suspend hot work if permit and fire-watch are absent.",
+        "Clear 10m surrounding combustibles or set isolation barrier.",
+        "Place extinguisher and check operability before ignition."
+      ]
+    },
+    {
+      "id": "PS-HEIGHT-001",
+      "domain": "work_at_height",
+      "scene": ["construction"],
+      "title": "Work-at-height fall protection",
+      "keywords": ["height", "scaffold", "edge", "guardrail", "safety belt", "helmet", "高处作业", "脚手架", "临边", "安全带"],
+      "risk_signal": [
+        "worker without safety harness",
+        "missing guardrail or toe board",
+        "unsafe scaffold access"
+      ],
+      "qa_points": [
+        "Workers at height should use qualified fall-arrest systems.",
+        "Edges/openings should have guardrails and warning marks.",
+        "Scaffold inspection should be completed before use."
+      ],
+      "actions": [
+        "Stop operation in unsafe edge/opening areas.",
+        "Install temporary guardrails and anchor points.",
+        "Re-inspect scaffold and issue go/no-go tag."
+      ]
+    },
+    {
+      "id": "PS-LIFT-001",
+      "domain": "lifting_operation",
+      "scene": ["construction", "industrial"],
+      "title": "Lifting operation safety",
+      "keywords": ["lifting", "crane", "hoist", "sling", "rigging", "吊装", "起重", "吊车", "钢丝绳"],
+      "risk_signal": [
+        "overload lifting",
+        "standing under suspended load",
+        "damaged sling or hook"
+      ],
+      "qa_points": [
+        "Lifting plans and load limits should be verified before operation.",
+        "No personnel should stay under suspended loads.",
+        "Slings and hooks should be inspected and replaced when damaged."
+      ],
+      "actions": [
+        "Set exclusion zone under lifting path.",
+        "Recalculate load and select compliant rigging.",
+        "Replace damaged sling/hook immediately."
+      ]
+    },
+    {
+      "id": "PS-CONFINED-001",
+      "domain": "confined_space",
+      "scene": ["construction", "industrial"],
+      "title": "Confined space entry control",
+      "keywords": ["confined space", "tank", "pit", "gas test", "ventilation", "permit", "受限空间", "有限空间", "气体检测", "通风"],
+      "risk_signal": [
+        "no gas testing records",
+        "insufficient ventilation",
+        "single-person entry"
+      ],
+      "qa_points": [
+        "Confined space entry should follow permit and gas test procedures.",
+        "Forced ventilation and communication should be maintained.",
+        "Rescue standby should be available outside the space."
+      ],
+      "actions": [
+        "Prohibit entry until atmosphere test passes.",
+        "Start forced ventilation and continuous monitoring.",
+        "Assign standby and rescue equipment at entry point."
+      ]
+    },
+    {
+      "id": "PS-PPE-001",
+      "domain": "ppe_management",
+      "scene": ["construction", "industrial"],
+      "title": "PPE and behavioral safety",
+      "keywords": ["ppe", "helmet", "gloves", "goggles", "reflective vest", "safety shoes", "个人防护", "安全帽", "反光衣"],
+      "risk_signal": [
+        "missing helmet or vest",
+        "incorrect ppe use",
+        "worker in restricted zone"
+      ],
+      "qa_points": [
+        "PPE should match hazard category and be worn correctly.",
+        "Access to restricted zones should be controlled.",
+        "Unsafe behaviors should be corrected on site."
+      ],
+      "actions": [
+        "Perform spot checks and deny entry without PPE.",
+        "Correct PPE wearing and retrain violators.",
+        "Mark restricted zones and enforce access control."
+      ]
+    }
+  ]
+}
+

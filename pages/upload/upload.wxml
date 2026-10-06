@@ -1,0 +1,83 @@
+﻿<view class="container">
+  <view class="header-section">
+    <view class="app-icon">AI</view>
+    <view class="app-title">消防隐患识别</view>
+    <view class="app-subtitle">AI 智能识别消防安全隐患</view>
+  </view>
+
+  <view class="main-section">
+    <view class="preview-section" wx:if="{{showPreview}}">
+      <view class="preview-card">
+        <view class="preview-title">图片预览</view>
+        <image class="preview-image" src="{{selectedImage.filePath}}" mode="aspectFit"></image>
+        <view class="preview-notice">已选择图片，可开始识别</view>
+
+        <view class="preview-actions">
+          <button class="btn btn-outline reselect-btn" bindtap="onReChooseImage">重新选择</button>
+          <button
+            class="btn btn-primary analyze-btn {{isAnalyzing ? 'disabled' : ''}}"
+            bindtap="onStartAnalysis"
+            disabled="{{isAnalyzing}}"
+          >
+            {{isAnalyzing ? '识别中...' : '开始识别'}}
+          </button>
+        </view>
+      </view>
+    </view>
+
+    <view class="actions-section" wx:else>
+      <view class="primary-actions">
+        <button class="btn btn-primary main-action-btn" bindtap="onChooseImage">
+          <view class="btn-content">
+            <text class="btn-icon">拍照</text>
+            <text class="btn-text">拍照 / 选图</text>
+          </view>
+        </button>
+      </view>
+
+      <view class="secondary-actions">
+        <button class="btn btn-secondary demo-btn" bindtap="onUseDemoImage">
+          <view class="btn-content">
+            <text class="btn-icon">示例</text>
+            <text class="btn-text">示例图片</text>
+          </view>
+        </button>
+
+        <button class="btn btn-outline history-btn" bindtap="onViewHistory">
+          <view class="btn-content">
+            <text class="btn-icon">历史</text>
+            <text class="btn-text">历史记录</text>
+          </view>
+        </button>
+      </view>
+
+      <button class="btn agent-entry-btn" bindtap="onOpenAgent">
+        <view class="agent-entry-inner">
+          <text class="agent-entry-badge">AGENT</text>
+          <text class="agent-entry-text">进入智能助手，直接问法规、历史与整改建议</text>
+        </view>
+      </button>
+    </view>
+  </view>
+
+  <view class="footer-section">
+    <view class="tips-section">
+      <view class="tip-item">
+        <text class="tip-icon">提示</text>
+        <text class="tip-text">建议上传清晰的消防场景图片</text>
+      </view>
+      <view class="tip-item">
+        <text class="tip-icon">提示</text>
+        <text class="tip-text">识别结果会自动保存到历史记录</text>
+      </view>
+      <view class="tip-item">
+        <text class="tip-icon">提示</text>
+        <text class="tip-text">支持回看历史与复盘分析结果</text>
+      </view>
+    </view>
+
+    <view class="version-info">消防安全，从识别开始</view>
+  </view>
+
+  <button class="floating-history-btn" bindtap="onViewHistory">历史记录</button>
+</view>

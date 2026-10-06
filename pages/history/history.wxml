@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="header">
+    <view class="title">历史记录</view>
+    <button class="btn-clear" bindtap="onClearHistory">清空本地历史</button>
+  </view>
+
+  <view class="records-list" wx:if="{{records.length > 0}}">
+    <view
+      class="record-item"
+      wx:for="{{records}}"
+      wx:key="id"
+      data-record-id="{{item.id}}"
+      data-source="{{item.source}}"
+      bindtap="onRecordTap"
+    >
+      <image class="record-image" src="{{item.imageUrl}}" mode="aspectFill"></image>
+
+      <view class="record-content">
+        <view class="record-time">{{formatTime(item.timestamp)}}</view>
+
+        <view class="record-risk">
+          <text class="record-risk-icon">{{item.riskIcon}}</text>
+          <text class="record-risk-text" style="color: {{item.riskColor}}">
+            {{item.riskText}}
+          </text>
+        </view>
+
+        <view class="record-summary">{{item.analysisResult.summary}}</view>
+      </view>
+
+      <text class="record-arrow">></text>
+    </view>
+  </view>
+
+  <view class="empty-state" wx:else>
+    <view class="empty-icon">📝</view>
+    <view class="empty-text">暂无历史记录</view>
+    <view class="empty-desc">上传图片并完成识别后，结果会自动保存到这里</view>
+  </view>
+</view>
+

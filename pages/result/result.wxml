@@ -1,0 +1,65 @@
+<view class="container">
+  <view class="image-section" wx:if="{{!isLoading && !isError}}">
+    <image class="result-image" src="{{imageUrl}}" mode="aspectFit" wx:if="{{imageUrl}}"></image>
+
+    <view class="image-controls" wx:if="{{analysisResult && analysisResult.annotated_url}}">
+      <button class="btn-switch {{showAnnotated ? 'active' : ''}}" bindtap="toggleAnnotatedImage">
+        {{showAnnotated ? '查看原图' : '查看标注图'}}
+      </button>
+    </view>
+  </view>
+
+  <view class="loading-section" wx:if="{{isLoading}}">
+    <view class="loading-content">
+      <text class="loading-icon">🔥</text>
+      <text class="loading-text">正在识别中...</text>
+      <text class="loading-desc">模型正在分析图片与消防风险，请稍候</text>
+
+      <view class="knowledge-card" wx:if="{{currentTip}}">
+        <view class="knowledge-title">消防小知识</view>
+        <view class="knowledge-body">{{currentTip}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="error-section" wx:if="{{isError}}">
+    <view class="error-content">
+      <text class="error-icon">❌</text>
+      <text class="error-title">识别失败</text>
+      <text class="error-message">{{errorMessage}}</text>
+      <button class="btn-retry" bindtap="onRetry">重试</button>
+    </view>
+  </view>
+
+  <view class="result-section" wx:if="{{!isLoading && !isError && analysisResult}}">
+    <view class="result-card">
+      <view class="risk-level risk-{{analysisResult.overall_risk}}">
+        <text class="risk-icon">{{overallRiskUI.icon}}</text>
+        <text class="risk-text">{{overallRiskUI.text}}</text>
+      </view>
+
+      <view class="result-title">分析结果</view>
+      <view class="result-summary">{{analysisResult.summary}}</view>
+    </view>
+
+    <view class="result-card" wx:if="{{displayItems && displayItems.length > 0}}">
+      <view class="result-title">发现隐患</view>
+      <view class="items-list">
+        <view class="item" wx:for="{{displayItems}}" wx:key="index">
+          <text class="item-icon">{{item.riskIcon}}</text>
+          <view class="item-content">
+            <view class="item-title">{{item.type}}</view>
+            <view class="item-desc">{{item.desc}}</view>
+            <view class="item-suggest" wx:if="{{item.suggest}}">建议：{{item.suggest}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="button-section" wx:if="{{!isLoading && !isError && analysisResult}}">
+    <button class="btn btn-secondary action-btn" bindtap="onReChoose">重新选择</button>
+    <button class="btn btn-primary action-btn" bindtap="onSaveToHistory">保存到历史</button>
+    <button class="btn btn-outline action-btn" bindtap="onViewHistory">查看历史</button>
+  </view>
+</view>

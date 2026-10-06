@@ -1,0 +1,46 @@
+<view class="container" wx:if="{{record}}">
+  <view class="image-section">
+    <image class="record-image" src="{{record.imageUrl}}" mode="aspectFit"></image>
+  </view>
+
+  <view class="info-section">
+    <view class="record-header">
+      <view class="record-time">{{formatTime(record.timestamp)}}</view>
+      <view class="record-risk">
+        <text class="record-risk-icon">{{record.recordRiskIcon}}</text>
+        <text class="record-risk-text" style="color: {{record.recordRiskColor}}">
+          {{record.recordRiskText}}
+        </text>
+      </view>
+    </view>
+
+    <view class="record-summary-section">
+      <view class="record-title">分析结果</view>
+      <view class="record-summary">{{record.analysisResult.summary}}</view>
+    </view>
+  </view>
+
+  <view class="items-section" wx:if="{{record.analysisResult.items && record.analysisResult.items.length > 0}}">
+    <view class="items-header">
+      <view class="items-title">发现隐患</view>
+    </view>
+
+    <view class="item" wx:for="{{record.analysisResult.items}}" wx:key="index">
+      <view class="item-header">
+        <text class="item-icon">{{item.riskIcon}}</text>
+        <view class="item-title">{{item.title}}</view>
+        <view class="item-type item-type-{{item.type}}">
+          {{item.riskText}}
+        </view>
+      </view>
+      <view class="item-description">{{item.description}}</view>
+    </view>
+  </view>
+
+  <view class="button-section">
+    <button class="btn btn-secondary action-btn" bindtap="onReAnalyze">重新分析</button>
+    <button class="btn btn-primary action-btn" bindtap="onShare">分享</button>
+    <button class="btn btn-danger action-btn" bindtap="onDeleteRecord">删除本地记录</button>
+  </view>
+</view>
+

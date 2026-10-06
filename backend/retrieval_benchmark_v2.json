@@ -1,0 +1,636 @@
+[
+  {
+    "name": "e_bike_hallway_charging",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "e_bike_hallway_charging_hard",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "e_bike_stairwell_parking",
+    "scene": "dormitory",
+    "query": "电动自行车停在楼梯间门口算违法吗？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "e_bike_stairwell_parking_hard",
+    "scene": "dormitory",
+    "query": "电动自行车停在楼梯间门口算违法吗？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "e_bike_penalty",
+    "scene": "residential",
+    "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "e_bike_penalty_hard",
+    "scene": "residential",
+    "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "fire_lane_parking",
+    "scene": "campus",
+    "query": "消防车通道被汽车占了，违反什么规定？",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "fire_lane_parking_hard",
+    "scene": "campus",
+    "query": "消防车通道被汽车占了，违反什么规定？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rescue_access_blocked",
+    "scene": "office",
+    "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rescue_access_blocked_hard",
+    "scene": "office",
+    "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "extinguisher_blocked",
+    "scene": "campus",
+    "query": "灭火器被箱子挡住了算不算违规，怎么整改？",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "extinguisher_blocked_hard",
+    "scene": "campus",
+    "query": "灭火器被箱子挡住了算不算违规，怎么整改？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "extinguisher_invalid",
+    "scene": "office",
+    "query": "灭火器压力表不在绿区还能继续放着吗？",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "extinguisher_invalid_hard",
+    "scene": "office",
+    "query": "灭火器压力表不在绿区还能继续放着吗？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "hydrant_blocked",
+    "scene": "office",
+    "query": "室内消火栓前面堆了东西，这种情况对应什么条款？",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "hydrant_blocked_hard",
+    "scene": "office",
+    "query": "室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "signage_blocked",
+    "scene": "campus",
+    "query": "安全出口指示标志被海报遮住了怎么办？",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "signage_blocked_hard",
+    "scene": "campus",
+    "query": "安全出口指示标志被海报遮住了怎么办？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "evacuation_route_goods",
+    "scene": "office",
+    "query": "疏散通道堆满快递箱，这个算什么隐患？",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "evacuation_route_goods_hard",
+    "scene": "office",
+    "query": "疏散通道堆满快递箱，这个算什么隐患？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "fire_door_open",
+    "scene": "office",
+    "query": "防火门长期敞开不关有没有问题？",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "fire_door_open_hard",
+    "scene": "office",
+    "query": "防火门长期敞开不关有没有问题？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "fire_door_closer_broken",
+    "scene": "campus",
+    "query": "防火门闭门器坏了，门关不上，这违反什么要求？",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "fire_door_closer_broken_hard",
+    "scene": "campus",
+    "query": "防火门闭门器坏了，门关不上，这违反什么要求？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "sprinkler_blocked",
+    "scene": "office",
+    "query": "喷淋头被装饰物挡住了，这属于什么隐患？",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "sprinkler_blocked_hard",
+    "scene": "office",
+    "query": "喷淋头被装饰物挡住了，这属于什么隐患？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "sprinkler_painted",
+    "scene": "office",
+    "query": "喷淋喷头刷漆了还能正常使用吗？",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "sprinkler_painted_hard",
+    "scene": "office",
+    "query": "喷淋喷头刷漆了还能正常使用吗？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "electrical_overload",
+    "scene": "campus",
+    "query": "插线板接了很多大功率设备，这样用电是否违规？",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "electrical_overload_hard",
+    "scene": "campus",
+    "query": "插线板接了很多大功率设备，这样用电是否违规？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "aging_wire",
+    "scene": "office",
+    "query": "电线外皮老化破损还在继续使用，这个风险依据是什么？",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "aging_wire_hard",
+    "scene": "office",
+    "query": "电线外皮老化破损还在继续使用，这个风险依据是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "alarm_detector_shielded",
+    "scene": "office",
+    "query": "火灾探测器被遮挡了，法规上怎么要求？",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "alarm_detector_shielded_hard",
+    "scene": "office",
+    "query": "火灾探测器被遮挡了，法规上怎么要求？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "alarm_device_fault",
+    "scene": "office",
+    "query": "火灾报警设备一直故障不修，管理上有什么要求？",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "alarm_device_fault_hard",
+    "scene": "office",
+    "query": "火灾报警设备一直故障不修，管理上有什么要求？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "kitchen_exhaust",
+    "scene": "dormitory",
+    "query": "厨房排油烟管道长期不清洗会违反哪条规定？",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "kitchen_exhaust_hard",
+    "scene": "dormitory",
+    "query": "厨房排油烟管道长期不清洗会违反哪条规定？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "combustible_near_heat_source",
+    "scene": "warehouse",
+    "query": "可燃纸箱堆在配电箱旁边，这样存放合规吗？",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "combustible_near_heat_source_hard",
+    "scene": "warehouse",
+    "query": "可燃纸箱堆在配电箱旁边，这样存放合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "gas_cylinder_indoor",
+    "scene": "residential",
+    "query": "高层住宅里长期放瓶装液化气合不合规？",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "gas_cylinder_indoor_hard",
+    "scene": "residential",
+    "query": "高层住宅里长期放瓶装液化气合不合规？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "hazardous_goods_storage",
+    "scene": "office",
+    "query": "高层办公楼里存放易燃易爆化学品，这条法规怎么说？",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "hazardous_goods_storage_hard",
+    "scene": "office",
+    "query": "高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "shaft_clutter",
+    "scene": "office",
+    "query": "电缆井门口堆了很多可燃杂物，这个问题对应什么规定？",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "shaft_clutter_hard",
+    "scene": "office",
+    "query": "电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "window_escape_obstacle",
+    "scene": "residential",
+    "query": "高层住宅外窗装了影响逃生的防盗网，是否违规？",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "window_escape_obstacle_hard",
+    "scene": "residential",
+    "query": "高层住宅外窗装了影响逃生的防盗网，是否违规？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "equipment_room_storage",
+    "scene": "office",
+    "query": "配电室被拿来堆纸箱和杂物，这样行吗？",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "equipment_room_storage_hard",
+    "scene": "office",
+    "query": "配电室被拿来堆纸箱和杂物，这样行吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "control_room_staffing",
+    "scene": "office",
+    "query": "消防控制室只有一个人值班，是否符合要求？",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "control_room_staffing_hard",
+    "scene": "office",
+    "query": "消防控制室只有一个人值班，是否符合要求？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "daily_patrol_missing",
+    "scene": "office",
+    "query": "高层办公楼没有做日常防火巡查记录，违反哪条规定？",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "daily_patrol_missing_hard",
+    "scene": "office",
+    "query": "高层办公楼没有做日常防火巡查记录，违反哪条规定？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "periodic_inspection_missing",
+    "scene": "office",
+    "query": "单位长期不做定期防火检查，这个管理要求在哪条？",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "periodic_inspection_missing_hard",
+    "scene": "office",
+    "query": "单位长期不做定期防火检查，这个管理要求在哪条？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "hazard_rectification_delay",
+    "scene": "campus",
+    "query": "发现火灾隐患后一直不整改，制度上有什么要求？",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "hazard_rectification_delay_hard",
+    "scene": "campus",
+    "query": "发现火灾隐患后一直不整改，制度上有什么要求？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "training_missing",
+    "scene": "office",
+    "query": "单位从来不做消防宣传教育培训，这合规吗？",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "training_missing_hard",
+    "scene": "office",
+    "query": "单位从来不做消防宣传教育培训，这合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "evacuation_map_missing",
+    "scene": "residential",
+    "query": "高层楼层里没有张贴疏散示意图，这种情况依据是什么？",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "evacuation_map_missing_hard",
+    "scene": "residential",
+    "query": "高层楼层里没有张贴疏散示意图，这种情况依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "emergency_plan_missing",
+    "scene": "office",
+    "query": "单位没有灭火和应急疏散预案，违反什么规定？",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "emergency_plan_missing_hard",
+    "scene": "office",
+    "query": "单位没有灭火和应急疏散预案，违反什么规定？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "drill_missing",
+    "scene": "office",
+    "query": "高层公共建筑一年都不组织消防演练，可以吗？",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "drill_missing_hard",
+    "scene": "office",
+    "query": "高层公共建筑一年都不组织消防演练，可以吗？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "hot_work_without_approval",
+    "scene": "office",
+    "query": "高层建筑里电焊动火没有审批和监护，会触犯哪条？",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "hot_work_without_approval_hard",
+    "scene": "office",
+    "query": "高层建筑里电焊动火没有审批和监护，会触犯哪条？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "public_venue_opening_check",
+    "scene": "office",
+    "query": "公众聚集场所开业前没做消防安全检查可以营业吗？",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "public_venue_opening_check_hard",
+    "scene": "office",
+    "query": "公众聚集场所开业前没做消防安全检查可以营业吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "facility_maintenance_missing",
+    "scene": "campus",
+    "query": "建筑消防设施长期不检测维护，这个法律依据是什么？",
+    "expected_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "facility_maintenance_missing_hard",
+    "scene": "campus",
+    "query": "建筑消防设施长期不检测维护，这个法律依据是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  }
+]

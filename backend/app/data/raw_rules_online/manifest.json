@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2024/art_17339_767704.html",
+    "status": null,
+    "saved_html": null,
+    "attachments": [],
+    "error": "HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/art/2024/art_17339_767704.html (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
+  },
+  {
+    "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2023/art_17339_770016.html",
+    "status": null,
+    "saved_html": null,
+    "attachments": [],
+    "error": "HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/art/2023/art_17339_770016.html (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
+  },
+  {
+    "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2025/art_ece9dcd9fbe5468f832c9c7ea31327a1.html",
+    "status": null,
+    "saved_html": null,
+    "attachments": [],
+    "error": "HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/art/2025/art_ece9dcd9fbe5468f832c9c7ea31327a1.html (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
+  },
+  {
+    "url": "https://wb.flk.npc.gov.cn/flfg/texthtml/e0c436242af74039bd167a7d11e06a1b.html",
+    "status": null,
+    "saved_html": null,
+    "attachments": [],
+    "error": "HTTPSConnectionPool(host='wb.flk.npc.gov.cn', port=443): Max retries exceeded with url: /flfg/texthtml/e0c436242af74039bd167a7d11e06a1b.html (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
+  }
+]

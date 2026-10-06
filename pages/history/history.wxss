@@ -1,0 +1,132 @@
+/* pages/history/history.wxss */
+
+.container {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.header {
+  background-color: white;
+  padding: 32rpx;
+  border-bottom: 1rpx solid #eee;
+  position: relative;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.btn-clear {
+  position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  border-radius: 28rpx;
+  border: 1rpx solid #ffb7bf;
+  color: #d53f57;
+  background: #fff6f8;
+}
+
+.records-list {
+  padding: 24rpx 0;
+}
+
+.record-item {
+  background-color: white;
+  margin: 0 24rpx 16rpx 24rpx;
+  border-radius: 12rpx;
+  padding: 32rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.record-item:active {
+  transform: scale(0.98);
+}
+
+.record-image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 8rpx;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+}
+
+.record-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.record-time {
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 8rpx;
+}
+
+.record-risk {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8rpx;
+}
+
+.record-risk-icon {
+  font-size: 32rpx;
+  margin-right: 8rpx;
+}
+
+.record-risk-text {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.record-summary {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.record-arrow {
+  font-size: 24rpx;
+  color: #ccc;
+  margin-left: 16rpx;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120rpx 32rpx;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 120rpx;
+  margin-bottom: 32rpx;
+  opacity: 0.5;
+}
+
+.empty-text {
+  font-size: 32rpx;
+  color: #999;
+  margin-bottom: 16rpx;
+}
+
+.empty-desc {
+  font-size: 26rpx;
+  color: #ccc;
+  line-height: 1.5;
+}

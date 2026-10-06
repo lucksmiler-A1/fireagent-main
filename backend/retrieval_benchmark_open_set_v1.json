@@ -1,0 +1,1802 @@
+[
+  {
+    "name": "open_set_0185",
+    "scene": "residential",
+    "query": "The residential area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0067",
+    "scene": "factory",
+    "query": "工厂监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0041",
+    "scene": "construction",
+    "query": "The construction area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0028",
+    "scene": "campus",
+    "query": "校园人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0032",
+    "scene": "factory",
+    "query": "工厂地面瓷砖颜色不统一，这算消防隐患吗？ 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0034",
+    "scene": "construction",
+    "query": "工地人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0151",
+    "scene": "factory",
+    "query": "工厂监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0186",
+    "scene": "factory",
+    "query": "工厂里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0145",
+    "scene": "industrial",
+    "query": "工业现场监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0025",
+    "scene": "factory",
+    "query": "工厂监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0006",
+    "scene": "construction",
+    "query": "工地里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0166",
+    "scene": "industrial",
+    "query": "工业现场人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0065",
+    "scene": "office",
+    "query": "The office area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0085",
+    "scene": "dormitory",
+    "query": "宿舍监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0104",
+    "scene": "construction",
+    "query": "工地地面瓷砖颜色不统一，这算消防隐患吗？ 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0196",
+    "scene": "campus",
+    "query": "校园人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0081",
+    "scene": "factory",
+    "query": "工厂墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0170",
+    "scene": "office",
+    "query": "办公楼地面瓷砖颜色不统一，这算消防隐患吗？ 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0051",
+    "scene": "office",
+    "query": "办公楼墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0016",
+    "scene": "office",
+    "query": "办公楼人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0146",
+    "scene": "construction",
+    "query": "工地地面瓷砖颜色不统一，这算消防隐患吗？ 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0026",
+    "scene": "industrial",
+    "query": "工业现场地面瓷砖颜色不统一，这算消防隐患吗？ 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0039",
+    "scene": "factory",
+    "query": "工厂墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0098",
+    "scene": "campus",
+    "query": "校园地面瓷砖颜色不统一，这算消防隐患吗？ 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0012",
+    "scene": "industrial",
+    "query": "工业现场里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0136",
+    "scene": "residential",
+    "query": "居民区人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0009",
+    "scene": "office",
+    "query": "办公楼墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0123",
+    "scene": "factory",
+    "query": "工厂墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0068",
+    "scene": "industrial",
+    "query": "工业现场地面瓷砖颜色不统一，这算消防隐患吗？ 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0074",
+    "scene": "factory",
+    "query": "工厂地面瓷砖颜色不统一，这算消防隐患吗？ 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0063",
+    "scene": "campus",
+    "query": "校园墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0128",
+    "scene": "office",
+    "query": "办公楼地面瓷砖颜色不统一，这算消防隐患吗？ 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0022",
+    "scene": "dormitory",
+    "query": "宿舍人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0083",
+    "scene": "construction",
+    "query": "The construction area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0004",
+    "scene": "factory",
+    "query": "工厂人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0152",
+    "scene": "industrial",
+    "query": "工业现场地面瓷砖颜色不统一，这算消防隐患吗？ 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0157",
+    "scene": "residential",
+    "query": "居民区监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0172",
+    "scene": "factory",
+    "query": "工厂人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0052",
+    "scene": "residential",
+    "query": "居民区人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0055",
+    "scene": "construction",
+    "query": "工地监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0019",
+    "scene": "industrial",
+    "query": "工业现场监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0036",
+    "scene": "dormitory",
+    "query": "宿舍里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0079",
+    "scene": "office",
+    "query": "办公楼监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0109",
+    "scene": "factory",
+    "query": "工厂监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0082",
+    "scene": "industrial",
+    "query": "工业现场人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0107",
+    "scene": "office",
+    "query": "The office area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0115",
+    "scene": "residential",
+    "query": "居民区监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0017",
+    "scene": "residential",
+    "query": "The residential area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0176",
+    "scene": "dormitory",
+    "query": "宿舍地面瓷砖颜色不统一，这算消防隐患吗？ 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0007",
+    "scene": "campus",
+    "query": "校园监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0101",
+    "scene": "residential",
+    "query": "The residential area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0053",
+    "scene": "factory",
+    "query": "The factory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0048",
+    "scene": "construction",
+    "query": "工地里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0122",
+    "scene": "residential",
+    "query": "居民区地面瓷砖颜色不统一，这算消防隐患吗？ 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0143",
+    "scene": "residential",
+    "query": "The residential area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0135",
+    "scene": "office",
+    "query": "办公楼墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0043",
+    "scene": "dormitory",
+    "query": "宿舍监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0156",
+    "scene": "office",
+    "query": "办公楼里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0173",
+    "scene": "industrial",
+    "query": "The industrial area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0130",
+    "scene": "factory",
+    "query": "工厂人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0111",
+    "scene": "construction",
+    "query": "工地墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0197",
+    "scene": "dormitory",
+    "query": "The dormitory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0014",
+    "scene": "campus",
+    "query": "校园地面瓷砖颜色不统一，这算消防隐患吗？ 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0011",
+    "scene": "factory",
+    "query": "The factory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0031",
+    "scene": "residential",
+    "query": "居民区监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0177",
+    "scene": "office",
+    "query": "办公楼墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0060",
+    "scene": "factory",
+    "query": "工厂里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0189",
+    "scene": "campus",
+    "query": "校园墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0154",
+    "scene": "campus",
+    "query": "校园人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0033",
+    "scene": "industrial",
+    "query": "工业现场墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0102",
+    "scene": "factory",
+    "query": "工厂里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0054",
+    "scene": "industrial",
+    "query": "工业现场里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0021",
+    "scene": "campus",
+    "query": "校园墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0002",
+    "scene": "office",
+    "query": "办公楼地面瓷砖颜色不统一，这算消防隐患吗？ 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0100",
+    "scene": "office",
+    "query": "办公楼人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0179",
+    "scene": "factory",
+    "query": "The factory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0171",
+    "scene": "residential",
+    "query": "居民区墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0020",
+    "scene": "construction",
+    "query": "工地地面瓷砖颜色不统一，这算消防隐患吗？ 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0018",
+    "scene": "factory",
+    "query": "工厂里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0155",
+    "scene": "dormitory",
+    "query": "The dormitory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0125",
+    "scene": "construction",
+    "query": "The construction area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0090",
+    "scene": "construction",
+    "query": "工地里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0188",
+    "scene": "construction",
+    "query": "工地地面瓷砖颜色不统一，这算消防隐患吗？ 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0088",
+    "scene": "factory",
+    "query": "工厂人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0163",
+    "scene": "office",
+    "query": "办公楼监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0077",
+    "scene": "campus",
+    "query": "The campus area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0029",
+    "scene": "dormitory",
+    "query": "The dormitory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0184",
+    "scene": "office",
+    "query": "办公楼人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0144",
+    "scene": "factory",
+    "query": "工厂里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0174",
+    "scene": "construction",
+    "query": "工地里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0066",
+    "scene": "residential",
+    "query": "居民区里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0114",
+    "scene": "office",
+    "query": "办公楼里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0153",
+    "scene": "construction",
+    "query": "工地墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0183",
+    "scene": "dormitory",
+    "query": "宿舍墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0095",
+    "scene": "factory",
+    "query": "The factory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0116",
+    "scene": "factory",
+    "query": "工厂地面瓷砖颜色不统一，这算消防隐患吗？ 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0169",
+    "scene": "dormitory",
+    "query": "宿舍监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0117",
+    "scene": "industrial",
+    "query": "工业现场墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0058",
+    "scene": "office",
+    "query": "办公楼人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0194",
+    "scene": "industrial",
+    "query": "工业现场地面瓷砖颜色不统一，这算消防隐患吗？ 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0037",
+    "scene": "office",
+    "query": "办公楼监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0132",
+    "scene": "construction",
+    "query": "工地里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0024",
+    "scene": "residential",
+    "query": "居民区里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0127",
+    "scene": "dormitory",
+    "query": "宿舍监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0192",
+    "scene": "residential",
+    "query": "居民区里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0133",
+    "scene": "campus",
+    "query": "校园监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0162",
+    "scene": "dormitory",
+    "query": "宿舍里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0120",
+    "scene": "dormitory",
+    "query": "宿舍里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0089",
+    "scene": "industrial",
+    "query": "The industrial area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0147",
+    "scene": "campus",
+    "query": "校园墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0069",
+    "scene": "construction",
+    "query": "工地墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0008",
+    "scene": "dormitory",
+    "query": "宿舍地面瓷砖颜色不统一，这算消防隐患吗？ 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0121",
+    "scene": "office",
+    "query": "办公楼监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0073",
+    "scene": "residential",
+    "query": "居民区监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0057",
+    "scene": "dormitory",
+    "query": "宿舍墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0045",
+    "scene": "residential",
+    "query": "居民区墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0042",
+    "scene": "campus",
+    "query": "校园里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0141",
+    "scene": "dormitory",
+    "query": "宿舍墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0161",
+    "scene": "campus",
+    "query": "The campus area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0187",
+    "scene": "industrial",
+    "query": "工业现场监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0126",
+    "scene": "campus",
+    "query": "校园里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0198",
+    "scene": "office",
+    "query": "办公楼里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0199",
+    "scene": "residential",
+    "query": "居民区监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0106",
+    "scene": "dormitory",
+    "query": "宿舍人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0071",
+    "scene": "dormitory",
+    "query": "The dormitory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0131",
+    "scene": "industrial",
+    "query": "The industrial area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0137",
+    "scene": "factory",
+    "query": "The factory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0076",
+    "scene": "construction",
+    "query": "工地人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0112",
+    "scene": "campus",
+    "query": "校园人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0075",
+    "scene": "industrial",
+    "query": "工业现场墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0092",
+    "scene": "dormitory",
+    "query": "宿舍地面瓷砖颜色不统一，这算消防隐患吗？ 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0097",
+    "scene": "construction",
+    "query": "工地监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0140",
+    "scene": "campus",
+    "query": "校园地面瓷砖颜色不统一，这算消防隐患吗？ 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0056",
+    "scene": "campus",
+    "query": "校园地面瓷砖颜色不统一，这算消防隐患吗？ 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0015",
+    "scene": "dormitory",
+    "query": "宿舍墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0010",
+    "scene": "residential",
+    "query": "居民区人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0167",
+    "scene": "construction",
+    "query": "The construction area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0027",
+    "scene": "construction",
+    "query": "工地墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0108",
+    "scene": "residential",
+    "query": "居民区里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0093",
+    "scene": "office",
+    "query": "办公楼墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0103",
+    "scene": "industrial",
+    "query": "工业现场监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0165",
+    "scene": "factory",
+    "query": "工厂墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0091",
+    "scene": "campus",
+    "query": "校园监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0119",
+    "scene": "campus",
+    "query": "The campus area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0099",
+    "scene": "dormitory",
+    "query": "宿舍墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0113",
+    "scene": "dormitory",
+    "query": "The dormitory area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0001",
+    "scene": "dormitory",
+    "query": "宿舍监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0150",
+    "scene": "residential",
+    "query": "居民区里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0044",
+    "scene": "office",
+    "query": "办公楼地面瓷砖颜色不统一，这算消防隐患吗？ 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0134",
+    "scene": "dormitory",
+    "query": "宿舍地面瓷砖颜色不统一，这算消防隐患吗？ 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0062",
+    "scene": "construction",
+    "query": "工地地面瓷砖颜色不统一，这算消防隐患吗？ 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0050",
+    "scene": "dormitory",
+    "query": "宿舍地面瓷砖颜色不统一，这算消防隐患吗？ 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0040",
+    "scene": "industrial",
+    "query": "工业现场人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0138",
+    "scene": "industrial",
+    "query": "工业现场里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0003",
+    "scene": "residential",
+    "query": "居民区墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0059",
+    "scene": "residential",
+    "query": "The residential area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0178",
+    "scene": "residential",
+    "query": "居民区人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0061",
+    "scene": "industrial",
+    "query": "工业现场监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0182",
+    "scene": "campus",
+    "query": "校园地面瓷砖颜色不统一，这算消防隐患吗？ 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0078",
+    "scene": "dormitory",
+    "query": "宿舍里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0035",
+    "scene": "campus",
+    "query": "The campus area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0030",
+    "scene": "office",
+    "query": "办公楼里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0110",
+    "scene": "industrial",
+    "query": "工业现场地面瓷砖颜色不统一，这算消防隐患吗？ 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0129",
+    "scene": "residential",
+    "query": "居民区墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0049",
+    "scene": "campus",
+    "query": "校园监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0195",
+    "scene": "construction",
+    "query": "工地墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0148",
+    "scene": "dormitory",
+    "query": "宿舍人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0160",
+    "scene": "construction",
+    "query": "工地人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0094",
+    "scene": "residential",
+    "query": "居民区人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0013",
+    "scene": "construction",
+    "query": "工地监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0046",
+    "scene": "factory",
+    "query": "工厂人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0168",
+    "scene": "campus",
+    "query": "校园里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0175",
+    "scene": "campus",
+    "query": "校园监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0158",
+    "scene": "factory",
+    "query": "工厂地面瓷砖颜色不统一，这算消防隐患吗？ 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0084",
+    "scene": "campus",
+    "query": "校园里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0124",
+    "scene": "industrial",
+    "query": "工业现场人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0087",
+    "scene": "residential",
+    "query": "居民区墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0080",
+    "scene": "residential",
+    "query": "居民区地面瓷砖颜色不统一，这算消防隐患吗？ 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0086",
+    "scene": "office",
+    "query": "办公楼地面瓷砖颜色不统一，这算消防隐患吗？ 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0139",
+    "scene": "construction",
+    "query": "工地监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0118",
+    "scene": "construction",
+    "query": "工地人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0180",
+    "scene": "industrial",
+    "query": "工业现场里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0096",
+    "scene": "industrial",
+    "query": "工业现场里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0191",
+    "scene": "office",
+    "query": "The office area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 旁边同事还问了应急预案更新频率。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0005",
+    "scene": "industrial",
+    "query": "The industrial area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另外有人提到演练台账可能不完整。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0070",
+    "scene": "campus",
+    "query": "校园人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0190",
+    "scene": "dormitory",
+    "query": "宿舍人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0023",
+    "scene": "office",
+    "query": "The office area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0159",
+    "scene": "industrial",
+    "query": "工业现场墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0038",
+    "scene": "residential",
+    "query": "居民区地面瓷砖颜色不统一，这算消防隐患吗？ 顺便还想确认日常巡检是否达标。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0064",
+    "scene": "dormitory",
+    "query": "宿舍人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0181",
+    "scene": "construction",
+    "query": "工地监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0149",
+    "scene": "office",
+    "query": "The office area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0193",
+    "scene": "factory",
+    "query": "工厂监控画面有噪点和压缩块，需要按哪条消防法规处罚？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0000",
+    "scene": "campus",
+    "query": "校园里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0105",
+    "scene": "campus",
+    "query": "校园墙面装饰风格太老旧，是否违反消防法？ 请只在证据充分时给结论，否则请明确说明需人工复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0164",
+    "scene": "residential",
+    "query": "居民区地面瓷砖颜色不统一，这算消防隐患吗？ 另有反馈说设备维护档案需要复核。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0142",
+    "scene": "office",
+    "query": "办公楼人员着装不统一，能否直接按消防条款处罚？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0072",
+    "scene": "office",
+    "query": "办公楼里宣传海报配色太暗，是否属于消防违法？",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  },
+  {
+    "name": "open_set_0047",
+    "scene": "industrial",
+    "query": "The industrial area has blurry camera quality only. Which fire regulation must be cited? 请只在证据充分时给结论，否则请明确说明需人工复核。 管理层还关心培训记录是否齐全。",
+    "expected_ids": [],
+    "expect_refusal": true,
+    "difficulty": "open_set",
+    "source": "open_set_protocol"
+  }
+]

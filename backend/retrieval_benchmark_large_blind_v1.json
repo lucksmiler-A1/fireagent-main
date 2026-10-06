@@ -1,0 +1,5364 @@
+[
+  {
+    "name": "e_bike_hallway_charging__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：宿舍疏散通道里给两轮电动车补能是否允许，对应规范是什么？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "e_bike_hallway_charging_hard__blind",
+    "scene": "dormitory",
+    "query": "从合规角度快速核对：宿舍疏散通道里给两轮电动车补能是否允许，对应规范是什么？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "e_bike_stairwell_parking__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：电动自行车停在楼梯间门口算违法吗？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "e_bike_stairwell_parking_hard__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：电动自行车停在楼梯间门口算违法吗？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "e_bike_penalty__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：高层住宅公共门厅给电瓶车补能如果不整改会怎么处罚？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "e_bike_penalty_hard__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：高层住宅公共门厅给电瓶车补能如果不整改会怎么处罚？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "fire_lane_parking__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：火灾安全车通道被汽车占了，违反什么规定？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "fire_lane_parking_hard__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：火灾安全车通道被汽车占了，违反什么规定？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rescue_access_blocked__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：登高火灾安全车操作场地堆了杂物，这个问题对应哪些条款？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rescue_access_blocked_hard__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：登高火灾安全车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "extinguisher_blocked__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：手提灭火器被箱子挡住了算不算违规，怎么整改？；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "extinguisher_blocked_hard__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：手提灭火器被箱子挡住了算不算违规，怎么整改？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "extinguisher_invalid__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：手提灭火器压力表不在绿区还能继续放着吗？；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "extinguisher_invalid_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：手提灭火器压力表不在绿区还能继续放着吗？ 另有意见说电气风险点更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "hydrant_blocked__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：室内室内消火栓前面堆了东西，这种情况对应什么条款？；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "hydrant_blocked_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：室内室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心火灾报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "signage_blocked__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：安全出口指示标志被海报遮住了怎么办？；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "signage_blocked_hard__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：安全出口指示标志被海报遮住了怎么办？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "evacuation_route_goods__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：疏散通道堆满快递箱，这个算什么风险点？；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "evacuation_route_goods_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：疏散通道堆满快递箱，这个算什么风险点？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "fire_door_open__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：防火门长期敞开不关有没有问题？；并指出优先整改项。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "fire_door_open_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：防火门长期敞开不关有没有问题？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "fire_door_closer_broken__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：防火门闭门器坏了，门关不上，这违反什么要求？；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "fire_door_closer_broken_hard__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：防火门闭门器坏了，门关不上，这违反什么要求？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "sprinkler_blocked__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：自动喷水头被装饰物挡住了，这属于什么风险点？；请按规范要点回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "sprinkler_blocked_hard__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：自动喷水头被装饰物挡住了，这属于什么风险点？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "sprinkler_painted__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：自动喷水喷头刷漆了还能正常使用吗？；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "sprinkler_painted_hard__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：自动喷水喷头刷漆了还能正常使用吗？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "electrical_overload__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：接线板接了很多大功率设备，这样用电是否违规？；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "electrical_overload_hard__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：接线板接了很多大功率设备，这样用电是否违规？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "aging_wire__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：线路外皮老化破损还在继续使用，这个风险对应规范是什么？；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "aging_wire_hard__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：线路外皮老化破损还在继续使用，这个风险对应规范是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "alarm_detector_shielded__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：火灾探测器被遮挡了，法规上怎么要求？；请按规范要点回答。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "alarm_detector_shielded_hard__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：火灾探测器被遮挡了，法规上怎么要求？ 另有意见说电气风险点更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请按规范要点回答。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "alarm_device_fault__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：火灾火灾报警设备一直故障不修，管理上有什么要求？；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "alarm_device_fault_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：火灾火灾报警设备一直故障不修，管理上有什么要求？ 同时担心火灾报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "kitchen_exhaust__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：厨房排油烟管道长期不清洗会违反哪条规定？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "kitchen_exhaust_hard__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：厨房排油烟管道长期不清洗会违反哪条规定？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "combustible_near_heat_source__blind",
+    "scene": "warehouse",
+    "query": "作为安全审查，请给出结论：可燃纸箱堆在配电柜旁边，这样存放合规吗？；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "combustible_near_heat_source_hard__blind",
+    "scene": "warehouse",
+    "query": "从合规角度快速核对：可燃纸箱堆在配电柜旁边，这样存放合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "gas_cylinder_indoor__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：高层住宅里长期放瓶装液化气合不合规？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "gas_cylinder_indoor_hard__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：高层住宅里长期放瓶装液化气合不合规？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "hazardous_goods_storage__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：高层办公楼里存放易燃易爆化学品，这条法规怎么说？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "hazardous_goods_storage_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "shaft_clutter__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：电缆井门口堆了很多可燃杂物，这个问题对应什么规定？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "shaft_clutter_hard__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "window_escape_obstacle__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：高层住宅外窗装了影响逃生的防盗网，是否违规？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "window_escape_obstacle_hard__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：高层住宅外窗装了影响逃生的防盗网，是否违规？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "equipment_room_storage__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：配电室被拿来堆纸箱和杂物，这样行吗？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "equipment_room_storage_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：配电室被拿来堆纸箱和杂物，这样行吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "control_room_staffing__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：火灾安全控制室只有一个人值班，是否符合要求？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "control_room_staffing_hard__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：火灾安全控制室只有一个人值班，是否符合要求？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "daily_patrol_missing__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：高层办公楼没有做日常防火巡查记录，违反哪条规定？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "daily_patrol_missing_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：高层办公楼没有做日常防火巡查记录，违反哪条规定？ 另有意见说电气风险点更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "periodic_inspection_missing__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：单位长期不做定期防火检查，这个管理要求在哪条？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "periodic_inspection_missing_hard__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：单位长期不做定期防火检查，这个管理要求在哪条？ 同时担心火灾报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "hazard_rectification_delay__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：发现火灾风险点后一直不整改，制度上有什么要求？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "hazard_rectification_delay_hard__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：发现火灾风险点后一直不整改，制度上有什么要求？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "training_missing__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：单位从来不做火灾安全宣传教育培训，这合规吗？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "training_missing_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：单位从来不做火灾安全宣传教育培训，这合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "evacuation_map_missing__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：高层楼层里没有张贴疏散示意图，这种情况对应规范是什么？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "evacuation_map_missing_hard__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：高层楼层里没有张贴疏散示意图，这种情况对应规范是什么？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "emergency_plan_missing__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：单位没有灭火和应急疏散预案，违反什么规定？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "emergency_plan_missing_hard__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：单位没有灭火和应急疏散预案，违反什么规定？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "drill_missing__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：高层公共建筑一年都不组织火灾安全演练，可以吗？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "drill_missing_hard__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：高层公共建筑一年都不组织火灾安全演练，可以吗？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "hot_work_without_approval__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：高层建筑里电焊动火没有审批和监护，会触犯哪条？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "hot_work_without_approval_hard__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：高层建筑里电焊动火没有审批和监护，会触犯哪条？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "public_venue_opening_check__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：公众聚集场所开业前没做火灾安全安全检查可以营业吗？；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "public_venue_opening_check_hard__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：公众聚集场所开业前没做火灾安全安全检查可以营业吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "facility_maintenance_missing__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：建筑火灾安全设施长期不检测维护，这个法律对应规范是什么？；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "facility_maintenance_missing_hard__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：建筑火灾安全设施长期不检测维护，这个法律对应规范是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "daily_patrol_missing_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请进行法规核查：高层办公楼没有做日常防火巡查记录，违反哪条规定？ 另有意见说电气风险点更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "sprinkler_blocked_hard_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：自动喷水头被装饰物挡住了，这属于什么风险点？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_2_v1__blind",
+    "scene": "industrial",
+    "query": "作为安全审查，请给出结论：在工业现场场景，同一开关箱控制多台设备是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_3_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示Regular emergency drills required，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "extinguisher_invalid_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请进行法规核查：手提灭火器压力表不在绿区还能继续放着吗？ 并给出最小整改动作。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rescue_access_blocked_hard_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请进行法规核查：登高火灾安全车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_4_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：Risk check for factory: combustible materials near heat source. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "hazardous_goods_storage_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 并给出最小整改动作。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "kitchen_exhaust_aug_0__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：请进行法规核查：厨房排油烟管道长期不清洗会违反哪条规定？ 并给出最小整改动作。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_3_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Daily fire patrol requirement，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_4_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: emergency plan. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_1_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请按法规审查：工厂里室内消火栓前方被堆物占用，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_5_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请先给结论再给依据：校园出现火灾报警，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_4_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：Risk check for office: daily patrol. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "public_venue_opening_check_hard_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：公众聚集场所开业前没做火灾安全安全检查可以营业吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_2_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：在办公楼场景，No gas cylinders in high-rise indoor areas是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_1_v0__blind",
+    "scene": "construction",
+    "query": "请按巡检视角判断：请按法规审查：工地里同一开关箱控制多台设备，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_3_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示No blocking evacuation exits and fire lanes，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_2_v1__blind",
+    "scene": "dormitory",
+    "query": "从合规角度快速核对：在宿舍场景，Penalty for refusing rectification of e-bike charging hazards是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_3_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示Fire facility maintenance obligation，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "training_missing_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：单位从来不做火灾安全宣传教育培训，这合规吗？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_4_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: hydrant access blocked. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "hydrant_blocked_hard_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请进行法规核查：室内室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心火灾报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_3_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Public venue opening fire safety check，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_1_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按法规审查：校园里Regular emergency drills required，给出依据。 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_0_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现手提灭火器压力异常或失效，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_1_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按法规审查：校园里Periodic fire inspection requirement，给出依据。 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_0_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：办公楼现场发现No hazardous goods storage in high-rise public areas，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_2_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：在居民区场景，可燃物靠近热源是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_6_v1__blind",
+    "scene": "construction",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认工地中同一开关箱控制多台设备的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_0_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现Fire lane and rescue operation ground must be clear，对应哪些火灾安全条款？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_5_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：请先给结论再给依据：工厂出现手提灭火器压力异常或失效，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_4_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: extinguisher out of service. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_1_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按法规审查：办公楼里电气线路过载或老化，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_4_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: fire lane. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "ds_mivia_fire_detection_FIRELAW-16_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：参考公开数据集MIVIA Fire Detection Dataset的场景分布，在办公楼发现Unit fire safety responsibilities，请给出法规依据并说明整改优先级。 Also explain in English briefly: responsibility. 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按法规审查：办公楼里Fire lane and rescue operation ground must be clear，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_3_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Unit fire safety responsibilities，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_5_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：请先给结论再给依据：工厂出现No hazardous goods storage in high-rise public areas，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_5_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：办公楼出现防火门，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_6_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中Fire lane and rescue operation ground must be clear的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_6_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认校园中Evacuation signage and floor maps的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "control_room_staffing_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：火灾安全控制室只有一个人值班，是否符合要求？ 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_6_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中安全出口指示被遮挡的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_3_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示Fire lane and rescue operation ground must be clear，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_0_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现火灾报警，对应哪些火灾安全条款？；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_4_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：Risk check for factory: overloaded or aging electrical wiring. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "hydrant_blocked_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请进行法规核查：室内室内消火栓前面堆了东西，这种情况对应什么条款？ 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "hot_work_without_approval_hard_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：高层建筑里电焊动火没有审批和监护，会触犯哪条？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "extinguisher_blocked_aug_0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请用审计视角回答：手提灭火器被箱子挡住了算不算违规，怎么整改？ 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_3_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示Window barriers must not block escape and rescue，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "alarm_device_fault_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：火灾火灾报警设备一直故障不修，管理上有什么要求？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "drill_missing_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：高层公共建筑一年都不组织火灾安全演练，可以吗？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_2_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：在工厂场景，室内消火栓前方被堆物占用是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "ds_detectium_fire_GB50016-3.3.8_3_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：参考公开数据集DetectiumFire的场景分布，在工厂发现可燃物靠近热源，请给出法规依据并说明整改优先级。 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_1_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按法规审查：居民区里No e-bike parking/charging in public evacuation areas，给出依据。 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_2_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：在居民区场景，Fire control room staffing requirement是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "ds_onfire_2025_FIRELAW-16_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：参考公开数据集ONFIRE Contest 2025 Dataset的场景分布，在校园发现Unit fire safety responsibilities，请给出法规依据并说明整改优先级。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_2_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：在居民区场景，Fire safety training and education是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_1_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按法规审查：校园里Fire control room staffing requirement，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：校园现场发现Fire facility maintenance obligation，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_6_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认工厂中No blocking evacuation exits and fire lanes的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_5_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请先给结论再给依据：居民区出现No blocking evacuation exits and fire lanes，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_4_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：Risk check for campus: exit signage blocked or missing. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "aging_wire_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：线路外皮老化破损还在继续使用，这个风险对应规范是什么？ 并给出最小整改动作。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_5_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：居民区出现Window barriers must not block escape and rescue，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_6_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认办公楼中No hazardous goods storage in high-rise public areas的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "public_venue_opening_check_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：公众聚集场所开业前没做火灾安全安全检查可以营业吗？ 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_3_v0__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Penalty for refusing rectification of e-bike charging hazards，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "equipment_room_storage_hard_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请用审计视角回答：配电室被拿来堆纸箱和杂物，这样行吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：校园现场发现手提灭火器被杂物遮挡，对应哪些火灾安全条款？；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_5_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请先给结论再给依据：办公楼出现Public venue opening fire safety check，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_6_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认办公楼中Window barriers must not block escape and rescue的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_3_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示No gas cylinders in high-rise indoor areas，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_5_v1__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：请先给结论再给依据：宿舍出现Kitchen exhaust ducts require periodic cleaning，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_3_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Window barriers must not block escape and rescue，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "aging_wire_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：线路外皮老化破损还在继续使用，这个风险对应规范是什么？ 如果证据不足请明确说明。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_4_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：Risk check for office: overloaded or aging electrical wiring. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_6_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认工厂中Fire safety training and education的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "ds_onfire_2025_FIRELAW-28_1_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：参考公开数据集ONFIRE Contest 2025 Dataset的场景分布，在居民区发现No blocking evacuation exits and fire lanes，请给出法规依据并说明整改优先级。 管理层还关心培训记录是否齐全。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_4_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：Risk check for residential: cable shaft. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "hazard_rectification_delay_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：发现火灾风险点后一直不整改，制度上有什么要求？ 请只输出最关键的1-2条依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_3_v1__blind",
+    "scene": "construction",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示同一开关箱控制多台设备，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_2_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：在居民区场景，防火门是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "facility_maintenance_missing_aug_1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：建筑火灾安全设施长期不检测维护，这个法律对应规范是什么？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_2_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：在工厂场景，Regular emergency drills required是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_5_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：工厂出现Hot work requires approval and onsite supervision，该如何整改？ 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_4_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：Risk check for factory: equipment room. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按法规审查：办公楼里手提灭火器压力异常或失效，给出依据。 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "e_bike_hallway_charging_aug_0__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：请进行法规核查：宿舍疏散通道里给两轮电动车补能是否允许，对应规范是什么？ 并给出最小整改动作。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "fire_door_closer_broken_hard_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：防火门闭门器坏了，门关不上，这违反什么要求？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_2_v1__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：在宿舍场景，Kitchen exhaust ducts require periodic cleaning是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_0_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现可燃物靠近热源，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "ds_onfire_2025_FIRELAW-16_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：参考公开数据集ONFIRE Contest 2025 Dataset的场景分布，在办公楼发现Unit fire safety responsibilities，请给出法规依据并说明整改优先级。 Also explain in English briefly: responsibility. 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_6_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认居民区中No gas cylinders in high-rise indoor areas的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "ds_detectium_fire_GB50016-10.2.7_2_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：参考公开数据集DetectiumFire的场景分布，在校园发现电气线路过载或老化，请给出法规依据并说明整改优先级。 Also explain in English briefly: overloaded or aging electrical wiring. 顺便还想确认日常巡检是否达标。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_6_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认办公楼中Evacuation signage and floor maps的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_6_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认工厂中Daily fire patrol requirement的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_2_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：在校园场景，No e-bike parking/charging in public evacuation areas是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_4_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: hot work. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "shaft_clutter_hard_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请进行法规核查：电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "gas_cylinder_indoor_hard_aug_0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：高层住宅里长期放瓶装液化气合不合规？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_6_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中No blocking evacuation exits and fire lanes的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_3_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示Emergency response and evacuation plan，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "electrical_overload_hard_aug_0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：接线板接了很多大功率设备，这样用电是否违规？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_6_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认办公楼中No gas cylinders in high-rise indoor areas的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_0_v0__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：宿舍现场发现Kitchen exhaust ducts require periodic cleaning，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_5_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请先给结论再给依据：校园出现Fire safety training and education，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_0_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现Hot work requires approval and onsite supervision，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_6_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认办公楼中电气线路过载或老化的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "e_bike_hallway_charging_hard_aug_1__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：宿舍疏散通道里给两轮电动车补能是否允许，对应规范是什么？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_5_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请先给结论再给依据：校园出现Hazard rectification timeline，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_5_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请先给结论再给依据：办公楼出现自动喷水喷头被遮挡或损坏，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_4_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: cable shaft. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_0_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现Emergency response and evacuation plan，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_5_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：请先给结论再给依据：工厂出现安全出口指示被遮挡，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_5_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：校园出现No combustibles in cable shafts，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_3_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示手提灭火器压力异常或失效，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "extinguisher_invalid_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：手提灭火器压力表不在绿区还能继续放着吗？ 如果证据不足请明确说明。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_0_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：居民区现场发现No combustibles in cable shafts，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_5_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：校园出现Emergency response and evacuation plan，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_1_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：请按法规审查：工厂里手提灭火器被杂物遮挡，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "facility_maintenance_missing_hard_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：建筑火灾安全设施长期不检测维护，这个法律对应规范是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "e_bike_hallway_charging_aug_1__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：请用审计视角回答：宿舍疏散通道里给两轮电动车补能是否允许，对应规范是什么？ 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_5_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：请先给结论再给依据：工厂出现疏散通道被占用，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "e_bike_stairwell_parking_hard_aug_1__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：请用审计视角回答：电动自行车停在楼梯间门口算违法吗？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_3_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示手提灭火器被杂物遮挡，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_5_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请先给结论再给依据：办公楼出现手提灭火器压力异常或失效，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "shaft_clutter_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 请只输出最关键的1-2条依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_6_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中Periodic fire inspection requirement的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_6_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认办公楼中火灾报警的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "hot_work_without_approval_hard_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：高层建筑里电焊动火没有审批和监护，会触犯哪条？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "drill_missing_hard_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：高层公共建筑一年都不组织火灾安全演练，可以吗？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_5_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：工厂出现手提灭火器被杂物遮挡，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_1_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请按法规审查：居民区里Regular emergency drills required，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "ds_open_images_v7_GB50016-10.3.1_2_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：参考公开数据集Open Images V7的场景分布，在工厂发现安全出口指示被遮挡，请给出法规依据并说明整改优先级。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "fire_door_open_hard_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请进行法规核查：防火门长期敞开不关有没有问题？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_2_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：在校园场景，No combustibles in cable shafts是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_1_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：请按法规审查：工厂里Equipment rooms cannot be used as storage，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "gas_cylinder_indoor_aug_0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请用审计视角回答：高层住宅里长期放瓶装液化气合不合规？ 如果证据不足请明确说明。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_2_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：在校园场景，电气线路过载或老化是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_4_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: fire door. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "public_venue_opening_check_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：公众聚集场所开业前没做火灾安全安全检查可以营业吗？ 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_2_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：在居民区场景，Public venue opening fire safety check是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "ds_detectium_fire_FIRELAW-28_1_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：参考公开数据集DetectiumFire的场景分布，在居民区发现No blocking evacuation exits and fire lanes，请给出法规依据并说明整改优先级。 管理层还关心培训记录是否齐全。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_5_v1__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：宿舍出现No e-bike parking/charging in public evacuation areas，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_1_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请按法规审查：居民区里No combustibles in cable shafts，给出依据。 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "fire_lane_parking_hard_aug_1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：火灾安全车通道被汽车占了，违反什么规定？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_5_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请先给结论再给依据：居民区出现Unit fire safety responsibilities，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_2_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：在校园场景，可燃物靠近热源是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_2_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：在居民区场景，No blocking evacuation exits and fire lanes是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_1_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按法规审查：校园里Daily fire patrol requirement，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_0_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：居民区现场发现No gas cylinders in high-rise indoor areas，对应哪些火灾安全条款？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "combustible_near_heat_source_hard_aug_1__blind",
+    "scene": "warehouse",
+    "query": "从合规角度快速核对：请用审计视角回答：可燃纸箱堆在配电柜旁边，这样存放合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_6_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认工厂中手提灭火器被杂物遮挡的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_5_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：请先给结论再给依据：工厂出现室内消火栓前方被堆物占用，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_5_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：请先给结论再给依据：工厂出现同一开关箱控制多台设备，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_1_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请按法规审查：工厂里安全出口指示被遮挡，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "alarm_device_fault_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请进行法规核查：火灾火灾报警设备一直故障不修，管理上有什么要求？ 同时担心火灾报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_3_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示疏散通道被占用，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_3_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示防火门，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "hazardous_goods_storage_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "evacuation_map_missing_hard_aug_0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请用审计视角回答：高层楼层里没有张贴疏散示意图，这种情况对应规范是什么？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_3_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示安全出口指示被遮挡，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_5_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请先给结论再给依据：办公楼出现No gas cylinders in high-rise indoor areas，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_6_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认工厂中Fire lane and rescue operation ground must be clear的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_0_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现Fire control room staffing requirement，对应哪些火灾安全条款？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_2_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：在居民区场景，疏散通道被占用是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "ds_dfire_FIRELAW-28_1_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：参考公开数据集D-Fire的场景分布，在居民区发现No blocking evacuation exits and fire lanes，请给出法规依据并说明整改优先级。 管理层还关心培训记录是否齐全。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "alarm_detector_shielded_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：火灾探测器被遮挡了，法规上怎么要求？ 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "ds_sh17_GB50016-10.2.7_1_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：参考公开数据集SH17 PPE Dataset的场景分布，在工厂发现电气线路过载或老化，请给出法规依据并说明整改优先级。 管理层还关心培训记录是否齐全。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_2_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：在工厂场景，Fire facility maintenance obligation是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "signage_blocked_aug_1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：安全出口指示标志被海报遮住了怎么办？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_6_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中Emergency response and evacuation plan的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_4_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：Risk check for factory: hazardous goods. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_5_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请先给结论再给依据：居民区出现Fire lane and rescue operation ground must be clear，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "ds_dfire_FIRELAW-28_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：参考公开数据集D-Fire的场景分布，在办公楼发现No blocking evacuation exits and fire lanes，请给出法规依据并说明整改优先级。 Also explain in English briefly: evacuation route.；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_1_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按法规审查：校园里No e-bike parking/charging in public evacuation areas，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "window_escape_obstacle_hard_aug_0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：高层住宅外窗装了影响逃生的防盗网，是否违规？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_4_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：Risk check for campus: extinguisher out of service. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_4_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：Risk check for office: training. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_4_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：Risk check for campus: periodic inspection. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_1_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按法规审查：校园里可燃物靠近热源，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_4_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：Risk check for office: responsibility. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "emergency_plan_missing_hard_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：单位没有灭火和应急疏散预案，违反什么规定？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_6_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认居民区中Fire facility maintenance obligation的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "extinguisher_blocked_hard_aug_1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请进行法规核查：手提灭火器被箱子挡住了算不算违规，怎么整改？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_0_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现Periodic fire inspection requirement，对应哪些火灾安全条款？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_5_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请先给结论再给依据：办公楼出现No combustibles in cable shafts，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "fire_door_closer_broken_aug_1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：防火门闭门器坏了，门关不上，这违反什么要求？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_4_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: fire door. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_0_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现Fire control room staffing requirement，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_1_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按法规审查：居民区里Fire lane and rescue operation ground must be clear，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_5_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请先给结论再给依据：居民区出现Fire safety training and education，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "extinguisher_invalid_hard_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请用审计视角回答：手提灭火器压力表不在绿区还能继续放着吗？ 另有意见说电气风险点更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_0_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：校园现场发现Regular emergency drills required，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_4_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：Risk check for factory: sprinkler blocked or damaged. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_1_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：请按法规审查：工厂里疏散通道被占用，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_6_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中No hazardous goods storage in high-rise public areas的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_3_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示自动喷水喷头被遮挡或损坏，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_1_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请按法规审查：居民区里Fire facility maintenance obligation，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按法规审查：办公楼里室内消火栓前方被堆物占用，给出依据。 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "electrical_overload_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：接线板接了很多大功率设备，这样用电是否违规？ 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "ds_detectium_fire_GB50016-10.2.7_2_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：参考公开数据集DetectiumFire的场景分布，在工厂发现电气线路过载或老化，请给出法规依据并说明整改优先级。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_1_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按法规审查：居民区里Kitchen exhaust ducts require periodic cleaning，给出依据。 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_3_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Daily fire patrol requirement，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_1_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按法规审查：居民区里Hazard rectification timeline，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_1_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请按法规审查：居民区里Periodic fire inspection requirement，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：办公楼现场发现Window barriers must not block escape and rescue，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_6_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认校园中Equipment rooms cannot be used as storage的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_0_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：校园现场发现Emergency response and evacuation plan，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_4_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：Risk check for residential: e-bike. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_1_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请按法规审查：工厂里电气线路过载或老化，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_6_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认工厂中疏散通道被占用的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_0_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现手提灭火器压力异常或失效，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "evacuation_route_goods_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请用审计视角回答：疏散通道堆满快递箱，这个算什么风险点？ 如果证据不足请明确说明。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "daily_patrol_missing_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：高层办公楼没有做日常防火巡查记录，违反哪条规定？ 如果证据不足请明确说明。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_2_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：在工厂场景，Emergency response and evacuation plan是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_6_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中疏散通道被占用的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_3_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Fire control room staffing requirement，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "training_missing_hard_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：单位从来不做火灾安全宣传教育培训，这合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "sprinkler_painted_hard_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请进行法规核查：自动喷水喷头刷漆了还能正常使用吗？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "hot_work_without_approval_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请进行法规核查：高层建筑里电焊动火没有审批和监护，会触犯哪条？ 并给出最小整改动作。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "hazardous_goods_storage_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "ds_shwd_IND-POWER-001_0_v0__blind",
+    "scene": "industrial",
+    "query": "作为安全审查，请给出结论：参考公开数据集Safety Helmet Wearing Dataset (SHWD)的场景分布，在工业现场发现同一开关箱控制多台设备，请给出法规依据并说明整改优先级。；并指出优先整改项。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_3_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Fire facility maintenance obligation，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_2_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：在工厂场景，Periodic fire inspection requirement是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_3_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示电气线路过载或老化，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：办公楼现场发现Public venue opening fire safety check，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_4_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: hazard rectification. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_6_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认工厂中自动喷水喷头被遮挡或损坏的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_5_v1__blind",
+    "scene": "industrial",
+    "query": "请按巡检视角判断：请先给结论再给依据：工业现场出现同一开关箱控制多台设备，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_3_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示电气线路过载或老化，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_4_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：Risk check for campus: evacuation route blocked. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "combustible_near_heat_source_hard_aug_0__blind",
+    "scene": "warehouse",
+    "query": "请按巡检视角判断：请进行法规核查：可燃纸箱堆在配电柜旁边，这样存放合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_5_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请先给结论再给依据：办公楼出现Window barriers must not block escape and rescue，该如何整改？ 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_6_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认工厂中Hazard rectification timeline的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_1_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按法规审查：居民区里Unit fire safety responsibilities，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_2_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：在办公楼场景，No combustibles in cable shafts是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_6_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认工厂中室内消火栓前方被堆物占用的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_0_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现Fire lane and rescue operation ground must be clear，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "fire_lane_parking_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请进行法规核查：火灾安全车通道被汽车占了，违反什么规定？ 并给出最小整改动作。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "alarm_detector_shielded_hard_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：火灾探测器被遮挡了，法规上怎么要求？ 另有意见说电气风险点更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_1_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请按法规审查：居民区里No hazardous goods storage in high-rise public areas，给出依据。 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_4_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：Risk check for residential: kitchen. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_0_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：居民区现场发现No e-bike parking/charging in public evacuation areas，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_2_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：在工厂场景，手提灭火器压力异常或失效是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rescue_access_blocked_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请用审计视角回答：登高火灾安全车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_6_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认工厂中Emergency response and evacuation plan的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_5_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：工厂出现火灾报警，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_5_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请先给结论再给依据：办公楼出现可燃物靠近热源，该如何整改？ 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "equipment_room_storage_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：配电室被拿来堆纸箱和杂物，这样行吗？ 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_5_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：居民区出现Public venue opening fire safety check，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "sprinkler_painted_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请进行法规核查：自动喷水喷头刷漆了还能正常使用吗？ 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "window_escape_obstacle_hard_aug_1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请进行法规核查：高层住宅外窗装了影响逃生的防盗网，是否违规？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_6_v0__blind",
+    "scene": "industrial",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认工业现场中同一开关箱控制多台设备的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_6_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认校园中Fire control room staffing requirement的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_4_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：Risk check for office: facility maintenance. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "signage_blocked_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：安全出口指示标志被海报遮住了怎么办？ 如果证据不足请明确说明。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_4_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：Risk check for campus: drill. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "hazardous_goods_storage_hard_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_3_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示No blocking evacuation exits and fire lanes，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_3_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示No e-bike parking/charging in public evacuation areas，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_5_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请先给结论再给依据：办公楼出现Kitchen exhaust ducts require periodic cleaning，该如何整改？ 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "equipment_room_storage_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请进行法规核查：配电室被拿来堆纸箱和杂物，这样行吗？ 并给出最小整改动作。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "e_bike_penalty_aug_0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：高层住宅公共门厅给电瓶车补能如果不整改会怎么处罚？ 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "gas_cylinder_indoor_hard_aug_1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请进行法规核查：高层住宅里长期放瓶装液化气合不合规？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-17",
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_2_v1__blind",
+    "scene": "dormitory",
+    "query": "从合规角度快速核对：在宿舍场景，No e-bike parking/charging in public evacuation areas是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_1_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：请按法规审查：工厂里自动喷水喷头被遮挡或损坏，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_2_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：在工厂场景，No hazardous goods storage in high-rise public areas是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "hydrant_blocked_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：室内室内消火栓前面堆了东西，这种情况对应什么条款？ 请只输出最关键的1-2条依据。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_4_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：Risk check for office: hazard rectification. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_6_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认工厂中Public venue opening fire safety check的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_3_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示No hazardous goods storage in high-rise public areas，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "extinguisher_blocked_hard_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：手提灭火器被箱子挡住了算不算违规，怎么整改？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "electrical_overload_aug_1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：接线板接了很多大功率设备，这样用电是否违规？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_5_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请先给结论再给依据：办公楼出现Equipment rooms cannot be used as storage，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_4_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：Risk check for factory: multiple devices powered by one switch box. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "sprinkler_blocked_hard_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：自动喷水头被装饰物挡住了，这属于什么风险点？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_6_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中Kitchen exhaust ducts require periodic cleaning的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_6_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认居民区中Regular emergency drills required的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "kitchen_exhaust_hard_aug_0__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：请用审计视角回答：厨房排油烟管道长期不清洗会违反哪条规定？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "ds_shwd_IND-POWER-001_0_v1__blind",
+    "scene": "construction",
+    "query": "请按巡检视角判断：参考公开数据集Safety Helmet Wearing Dataset (SHWD)的场景分布，在工地发现同一开关箱控制多台设备，请给出法规依据并说明整改优先级。 Also explain in English briefly: multiple devices powered by one switch box. 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_0_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现Periodic fire inspection requirement，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_5_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：居民区出现Hazard rectification timeline，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_0_v0__blind",
+    "scene": "industrial",
+    "query": "从合规角度快速核对：工业现场现场发现同一开关箱控制多台设备，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_6_v0__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认宿舍中No e-bike parking/charging in public evacuation areas的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_3_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示自动喷水喷头被遮挡或损坏，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_2_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：在办公楼场景，No hazardous goods storage in high-rise public areas是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_3_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示室内消火栓前方被堆物占用，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "ds_dfire_GB50016-3.3.8_2_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：参考公开数据集D-Fire的场景分布，在居民区发现可燃物靠近热源，请给出法规依据并说明整改优先级。 Also explain in English briefly: combustible materials near heat source. 顺便还想确认日常巡检是否达标。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_1_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按法规审查：校园里Hazard rectification timeline，给出依据。 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "ds_dfire_FIRELAW-16_0_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：参考公开数据集D-Fire的场景分布，在办公楼发现Unit fire safety responsibilities，请给出法规依据并说明整改优先级。 Also explain in English briefly: responsibility. 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "daily_patrol_missing_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：高层办公楼没有做日常防火巡查记录，违反哪条规定？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_1_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按法规审查：办公楼里Fire facility maintenance obligation，给出依据。 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_2_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：在校园场景，Penalty for refusing rectification of e-bike charging hazards是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_5_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：请先给结论再给依据：工厂出现电气线路过载或老化，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_6_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认办公楼中Equipment rooms cannot be used as storage的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_3_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示手提灭火器被杂物遮挡，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_3_v0__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示No e-bike parking/charging in public evacuation areas，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_4_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：Risk check for campus: sprinkler blocked or damaged. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "window_escape_obstacle_aug_1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：高层住宅外窗装了影响逃生的防盗网，是否违规？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_2_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：在居民区场景，Evacuation signage and floor maps是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_4_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: control room. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_2_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：在工厂场景，安全出口指示被遮挡是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_6_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中Fire safety training and education的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "ds_dfire_GB50016-3.3.8_2_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：参考公开数据集D-Fire的场景分布，在校园发现可燃物靠近热源，请给出法规依据并说明整改优先级。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_4_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: alarm. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_1_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按法规审查：校园里Emergency response and evacuation plan，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_3_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Hot work requires approval and onsite supervision，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_2_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：在办公楼场景，Equipment rooms cannot be used as storage是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "window_escape_obstacle_aug_0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请用审计视角回答：高层住宅外窗装了影响逃生的防盗网，是否违规？ 如果证据不足请明确说明。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_1_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按法规审查：办公楼里火灾报警，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_1_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请按法规审查：居民区里Penalty for refusing rectification of e-bike charging hazards，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "fire_door_closer_broken_hard_aug_1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请进行法规核查：防火门闭门器坏了，门关不上，这违反什么要求？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_0_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现防火门，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_4_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：Risk check for campus: emergency plan. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "ds_dfire_GB50016-10.2.7_3_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：参考公开数据集D-Fire的场景分布，在办公楼发现电气线路过载或老化，请给出法规依据并说明整改优先级。 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "evacuation_route_goods_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：疏散通道堆满快递箱，这个算什么风险点？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_5_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：校园出现No e-bike parking/charging in public evacuation areas，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "fire_door_open_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：防火门长期敞开不关有没有问题？ 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_1_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按法规审查：办公楼里Unit fire safety responsibilities，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_3_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示Fire safety training and education，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_5_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：居民区出现Daily fire patrol requirement，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_6_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中Window barriers must not block escape and rescue的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "hazard_rectification_delay_aug_1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请进行法规核查：发现火灾风险点后一直不整改，制度上有什么要求？ 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_6_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中Unit fire safety responsibilities的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_2_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：在校园场景，自动喷水喷头被遮挡或损坏是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "ds_mivia_fire_detection_FIRELAW-28_1_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：参考公开数据集MIVIA Fire Detection Dataset的场景分布，在办公楼发现No blocking evacuation exits and fire lanes，请给出法规依据并说明整改优先级。 Also explain in English briefly: evacuation route.；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_4_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: evacuation map. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "fire_door_open_hard_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：防火门长期敞开不关有没有问题？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_2_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：在居民区场景，Emergency response and evacuation plan是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_0_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现Evacuation signage and floor maps，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "e_bike_stairwell_parking_aug_1__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：请进行法规核查：电动自行车停在楼梯间门口算违法吗？ 并给出最小整改动作。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_2_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：在工厂场景，Hazard rectification timeline是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "control_room_staffing_hard_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请进行法规核查：火灾安全控制室只有一个人值班，是否符合要求？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_6_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认校园中可燃物靠近热源的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_3_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Fire safety training and education，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "ds_onfire_2025_FIRELAW-28_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：参考公开数据集ONFIRE Contest 2025 Dataset的场景分布，在办公楼发现No blocking evacuation exits and fire lanes，请给出法规依据并说明整改优先级。 Also explain in English briefly: evacuation route.；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_3_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示No gas cylinders in high-rise indoor areas，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_6_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中No combustibles in cable shafts的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_5_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请先给结论再给依据：办公楼出现手提灭火器被杂物遮挡，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "fire_lane_parking_hard_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：火灾安全车通道被汽车占了，违反什么规定？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_6_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认工厂中防火门的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_0_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：工厂现场发现Hot work requires approval and onsite supervision，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "kitchen_exhaust_aug_1__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：请用审计视角回答：厨房排油烟管道长期不清洗会违反哪条规定？ 如果证据不足请明确说明。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "evacuation_map_missing_hard_aug_1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：高层楼层里没有张贴疏散示意图，这种情况对应规范是什么？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_1_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按法规审查：办公楼里Public venue opening fire safety check，给出依据。 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_4_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：Risk check for residential: gas cylinder. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_6_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认居民区中防火门的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "ds_open_images_v7_GB50016-8.4.1_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：参考公开数据集Open Images V7的场景分布，在办公楼发现手提灭火器被杂物遮挡，请给出法规依据并说明整改优先级。 Also explain in English briefly: fire extinguisher blocked by objects. 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_4_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: evacuation route. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rescue_access_blocked_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请进行法规核查：登高火灾安全车操作场地堆了杂物，这个问题对应哪些条款？ 并给出最小整改动作。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "hydrant_blocked_hard_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：室内室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心火灾报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_0_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：居民区现场发现Window barriers must not block escape and rescue，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_6_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认办公楼中自动喷水喷头被遮挡或损坏的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_0_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：办公楼现场发现Hazard rectification timeline，对应哪些火灾安全条款？；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_6_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认校园中电气线路过载或老化的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_4_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: training. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "control_room_staffing_hard_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：火灾安全控制室只有一个人值班，是否符合要求？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_2_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：在校园场景，Hot work requires approval and onsite supervision是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_3_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示室内消火栓前方被堆物占用，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_4_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：Risk check for campus: evacuation route. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_1_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请按法规审查：校园里Evacuation signage and floor maps，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_4_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：Risk check for office: fire extinguisher blocked by objects. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "alarm_device_fault_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请用审计视角回答：火灾火灾报警设备一直故障不修，管理上有什么要求？ 如果证据不足请明确说明。；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_5_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：校园出现自动喷水喷头被遮挡或损坏，该如何整改？ 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_0_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：居民区现场发现No hazardous goods storage in high-rise public areas，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_3_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示手提灭火器压力异常或失效，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "ds_dfire_FIRELAW-16_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：参考公开数据集D-Fire的场景分布，在校园发现Unit fire safety responsibilities，请给出法规依据并说明整改优先级。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_0_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现安全出口指示被遮挡，对应哪些火灾安全条款？；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "shaft_clutter_hard_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "emergency_plan_missing_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请用审计视角回答：单位没有灭火和应急疏散预案，违反什么规定？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_5_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请先给结论再给依据：校园出现Penalty for refusing rectification of e-bike charging hazards，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "alarm_device_fault_hard_aug_0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：火灾火灾报警设备一直故障不修，管理上有什么要求？ 同时担心火灾报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2",
+      "FIRELAW-34",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "ds_mivia_fire_detection_FIRELAW-16_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：参考公开数据集MIVIA Fire Detection Dataset的场景分布，在校园发现Unit fire safety responsibilities，请给出法规依据并说明整改优先级。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_6_v0__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认宿舍中Penalty for refusing rectification of e-bike charging hazards的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_6_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中Public venue opening fire safety check的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "e_bike_penalty_hard_aug_0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：高层住宅公共门厅给电瓶车补能如果不整改会怎么处罚？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_2_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：在校园场景，火灾报警是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "ds_detectium_fire_FIRELAW-16_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：参考公开数据集DetectiumFire的场景分布，在校园发现Unit fire safety responsibilities，请给出法规依据并说明整改优先级。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_1_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按法规审查：校园里Penalty for refusing rectification of e-bike charging hazards，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "aging_wire_hard_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请用审计视角回答：线路外皮老化破损还在继续使用，这个风险对应规范是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_6_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中室内消火栓前方被堆物占用的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_1_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请按法规审查：居民区里No gas cylinders in high-rise indoor areas，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_1_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按法规审查：办公楼里疏散通道被占用，给出依据。 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_2_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：在办公楼场景，自动喷水喷头被遮挡或损坏是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_1_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请按法规审查：工厂里Hot work requires approval and onsite supervision，给出依据。 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "evacuation_route_goods_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：疏散通道堆满快递箱，这个算什么风险点？ 并给出最小整改动作。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：办公楼现场发现电气线路过载或老化，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_6_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中手提灭火器压力异常或失效的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_6_v0__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认宿舍中Kitchen exhaust ducts require periodic cleaning的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_0_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现Regular emergency drills required，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_5_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请先给结论再给依据：办公楼出现Fire control room staffing requirement，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_5_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请先给结论再给依据：居民区出现Periodic fire inspection requirement，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_6_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认办公楼中No combustibles in cable shafts的合规性。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "combustible_near_heat_source_aug_0__blind",
+    "scene": "warehouse",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：可燃纸箱堆在配电柜旁边，这样存放合规吗？ 请只输出最关键的1-2条依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_0_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现No gas cylinders in high-rise indoor areas，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_1_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按法规审查：校园里Fire safety training and education，给出依据。 旁边同事还问了应急预案更新频率。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "combustible_near_heat_source_aug_1__blind",
+    "scene": "warehouse",
+    "query": "从合规角度快速核对：请进行法规核查：可燃纸箱堆在配电柜旁边，这样存放合规吗？ 并给出最小整改动作。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-3.3.8",
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_2_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：在办公楼场景，Window barriers must not block escape and rescue是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_0_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：办公楼现场发现疏散通道被占用，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_3_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示Periodic fire inspection requirement，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_0_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现Daily fire patrol requirement，对应哪些火灾安全条款？；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_5_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：办公楼出现室内消火栓前方被堆物占用，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：办公楼现场发现No blocking evacuation exits and fire lanes，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_6_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中Hazard rectification timeline的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "ds_mivia_fire_detection_FIRELAW-28_1_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：参考公开数据集MIVIA Fire Detection Dataset的场景分布，在居民区发现No blocking evacuation exits and fire lanes，请给出法规依据并说明整改优先级。 管理层还关心培训记录是否齐全。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_5_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请先给结论再给依据：校园出现Hot work requires approval and onsite supervision，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_4_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：Risk check for residential: evacuation map. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_0_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现Unit fire safety responsibilities，对应哪些火灾安全条款？；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_2_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：在居民区场景，Window barriers must not block escape and rescue是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_3_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示Hazard rectification timeline，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "hot_work_without_approval_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：高层建筑里电焊动火没有审批和监护，会触犯哪条？ 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_2_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：在工厂场景，火灾报警是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_6_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认工厂中手提灭火器压力异常或失效的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_2_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：在居民区场景，室内消火栓前方被堆物占用是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "e_bike_hallway_charging_hard_aug_0__blind",
+    "scene": "dormitory",
+    "query": "从合规角度快速核对：请用审计视角回答：宿舍疏散通道里给两轮电动车补能是否允许，对应规范是什么？ 另外有人反馈火灾安全演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "evacuation_map_missing_aug_0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请进行法规核查：高层楼层里没有张贴疏散示意图，这种情况对应规范是什么？ 并给出最小整改动作。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "hazard_rectification_delay_hard_aug_1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：发现火灾风险点后一直不整改，制度上有什么要求？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_1_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请按法规审查：居民区里Fire safety training and education，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "ds_open_images_v7_GB50016-10.1.5_1_v1__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：参考公开数据集Open Images V7的场景分布，在工厂发现室内消火栓前方被堆物占用，请给出法规依据并说明整改优先级。 管理层还关心培训记录是否齐全。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_4_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：Risk check for factory: hot work. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "ds_detectium_fire_GB50016-3.3.8_3_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：参考公开数据集DetectiumFire的场景分布，在居民区发现可燃物靠近热源，请给出法规依据并说明整改优先级。 Also explain in English briefly: combustible materials near heat source.；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_6_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认工厂中Regular emergency drills required的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_2_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：在居民区场景，No gas cylinders in high-rise indoor areas是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_5_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请先给结论再给依据：校园出现Periodic fire inspection requirement，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_6_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：作为安全负责人，我需要确认校园中火灾报警的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_2_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：在居民区场景，Hazard rectification timeline是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_2_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：在工厂场景，Public venue opening fire safety check是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_1_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按法规审查：办公楼里No blocking evacuation exits and fire lanes，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_5_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请先给结论再给依据：办公楼出现Fire lane and rescue operation ground must be clear，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "public_venue_opening_check_hard_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：公众聚集场所开业前没做火灾安全安全检查可以营业吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_2_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：在工厂场景，疏散通道被占用是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_3_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示火灾报警，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "ds_detectium_fire_FIRELAW-16_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：参考公开数据集DetectiumFire的场景分布，在办公楼发现Unit fire safety responsibilities，请给出法规依据并说明整改优先级。 Also explain in English briefly: responsibility. 旁边同事还问了应急预案更新频率。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_5_v1__blind",
+    "scene": "dormitory",
+    "query": "请按巡检视角判断：请先给结论再给依据：宿舍出现Penalty for refusing rectification of e-bike charging hazards，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_2_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：在居民区场景，Regular emergency drills required是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "periodic_inspection_missing_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：单位长期不做定期防火检查，这个管理要求在哪条？ 并给出最小整改动作。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-15_0_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：校园现场发现Public venue opening fire safety check，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-15"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_3_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示Equipment rooms cannot be used as storage，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_2_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：在工厂场景，防火门是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_1_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按法规审查：居民区里Emergency response and evacuation plan，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_6_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中Penalty for refusing rectification of e-bike charging hazards的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_0_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：工厂现场发现自动喷水喷头被遮挡或损坏，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_3_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Unit fire safety responsibilities，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_2_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：在工厂场景，Equipment rooms cannot be used as storage是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_0_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：居民区现场发现Penalty for refusing rectification of e-bike charging hazards，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "sprinkler_blocked_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：自动喷水头被装饰物挡住了，这属于什么风险点？ 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_1_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按法规审查：校园里Hot work requires approval and onsite supervision，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_2_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：在居民区场景，Unit fire safety responsibilities是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_4_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：Risk check for office: drill. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_3_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Periodic fire inspection requirement，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_2_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：在居民区场景，手提灭火器压力异常或失效是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_4_v0__blind",
+    "scene": "construction",
+    "query": "作为安全审查，请给出结论：Risk check for construction: multiple devices powered by one switch box. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_6_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中可燃物靠近热源的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "control_room_staffing_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请进行法规核查：火灾安全控制室只有一个人值班，是否符合要求？ 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_3_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示No combustibles in cable shafts，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "kitchen_exhaust_hard_aug_1__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：厨房排油烟管道长期不清洗会违反哪条规定？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_0_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：居民区现场发现Kitchen exhaust ducts require periodic cleaning，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_0_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：校园现场发现Evacuation signage and floor maps，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_4_v1__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：Risk check for campus: e-bike. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "fire_door_closer_broken_aug_0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：防火门闭门器坏了，门关不上，这违反什么要求？ 如果证据不足请明确说明。；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-20_3_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示No combustibles in cable shafts，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_6_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认居民区中Daily fire patrol requirement的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.1.5_0_v1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：办公楼现场发现室内消火栓前方被堆物占用，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_4_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：Risk check for campus: responsibility. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50084-10.1.1_0_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：办公楼现场发现自动喷水喷头被遮挡或损坏，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_4_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：Risk check for campus: fire lane. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_4_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: gas cylinder. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_3_v0__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示Emergency response and evacuation plan，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_5_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请先给结论再给依据：校园出现电气线路过载或老化，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_3_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Equipment rooms cannot be used as storage，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "ds_open_images_v7_GB50016-10.3.1_2_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：参考公开数据集Open Images V7的场景分布，在居民区发现安全出口指示被遮挡，请给出法规依据并说明整改优先级。 Also explain in English briefly: exit signage blocked or missing. 顺便还想确认日常巡检是否达标。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "sprinkler_painted_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：自动喷水喷头刷漆了还能正常使用吗？ 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "ds_open_images_v7_GB50016-10.1.5_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：参考公开数据集Open Images V7的场景分布，在办公楼发现室内消火栓前方被堆物占用，请给出法规依据并说明整改优先级。 Also explain in English briefly: hydrant access blocked.；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.1.5"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_1_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按法规审查：办公楼里No gas cylinders in high-rise indoor areas，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "rule_HMBF-43_5_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：居民区出现Emergency response and evacuation plan，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-43"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_0_v0__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现防火门，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_5_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：办公楼出现安全出口指示被遮挡，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_4_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：Risk check for residential: window escape. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_5_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：办公楼出现疏散通道被占用，该如何整改？ 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_1_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请按法规审查：居民区里No blocking evacuation exits and fire lanes，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_5_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请先给结论再给依据：办公楼出现Fire facility maintenance obligation，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "evacuation_map_missing_aug_1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：高层楼层里没有张贴疏散示意图，这种情况对应规范是什么？ 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-42",
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "electrical_overload_hard_aug_1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请进行法规核查：接线板接了很多大功率设备，这样用电是否违规？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "emergency_plan_missing_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：单位没有灭火和应急疏散预案，违反什么规定？ 请只输出最关键的1-2条依据。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-17_5_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：居民区出现No gas cylinders in high-rise indoor areas，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-17"
+    ]
+  },
+  {
+    "name": "periodic_inspection_missing_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：单位长期不做定期防火检查，这个管理要求在哪条？ 同时担心火灾报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_5_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请先给结论再给依据：校园出现Regular emergency drills required，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_2_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：在居民区场景，Daily fire patrol requirement是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按法规审查：办公楼里防火门，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "evacuation_route_goods_hard_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：疏散通道堆满快递箱，这个算什么风险点？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_1_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：请按法规审查：工厂里同一开关箱控制多台设备，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_5_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：工厂出现防火门，该如何整改？ 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_6_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认工厂中Unit fire safety responsibilities的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_0_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：办公楼现场发现手提灭火器被杂物遮挡，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "ds_sh17_GB50016-10.2.7_1_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：参考公开数据集SH17 PPE Dataset的场景分布，在办公楼发现电气线路过载或老化，请给出法规依据并说明整改优先级。 Also explain in English briefly: overloaded or aging electrical wiring.；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_2_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：在工厂场景，手提灭火器被杂物遮挡是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_3_v0__blind",
+    "scene": "industrial",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示同一开关箱控制多台设备，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_1_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请按法规审查：工厂里火灾报警，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "aging_wire_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：线路外皮老化破损还在继续使用，这个风险对应规范是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_2_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：在工厂场景，No blocking evacuation exits and fire lanes是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_1_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请按法规审查：工厂里防火门，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_5_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请先给结论再给依据：办公楼出现No hazardous goods storage in high-rise public areas，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_5_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：请先给结论再给依据：校园出现Daily fire patrol requirement，该如何整改？ 请优先返回1-2条最关键依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_GB50016-8.4.1_2_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：在居民区场景，手提灭火器被杂物遮挡是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-8.4.1"
+    ]
+  },
+  {
+    "name": "extinguisher_invalid_hard_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：手提灭火器压力表不在绿区还能继续放着吗？ 另有意见说电气风险点更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "e_bike_penalty_hard_aug_1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请进行法规核查：高层住宅公共门厅给电瓶车补能如果不整改会怎么处罚？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "ds_sh17_IND-POWER-001_0_v0__blind",
+    "scene": "industrial",
+    "query": "从合规角度快速核对：参考公开数据集SH17 PPE Dataset的场景分布，在工业现场发现同一开关箱控制多台设备，请给出法规依据并说明整改优先级。；并指出优先整改项。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "equipment_room_storage_hard_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：配电室被拿来堆纸箱和杂物，这样行吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-25",
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "e_bike_penalty_aug_1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请按风险点闭环管理要求判断：高层住宅公共门厅给电瓶车补能如果不整改会怎么处罚？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "ds_sh17_IND-POWER-001_0_v1__blind",
+    "scene": "construction",
+    "query": "作为安全审查，请给出结论：参考公开数据集SH17 PPE Dataset的场景分布，在工地发现同一开关箱控制多台设备，请给出法规依据并说明整改优先级。 Also explain in English briefly: multiple devices powered by one switch box. 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_1_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：请按法规审查：工厂里No hazardous goods storage in high-rise public areas，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_4_v1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：Risk check for office: window escape. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "ds_dfire_GB50016-10.2.7_3_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：参考公开数据集D-Fire的场景分布，在校园发现电气线路过载或老化，请给出法规依据并说明整改优先级。 Also explain in English briefly: overloaded or aging electrical wiring.；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-21_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按法规审查：办公楼里Window barriers must not block escape and rescue，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-21"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-7_3_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Penalty for refusing rectification of e-bike charging hazards，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-7"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_3_v0__blind",
+    "scene": "dormitory",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示Kitchen exhaust ducts require periodic cleaning，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "fire_lane_parking_aug_1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：火灾安全车通道被汽车占了，违反什么规定？ 如果证据不足请明确说明。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "drill_missing_hard_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：高层公共建筑一年都不组织火灾安全演练，可以吗？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 并给出最小整改动作。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-44",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_1_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按法规审查：办公楼里可燃物靠近热源，给出依据。 旁边同事还问了应急预案更新频率。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "sprinkler_painted_hard_aug_1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请用审计视角回答：自动喷水喷头刷漆了还能正常使用吗？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 如果证据不足请明确说明。 Also include one short English rationale.；请附上可执行建议。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：校园现场发现No blocking evacuation exits and fire lanes，对应哪些火灾安全条款？；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_1_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请按法规审查：办公楼里Kitchen exhaust ducts require periodic cleaning，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_4_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：Risk check for campus: daily patrol. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "ds_detectium_fire_FIRELAW-28_1_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：参考公开数据集DetectiumFire的场景分布，在办公楼发现No blocking evacuation exits and fire lanes，请给出法规依据并说明整改优先级。 Also explain in English briefly: evacuation route.；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_GB25506-2010-5.1_3_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示防火门，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_5_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：办公楼出现Evacuation signage and floor maps，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "e_bike_stairwell_parking_aug_0__blind",
+    "scene": "dormitory",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：电动自行车停在楼梯间门口算违法吗？ 请只输出最关键的1-2条依据。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.2.7_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：校园现场发现电气线路过载或老化，对应哪些火灾安全条款？；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.2.7"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_2_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：在工厂场景，同一开关箱控制多台设备是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "rule_HMBF-37_6_v1__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认居民区中No e-bike parking/charging in public evacuation areas的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-37"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_4_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: equipment room. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "periodic_inspection_missing_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：单位长期不做定期防火检查，这个管理要求在哪条？ 如果证据不足请明确说明。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-35",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_6_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认办公楼中Fire control room staffing requirement的合规性。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_HMBF-42_2_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：在办公楼场景，Evacuation signage and floor maps是否违规？请列出关键条款。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_2_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：在办公楼场景，Fire control room staffing requirement是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_5_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：居民区出现Fire control room staffing requirement，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_3_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示Regular emergency drills required，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_5_v0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请先给结论再给依据：办公楼出现Unit fire safety responsibilities，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_4_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: evacuation route blocked. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_HMBF-25_5_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：请先给结论再给依据：工厂出现Equipment rooms cannot be used as storage，该如何整改？ 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-25"
+    ]
+  },
+  {
+    "name": "emergency_plan_missing_aug_1__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：单位没有灭火和应急疏散预案，违反什么规定？ 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-43",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-34_1_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请按法规审查：居民区里Daily fire patrol requirement，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_6_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：作为安全负责人，我需要确认校园中Hot work requires approval and onsite supervision的合规性。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-36_3_v0__blind",
+    "scene": "factory",
+    "query": "从合规角度快速核对：你是火灾安全审查员。图像描述显示Hazard rectification timeline，请返回法规依据与处置建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-36"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-28_5_v0__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：请先给结论再给依据：办公楼出现No blocking evacuation exits and fire lanes，该如何整改？ 请优先返回1-2条最关键依据。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rescue_access_blocked_aug_0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：登高火灾安全车操作场地堆了杂物，这个问题对应哪些条款？ 请只输出最关键的1-2条依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ]
+  },
+  {
+    "name": "rule_HMBF-41_0_v1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：校园现场发现Fire safety training and education，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-41"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_3_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示安全出口指示被遮挡，请返回法规依据与处置建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_3_v0__blind",
+    "scene": "residential",
+    "query": "作为安全审查，请给出结论：你是火灾安全审查员。图像描述显示疏散通道被占用，请返回法规依据与处置建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_GB50016-6.4.10_0_v0__blind",
+    "scene": "campus",
+    "query": "从合规角度快速核对：校园现场发现疏散通道被占用，对应哪些火灾安全条款？；并指出优先整改项。",
+    "expected_ids": [
+      "GB50016-6.4.10"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_5_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请先给结论再给依据：居民区出现Fire facility maintenance obligation，该如何整改？ 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-26_1_v1__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：请按法规审查：居民区里Fire control room staffing requirement，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-26"
+    ]
+  },
+  {
+    "name": "rule_GB50140-3.1.2_1_v1__blind",
+    "scene": "factory",
+    "query": "作为安全审查，请给出结论：请按法规审查：工厂里手提灭火器压力异常或失效，给出依据。 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "GB50140-3.1.2"
+    ]
+  },
+  {
+    "name": "rule_IND-POWER-001_0_v1__blind",
+    "scene": "construction",
+    "query": "作为安全审查，请给出结论：工地现场发现同一开关箱控制多台设备，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "IND-POWER-001"
+    ]
+  },
+  {
+    "name": "sprinkler_blocked_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请进行法规核查：自动喷水头被装饰物挡住了，这属于什么风险点？ 并给出最小整改动作。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ]
+  },
+  {
+    "name": "signage_blocked_hard_aug_0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请按风险点闭环管理要求判断：安全出口指示标志被海报遮住了怎么办？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。 请只输出最关键的1-2条依据。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ]
+  },
+  {
+    "name": "shaft_clutter_aug_1__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：请进行法规核查：电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 并给出最小整改动作。 Also include one short English rationale.；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-20"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-34_4_v0__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：Risk check for campus: facility maintenance. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-34"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_3_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示Kitchen exhaust ducts require periodic cleaning，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "rule_GB50016-10.3.1_4_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：Risk check for office: exit signage blocked or missing. Please cite Chinese fire safety rules. 请优先返回1-2条最关键依据。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-10.3.1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_2_v1__blind",
+    "scene": "construction",
+    "query": "从合规角度快速核对：在工地场景，Hot work requires approval and onsite supervision是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_2_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：在工厂场景，Fire lane and rescue operation ground must be clear是否违规？请列出关键条款。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_HMBF-22_2_v0__blind",
+    "scene": "residential",
+    "query": "从合规角度快速核对：在居民区场景，Fire lane and rescue operation ground must be clear是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-22"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_4_v0__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：Risk check for residential: hazardous goods. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；并指出优先整改项。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "rule_HMBF-35_4_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：Risk check for office: periodic inspection. Please cite Chinese fire safety rules. 另有反馈说设备维护档案需要复核。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-35"
+    ]
+  },
+  {
+    "name": "rule_HMBF-47-1_6_v1__blind",
+    "scene": "construction",
+    "query": "作为安全审查，请给出结论：作为安全负责人，我需要确认工地中Hot work requires approval and onsite supervision的合规性。 管理层还关心培训记录是否齐全。 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-47-1"
+    ]
+  },
+  {
+    "name": "rule_FIRELAW-16_2_v1__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：在工厂场景，Unit fire safety responsibilities是否违规？请列出关键条款。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-44_5_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：请先给结论再给依据：居民区出现Regular emergency drills required，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-44"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_0_v0__blind",
+    "scene": "factory",
+    "query": "请按巡检视角判断：工厂现场发现可燃物靠近热源，对应哪些火灾安全条款？；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  },
+  {
+    "name": "rule_HMBF-23_2_v0__blind",
+    "scene": "office",
+    "query": "请按巡检视角判断：在办公楼场景，Kitchen exhaust ducts require periodic cleaning是否违规？请列出关键条款。 请优先返回1-2条最关键依据。；请附上可执行建议。",
+    "expected_ids": [
+      "HMBF-23"
+    ]
+  },
+  {
+    "name": "training_missing_aug_0__blind",
+    "scene": "office",
+    "query": "从合规角度快速核对：请用审计视角回答：单位从来不做火灾安全宣传教育培训，这合规吗？ 如果证据不足请明确说明。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-41",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_HMBF-18_3_v1__blind",
+    "scene": "residential",
+    "query": "请按巡检视角判断：你是火灾安全审查员。图像描述显示No hazardous goods storage in high-rise public areas，请返回法规依据与处置建议。 另有反馈说设备维护档案需要复核。 并补充一句可执行整改建议。；请按规范要点回答。",
+    "expected_ids": [
+      "HMBF-18"
+    ]
+  },
+  {
+    "name": "extinguisher_blocked_aug_1__blind",
+    "scene": "campus",
+    "query": "作为安全审查，请给出结论：请按风险点闭环管理要求判断：手提灭火器被箱子挡住了算不算违规，怎么整改？ 请只输出最关键的1-2条依据。 Also include one short English rationale.；请按规范要点回答。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ]
+  },
+  {
+    "name": "rule_GA95-2015-7.2_0_v1__blind",
+    "scene": "office",
+    "query": "作为安全审查，请给出结论：办公楼现场发现火灾报警，对应哪些火灾安全条款？ 旁边同事还问了应急预案更新频率。 并补充一句可执行整改建议。；并指出优先整改项。",
+    "expected_ids": [
+      "GA95-2015-7.2"
+    ]
+  },
+  {
+    "name": "rule_GB50016-3.3.8_5_v1__blind",
+    "scene": "campus",
+    "query": "请按巡检视角判断：请先给结论再给依据：校园出现可燃物靠近热源，该如何整改？ 并补充一句可执行整改建议。；请附上可执行建议。",
+    "expected_ids": [
+      "GB50016-3.3.8"
+    ]
+  }
+]

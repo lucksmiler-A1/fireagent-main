@@ -1,0 +1,109 @@
+[
+  {
+    "name": "e_bike_hallway_charging",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "HMBF-22",
+      "FIRELAW-21",
+      "FIRELAW-28"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 8124.45,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\",\"FIRELAW-28\"],\"should_refuse\":false,\"answer\":\"不行。依据：HMBF-37明确规定，电动自行车不得在楼梯间、走道（楼道）或门厅停放、充电；同时FIRELAW-28规定，不得占用、堵塞疏散通道和安全出口。宿舍楼道属于公共疏散区域，因此不能给电动车充电。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37",
+        "FIRELAW-28"
+      ],
+      "should_refuse": false,
+      "answer": "不行。依据：HMBF-37明确规定，电动自行车不得在楼梯间、走道（楼道）或门厅停放、充电；同时FIRELAW-28规定，不得占用、堵塞疏散通道和安全出口。宿舍楼道属于公共疏散区域，因此不能给电动车充电。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_hallway_charging_hard",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "DORM-4",
+      "RESP-7",
+      "GB50016-6.4.11",
+      "DORM-7"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "DORM-7"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 12024.72,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\",\"DORM-7\"],\"should_refuse\":false,\"answer\":\"不行。依据如下：1. 根据 HMBF-37，电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电；宿舍楼道属于走道/疏散通道，因此禁止在楼道内给电动车充电。2. 根据 DORM-7，宿舍管理员应对走廊、楼梯间等每日开展消防巡查并记录，发现楼道充电应及时制止并整改。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37",
+        "DORM-7"
+      ],
+      "should_refuse": false,
+      "answer": "不行。依据如下：1. 根据 HMBF-37，电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电；宿舍楼道属于走道/疏散通道，因此禁止在楼道内给电动车充电。2. 根据 DORM-7，宿舍管理员应对走廊、楼梯间等每日开展消防巡查并记录，发现楼道充电应及时制止并整改。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_stairwell_parking",
+    "scene": "dormitory",
+    "query": "电动自行车停在楼梯间门口算违法吗？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "EVCHARGE-4.1",
+      "GB50016-5.5.13",
+      "HMBF-33"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "HMBF-33"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 12473.7,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\"],\"should_refuse\":false,\"answer\":\"算违规。根据 HMBF-37，电动自行车不得停放或充电在楼梯间、走道或门厅等公共疏散区域；楼梯间门口若属于这类疏散区域，就不应停放。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37"
+      ],
+      "should_refuse": false,
+      "answer": "算违规。根据 HMBF-37，电动自行车不得停放或充电在楼梯间、走道或门厅等公共疏散区域；楼梯间门口若属于这类疏散区域，就不应停放。"
+    },
+    "error": ""
+  }
+]

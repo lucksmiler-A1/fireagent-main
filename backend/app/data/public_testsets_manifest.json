@@ -1,0 +1,186 @@
+﻿{
+  "version": "2026-04-19",
+  "datasets": [
+    {
+      "id": "dfire",
+      "name": "D-Fire",
+      "domain": "fire_and_smoke_detection",
+      "modality": ["image"],
+      "scale": {
+        "images": 21527,
+        "fire_boxes": 14692,
+        "smoke_boxes": 11865
+      },
+      "license_note": "Check repository LICENSE before redistribution.",
+      "source": {
+        "dataset": "https://github.com/gaia-solutions-on-demand/DFireDataset"
+      },
+      "key_notes": [
+        "Contains positive and negative scenes for robust detection.",
+        "Provides pre-split train/val/test links and YOLO labels."
+      ],
+      "hazard_mapping": [
+        "fire_smoke_visible",
+        "combustible_near_heat_source",
+        "electrical_overload_or_aging"
+      ]
+    },
+    {
+      "id": "mivia_fire_detection",
+      "name": "MIVIA Fire Detection Dataset",
+      "domain": "video_fire_smoke_detection",
+      "modality": ["video"],
+      "scale": {
+        "videos": 31,
+        "positive_videos": 14,
+        "negative_videos": 17
+      },
+      "license_note": "Research use; follow MIVIA access requirements.",
+      "source": {
+        "dataset": "https://mivia.unisa.it/datasets/video-analysis-datasets/fire-detection-dataset/"
+      },
+      "key_notes": [
+        "Negative set includes hard distractors such as red moving objects and cloud-like patterns.",
+        "Suitable for false-positive stress testing."
+      ],
+      "hazard_mapping": [
+        "fire_smoke_visible",
+        "open_set_non_fire_distractor"
+      ]
+    },
+    {
+      "id": "onfire_2025",
+      "name": "ONFIRE Contest 2025 Dataset",
+      "domain": "video_early_fire_detection",
+      "modality": ["video"],
+      "scale": {
+        "training_videos": ">300"
+      },
+      "license_note": "Follow contest rules for data usage and redistribution.",
+      "source": {
+        "dataset": "https://mivia.unisa.it/onfire2025/"
+      },
+      "key_notes": [
+        "Scenario-level difficulty tags (LA-SR, LA-LR, HA-LR, HA-SR).",
+        "Uses fire-start instant annotation, supports latency-aware metrics."
+      ],
+      "hazard_mapping": [
+        "fire_smoke_visible",
+        "early_warning_latency"
+      ]
+    },
+    {
+      "id": "shwd",
+      "name": "Safety Helmet Wearing Dataset (SHWD)",
+      "domain": "construction_ppe_detection",
+      "modality": ["image"],
+      "scale": {
+        "images": 7581,
+        "helmet_positive_objects": 9044,
+        "head_negative_objects": 111514
+      },
+      "license_note": "MIT repository license; check linked data source terms.",
+      "source": {
+        "dataset": "https://github.com/njvisionpower/Safety-Helmet-Wearing-Dataset"
+      },
+      "key_notes": [
+        "Directly supports construction safety extension in industrial scenes.",
+        "Good for helmet-compliance hazard priors."
+      ],
+      "hazard_mapping": [
+        "ppe_missing_helmet",
+        "construction_site_compliance"
+      ]
+    },
+    {
+      "id": "sh17",
+      "name": "SH17 PPE Dataset",
+      "domain": "industrial_ppe_detection",
+      "modality": ["image"],
+      "scale": {
+        "images": 8099,
+        "instances": 75994,
+        "classes": 17
+      },
+      "license_note": "CC BY-NC-SA 4.0; verify non-commercial restriction for releases.",
+      "source": {
+        "dataset": "https://github.com/ahmadmughees/SH17dataset"
+      },
+      "key_notes": [
+        "Includes helmet, vest, gloves, face protection and tool-related classes.",
+        "Provides baseline mAP results for YOLO families."
+      ],
+      "hazard_mapping": [
+        "ppe_missing_helmet",
+        "ppe_missing_vest",
+        "industrial_operation_risk"
+      ]
+    },
+    {
+      "id": "open_images_v7",
+      "name": "Open Images V7",
+      "domain": "large_scale_open_world_detection",
+      "modality": ["image", "text"],
+      "scale": {
+        "images": 9000000,
+        "dense_subset_images": 1900000
+      },
+      "license_note": "Open Images license and attribution rules apply.",
+      "source": {
+        "dataset": "https://storage.googleapis.com/openimages/web/factsfigures_v7.html",
+        "release_blog": "https://research.google/blog/open-images-v7-now-featuring-point-labels/"
+      },
+      "key_notes": [
+        "Useful for open-set distractor and long-tail object robustness.",
+        "Densely annotated subset supports hard-negative mining."
+      ],
+      "hazard_mapping": [
+        "open_set_non_fire_distractor",
+        "equipment_visibility_and_occlusion"
+      ]
+    },
+    {
+      "id": "detectium_fire",
+      "name": "DetectiumFire",
+      "domain": "multimodal_fire_reasoning",
+      "modality": ["image", "video", "text"],
+      "scale": {
+        "images": 22500,
+        "videos": 2500
+      },
+      "license_note": "Released by authors via linked dataset page (Kaggle).",
+      "source": {
+        "paper": "https://arxiv.org/abs/2511.02495"
+      },
+      "key_notes": [
+        "NeurIPS 2025 poster dataset for CV+language fire reasoning tasks.",
+        "Supports joint object detection and VLM-style risk reasoning benchmarks."
+      ],
+      "hazard_mapping": [
+        "fire_smoke_visible",
+        "scene_observation_to_risk_reasoning"
+      ]
+    },
+    {
+      "id": "mmodalfire",
+      "name": "MmodalFire",
+      "domain": "indoor_multimodal_fire_detection",
+      "modality": ["video", "sensor", "thermal"],
+      "scale": {
+        "setting": "continuous multimodal indoor sequences"
+      },
+      "license_note": "Scientific Data publication terms apply.",
+      "source": {
+        "paper": "https://www.nature.com/articles/s41597-026-06810-6"
+      },
+      "key_notes": [
+        "Includes synchronized RGB video and physical sensing streams.",
+        "Useful for missing-modality and sensor-failure ablation."
+      ],
+      "hazard_mapping": [
+        "missing_modality_robustness",
+        "sensor_visual_fusion"
+      ]
+    }
+  ]
+}

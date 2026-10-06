@@ -1,0 +1,60 @@
+{
+  "dev": [
+    {
+      "profile": "iter7_dynamic",
+      "case_count": 650,
+      "top1_hit_rate": 0.5092,
+      "top3_hit_rate": 0.9123,
+      "mrr": 0.7019,
+      "avg_latency_ms": 9.69,
+      "p95_latency_ms": 15.08
+    },
+    {
+      "profile": "iter8_set_selection",
+      "case_count": 650,
+      "top1_hit_rate": 0.5092,
+      "top3_hit_rate": 0.9,
+      "mrr": 0.7047,
+      "avg_latency_ms": 9.99,
+      "p95_latency_ms": 15.85
+    },
+    {
+      "profile": "iter9_evidence_tree",
+      "case_count": 650,
+      "top1_hit_rate": 0.5938,
+      "top3_hit_rate": 0.9015,
+      "mrr": 0.7447,
+      "avg_latency_ms": 11.98,
+      "p95_latency_ms": 17.26
+    }
+  ],
+  "blind": [
+    {
+      "profile": "iter7_dynamic",
+      "case_count": 650,
+      "top1_hit_rate": 0.4554,
+      "top3_hit_rate": 0.8769,
+      "mrr": 0.6555,
+      "avg_latency_ms": 11.29,
+      "p95_latency_ms": 16.48
+    },
+    {
+      "profile": "iter8_set_selection",
+      "case_count": 650,
+      "top1_hit_rate": 0.4554,
+      "top3_hit_rate": 0.8662,
+      "mrr": 0.656,
+      "avg_latency_ms": 11.34,
+      "p95_latency_ms": 15.86
+    },
+    {
+      "profile": "iter9_evidence_tree",
+      "case_count": 650,
+      "top1_hit_rate": 0.5338,
+      "top3_hit_rate": 0.8585,
+      "mrr": 0.6899,
+      "avg_latency_ms": 12.99,
+      "p95_latency_ms": 17.21
+    }
+  ]
+}

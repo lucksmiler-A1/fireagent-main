@@ -1,0 +1,70 @@
+<view class="page">
+  <view class="hero">
+    <view class="hero-badge">AGENT</view>
+    <view class="hero-title">消防智能助手</view>
+    <view class="hero-subtitle">会查法规、会看历史、会给整改建议</view>
+  </view>
+
+  <view class="toolbar">
+    <view class="scene-label">场景</view>
+    <picker mode="selector" range="{{sceneOptions}}" range-key="label" value="{{sceneIndex}}" bindchange="onSceneChange">
+      <view class="scene-picker">{{sceneOptions[sceneIndex].label}}</view>
+    </picker>
+  </view>
+
+  <view class="quick-section">
+    <view class="quick-title">快捷提问</view>
+    <scroll-view class="quick-scroll" scroll-x="true" enable-flex="true">
+      <view class="quick-list">
+        <view class="quick-chip" wx:for="{{quickPrompts}}" wx:key="*this" data-prompt="{{item}}" bindtap="onTapPrompt">{{item}}</view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <scroll-view class="chat-panel" scroll-y="true" scroll-with-animation="true" scroll-into-view="{{scrollIntoView}}">
+    <view class="message-list">
+      <view
+        class="message {{item.role === 'assistant' ? 'assistant' : 'user'}}"
+        wx:for="{{messages}}"
+        wx:key="id"
+        id="msg-{{item.id}}"
+      >
+        <view class="message-role">{{item.role === 'assistant' ? '助手' : '我'}}</view>
+        <view class="message-bubble">{{item.content}}</view>
+
+        <view class="meta-chips" wx:if="{{item.role === 'assistant' && item.used_tools && item.used_tools.length}}">
+          <text class="meta-chip" wx:for="{{item.used_tools}}" wx:key="*this">{{item}}</text>
+        </view>
+
+        <view class="assistant-extra" wx:if="{{item.role === 'assistant' && item.citations && item.citations.length}}">
+          <view class="citation-card" wx:for="{{item.citations}}" wx:key="index">
+            <view class="citation-title">{{item.source}} {{item.article}}</view>
+            <view class="citation-quote">{{item.quote}}</view>
+          </view>
+        </view>
+
+        <view class="assistant-extra" wx:if="{{item.role === 'assistant' && item.next_actions && item.next_actions.length}}">
+          <view class="next-title">接下来可以继续问</view>
+          <view class="next-action" wx:for="{{item.next_actions}}" wx:key="index">{{item}}</view>
+        </view>
+      </view>
+
+      <view class="loading-card" wx:if="{{loading}}">
+        <view class="loading-title">助手正在组织回答</view>
+        <view class="loading-subtitle">它会按需要自动查法规、历史记录和趋势洞察</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="composer">
+    <textarea
+      class="composer-input"
+      maxlength="500"
+      placeholder="问我消防法规、历史隐患、整改建议..."
+      value="{{inputValue}}"
+      bindinput="onInput"
+      auto-height="true"
+    />
+    <button class="send-button" bindtap="onSend" loading="{{loading}}" disabled="{{loading}}">发送</button>
+  </view>
+</view>

@@ -1,0 +1,318 @@
+[
+  {
+    "profile": "B_standard_single_rag_keyword_topk",
+    "case_count": 3,
+    "top1_hit_rate": 1.0,
+    "top3_hit_rate": 1.0,
+    "mrr": 1.0,
+    "top1_ci95": {
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    "top3_ci95": {
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    "mrr_ci95": {
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    "avg_latency_ms": 62.52,
+    "p95_latency_ms": 99.93,
+    "rows": [
+      {
+        "name": "e_bike_hallway_charging",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "HMBF-37",
+          "GB50016-6.4.11",
+          "HMBF-22",
+          "FIRELAW-21",
+          "FIRELAW-28"
+        ],
+        "hit_top1": true,
+        "hit_top3": true,
+        "mrr": 1.0,
+        "latency_ms": 55.02
+      },
+      {
+        "name": "e_bike_hallway_charging_hard",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "HMBF-37",
+          "DORM-4",
+          "RESP-7",
+          "GB50016-6.4.11",
+          "DORM-7"
+        ],
+        "hit_top1": true,
+        "hit_top3": true,
+        "mrr": 1.0,
+        "latency_ms": 99.93
+      },
+      {
+        "name": "e_bike_stairwell_parking",
+        "scene": "dormitory",
+        "query": "电动自行车停在楼梯间门口算违法吗？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28"
+        ],
+        "returned_ids": [
+          "HMBF-37",
+          "GB50016-6.4.11",
+          "EVCHARGE-4.1",
+          "GB50016-5.5.13",
+          "HMBF-33"
+        ],
+        "hit_top1": true,
+        "hit_top3": true,
+        "mrr": 1.0,
+        "latency_ms": 32.61
+      }
+    ],
+    "overrides": {
+      "RAG_ENABLE_QUERY_REWRITE": false,
+      "RAG_QUERY_REWRITE_USE_LLM": false,
+      "RAG_ENABLE_TEXT_REPAIR": true,
+      "RAG_ENABLE_DYNAMIC_TOP_K": false,
+      "RAG_ENABLE_DYNAMIC_QUERY_BUDGET": false,
+      "RAG_ENABLE_MMR_SELECTION": false,
+      "RAG_ENABLE_SET_SELECTION": false,
+      "RAG_ENABLE_EVIDENCE_TREE_SEARCH": false,
+      "RAG_ENABLE_HAZARD_HINT_ROUTING": false,
+      "RAG_ENABLE_DENSE_RETRIEVAL": false,
+      "RAG_ENABLE_RERANK": false,
+      "RAG_RETRIEVAL_MODE": "keyword"
+    }
+  },
+  {
+    "profile": "Ours_full_method_local",
+    "case_count": 3,
+    "top1_hit_rate": 0.3333,
+    "top3_hit_rate": 0.6667,
+    "mrr": 0.5111,
+    "top1_ci95": {
+      "mean": 0.3333,
+      "low": 0.0,
+      "high": 1.0
+    },
+    "top3_ci95": {
+      "mean": 0.6667,
+      "low": 0.0,
+      "high": 1.0
+    },
+    "mrr_ci95": {
+      "mean": 0.5111,
+      "low": 0.2,
+      "high": 1.0
+    },
+    "avg_latency_ms": 77.79,
+    "p95_latency_ms": 113.03,
+    "rows": [
+      {
+        "name": "e_bike_hallway_charging",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "HMBF-22",
+          "FIRELAW-21",
+          "HMBF-37",
+          "GB50016-6.4.11",
+          "FIRELAW-28"
+        ],
+        "hit_top1": false,
+        "hit_top3": true,
+        "mrr": 0.3333333333333333,
+        "latency_ms": 58.58
+      },
+      {
+        "name": "e_bike_hallway_charging_hard",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "HMBF-44",
+          "DORM-4",
+          "FIRELAW-21",
+          "HMBF-22",
+          "HMBF-37"
+        ],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.2,
+        "latency_ms": 113.03
+      },
+      {
+        "name": "e_bike_stairwell_parking",
+        "scene": "dormitory",
+        "query": "电动自行车停在楼梯间门口算违法吗？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28"
+        ],
+        "returned_ids": [
+          "HMBF-37",
+          "HMBF-47-7",
+          "HMBF-33",
+          "EBIKE-8.3",
+          "GB50016-12.0.9"
+        ],
+        "hit_top1": true,
+        "hit_top3": true,
+        "mrr": 1.0,
+        "latency_ms": 61.76
+      }
+    ],
+    "overrides": {
+      "RAG_ENABLE_QUERY_REWRITE": true,
+      "RAG_QUERY_REWRITE_USE_LLM": false,
+      "RAG_ENABLE_TEXT_REPAIR": true,
+      "RAG_ENABLE_DYNAMIC_TOP_K": true,
+      "RAG_ENABLE_DYNAMIC_QUERY_BUDGET": true,
+      "RAG_ENABLE_MMR_SELECTION": true,
+      "RAG_ENABLE_SET_SELECTION": true,
+      "RAG_ENABLE_EVIDENCE_TREE_SEARCH": true,
+      "RAG_ENABLE_HAZARD_HINT_ROUTING": true,
+      "RAG_ENABLE_DENSE_RETRIEVAL": false,
+      "RAG_ENABLE_RERANK": false,
+      "RAG_RETRIEVAL_MODE": "hybrid"
+    }
+  },
+  {
+    "profile": "direct_model_no_rag:gpt-5.4-high",
+    "case_count": 3,
+    "top1_hit_rate": 0.0,
+    "top3_hit_rate": 0.0,
+    "mrr": 0.0,
+    "top1_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "top3_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "mrr_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "avg_latency_ms": 18652.93,
+    "p95_latency_ms": 25322.34,
+    "rows": [
+      {
+        "name": "e_bike_hallway_charging",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "《中华人民共和国消防法》第二十八条",
+          "《高层民用建筑消防安全管理规定》第三十七条"
+        ],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.0,
+        "latency_ms": 25322.34,
+        "raw_content": "{\n  \"risk_level\": \"high\",\n  \"rule_ids\": [\n    \"《中华人民共和国消防法》第二十八条\",\n    \"《高层民用建筑消防安全管理规定》第三十七条\"\n  ],\n  \"should_refuse\": false,\n  \"answer\": \"不行。宿舍楼道一般属于疏散通道/疏散走道，在楼道里给电动车充电有较大火灾风险，也可能妨碍人员逃生。依据主要是：1.《中华人民共和国消防法》第二十八条：任何单位、个人不得占用、堵塞、封闭疏散通道、安全出口等。2.如果宿舍楼属于高层民用建筑，《高层民用建筑消防安全管理规定》第三十七条明确规定：禁止在高层民用建筑公共门厅、疏散走道、楼梯间、安全出口停放电动自行车或者为电动自行车充电。实践中应当在学校设置的集中停放、集中充电点进行充电。\"\n}",
+        "parsed": {
+          "risk_level": "high",
+          "rule_ids": [
+            "《中华人民共和国消防法》第二十八条",
+            "《高层民用建筑消防安全管理规定》第三十七条"
+          ],
+          "should_refuse": false,
+          "answer": "不行。宿舍楼道一般属于疏散通道/疏散走道，在楼道里给电动车充电有较大火灾风险，也可能妨碍人员逃生。依据主要是：1.《中华人民共和国消防法》第二十八条：任何单位、个人不得占用、堵塞、封闭疏散通道、安全出口等。2.如果宿舍楼属于高层民用建筑，《高层民用建筑消防安全管理规定》第三十七条明确规定：禁止在高层民用建筑公共门厅、疏散走道、楼梯间、安全出口停放电动自行车或者为电动自行车充电。实践中应当在学校设置的集中停放、集中充电点进行充电。"
+        },
+        "error": ""
+      },
+      {
+        "name": "e_bike_hallway_charging_hard",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "《中华人民共和国消防法》第二十八条",
+          "《高层民用建筑消防安全管理规定》第三十七条"
+        ],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.0,
+        "latency_ms": 15352.78,
+        "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"《中华人民共和国消防法》第二十八条\",\"《高层民用建筑消防安全管理规定》第三十七条\"],\"should_refuse\":false,\"answer\":\"结论：一般不行；如果宿舍属于高层民用建筑，则在楼道（疏散走道）给电动车充电属于明令禁止。\\n\\n1. 《高层民用建筑消防安全管理规定》第三十七条：禁止在高层民用建筑公共门厅、疏散走道、楼梯间、安全出口停放电动自行车或者为电动自行车充电。\\n2. 《中华人民共和国消防法》第二十八条：任何单位、个人不得占用、堵塞、封闭疏散通道、安全出口。宿舍楼道属于疏散通道，在楼道内停放、充电易妨碍疏散并增加火灾风险，因此不应在楼道内充电。\"}",
+        "parsed": {
+          "risk_level": "high",
+          "rule_ids": [
+            "《中华人民共和国消防法》第二十八条",
+            "《高层民用建筑消防安全管理规定》第三十七条"
+          ],
+          "should_refuse": false,
+          "answer": "结论：一般不行；如果宿舍属于高层民用建筑，则在楼道（疏散走道）给电动车充电属于明令禁止。\n\n1. 《高层民用建筑消防安全管理规定》第三十七条：禁止在高层民用建筑公共门厅、疏散走道、楼梯间、安全出口停放电动自行车或者为电动自行车充电。\n2. 《中华人民共和国消防法》第二十八条：任何单位、个人不得占用、堵塞、封闭疏散通道、安全出口。宿舍楼道属于疏散通道，在楼道内停放、充电易妨碍疏散并增加火灾风险，因此不应在楼道内充电。"
+        },
+        "error": ""
+      },
+      {
+        "name": "e_bike_stairwell_parking",
+        "scene": "dormitory",
+        "query": "电动自行车停在楼梯间门口算违法吗？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28"
+        ],
+        "returned_ids": [
+          "《中华人民共和国消防法》第二十八条",
+          "《高层民用建筑消防安全管理规定》第三十七条"
+        ],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.0,
+        "latency_ms": 15283.68,
+        "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"《中华人民共和国消防法》第二十八条\",\"《高层民用建筑消防安全管理规定》第三十七条\"],\"should_refuse\":false,\"answer\":\"一般算违法或至少属于明确的消防违法/违规行为。电动自行车停在楼梯间门口，通常会占用、堵塞疏散通道或安全出口，影响人员逃生和灭火救援。最直接的依据是：1.《中华人民共和国消防法》第二十八条：禁止占用、堵塞、封闭疏散通道、安全出口。2. 如果该宿舍属于高层民用建筑，《高层民用建筑消防安全管理规定》第三十七条明确规定：禁止在公共门厅、疏散走道、楼梯间、安全出口停放电动自行车或者为其充电。也就是说，停在楼梯间门口通常不允许；若同时伴随充电，风险和违法性更明显。\"}",
+        "parsed": {
+          "risk_level": "high",
+          "rule_ids": [
+            "《中华人民共和国消防法》第二十八条",
+            "《高层民用建筑消防安全管理规定》第三十七条"
+          ],
+          "should_refuse": false,
+          "answer": "一般算违法或至少属于明确的消防违法/违规行为。电动自行车停在楼梯间门口，通常会占用、堵塞疏散通道或安全出口，影响人员逃生和灭火救援。最直接的依据是：1.《中华人民共和国消防法》第二十八条：禁止占用、堵塞、封闭疏散通道、安全出口。2. 如果该宿舍属于高层民用建筑，《高层民用建筑消防安全管理规定》第三十七条明确规定：禁止在公共门厅、疏散走道、楼梯间、安全出口停放电动自行车或者为其充电。也就是说，停在楼梯间门口通常不允许；若同时伴随充电，风险和违法性更明显。"
+        },
+        "error": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/upload/upload",
+    "pages/agent/agent",
+    "pages/result/result",
+    "pages/history/history",
+    "pages/record/record"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "消防隐患识别",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.writePhotosAlbum": {
+      "desc": "保存识别结果到相册"
+    }
+  }
+}

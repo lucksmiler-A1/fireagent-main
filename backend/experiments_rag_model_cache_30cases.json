@@ -1,0 +1,1038 @@
+[
+  {
+    "name": "e_bike_hallway_charging",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "HMBF-22",
+      "FIRELAW-21",
+      "FIRELAW-28"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 8829.53,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\",\"FIRELAW-28\"],\"should_refuse\":false,\"answer\":\"不行。依据：HMBF-37明确规定，电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电；宿舍楼道属于公共疏散通道。另依据FIRELAW-28，禁止占用、堵塞疏散通道和安全出口。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37",
+        "FIRELAW-28"
+      ],
+      "should_refuse": false,
+      "answer": "不行。依据：HMBF-37明确规定，电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电；宿舍楼道属于公共疏散通道。另依据FIRELAW-28，禁止占用、堵塞疏散通道和安全出口。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_hallway_charging_hard",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "DORM-4",
+      "RESP-7",
+      "GB50016-6.4.11",
+      "DORM-7"
+    ],
+    "returned_ids": [
+      "HMBF-37"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 10305.91,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\"],\"should_refuse\":false,\"answer\":\"不行。依据 HMBF-37：①电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放；②不得在上述区域充电。宿舍楼道属于走道/公共疏散区域，因此在宿舍楼道给电动车充电属于禁止行为。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37"
+      ],
+      "should_refuse": false,
+      "answer": "不行。依据 HMBF-37：①电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放；②不得在上述区域充电。宿舍楼道属于走道/公共疏散区域，因此在宿舍楼道给电动车充电属于禁止行为。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_stairwell_parking",
+    "scene": "dormitory",
+    "query": "电动自行车停在楼梯间门口算违法吗？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "EVCHARGE-4.1",
+      "GB50016-5.5.13",
+      "HMBF-33"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "HMBF-33"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 11150.02,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\"],\"should_refuse\":false,\"answer\":\"算违规。依据 HMBF-37，电动自行车不得停放或充电在楼梯间、走道或门厅等公共疏散区域；楼梯间门口通常属于这类区域，会妨碍疏散、增加火灾风险，应立即移走。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37"
+      ],
+      "should_refuse": false,
+      "answer": "算违规。依据 HMBF-37，电动自行车不得停放或充电在楼梯间、走道或门厅等公共疏散区域；楼梯间门口通常属于这类区域，会妨碍疏散、增加火灾风险，应立即移走。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_stairwell_parking_hard",
+    "scene": "dormitory",
+    "query": "电动自行车停在楼梯间门口算违法吗？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "DORM-7",
+      "HOTEL-1",
+      "HOSPITAL-3",
+      "DORM-4"
+    ],
+    "returned_ids": [
+      "HMBF-37"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 18263.48,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\"],\"should_refuse\":false,\"answer\":\"是，按所给依据可认定为违规。关键依据：1）HMBF-37规定：电动自行车不得停放或充电于楼梯间、走道或门厅；2）因此，停在楼梯间门口属于占用/临近公共疏散区域，不允许。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37"
+      ],
+      "should_refuse": false,
+      "answer": "是，按所给依据可认定为违规。关键依据：1）HMBF-37规定：电动自行车不得停放或充电于楼梯间、走道或门厅；2）因此，停在楼梯间门口属于占用/临近公共疏散区域，不允许。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_penalty",
+    "scene": "residential",
+    "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ],
+    "evidence_ids": [
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "EVCHARGE-4.1",
+      "HMBF-36",
+      "FIRELAW-60"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "HMBF-36",
+      "FIRELAW-60"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 8955.95,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\",\"HMBF-36\",\"FIRELAW-60\"],\"should_refuse\":false,\"answer\":\"高层住宅公共门厅属于禁止停放、充电电瓶车的区域。发现此类火灾隐患后应当及时整改；如果在责令整改期限内仍不整改，可能被依法处罚，包括罚款，以及其他行政处罚。现有证据未提供具体罚款金额。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37",
+        "HMBF-36",
+        "FIRELAW-60"
+      ],
+      "should_refuse": false,
+      "answer": "高层住宅公共门厅属于禁止停放、充电电瓶车的区域。发现此类火灾隐患后应当及时整改；如果在责令整改期限内仍不整改，可能被依法处罚，包括罚款，以及其他行政处罚。现有证据未提供具体罚款金额。"
+    },
+    "error": ""
+  },
+  {
+    "name": "e_bike_penalty_hard",
+    "scene": "residential",
+    "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-47-7",
+      "HMBF-37"
+    ],
+    "evidence_ids": [
+      "EVCHARGE-4.1",
+      "FIRELAW-34",
+      "HMBF-37",
+      "GB50016-6.4.11",
+      "HMBF-36"
+    ],
+    "returned_ids": [
+      "HMBF-37",
+      "HMBF-36"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 9476.6,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-37\",\"HMBF-36\"],\"should_refuse\":true,\"answer\":\"依据现有证据，只能确认该行为属于禁止情形并应立即整改，无法据此得出具体“怎么处罚”的结论，因为提供的证据中没有处罚条款。最关键依据：1. HMBF-37：电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电。2. HMBF-36：发现的火灾隐患应当及时整改并落实责任措施。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-37",
+        "HMBF-36"
+      ],
+      "should_refuse": true,
+      "answer": "依据现有证据，只能确认该行为属于禁止情形并应立即整改，无法据此得出具体“怎么处罚”的结论，因为提供的证据中没有处罚条款。最关键依据：1. HMBF-37：电动自行车不得在楼梯间、走道、门厅等公共疏散区域停放或充电。2. HMBF-36：发现的火灾隐患应当及时整改并落实责任措施。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_lane_parking",
+    "scene": "campus",
+    "query": "消防车通道被汽车占了，违反什么规定？",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-22",
+      "FIRELAW-21",
+      "FIRELAW-28",
+      "GB50016-6.4.11",
+      "GB50016-7.1.5"
+    ],
+    "returned_ids": [
+      "FIRELAW-21",
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 9589.2,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-21\",\"HMBF-22\",\"FIRELAW-28\"],\"should_refuse\":false,\"answer\":\"违反了消防车通道不得被占用、堵塞的规定。依据包括：FIRELAW-21（消防车通道不得占用、堵塞、封闭），HMBF-22（消防车通道和灭火救援场地不得被占用或堵塞），以及 FIRELAW-28（禁止占用、堵塞消防车通道）。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-21",
+        "HMBF-22",
+        "FIRELAW-28"
+      ],
+      "should_refuse": false,
+      "answer": "违反了消防车通道不得被占用、堵塞的规定。依据包括：FIRELAW-21（消防车通道不得占用、堵塞、封闭），HMBF-22（消防车通道和灭火救援场地不得被占用或堵塞），以及 FIRELAW-28（禁止占用、堵塞消防车通道）。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_lane_parking_hard",
+    "scene": "campus",
+    "query": "消防车通道被汽车占了，违反什么规定？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "FIRELAW-21",
+      "GB50016-7.1.5",
+      "DORM-4",
+      "DORM-7",
+      "SCHOOL-1"
+    ],
+    "returned_ids": [
+      "FIRELAW-21",
+      "GB50016-7.1.5"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 7276.17,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-21\",\"GB50016-7.1.5\"],\"should_refuse\":false,\"answer\":\"属于违反消防车通道管理规定，关键依据可引用：1. FIRELAW-21：消防车通道不得被占用、堵塞或者封闭，违法停车持续存在的，可依法处罚。2. GB50016-7.1.5：消防车道的净宽、净高均不应小于4.0m，车辆不得侵占该通行净空。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-21",
+        "GB50016-7.1.5"
+      ],
+      "should_refuse": false,
+      "answer": "属于违反消防车通道管理规定，关键依据可引用：1. FIRELAW-21：消防车通道不得被占用、堵塞或者封闭，违法停车持续存在的，可依法处罚。2. GB50016-7.1.5：消防车道的净宽、净高均不应小于4.0m，车辆不得侵占该通行净空。"
+    },
+    "error": ""
+  },
+  {
+    "name": "rescue_access_blocked",
+    "scene": "office",
+    "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "HMBF-22",
+      "FIRELAW-21",
+      "FIRELAW-28",
+      "GB50016-7.1.5",
+      "GB50016-7.1.8"
+    ],
+    "returned_ids": [
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 7763.05,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"HMBF-22\"],\"should_refuse\":false,\"answer\":\"对应条款主要是 HMBF-22：消防车通道和灭火救援操作场地不得被占用、堵塞。登高消防车操作场地堆放杂物，属于占用/堵塞灭火救援操作场地。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "HMBF-22"
+      ],
+      "should_refuse": false,
+      "answer": "对应条款主要是 HMBF-22：消防车通道和灭火救援操作场地不得被占用、堵塞。登高消防车操作场地堆放杂物，属于占用/堵塞灭火救援操作场地。"
+    },
+    "error": ""
+  },
+  {
+    "name": "rescue_access_blocked_hard",
+    "scene": "office",
+    "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-22",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "GB50016-7.1.5",
+      "FIRELAW-21",
+      "HOSPITAL-3",
+      "RESP-7",
+      "HOTEL-2"
+    ],
+    "returned_ids": [
+      "GB50016-7.1.5",
+      "FIRELAW-21"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 18372.99,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-7.1.5\",\"FIRELAW-21\"],\"should_refuse\":true,\"answer\":\"现有证据中没有直接针对“登高消防车操作场地不得堆放杂物”的专门条款，因此不能仅凭这些证据作出精确对应。若该处属于消防车通道或其净空范围，最接近的依据是：1. GB50016-7.1.5：消防车道的净宽、净高均不应小于4.0m，且不得被车辆、植物、构筑物侵占。2. FIRELAW-21：消防车通道不得占用、堵塞、封闭。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-7.1.5",
+        "FIRELAW-21"
+      ],
+      "should_refuse": true,
+      "answer": "现有证据中没有直接针对“登高消防车操作场地不得堆放杂物”的专门条款，因此不能仅凭这些证据作出精确对应。若该处属于消防车通道或其净空范围，最接近的依据是：1. GB50016-7.1.5：消防车道的净宽、净高均不应小于4.0m，且不得被车辆、植物、构筑物侵占。2. FIRELAW-21：消防车通道不得占用、堵塞、封闭。"
+    },
+    "error": ""
+  },
+  {
+    "name": "extinguisher_blocked",
+    "scene": "campus",
+    "query": "灭火器被箱子挡住了算不算违规，怎么整改？",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "returned_ids": [
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 7376.99,
+    "raw_content": "{\"risk_level\":\"medium\",\"rule_ids\":[\"GB50016-8.4.1\",\"HMBF-36\"],\"should_refuse\":false,\"answer\":\"算违规。依据 GB50016-8.4.1，灭火器应设置在明显、便于取用的位置，且不得被物品遮挡。整改建议：立即移开挡住灭火器的箱子，恢复其明显、可直接取用状态；如现位置不合适，应调整到醒目、便于取用的位置，并按 HMBF-36 要求及时落实整改责任。\"}",
+    "parsed": {
+      "risk_level": "medium",
+      "rule_ids": [
+        "GB50016-8.4.1",
+        "HMBF-36"
+      ],
+      "should_refuse": false,
+      "answer": "算违规。依据 GB50016-8.4.1，灭火器应设置在明显、便于取用的位置，且不得被物品遮挡。整改建议：立即移开挡住灭火器的箱子，恢复其明显、可直接取用状态；如现位置不合适，应调整到醒目、便于取用的位置，并按 HMBF-36 要求及时落实整改责任。"
+    },
+    "error": ""
+  },
+  {
+    "name": "extinguisher_blocked_hard",
+    "scene": "campus",
+    "query": "灭火器被箱子挡住了算不算违规，怎么整改？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-8.4.1",
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "returned_ids": [
+      "GB50016-8.4.1",
+      "HMBF-36"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 17742.75,
+    "raw_content": "{\"risk_level\":\"中\",\"rule_ids\":[\"GB50016-8.4.1\",\"HMBF-36\"],\"should_refuse\":false,\"answer\":\"算违规。依据：1) GB50016-8.4.1：灭火器应设置在明显、便于取用的地点，且不得影响安全疏散；对有视线障碍的灭火器设置点，应设置指示其位置的发光标志；手提式灭火器宜设置在灭火器箱内或挂钩、托架上，其顶部离地面高度不应大于1.50m，底部离地面高度不宜小于0.08m。箱子挡住灭火器，已不符合“明显、便于取用、不得被遮挡”的要求。2) HMBF-36：发现的火灾隐患应及时整改并落实责任。整改建议：立即移开挡住灭火器的箱子，恢复灭火器前方和周边无阻挡、可直接取用；同时明确责任人，防止再次堆放遮挡。\"}",
+    "parsed": {
+      "risk_level": "中",
+      "rule_ids": [
+        "GB50016-8.4.1",
+        "HMBF-36"
+      ],
+      "should_refuse": false,
+      "answer": "算违规。依据：1) GB50016-8.4.1：灭火器应设置在明显、便于取用的地点，且不得影响安全疏散；对有视线障碍的灭火器设置点，应设置指示其位置的发光标志；手提式灭火器宜设置在灭火器箱内或挂钩、托架上，其顶部离地面高度不应大于1.50m，底部离地面高度不宜小于0.08m。箱子挡住灭火器，已不符合“明显、便于取用、不得被遮挡”的要求。2) HMBF-36：发现的火灾隐患应及时整改并落实责任。整改建议：立即移开挡住灭火器的箱子，恢复灭火器前方和周边无阻挡、可直接取用；同时明确责任人，防止再次堆放遮挡。"
+    },
+    "error": ""
+  },
+  {
+    "name": "extinguisher_invalid",
+    "scene": "office",
+    "query": "灭火器压力表不在绿区还能继续放着吗？",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "GB50016-8.4.1",
+      "GB50084-5.0.4"
+    ],
+    "returned_ids": [
+      "GA95-7.5",
+      "GB50140-3.1.2"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 7159.86,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GA95-7.5\",\"GB50140-3.1.2\"],\"should_refuse\":false,\"answer\":\"不能继续放着正常使用。灭火器压力表如果不在绿区（红区或黄区），应立即退出使用并送修；灭火器应保持有效状态，压力指示必须符合要求。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GA95-7.5",
+        "GB50140-3.1.2"
+      ],
+      "should_refuse": false,
+      "answer": "不能继续放着正常使用。灭火器压力表如果不在绿区（红区或黄区），应立即退出使用并送修；灭火器应保持有效状态，压力指示必须符合要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "extinguisher_invalid_hard",
+    "scene": "office",
+    "query": "灭火器压力表不在绿区还能继续放着吗？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50140-3.1.2",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GB50016-10.2.7",
+      "IND-POWER-001",
+      "GA95-7.5",
+      "GB50016-10.1.5"
+    ],
+    "returned_ids": [
+      "GA95-7.5",
+      "GB50140-3.1.2"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 18797.23,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GA95-7.5\",\"GB50140-3.1.2\"],\"should_refuse\":false,\"answer\":\"不能继续放着当作有效灭火器使用。依据：1) GA95-7.5：压力指示器指向红区或黄区的灭火器，应立即退出使用并送修；2) GB50140-3.1.2：手提式灭火器应保持在有效状态，压力指示和维修期限应符合要求。结论：压力表不在绿区，不能继续按合格器材留置，应立即更换或送修。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GA95-7.5",
+        "GB50140-3.1.2"
+      ],
+      "should_refuse": false,
+      "answer": "不能继续放着当作有效灭火器使用。依据：1) GA95-7.5：压力指示器指向红区或黄区的灭火器，应立即退出使用并送修；2) GB50140-3.1.2：手提式灭火器应保持在有效状态，压力指示和维修期限应符合要求。结论：压力表不在绿区，不能继续按合格器材留置，应立即更换或送修。"
+    },
+    "error": ""
+  },
+  {
+    "name": "hydrant_blocked",
+    "scene": "office",
+    "query": "室内消火栓前面堆了东西，这种情况对应什么条款？",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "GB50016-8.2.7",
+      "GB50140-3.1.2",
+      "GB50016-10.1.5",
+      "GA95-7.5",
+      "GB50016-8.4.1"
+    ],
+    "returned_ids": [
+      "GB50016-10.1.5"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 16787.18,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-10.1.5\"],\"should_refuse\":false,\"answer\":\"对应条款为 GB50016-10.1.5：室内消火栓应有明显标志，且不得被遮挡、圈占。室内消火栓前堆放物品属于被遮挡/圈占的情形。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-10.1.5"
+      ],
+      "should_refuse": false,
+      "answer": "对应条款为 GB50016-10.1.5：室内消火栓应有明显标志，且不得被遮挡、圈占。室内消火栓前堆放物品属于被遮挡/圈占的情形。"
+    },
+    "error": ""
+  },
+  {
+    "name": "hydrant_blocked_hard",
+    "scene": "office",
+    "query": "室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.1.5",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "GB50016-8.2.7",
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "GB50016-10.1.5",
+      "FIRELAW-34"
+    ],
+    "returned_ids": [
+      "GB50016-10.1.5"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 16969.02,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-10.1.5\"],\"should_refuse\":false,\"answer\":\"对应的最直接条款是 GB50016-10.1.5：‘室内消火栓应设置明显标志，且不得被遮挡、圈占。’ 室内消火栓前面堆放物品，导致其被遮挡或影响取用，属于不符合该条的情形。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-10.1.5"
+      ],
+      "should_refuse": false,
+      "answer": "对应的最直接条款是 GB50016-10.1.5：‘室内消火栓应设置明显标志，且不得被遮挡、圈占。’ 室内消火栓前面堆放物品，导致其被遮挡或影响取用，属于不符合该条的情形。"
+    },
+    "error": ""
+  },
+  {
+    "name": "signage_blocked",
+    "scene": "campus",
+    "query": "安全出口指示标志被海报遮住了怎么办？",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ],
+    "evidence_ids": [
+      "FIRELAW-28",
+      "GB50016-6.4.11",
+      "HMBF-22",
+      "FIRELAW-21",
+      "GB50016-6.4.10"
+    ],
+    "returned_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 11586.64,
+    "raw_content": "{\"risk_level\":\"unknown\",\"rule_ids\":[\"GB50016-6.4.10\",\"FIRELAW-28\"],\"should_refuse\":true,\"answer\":\"现有证据没有直接规定“安全出口指示标志被海报遮挡”这一情形。证据只明确要求疏散通道和安全出口保持畅通、不得堵塞。若海报同时影响了疏散出口或疏散路线的正常识别与通行，应立即移除；但仅就“遮住指示标志”本身，依据所给证据无法作出更具体结论。\"}",
+    "parsed": {
+      "risk_level": "unknown",
+      "rule_ids": [
+        "GB50016-6.4.10",
+        "FIRELAW-28"
+      ],
+      "should_refuse": true,
+      "answer": "现有证据没有直接规定“安全出口指示标志被海报遮挡”这一情形。证据只明确要求疏散通道和安全出口保持畅通、不得堵塞。若海报同时影响了疏散出口或疏散路线的正常识别与通行，应立即移除；但仅就“遮住指示标志”本身，依据所给证据无法作出更具体结论。"
+    },
+    "error": ""
+  },
+  {
+    "name": "signage_blocked_hard",
+    "scene": "campus",
+    "query": "安全出口指示标志被海报遮住了怎么办？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.3.1",
+      "HMBF-42"
+    ],
+    "evidence_ids": [
+      "FIRELAW-15",
+      "FIRELAW-28",
+      "GB50016-6.4.11",
+      "GB50016-12.0.6",
+      "GB13495-4.1"
+    ],
+    "returned_ids": [
+      "GB13495-4.1"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 14020.6,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB13495-4.1\"],\"should_refuse\":false,\"answer\":\"应立即移除遮挡海报，恢复安全出口指示标志完整、清晰可见。法规依据：GB13495-4.1 规定，消防安全标志应满足最小可视尺寸要求；标志被遮挡或低于最小尺寸均属不符合要求。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB13495-4.1"
+      ],
+      "should_refuse": false,
+      "answer": "应立即移除遮挡海报，恢复安全出口指示标志完整、清晰可见。法规依据：GB13495-4.1 规定，消防安全标志应满足最小可视尺寸要求；标志被遮挡或低于最小尺寸均属不符合要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "evacuation_route_goods",
+    "scene": "office",
+    "query": "疏散通道堆满快递箱，这个算什么隐患？",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "FIRELAW-21",
+      "HMBF-36",
+      "HMBF-22",
+      "FIRELAW-28",
+      "GB50016-6.4.11"
+    ],
+    "returned_ids": [
+      "FIRELAW-28",
+      "HMBF-36",
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 6911.12,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-28\",\"HMBF-36\"],\"should_refuse\":false,\"answer\":\"算消防安全隐患，属于占用、堵塞疏散通道/安全出口的情形，法律明确禁止。应立即清理，及时整改。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-28",
+        "HMBF-36"
+      ],
+      "should_refuse": false,
+      "answer": "算消防安全隐患，属于占用、堵塞疏散通道/安全出口的情形，法律明确禁止。应立即清理，及时整改。"
+    },
+    "error": ""
+  },
+  {
+    "name": "evacuation_route_goods_hard",
+    "scene": "office",
+    "query": "疏散通道堆满快递箱，这个算什么隐患？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-6.4.10",
+      "FIRELAW-28"
+    ],
+    "evidence_ids": [
+      "FIRELAW-21",
+      "HMBF-36",
+      "HMBF-22",
+      "FIRELAW-28",
+      "GB50016-6.4.11"
+    ],
+    "returned_ids": [
+      "FIRELAW-28",
+      "HMBF-36",
+      "HMBF-22"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 11201.67,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"FIRELAW-28\",\"HMBF-36\"],\"should_refuse\":false,\"answer\":\"算“堵塞疏散通道”的消防安全隐患。依据：1.《消防法》FIRELAW-28：禁止占用、堵塞疏散通道、疏散出口或者消防车通道。2. HMBF-36：发现火灾隐患后，应当及时整改并落实责任措施。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "FIRELAW-28",
+        "HMBF-36"
+      ],
+      "should_refuse": false,
+      "answer": "算“堵塞疏散通道”的消防安全隐患。依据：1.《消防法》FIRELAW-28：禁止占用、堵塞疏散通道、疏散出口或者消防车通道。2. HMBF-36：发现火灾隐患后，应当及时整改并落实责任措施。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_door_open",
+    "scene": "office",
+    "query": "防火门长期敞开不关有没有问题？",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ],
+    "evidence_ids": [
+      "GB50016-5.5.8",
+      "GB25506-2010-5.1",
+      "WAREHOUSE-1",
+      "GB50016-6.7.2",
+      "GB50016-3.6.1"
+    ],
+    "returned_ids": [
+      "GB50016-5.5.8",
+      "GB25506-2010-5.1"
+    ],
+    "hit_top1": false,
+    "hit_top3": true,
+    "mrr": 0.5,
+    "latency_ms": 10013.62,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-5.5.8\",\"GB25506-2010-5.1\"],\"should_refuse\":false,\"answer\":\"有问题。常闭式防火门应保持关闭，自闭装置应保持有效；A、B类防火分区门应能自行关闭，不得被长期固定在开启状态或楔住不关。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-5.5.8",
+        "GB25506-2010-5.1"
+      ],
+      "should_refuse": false,
+      "answer": "有问题。常闭式防火门应保持关闭，自闭装置应保持有效；A、B类防火分区门应能自行关闭，不得被长期固定在开启状态或楔住不关。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_door_open_hard",
+    "scene": "office",
+    "query": "防火门长期敞开不关有没有问题？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ],
+    "evidence_ids": [
+      "GB50016-5.5.8",
+      "HOSPITAL-3",
+      "RESP-7",
+      "HMBF-43",
+      "HMBF-44"
+    ],
+    "returned_ids": [
+      "GB50016-5.5.8"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 7843.96,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50016-5.5.8\"],\"should_refuse\":false,\"answer\":\"有问题。防火门长期敞开不关会削弱防火分隔作用，属于明显消防隐患。\\n法规依据（关键条款）：\\n1. GB50016-5.5.8：甲、乙类防火门应保持自行关闭状态。\\n2. GB50016-5.5.8：闭门器不得拆除，防火门不得被楔住常开。\\n结论：如果现场存在防火门长期敞开、不具备自行关闭功能或被人为固定常开，均不符合上述要求，应立即整改。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-5.5.8"
+      ],
+      "should_refuse": false,
+      "answer": "有问题。防火门长期敞开不关会削弱防火分隔作用，属于明显消防隐患。\n法规依据（关键条款）：\n1. GB50016-5.5.8：甲、乙类防火门应保持自行关闭状态。\n2. GB50016-5.5.8：闭门器不得拆除，防火门不得被楔住常开。\n结论：如果现场存在防火门长期敞开、不具备自行关闭功能或被人为固定常开，均不符合上述要求，应立即整改。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_door_closer_broken",
+    "scene": "campus",
+    "query": "防火门闭门器坏了，门关不上，这违反什么要求？",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ],
+    "evidence_ids": [
+      "GB50016-5.5.8",
+      "GB25506-2010-5.1",
+      "GB50016-6.7.2",
+      "EBIKE-7.1",
+      "FIRELAW-17"
+    ],
+    "returned_ids": [
+      "GB25506-2010-5.1",
+      "GB50016-5.5.8"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 10084.8,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB25506-2010-5.1\",\"GB50016-5.5.8\"],\"should_refuse\":false,\"answer\":\"这违反了防火门应保持常闭、闭门器/自闭装置应保持完好的要求。闭门器坏了导致门不能自行关闭，不符合“常闭防火门应保持关闭，自动关闭装置应保持功能正常”的规定；甲、乙类防火分区门还应保持自闭，闭门器不得拆除。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB25506-2010-5.1",
+        "GB50016-5.5.8"
+      ],
+      "should_refuse": false,
+      "answer": "这违反了防火门应保持常闭、闭门器/自闭装置应保持完好的要求。闭门器坏了导致门不能自行关闭，不符合“常闭防火门应保持关闭，自动关闭装置应保持功能正常”的规定；甲、乙类防火分区门还应保持自闭，闭门器不得拆除。"
+    },
+    "error": ""
+  },
+  {
+    "name": "fire_door_closer_broken_hard",
+    "scene": "campus",
+    "query": "防火门闭门器坏了，门关不上，这违反什么要求？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB25506-2010-5.1"
+    ],
+    "evidence_ids": [
+      "GB50016-5.5.8",
+      "HMBF-43",
+      "DORM-4",
+      "RESP-7",
+      "SCHOOL-1"
+    ],
+    "returned_ids": [
+      "GB50016-5.5.8"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 10261.5,
+    "raw_content": "{\n  \"risk_level\": \"high\",\n  \"rule_ids\": [\"GB50016-5.5.8\"],\n  \"should_refuse\": false,\n  \"answer\": \"若该门属于甲、乙类防火分区门，闭门器损坏导致门无法自行关闭，违反了以下关键要求：1. 防火分区门应保持自行关闭状态。2. 闭门器不得拆除，门不得被固定在常开状态。也就是说，门关不上会破坏防火分隔功能，属于明显不符合要求。\"\n}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50016-5.5.8"
+      ],
+      "should_refuse": false,
+      "answer": "若该门属于甲、乙类防火分区门，闭门器损坏导致门无法自行关闭，违反了以下关键要求：1. 防火分区门应保持自行关闭状态。2. 闭门器不得拆除，门不得被固定在常开状态。也就是说，门关不上会破坏防火分隔功能，属于明显不符合要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "sprinkler_blocked",
+    "scene": "office",
+    "query": "喷淋头被装饰物挡住了，这属于什么隐患？",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GB50016-10.1.5",
+      "GA95-7.5",
+      "GB50084-10.1.1",
+      "GB50084-5.0.4"
+    ],
+    "returned_ids": [
+      "GB50084-10.1.1"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 16906.36,
+    "raw_content": "{\"risk_level\":\"unspecified\",\"rule_ids\":[\"GB50084-10.1.1\"],\"should_refuse\":false,\"answer\":\"属于自动喷水灭火系统喷头被遮挡的消防隐患。根据GB50084-10.1.1，喷淋头不得被遮挡，否则会影响有效喷洒灭火。\"}",
+    "parsed": {
+      "risk_level": "unspecified",
+      "rule_ids": [
+        "GB50084-10.1.1"
+      ],
+      "should_refuse": false,
+      "answer": "属于自动喷水灭火系统喷头被遮挡的消防隐患。根据GB50084-10.1.1，喷淋头不得被遮挡，否则会影响有效喷洒灭火。"
+    },
+    "error": ""
+  },
+  {
+    "name": "sprinkler_blocked_hard",
+    "scene": "office",
+    "query": "喷淋头被装饰物挡住了，这属于什么隐患？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50084-10.1.1"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GA95-7.5",
+      "FIRELAW-34",
+      "GB50016-10.1.5",
+      "GB50084-10.1.1"
+    ],
+    "returned_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 12460.38,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50084-10.1.1\",\"FIRELAW-34\"],\"should_refuse\":false,\"answer\":\"这属于“自动喷淋系统喷头被遮挡、影响有效喷水”的消防设施隐患。法规依据：1. GB50084-10.1.1：自动喷水灭火系统喷头不得被遮挡、涂覆或损坏，并应保持有效喷放。2. FIRELAW-34：消防设施必须维护保养，存在故障应及时修复。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50084-10.1.1",
+        "FIRELAW-34"
+      ],
+      "should_refuse": false,
+      "answer": "这属于“自动喷淋系统喷头被遮挡、影响有效喷水”的消防设施隐患。法规依据：1. GB50084-10.1.1：自动喷水灭火系统喷头不得被遮挡、涂覆或损坏，并应保持有效喷放。2. FIRELAW-34：消防设施必须维护保养，存在故障应及时修复。"
+    },
+    "error": ""
+  },
+  {
+    "name": "sprinkler_painted",
+    "scene": "office",
+    "query": "喷淋喷头刷漆了还能正常使用吗？",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ],
+    "evidence_ids": [
+      "GB50140-3.1.2",
+      "GB50016-10.1.5",
+      "GA95-7.5",
+      "GB50084-10.1.1",
+      "GB50084-5.0.4"
+    ],
+    "returned_ids": [
+      "GB50084-10.1.1"
+    ],
+    "hit_top1": true,
+    "hit_top3": true,
+    "mrr": 1.0,
+    "latency_ms": 8653.26,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"GB50084-10.1.1\"],\"should_refuse\":false,\"answer\":\"不能。自动喷淋喷头不得被刷漆；规范要求喷头不得被涂漆、堵塞或损坏，并应保持有效喷水状态。喷头刷漆后不能视为正常可用，属于不符合要求。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "GB50084-10.1.1"
+      ],
+      "should_refuse": false,
+      "answer": "不能。自动喷淋喷头不得被刷漆；规范要求喷头不得被涂漆、堵塞或损坏，并应保持有效喷水状态。喷头刷漆后不能视为正常可用，属于不符合要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "sprinkler_painted_hard",
+    "scene": "office",
+    "query": "喷淋喷头刷漆了还能正常使用吗？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50084-10.1.1",
+      "FIRELAW-34"
+    ],
+    "evidence_ids": [
+      "HOSPITAL-3",
+      "RESP-7",
+      "ITROOM-1",
+      "HMBF-43",
+      "FIRELAW-16"
+    ],
+    "returned_ids": [
+      "FIRELAW-16"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 11928.87,
+    "raw_content": "{\"risk_level\":\"unknown\",\"rule_ids\":[\"FIRELAW-16\"],\"should_refuse\":true,\"answer\":\"基于当前提供的证据，无法直接得出“喷淋喷头刷漆后还能正常使用吗”的法规结论。现有最相关依据仅说明：单位应当进行“火灾隐患整改和消防设施维护”（FIRELAW-16），但没有提供关于“喷头被刷漆是否应报废、更换或禁止使用”的具体条款。因此，我不能仅凭这些证据给出确定性判断。\"}",
+    "parsed": {
+      "risk_level": "unknown",
+      "rule_ids": [
+        "FIRELAW-16"
+      ],
+      "should_refuse": true,
+      "answer": "基于当前提供的证据，无法直接得出“喷淋喷头刷漆后还能正常使用吗”的法规结论。现有最相关依据仅说明：单位应当进行“火灾隐患整改和消防设施维护”（FIRELAW-16），但没有提供关于“喷头被刷漆是否应报废、更换或禁止使用”的具体条款。因此，我不能仅凭这些证据给出确定性判断。"
+    },
+    "error": ""
+  },
+  {
+    "name": "electrical_overload",
+    "scene": "campus",
+    "query": "插线板接了很多大功率设备，这样用电是否违规？",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "SCHOOL-3",
+      "DORM-2",
+      "GB50016-10.2.7",
+      "DORM-1",
+      "IND-POWER-001"
+    ],
+    "returned_ids": [
+      "SCHOOL-3",
+      "DORM-1",
+      "DORM-2",
+      "GB50016-10.2.7"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.25,
+    "latency_ms": 14922.64,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"SCHOOL-3\",\"DORM-1\",\"DORM-2\",\"GB50016-10.2.7\"],\"should_refuse\":false,\"answer\":\"有违规风险。根据现有证据，在校园教室内不得串接多个插线板，且大功率设备不得接入教室插座；在学生宿舍内，禁止多级插线板和私拉乱接，且电炉、取暖器、电磁炉等大功率电器属禁用品。即使不明确是教室还是宿舍，这种“插线板接很多大功率设备”的用法也容易导致过热、短路，违反电气防火安全要求。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "SCHOOL-3",
+        "DORM-1",
+        "DORM-2",
+        "GB50016-10.2.7"
+      ],
+      "should_refuse": false,
+      "answer": "有违规风险。根据现有证据，在校园教室内不得串接多个插线板，且大功率设备不得接入教室插座；在学生宿舍内，禁止多级插线板和私拉乱接，且电炉、取暖器、电磁炉等大功率电器属禁用品。即使不明确是教室还是宿舍，这种“插线板接很多大功率设备”的用法也容易导致过热、短路，违反电气防火安全要求。"
+    },
+    "error": ""
+  },
+  {
+    "name": "electrical_overload_hard",
+    "scene": "campus",
+    "query": "插线板接了很多大功率设备，这样用电是否违规？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "GB50016-10.2.7",
+      "FIRELAW-16"
+    ],
+    "evidence_ids": [
+      "DORM-2",
+      "SCHOOL-3",
+      "DORM-1",
+      "DORM-7",
+      "RESP-7"
+    ],
+    "returned_ids": [
+      "DORM-2",
+      "SCHOOL-3"
+    ],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 22899.97,
+    "raw_content": "{\"risk_level\":\"high\",\"rule_ids\":[\"DORM-2\",\"SCHOOL-3\"],\"should_refuse\":true,\"answer\":\"仅凭“校园”这一场景，现有证据不足以对所有场所一概认定违规；证据只明确覆盖宿舍和教室。可依据最关键的两条作条件判断：1. 宿舍内：DORM-2 规定，电炉、取暖器、电磁炉等大功率电器禁止使用。2. 教室内：SCHOOL-3 规定，不得串接多个插线板，且电热水壶等大功率设备不得接入教室插座。若该情况发生在宿舍或教室，通常可认定为违规。\"}",
+    "parsed": {
+      "risk_level": "high",
+      "rule_ids": [
+        "DORM-2",
+        "SCHOOL-3"
+      ],
+      "should_refuse": true,
+      "answer": "仅凭“校园”这一场景，现有证据不足以对所有场所一概认定违规；证据只明确覆盖宿舍和教室。可依据最关键的两条作条件判断：1. 宿舍内：DORM-2 规定，电炉、取暖器、电磁炉等大功率电器禁止使用。2. 教室内：SCHOOL-3 规定，不得串接多个插线板，且电热水壶等大功率设备不得接入教室插座。若该情况发生在宿舍或教室，通常可认定为违规。"
+    },
+    "error": ""
+  }
+]

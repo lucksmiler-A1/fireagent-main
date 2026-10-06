@@ -1,0 +1,1940 @@
+[
+  {
+    "profile": "naive_topk_keyword_only",
+    "config": {
+      "RAG_RETRIEVAL_MODE": "keyword",
+      "RAG_ENABLE_QUERY_REWRITE": false,
+      "RAG_QUERY_REWRITE_USE_LLM": false,
+      "RAG_ENABLE_DENSE_RETRIEVAL": false,
+      "RAG_ENABLE_RERANK": false,
+      "RAG_ENABLE_DYNAMIC_TOP_K": false,
+      "RAG_ENABLE_DYNAMIC_QUERY_BUDGET": false,
+      "RAG_ENABLE_MMR_SELECTION": false,
+      "RAG_ENABLE_SET_SELECTION": false,
+      "RAG_ENABLE_EVIDENCE_TREE_SEARCH": false,
+      "RAG_ENABLE_HAZARD_HINT_ROUTING": false,
+      "RAG_ENABLE_TEXT_REPAIR": false,
+      "RAG_TOP_K": 3
+    },
+    "n_cases": 50,
+    "n_seeds": 1,
+    "top1": {
+      "per_seed": [
+        0.4
+      ],
+      "mean": 0.4,
+      "ci": {
+        "mean": 0.4,
+        "lo": 0.4,
+        "hi": 0.4
+      }
+    },
+    "top3": {
+      "per_seed": [
+        0.66
+      ],
+      "mean": 0.66,
+      "ci": {
+        "mean": 0.66,
+        "lo": 0.66,
+        "hi": 0.66
+      }
+    },
+    "mrr": {
+      "per_seed": [
+        0.51
+      ],
+      "mean": 0.51,
+      "ci": {
+        "mean": 0.51,
+        "lo": 0.51,
+        "hi": 0.51
+      }
+    },
+    "avg_latency_ms": {
+      "per_seed": [
+        42.4
+      ],
+      "mean": 42.4
+    },
+    "p95_latency_ms": {
+      "per_seed": [
+        77.75
+      ],
+      "mean": 77.75
+    },
+    "seed_runs": [
+      {
+        "seed": 20260427,
+        "top1": 0.4,
+        "top3": 0.66,
+        "mrr": 0.51,
+        "avg_latency_ms": 42.4,
+        "p95_latency_ms": 77.75,
+        "rows": [
+          {
+            "name": "e_bike_hallway_charging",
+            "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-37",
+              "FIRELAW-28",
+              "HMBF-47-7"
+            ],
+            "returned_ids": [
+              "HMBF-37",
+              "GB50016-6.4.11",
+              "HMBF-22"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 38.66
+          },
+          {
+            "name": "e_bike_hallway_charging_hard",
+            "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-37",
+              "FIRELAW-28",
+              "HMBF-47-7"
+            ],
+            "returned_ids": [
+              "HMBF-37",
+              "DORM-4",
+              "RESP-7"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 80.89
+          },
+          {
+            "name": "e_bike_stairwell_parking",
+            "query": "电动自行车停在楼梯间门口算违法吗？",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-37",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-37",
+              "GB50016-6.4.11",
+              "EVCHARGE-4.1"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 25.81
+          },
+          {
+            "name": "e_bike_stairwell_parking_hard",
+            "query": "电动自行车停在楼梯间门口算违法吗？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-37",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-37",
+              "DORM-7",
+              "HOTEL-1"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 76.69
+          },
+          {
+            "name": "e_bike_penalty",
+            "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-47-7",
+              "HMBF-37"
+            ],
+            "returned_ids": [
+              "HMBF-37",
+              "GB50016-6.4.11",
+              "EVCHARGE-4.1"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 42.58
+          },
+          {
+            "name": "e_bike_penalty_hard",
+            "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-47-7",
+              "HMBF-37"
+            ],
+            "returned_ids": [
+              "EVCHARGE-4.1",
+              "FIRELAW-34",
+              "HMBF-37"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 83.05
+          },
+          {
+            "name": "fire_lane_parking",
+            "query": "消防车通道被汽车占了，违反什么规定？",
+            "scene": "campus",
+            "expected_ids": [
+              "HMBF-22",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "FIRELAW-28"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 25.52
+          },
+          {
+            "name": "fire_lane_parking_hard",
+            "query": "消防车通道被汽车占了，违反什么规定？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "HMBF-22",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "FIRELAW-21",
+              "GB50016-7.1.5",
+              "DORM-4"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 77.75
+          },
+          {
+            "name": "rescue_access_blocked",
+            "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-22",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "FIRELAW-28"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 22.9
+          },
+          {
+            "name": "rescue_access_blocked_hard",
+            "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-22",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "GB50016-7.1.5",
+              "FIRELAW-21",
+              "HOSPITAL-3"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 61.81
+          },
+          {
+            "name": "extinguisher_blocked",
+            "query": "灭火器被箱子挡住了算不算违规，怎么整改？",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-8.4.1",
+              "GB50140-3.1.2",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 32.44
+          },
+          {
+            "name": "extinguisher_blocked_hard",
+            "query": "灭火器被箱子挡住了算不算违规，怎么整改？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-8.4.1",
+              "GB50140-3.1.2",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 56.38
+          },
+          {
+            "name": "extinguisher_invalid",
+            "query": "灭火器压力表不在绿区还能继续放着吗？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50140-3.1.2",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 20.64
+          },
+          {
+            "name": "extinguisher_invalid_hard",
+            "query": "灭火器压力表不在绿区还能继续放着吗？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50140-3.1.2",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GB50016-10.2.7",
+              "IND-POWER-001"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 60.46
+          },
+          {
+            "name": "hydrant_blocked",
+            "query": "室内消火栓前面堆了东西，这种情况对应什么条款？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-10.1.5",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "GB50016-8.2.7",
+              "GB50140-3.1.2",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 26.16
+          },
+          {
+            "name": "hydrant_blocked_hard",
+            "query": "室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-10.1.5",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "GB50016-8.2.7",
+              "GB50140-3.1.2",
+              "GA95-7.5"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 59.74
+          },
+          {
+            "name": "signage_blocked",
+            "query": "安全出口指示标志被海报遮住了怎么办？",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-10.3.1",
+              "HMBF-42"
+            ],
+            "returned_ids": [
+              "FIRELAW-28",
+              "GB50016-6.4.11",
+              "HMBF-22"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 27.43
+          },
+          {
+            "name": "signage_blocked_hard",
+            "query": "安全出口指示标志被海报遮住了怎么办？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-10.3.1",
+              "HMBF-42"
+            ],
+            "returned_ids": [
+              "FIRELAW-15",
+              "FIRELAW-28",
+              "GB50016-6.4.11"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 68.27
+          },
+          {
+            "name": "evacuation_route_goods",
+            "query": "疏散通道堆满快递箱，这个算什么隐患？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-6.4.10",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "FIRELAW-21",
+              "HMBF-36",
+              "HMBF-22"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 22.44
+          },
+          {
+            "name": "evacuation_route_goods_hard",
+            "query": "疏散通道堆满快递箱，这个算什么隐患？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-6.4.10",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "FIRELAW-21",
+              "HMBF-36",
+              "HMBF-22"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 51.6
+          },
+          {
+            "name": "fire_door_open",
+            "query": "防火门长期敞开不关有没有问题？",
+            "scene": "office",
+            "expected_ids": [
+              "GB25506-2010-5.1"
+            ],
+            "returned_ids": [
+              "GB50016-5.5.8",
+              "GB25506-2010-5.1",
+              "WAREHOUSE-1"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 16.19
+          },
+          {
+            "name": "fire_door_open_hard",
+            "query": "防火门长期敞开不关有没有问题？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB25506-2010-5.1"
+            ],
+            "returned_ids": [
+              "GB50016-5.5.8",
+              "HOSPITAL-3",
+              "RESP-7"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 60.34
+          },
+          {
+            "name": "fire_door_closer_broken",
+            "query": "防火门闭门器坏了，门关不上，这违反什么要求？",
+            "scene": "campus",
+            "expected_ids": [
+              "GB25506-2010-5.1"
+            ],
+            "returned_ids": [
+              "GB50016-5.5.8",
+              "GB25506-2010-5.1",
+              "GB50016-6.7.2"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 18.88
+          },
+          {
+            "name": "fire_door_closer_broken_hard",
+            "query": "防火门闭门器坏了，门关不上，这违反什么要求？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "GB25506-2010-5.1"
+            ],
+            "returned_ids": [
+              "GB50016-5.5.8",
+              "HMBF-43",
+              "DORM-4"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 70.71
+          },
+          {
+            "name": "sprinkler_blocked",
+            "query": "喷淋头被装饰物挡住了，这属于什么隐患？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50084-10.1.1"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GB50016-10.1.5",
+              "GA95-7.5"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 24.69
+          },
+          {
+            "name": "sprinkler_blocked_hard",
+            "query": "喷淋头被装饰物挡住了，这属于什么隐患？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50084-10.1.1"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "FIRELAW-34"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 62.14
+          },
+          {
+            "name": "sprinkler_painted",
+            "query": "喷淋喷头刷漆了还能正常使用吗？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50084-10.1.1",
+              "FIRELAW-34"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GB50016-10.1.5",
+              "GA95-7.5"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 21.3
+          },
+          {
+            "name": "sprinkler_painted_hard",
+            "query": "喷淋喷头刷漆了还能正常使用吗？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50084-10.1.1",
+              "FIRELAW-34"
+            ],
+            "returned_ids": [
+              "HOSPITAL-3",
+              "RESP-7",
+              "ITROOM-1"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 59.09
+          },
+          {
+            "name": "electrical_overload",
+            "query": "插线板接了很多大功率设备，这样用电是否违规？",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-10.2.7",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "SCHOOL-3",
+              "DORM-2",
+              "GB50016-10.2.7"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 14.32
+          },
+          {
+            "name": "electrical_overload_hard",
+            "query": "插线板接了很多大功率设备，这样用电是否违规？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-10.2.7",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "DORM-2",
+              "SCHOOL-3",
+              "DORM-1"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 52.37
+          },
+          {
+            "name": "aging_wire",
+            "query": "电线外皮老化破损还在继续使用，这个风险依据是什么？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-10.2.7",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "IND-POWER-001",
+              "SCHOOL-3"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 22.17
+          },
+          {
+            "name": "aging_wire_hard",
+            "query": "电线外皮老化破损还在继续使用，这个风险依据是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-10.2.7",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "IND-POWER-001",
+              "SCHOOL-3"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 39.21
+          },
+          {
+            "name": "alarm_detector_shielded",
+            "query": "火灾探测器被遮挡了，法规上怎么要求？",
+            "scene": "office",
+            "expected_ids": [
+              "GA95-2015-7.2",
+              "FIRELAW-34"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "FIRELAW-34",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 23.54
+          },
+          {
+            "name": "alarm_detector_shielded_hard",
+            "query": "火灾探测器被遮挡了，法规上怎么要求？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GA95-2015-7.2",
+              "FIRELAW-34"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "GB50140-3.1.2",
+              "IND-POWER-001"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 57.12
+          },
+          {
+            "name": "alarm_device_fault",
+            "query": "火灾报警设备一直故障不修，管理上有什么要求？",
+            "scene": "office",
+            "expected_ids": [
+              "GA95-2015-7.2",
+              "FIRELAW-34",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "FIRELAW-34"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 21.34
+          },
+          {
+            "name": "alarm_device_fault_hard",
+            "query": "火灾报警设备一直故障不修，管理上有什么要求？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GA95-2015-7.2",
+              "FIRELAW-34",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "FIRELAW-34"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 50.69
+          },
+          {
+            "name": "kitchen_exhaust",
+            "query": "厨房排油烟管道长期不清洗会违反哪条规定？",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-23"
+            ],
+            "returned_ids": [
+              "HMBF-23",
+              "KITCHEN-1",
+              "GB50166-3.4.4"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 12.59
+          },
+          {
+            "name": "kitchen_exhaust_hard",
+            "query": "厨房排油烟管道长期不清洗会违反哪条规定？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-23"
+            ],
+            "returned_ids": [
+              "FIRELAW-15",
+              "HMBF-23",
+              "FIRELAW-17"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 47.44
+          },
+          {
+            "name": "combustible_near_heat_source",
+            "query": "可燃纸箱堆在配电箱旁边，这样存放合规吗？",
+            "scene": "warehouse",
+            "expected_ids": [
+              "GB50016-3.3.8",
+              "GB50016-10.2.7"
+            ],
+            "returned_ids": [
+              "IND-POWER-001",
+              "GB50016-10.2.7",
+              "SCHOOL-3"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 15.1
+          },
+          {
+            "name": "combustible_near_heat_source_hard",
+            "query": "可燃纸箱堆在配电箱旁边，这样存放合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "warehouse",
+            "expected_ids": [
+              "GB50016-3.3.8",
+              "GB50016-10.2.7"
+            ],
+            "returned_ids": [
+              "IND-POWER-001",
+              "GB50016-10.2.7",
+              "SCHOOL-3"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 50.32
+          },
+          {
+            "name": "gas_cylinder_indoor",
+            "query": "高层住宅里长期放瓶装液化气合不合规？",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-17",
+              "HMBF-18"
+            ],
+            "returned_ids": [
+              "HMBF-18",
+              "HMBF-17",
+              "GASREG-31"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 17.35
+          },
+          {
+            "name": "gas_cylinder_indoor_hard",
+            "query": "高层住宅里长期放瓶装液化气合不合规？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-17",
+              "HMBF-18"
+            ],
+            "returned_ids": [
+              "HMBF-18",
+              "HMBF-17",
+              "DORM-2"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 57.35
+          },
+          {
+            "name": "hazardous_goods_storage",
+            "query": "高层办公楼里存放易燃易爆化学品，这条法规怎么说？",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-18"
+            ],
+            "returned_ids": [
+              "HMBF-18",
+              "HMBF-17",
+              "SCHOOL-2"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 27.38
+          },
+          {
+            "name": "hazardous_goods_storage_hard",
+            "query": "高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-18"
+            ],
+            "returned_ids": [
+              "HMBF-43",
+              "HMBF-18",
+              "HOSPITAL-3"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 82.64
+          },
+          {
+            "name": "shaft_clutter",
+            "query": "电缆井门口堆了很多可燃杂物，这个问题对应什么规定？",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-20"
+            ],
+            "returned_ids": [
+              "HMBF-20",
+              "GB50028-10.5.1",
+              "GB50016-3.3.8"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 17.02
+          },
+          {
+            "name": "shaft_clutter_hard",
+            "query": "电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-20"
+            ],
+            "returned_ids": [
+              "FIRELAW-34",
+              "GB50028-10.5.1",
+              "HMBF-20"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 49.33
+          },
+          {
+            "name": "window_escape_obstacle",
+            "query": "高层住宅外窗装了影响逃生的防盗网，是否违规？",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-21"
+            ],
+            "returned_ids": [
+              "HMBF-21",
+              "GB50016-7.3.5",
+              "HMBF-17"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 33.1
+          },
+          {
+            "name": "window_escape_obstacle_hard",
+            "query": "高层住宅外窗装了影响逃生的防盗网，是否违规？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-21"
+            ],
+            "returned_ids": [
+              "DORM-2",
+              "RESP-7",
+              "RESP-4"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 59.03
+          },
+          {
+            "name": "equipment_room_storage",
+            "query": "配电室被拿来堆纸箱和杂物，这样行吗？",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-25",
+              "GB50016-3.3.8"
+            ],
+            "returned_ids": [
+              "HMBF-25",
+              "GB25506-5.1",
+              "ITROOM-2"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 15.7
+          },
+          {
+            "name": "equipment_room_storage_hard",
+            "query": "配电室被拿来堆纸箱和杂物，这样行吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-25",
+              "GB50016-3.3.8"
+            ],
+            "returned_ids": [
+              "ITROOM-2",
+              "HOSPITAL-3",
+              "ITROOM-3"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 60.16
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profile": "naive_hybrid",
+    "config": {
+      "RAG_RETRIEVAL_MODE": "hybrid",
+      "RAG_ENABLE_QUERY_REWRITE": false,
+      "RAG_QUERY_REWRITE_USE_LLM": false,
+      "RAG_ENABLE_DENSE_RETRIEVAL": true,
+      "RAG_ENABLE_RERANK": false,
+      "RAG_ENABLE_DYNAMIC_TOP_K": false,
+      "RAG_ENABLE_DYNAMIC_QUERY_BUDGET": false,
+      "RAG_ENABLE_MMR_SELECTION": false,
+      "RAG_ENABLE_SET_SELECTION": false,
+      "RAG_ENABLE_EVIDENCE_TREE_SEARCH": false,
+      "RAG_ENABLE_HAZARD_HINT_ROUTING": false,
+      "RAG_ENABLE_TEXT_REPAIR": false,
+      "RAG_TOP_K": 3
+    },
+    "n_cases": 50,
+    "n_seeds": 1,
+    "top1": {
+      "per_seed": [
+        0.52
+      ],
+      "mean": 0.52,
+      "ci": {
+        "mean": 0.52,
+        "lo": 0.52,
+        "hi": 0.52
+      }
+    },
+    "top3": {
+      "per_seed": [
+        0.84
+      ],
+      "mean": 0.84,
+      "ci": {
+        "mean": 0.84,
+        "lo": 0.84,
+        "hi": 0.84
+      }
+    },
+    "mrr": {
+      "per_seed": [
+        0.66
+      ],
+      "mean": 0.66,
+      "ci": {
+        "mean": 0.66,
+        "lo": 0.66,
+        "hi": 0.66
+      }
+    },
+    "avg_latency_ms": {
+      "per_seed": [
+        81.78
+      ],
+      "mean": 81.78
+    },
+    "p95_latency_ms": {
+      "per_seed": [
+        124.3
+      ],
+      "mean": 124.3
+    },
+    "seed_runs": [
+      {
+        "seed": 20260427,
+        "top1": 0.52,
+        "top3": 0.84,
+        "mrr": 0.66,
+        "avg_latency_ms": 81.78,
+        "p95_latency_ms": 124.3,
+        "rows": [
+          {
+            "name": "e_bike_hallway_charging",
+            "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-37",
+              "FIRELAW-28",
+              "HMBF-47-7"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "HMBF-37"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 77.35
+          },
+          {
+            "name": "e_bike_hallway_charging_hard",
+            "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-37",
+              "FIRELAW-28",
+              "HMBF-47-7"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "HMBF-37"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 133.34
+          },
+          {
+            "name": "e_bike_stairwell_parking",
+            "query": "电动自行车停在楼梯间门口算违法吗？",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-37",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-37",
+              "GB50016-6.4.11",
+              "EVCHARGE-4.1"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 58.92
+          },
+          {
+            "name": "e_bike_stairwell_parking_hard",
+            "query": "电动自行车停在楼梯间门口算违法吗？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-37",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-43",
+              "HMBF-37",
+              "FIRELAW-16"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 128.96
+          },
+          {
+            "name": "e_bike_penalty",
+            "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-47-7",
+              "HMBF-37"
+            ],
+            "returned_ids": [
+              "EVCHARGE-4.1",
+              "HMBF-37",
+              "FIRELAW-60"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 74.83
+          },
+          {
+            "name": "e_bike_penalty_hard",
+            "query": "高层住宅公共门厅给电瓶车充电如果不整改会怎么处罚？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-47-7",
+              "HMBF-37"
+            ],
+            "returned_ids": [
+              "FIRELAW-34",
+              "EVCHARGE-4.1",
+              "HMBF-37"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 130.7
+          },
+          {
+            "name": "fire_lane_parking",
+            "query": "消防车通道被汽车占了，违反什么规定？",
+            "scene": "campus",
+            "expected_ids": [
+              "HMBF-22",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "FIRELAW-28"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 51.97
+          },
+          {
+            "name": "fire_lane_parking_hard",
+            "query": "消防车通道被汽车占了，违反什么规定？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "HMBF-22",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "FIRELAW-28"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 124.19
+          },
+          {
+            "name": "rescue_access_blocked",
+            "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-22",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "FIRELAW-28"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 50.17
+          },
+          {
+            "name": "rescue_access_blocked_hard",
+            "query": "登高消防车操作场地堆了杂物，这个问题对应哪些条款？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-22",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "HMBF-43",
+              "FIRELAW-21"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 100.06
+          },
+          {
+            "name": "extinguisher_blocked",
+            "query": "灭火器被箱子挡住了算不算违规，怎么整改？",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-8.4.1",
+              "GB50140-3.1.2",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GA95-7.5",
+              "GB50140-3.1.2",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 72.76
+          },
+          {
+            "name": "extinguisher_blocked_hard",
+            "query": "灭火器被箱子挡住了算不算违规，怎么整改？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-8.4.1",
+              "GB50140-3.1.2",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 121.48
+          },
+          {
+            "name": "extinguisher_invalid",
+            "query": "灭火器压力表不在绿区还能继续放着吗？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50140-3.1.2",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 48.21
+          },
+          {
+            "name": "extinguisher_invalid_hard",
+            "query": "灭火器压力表不在绿区还能继续放着吗？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50140-3.1.2",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50140-3.1.2",
+              "GA95-7.5",
+              "GB50016-10.2.7"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 118.19
+          },
+          {
+            "name": "hydrant_blocked",
+            "query": "室内消火栓前面堆了东西，这种情况对应什么条款？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-10.1.5",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "GB50016-10.1.5",
+              "GB50016-8.2.7",
+              "GB50016-8.4.1"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 61.54
+          },
+          {
+            "name": "hydrant_blocked_hard",
+            "query": "室内消火栓前面堆了东西，这种情况对应什么条款？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-10.1.5",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "GB50016-10.1.5",
+              "FIRELAW-34",
+              "GB50140-3.1.2"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 107.87
+          },
+          {
+            "name": "signage_blocked",
+            "query": "安全出口指示标志被海报遮住了怎么办？",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-10.3.1",
+              "HMBF-42"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "GB50016-6.4.10"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 53.74
+          },
+          {
+            "name": "signage_blocked_hard",
+            "query": "安全出口指示标志被海报遮住了怎么办？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-10.3.1",
+              "HMBF-42"
+            ],
+            "returned_ids": [
+              "FIRELAW-15",
+              "HMBF-22",
+              "FIRELAW-21"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 124.3
+          },
+          {
+            "name": "evacuation_route_goods",
+            "query": "疏散通道堆满快递箱，这个算什么隐患？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-6.4.10",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "HMBF-36"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 51.89
+          },
+          {
+            "name": "evacuation_route_goods_hard",
+            "query": "疏散通道堆满快递箱，这个算什么隐患？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-6.4.10",
+              "FIRELAW-28"
+            ],
+            "returned_ids": [
+              "HMBF-22",
+              "FIRELAW-21",
+              "HMBF-36"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 102.91
+          },
+          {
+            "name": "fire_door_open",
+            "query": "防火门长期敞开不关有没有问题？",
+            "scene": "office",
+            "expected_ids": [
+              "GB25506-2010-5.1"
+            ],
+            "returned_ids": [
+              "GB50016-5.5.8",
+              "GB25506-2010-5.1",
+              "WAREHOUSE-1"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 42.35
+          },
+          {
+            "name": "fire_door_open_hard",
+            "query": "防火门长期敞开不关有没有问题？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB25506-2010-5.1"
+            ],
+            "returned_ids": [
+              "GB50016-5.5.8",
+              "HMBF-43",
+              "HMBF-44"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 116.5
+          },
+          {
+            "name": "fire_door_closer_broken",
+            "query": "防火门闭门器坏了，门关不上，这违反什么要求？",
+            "scene": "campus",
+            "expected_ids": [
+              "GB25506-2010-5.1"
+            ],
+            "returned_ids": [
+              "GB50016-5.5.8",
+              "GB25506-2010-5.1",
+              "GB50016-6.7.2"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 44.95
+          },
+          {
+            "name": "fire_door_closer_broken_hard",
+            "query": "防火门闭门器坏了，门关不上，这违反什么要求？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "GB25506-2010-5.1"
+            ],
+            "returned_ids": [
+              "HMBF-43",
+              "GB50016-5.5.8",
+              "FIRELAW-16"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 119.23
+          },
+          {
+            "name": "sprinkler_blocked",
+            "query": "喷淋头被装饰物挡住了，这属于什么隐患？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50084-10.1.1"
+            ],
+            "returned_ids": [
+              "GB50084-10.1.1",
+              "GB50016-10.1.5",
+              "GB50084-5.0.4"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 52.12
+          },
+          {
+            "name": "sprinkler_blocked_hard",
+            "query": "喷淋头被装饰物挡住了，这属于什么隐患？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50084-10.1.1"
+            ],
+            "returned_ids": [
+              "FIRELAW-34",
+              "GB50016-10.1.5",
+              "GB50084-10.1.1"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 114.79
+          },
+          {
+            "name": "sprinkler_painted",
+            "query": "喷淋喷头刷漆了还能正常使用吗？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50084-10.1.1",
+              "FIRELAW-34"
+            ],
+            "returned_ids": [
+              "GB50084-10.1.1",
+              "GB50084-5.0.4",
+              "GB50016-10.1.5"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 46.32
+          },
+          {
+            "name": "sprinkler_painted_hard",
+            "query": "喷淋喷头刷漆了还能正常使用吗？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50084-10.1.1",
+              "FIRELAW-34"
+            ],
+            "returned_ids": [
+              "HMBF-43",
+              "GB50016-10.1.5",
+              "GB50084-10.1.1"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 115.88
+          },
+          {
+            "name": "electrical_overload",
+            "query": "插线板接了很多大功率设备，这样用电是否违规？",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-10.2.7",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "DORM-2",
+              "SCHOOL-3"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 34.48
+          },
+          {
+            "name": "electrical_overload_hard",
+            "query": "插线板接了很多大功率设备，这样用电是否违规？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "campus",
+            "expected_ids": [
+              "GB50016-10.2.7",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "HMBF-43",
+              "DORM-2",
+              "FIRELAW-16"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.3333333333333333,
+            "latency_ms": 103.13
+          },
+          {
+            "name": "aging_wire",
+            "query": "电线外皮老化破损还在继续使用，这个风险依据是什么？",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-10.2.7",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "IND-POWER-001",
+              "WAREHOUSE-4"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 51.78
+          },
+          {
+            "name": "aging_wire_hard",
+            "query": "电线外皮老化破损还在继续使用，这个风险依据是什么？ 补充：现场还有杂物堆放情况。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GB50016-10.2.7",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "IND-POWER-001",
+              "WAREHOUSE-4"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 106.35
+          },
+          {
+            "name": "alarm_detector_shielded",
+            "query": "火灾探测器被遮挡了，法规上怎么要求？",
+            "scene": "office",
+            "expected_ids": [
+              "GA95-2015-7.2",
+              "FIRELAW-34"
+            ],
+            "returned_ids": [
+              "GB50016-10.1.5",
+              "GB50016-8.4.1",
+              "GB50140-3.1.2"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 57.49
+          },
+          {
+            "name": "alarm_detector_shielded_hard",
+            "query": "火灾探测器被遮挡了，法规上怎么要求？ 另有意见说电气隐患更突出。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GA95-2015-7.2",
+              "FIRELAW-34"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "GB50016-10.1.5",
+              "GB50016-8.4.1"
+            ],
+            "hit_top1": false,
+            "hit_top3": false,
+            "rr": 0.0,
+            "latency_ms": 122.67
+          },
+          {
+            "name": "alarm_device_fault",
+            "query": "火灾报警设备一直故障不修，管理上有什么要求？",
+            "scene": "office",
+            "expected_ids": [
+              "GA95-2015-7.2",
+              "FIRELAW-34",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "FIRELAW-34",
+              "GB50016-10.1.5",
+              "GB50140-3.1.2"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 58.53
+          },
+          {
+            "name": "alarm_device_fault_hard",
+            "query": "火灾报警设备一直故障不修，管理上有什么要求？ 同时担心报警系统故障。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "GA95-2015-7.2",
+              "FIRELAW-34",
+              "FIRELAW-16"
+            ],
+            "returned_ids": [
+              "GB50016-10.1.5",
+              "FIRELAW-34",
+              "GB50116-12.4.1"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 113.18
+          },
+          {
+            "name": "kitchen_exhaust",
+            "query": "厨房排油烟管道长期不清洗会违反哪条规定？",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-23"
+            ],
+            "returned_ids": [
+              "HMBF-23",
+              "KITCHEN-1",
+              "GB50166-3.4.4"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 34.07
+          },
+          {
+            "name": "kitchen_exhaust_hard",
+            "query": "厨房排油烟管道长期不清洗会违反哪条规定？ 旁边人员还问开业前检查要求。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "dormitory",
+            "expected_ids": [
+              "HMBF-23"
+            ],
+            "returned_ids": [
+              "FIRELAW-15",
+              "HMBF-23",
+              "KITCHEN-1"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 97.17
+          },
+          {
+            "name": "combustible_near_heat_source",
+            "query": "可燃纸箱堆在配电箱旁边，这样存放合规吗？",
+            "scene": "warehouse",
+            "expected_ids": [
+              "GB50016-3.3.8",
+              "GB50016-10.2.7"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "IND-POWER-001",
+              "SCHOOL-3"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 33.55
+          },
+          {
+            "name": "combustible_near_heat_source_hard",
+            "query": "可燃纸箱堆在配电箱旁边，这样存放合规吗？ 管理层还想确认处罚条款。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "warehouse",
+            "expected_ids": [
+              "GB50016-3.3.8",
+              "GB50016-10.2.7"
+            ],
+            "returned_ids": [
+              "GB50016-10.2.7",
+              "IND-POWER-001",
+              "SCHOOL-3"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 102.15
+          },
+          {
+            "name": "gas_cylinder_indoor",
+            "query": "高层住宅里长期放瓶装液化气合不合规？",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-17",
+              "HMBF-18"
+            ],
+            "returned_ids": [
+              "HMBF-18",
+              "HMBF-17",
+              "GASREG-31"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 38.63
+          },
+          {
+            "name": "gas_cylinder_indoor_hard",
+            "query": "高层住宅里长期放瓶装液化气合不合规？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-17",
+              "HMBF-18"
+            ],
+            "returned_ids": [
+              "HMBF-18",
+              "HMBF-43",
+              "HMBF-44"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 109.8
+          },
+          {
+            "name": "hazardous_goods_storage",
+            "query": "高层办公楼里存放易燃易爆化学品，这条法规怎么说？",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-18"
+            ],
+            "returned_ids": [
+              "HMBF-18",
+              "HMBF-17",
+              "HOSPITAL-2"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 48.0
+          },
+          {
+            "name": "hazardous_goods_storage_hard",
+            "query": "高层办公楼里存放易燃易爆化学品，这条法规怎么说？ 顺便还担心应急预案是否有效。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-18"
+            ],
+            "returned_ids": [
+              "HMBF-43",
+              "HMBF-18",
+              "FIRELAW-16"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 105.77
+          },
+          {
+            "name": "shaft_clutter",
+            "query": "电缆井门口堆了很多可燃杂物，这个问题对应什么规定？",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-20"
+            ],
+            "returned_ids": [
+              "HMBF-20",
+              "GB50028-10.5.1",
+              "GB50016-10.2.7"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 34.6
+          },
+          {
+            "name": "shaft_clutter_hard",
+            "query": "电缆井门口堆了很多可燃杂物，这个问题对应什么规定？ 另一个同事提到设备维护也有问题。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-20"
+            ],
+            "returned_ids": [
+              "FIRELAW-34",
+              "HMBF-20",
+              "GB50028-10.5.1"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 93.63
+          },
+          {
+            "name": "window_escape_obstacle",
+            "query": "高层住宅外窗装了影响逃生的防盗网，是否违规？",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-21"
+            ],
+            "returned_ids": [
+              "HMBF-21",
+              "GB50016-7.3.5",
+              "HMBF-17"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 41.63
+          },
+          {
+            "name": "window_escape_obstacle_hard",
+            "query": "高层住宅外窗装了影响逃生的防盗网，是否违规？ 还有人说培训台账可能缺失。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "residential",
+            "expected_ids": [
+              "HMBF-21"
+            ],
+            "returned_ids": [
+              "HMBF-21",
+              "HMBF-43",
+              "FIRELAW-16"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 115.34
+          },
+          {
+            "name": "equipment_room_storage",
+            "query": "配电室被拿来堆纸箱和杂物，这样行吗？",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-25",
+              "GB50016-3.3.8"
+            ],
+            "returned_ids": [
+              "HMBF-25",
+              "HMBF-26",
+              "GB25506-5.1"
+            ],
+            "hit_top1": true,
+            "hit_top3": true,
+            "rr": 1.0,
+            "latency_ms": 37.1
+          },
+          {
+            "name": "equipment_room_storage_hard",
+            "query": "配电室被拿来堆纸箱和杂物，这样行吗？ 也有人怀疑巡查频次不够。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+            "scene": "office",
+            "expected_ids": [
+              "HMBF-25",
+              "GB50016-3.3.8"
+            ],
+            "returned_ids": [
+              "HMBF-43",
+              "HMBF-25",
+              "ITROOM-2"
+            ],
+            "hit_top1": false,
+            "hit_top3": true,
+            "rr": 0.5,
+            "latency_ms": 104.33
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,165 @@
+/* pages/record/record.wxss */
+
+.container {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  padding-bottom: 40rpx;
+}
+
+.image-section {
+  background-color: white;
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+}
+
+.record-image {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 8rpx;
+  display: block;
+}
+
+.info-section {
+  background-color: white;
+  margin: 0 24rpx 24rpx 24rpx;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.record-header {
+  padding: 32rpx 32rpx 0 32rpx;
+}
+
+.record-time {
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 16rpx;
+}
+
+.record-risk {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+
+.record-risk-icon {
+  font-size: 48rpx;
+  margin-right: 16rpx;
+}
+
+.record-risk-text {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.record-summary-section {
+  padding: 0 32rpx 32rpx 32rpx;
+}
+
+.record-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.record-summary {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+}
+
+.items-section {
+  background-color: white;
+  margin: 0 24rpx 24rpx 24rpx;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.items-header {
+  padding: 32rpx 32rpx 0 32rpx;
+}
+
+.items-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24rpx;
+}
+
+.item {
+  padding: 24rpx 32rpx;
+  border-top: 1rpx solid #f0f0f0;
+}
+
+.item:first-child {
+  border-top: none;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+
+.item-icon {
+  font-size: 32rpx;
+  margin-right: 12rpx;
+}
+
+.item-title {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+}
+
+.item-type {
+  font-size: 24rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 12rpx;
+  color: white;
+  background-color: #07c160;
+}
+
+.item-type-warning {
+  background-color: #ff976a;
+}
+
+.item-type-danger {
+  background-color: #ee0a24;
+}
+
+.item-description {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.5;
+  margin-left: 44rpx;
+}
+
+.button-section {
+  padding: 32rpx;
+  background-color: white;
+  display: flex;
+  gap: 24rpx;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  flex: 1 1 200rpx;
+  height: 88rpx;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-danger {
+  background: #ffecef;
+  color: #c92a46;
+  border: 1rpx solid #f5b8c4;
+}

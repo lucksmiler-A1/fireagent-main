@@ -1,0 +1,38 @@
+[
+  {
+    "name": "e_bike_hallway_charging",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 1103.31,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
+  },
+  {
+    "name": "e_bike_hallway_charging_hard",
+    "scene": "dormitory",
+    "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+    "expected_ids": [
+      "HMBF-37",
+      "FIRELAW-28",
+      "HMBF-47-7"
+    ],
+    "returned_ids": [],
+    "hit_top1": false,
+    "hit_top3": false,
+    "mrr": 0.0,
+    "latency_ms": 527.08,
+    "raw_content": "",
+    "parsed": null,
+    "error": "HTTP 403: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
+  }
+]

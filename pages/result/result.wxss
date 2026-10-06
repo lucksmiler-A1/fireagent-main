@@ -1,0 +1,281 @@
+/* pages/result/result.wxss */
+
+.container {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  padding-bottom: 40rpx;
+}
+
+.image-section {
+  padding: 32rpx;
+  background-color: white;
+  margin-bottom: 24rpx;
+}
+
+.result-image {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 8rpx;
+  display: block;
+}
+
+.result-section {
+  padding: 32rpx;
+}
+
+.result-card {
+  background-color: white;
+  border-radius: 12rpx;
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.risk-level {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+
+.risk-icon {
+  font-size: 48rpx;
+  margin-right: 16rpx;
+}
+
+.risk-text {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.risk-safe .risk-text {
+  color: #07c160;
+}
+
+.risk-warning .risk-text {
+  color: #ff976a;
+}
+
+.risk-danger .risk-text {
+  color: #ee0a24;
+}
+
+.result-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.result-summary {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 24rpx;
+}
+
+.items-list {
+  border-top: 1rpx solid #eee;
+  padding-top: 24rpx;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16rpx;
+  padding: 16rpx;
+  background-color: #f8f8f8;
+  border-radius: 8rpx;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item-icon {
+  font-size: 32rpx;
+  margin-right: 12rpx;
+  margin-top: 4rpx;
+}
+
+.item-content {
+  flex: 1;
+}
+
+.item-title {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.item-desc {
+  font-size: 24rpx;
+  color: #666;
+  line-height: 1.4;
+}
+
+.image-controls {
+  margin-top: 16rpx;
+  text-align: center;
+}
+
+.btn-switch {
+  background-color: #f0f0f0;
+  color: #666;
+  border: 2rpx solid #ddd;
+  border-radius: 20rpx;
+  padding: 12rpx 24rpx;
+  font-size: 28rpx;
+  transition: all 0.3s;
+}
+
+.btn-switch.active {
+  background-color: #07c160;
+  color: white;
+  border-color: #07c160;
+}
+
+.loading-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400rpx;
+  padding: 80rpx 32rpx;
+}
+
+.loading-content {
+  text-align: center;
+  background-color: white;
+  border-radius: 12rpx;
+  padding: 60rpx 40rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.loading-icon {
+  font-size: 80rpx;
+  display: block;
+  margin-bottom: 24rpx;
+  animation: pulse 2s infinite;
+}
+
+.loading-text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.loading-desc {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 24rpx;
+}
+
+.knowledge-card {
+  text-align: left;
+  background: #f0f8ff;
+  border: 1rpx solid #cfe8ff;
+  border-radius: 12rpx;
+  padding: 20rpx;
+}
+
+.knowledge-title {
+  font-size: 26rpx;
+  color: #1989fa;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+
+.knowledge-body {
+  font-size: 24rpx;
+  color: #335;
+  line-height: 1.6;
+}
+
+.error-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400rpx;
+  padding: 80rpx 32rpx;
+}
+
+.error-content {
+  text-align: center;
+  background-color: white;
+  border-radius: 12rpx;
+  padding: 60rpx 40rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  max-width: 600rpx;
+}
+
+.error-icon {
+  font-size: 80rpx;
+  display: block;
+  margin-bottom: 24rpx;
+}
+
+.error-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.error-message {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 40rpx;
+  display: block;
+}
+
+.btn-retry {
+  background-color: #1989fa;
+  color: white;
+  border: none;
+  border-radius: 8rpx;
+  padding: 24rpx 48rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.btn-retry:active {
+  opacity: 0.8;
+}
+
+.item-suggest {
+  font-size: 24rpx;
+  color: #07c160;
+  margin-top: 8rpx;
+  font-weight: 500;
+}
+
+.button-section {
+  padding: 32rpx;
+  background-color: white;
+  display: flex;
+  gap: 24rpx;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  flex: 1 1 200rpx;
+  height: 88rpx;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}

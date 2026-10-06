@@ -1,0 +1,121 @@
+/* app.wxss - 全局样式 */
+
+/* 容器样式 */
+.container {
+  padding: 32rpx;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+/* 按钮样式 */
+.btn {
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  line-height: 1.4;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: #07c160;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #1989fa;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #ee0a24;
+  color: white;
+}
+
+/* 卡片样式 */
+.card {
+  background-color: white;
+  border-radius: 12rpx;
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+/* 文本样式 */
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 16rpx;
+}
+
+.text {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* 状态颜色 */
+.status-safe {
+  color: #07c160;
+}
+
+.status-warning {
+  color: #ff976a;
+}
+
+.status-danger {
+  color: #ee0a24;
+}
+
+/* 图标样式 */
+.icon {
+  font-size: 48rpx;
+  margin-right: 16rpx;
+}
+
+/* 图片样式 */
+.image {
+  border-radius: 8rpx;
+  width: 100%;
+  height: auto;
+}
+
+/* 列表样式 */
+.list-item {
+  padding: 24rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+/* 空状态样式 */
+.empty {
+  text-align: center;
+  padding: 120rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}
+
+/* 加载样式 */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60rpx 0;
+}

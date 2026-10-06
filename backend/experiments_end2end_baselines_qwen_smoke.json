@@ -1,0 +1,304 @@
+[
+  {
+    "profile": "B_standard_single_rag_keyword_topk",
+    "case_count": 2,
+    "top1_hit_rate": 1.0,
+    "top3_hit_rate": 1.0,
+    "mrr": 1.0,
+    "top1_ci95": {
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    "top3_ci95": {
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    "mrr_ci95": {
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    "avg_latency_ms": 77.21,
+    "p95_latency_ms": 105.46,
+    "rows": [
+      {
+        "name": "e_bike_hallway_charging",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "HMBF-37",
+          "GB50016-6.4.11",
+          "HMBF-22",
+          "FIRELAW-21",
+          "FIRELAW-28"
+        ],
+        "hit_top1": true,
+        "hit_top3": true,
+        "mrr": 1.0,
+        "latency_ms": 48.96
+      },
+      {
+        "name": "e_bike_hallway_charging_hard",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "HMBF-37",
+          "DORM-4",
+          "RESP-7",
+          "GB50016-6.4.11",
+          "DORM-7"
+        ],
+        "hit_top1": true,
+        "hit_top3": true,
+        "mrr": 1.0,
+        "latency_ms": 105.46
+      }
+    ],
+    "overrides": {
+      "RAG_ENABLE_QUERY_REWRITE": false,
+      "RAG_QUERY_REWRITE_USE_LLM": false,
+      "RAG_ENABLE_TEXT_REPAIR": true,
+      "RAG_ENABLE_DYNAMIC_TOP_K": false,
+      "RAG_ENABLE_DYNAMIC_QUERY_BUDGET": false,
+      "RAG_ENABLE_MMR_SELECTION": false,
+      "RAG_ENABLE_SET_SELECTION": false,
+      "RAG_ENABLE_EVIDENCE_TREE_SEARCH": false,
+      "RAG_ENABLE_HAZARD_HINT_ROUTING": false,
+      "RAG_ENABLE_DENSE_RETRIEVAL": false,
+      "RAG_ENABLE_RERANK": false,
+      "RAG_RETRIEVAL_MODE": "keyword"
+    }
+  },
+  {
+    "profile": "Ours_full_method_local",
+    "case_count": 2,
+    "top1_hit_rate": 0.0,
+    "top3_hit_rate": 0.5,
+    "mrr": 0.2667,
+    "top1_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "top3_ci95": {
+      "mean": 0.5,
+      "low": 0.0,
+      "high": 1.0
+    },
+    "mrr_ci95": {
+      "mean": 0.2667,
+      "low": 0.2,
+      "high": 0.3333
+    },
+    "avg_latency_ms": 87.41,
+    "p95_latency_ms": 111.21,
+    "rows": [
+      {
+        "name": "e_bike_hallway_charging",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "HMBF-22",
+          "FIRELAW-21",
+          "HMBF-37",
+          "GB50016-6.4.11",
+          "FIRELAW-28"
+        ],
+        "hit_top1": false,
+        "hit_top3": true,
+        "mrr": 0.3333333333333333,
+        "latency_ms": 63.6
+      },
+      {
+        "name": "e_bike_hallway_charging_hard",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [
+          "HMBF-44",
+          "DORM-4",
+          "FIRELAW-21",
+          "HMBF-22",
+          "HMBF-37"
+        ],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.2,
+        "latency_ms": 111.21
+      }
+    ],
+    "overrides": {
+      "RAG_ENABLE_QUERY_REWRITE": true,
+      "RAG_QUERY_REWRITE_USE_LLM": false,
+      "RAG_ENABLE_TEXT_REPAIR": true,
+      "RAG_ENABLE_DYNAMIC_TOP_K": true,
+      "RAG_ENABLE_DYNAMIC_QUERY_BUDGET": true,
+      "RAG_ENABLE_MMR_SELECTION": true,
+      "RAG_ENABLE_SET_SELECTION": true,
+      "RAG_ENABLE_EVIDENCE_TREE_SEARCH": true,
+      "RAG_ENABLE_HAZARD_HINT_ROUTING": true,
+      "RAG_ENABLE_DENSE_RETRIEVAL": false,
+      "RAG_ENABLE_RERANK": false,
+      "RAG_RETRIEVAL_MODE": "hybrid"
+    }
+  },
+  {
+    "profile": "direct_model_no_rag:Qwen/Qwen3.6-35B-A3B",
+    "case_count": 2,
+    "top1_hit_rate": 0.0,
+    "top3_hit_rate": 0.0,
+    "mrr": 0.0,
+    "top1_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "top3_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "mrr_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "avg_latency_ms": 815.2,
+    "p95_latency_ms": 1103.31,
+    "rows": [
+      {
+        "name": "e_bike_hallway_charging",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.0,
+        "latency_ms": 1103.31,
+        "raw_content": "",
+        "parsed": null,
+        "error": "HTTP 403: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
+      },
+      {
+        "name": "e_bike_hallway_charging_hard",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "returned_ids": [],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.0,
+        "latency_ms": 527.08,
+        "raw_content": "",
+        "parsed": null,
+        "error": "HTTP 403: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
+      }
+    ]
+  },
+  {
+    "profile": "rag_model_standard_topk:Qwen/Qwen3.6-35B-A3B",
+    "case_count": 2,
+    "top1_hit_rate": 0.0,
+    "top3_hit_rate": 0.0,
+    "mrr": 0.0,
+    "top1_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "top3_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "mrr_ci95": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "avg_latency_ms": 232.76,
+    "p95_latency_ms": 268.33,
+    "rows": [
+      {
+        "name": "e_bike_hallway_charging",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "evidence_ids": [
+          "HMBF-37",
+          "GB50016-6.4.11",
+          "HMBF-22",
+          "FIRELAW-21",
+          "FIRELAW-28"
+        ],
+        "returned_ids": [],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.0,
+        "latency_ms": 197.19,
+        "raw_content": "",
+        "parsed": null,
+        "error": "HTTP 403: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
+      },
+      {
+        "name": "e_bike_hallway_charging_hard",
+        "scene": "dormitory",
+        "query": "宿舍楼道里给电动车充电行不行，依据是什么？ 另外有人反馈消防演练记录也不全。 请先聚焦前一个问题，给出法规依据，并用1-2条最关键条款回答。",
+        "expected_ids": [
+          "HMBF-37",
+          "FIRELAW-28",
+          "HMBF-47-7"
+        ],
+        "evidence_ids": [
+          "HMBF-37",
+          "DORM-4",
+          "RESP-7",
+          "GB50016-6.4.11",
+          "DORM-7"
+        ],
+        "returned_ids": [],
+        "hit_top1": false,
+        "hit_top3": false,
+        "mrr": 0.0,
+        "latency_ms": 268.33,
+        "raw_content": "",
+        "parsed": null,
+        "error": "HTTP 403: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
+      }
+    ]
+  }
+]

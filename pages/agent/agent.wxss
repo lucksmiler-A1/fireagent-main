@@ -1,0 +1,244 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 208, 140, 0.52), transparent 34%),
+    linear-gradient(180deg, #f6f1e7 0%, #efe7da 36%, #f8f4ec 100%);
+  padding: 36rpx 28rpx 240rpx;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: linear-gradient(135deg, #16342f 0%, #24554e 58%, #2f6f66 100%);
+  border-radius: 32rpx;
+  padding: 34rpx;
+  color: #fdf5e8;
+  box-shadow: 0 22rpx 50rpx rgba(32, 60, 55, 0.18);
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 8rpx 18rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 244, 218, 0.14);
+  color: #ffdca7;
+  font-size: 20rpx;
+  letter-spacing: 4rpx;
+}
+
+.hero-title {
+  margin-top: 18rpx;
+  font-size: 44rpx;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  line-height: 1.6;
+  color: rgba(253, 245, 232, 0.82);
+}
+
+.toolbar,
+.quick-section,
+.chat-panel,
+.composer {
+  margin-top: 24rpx;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 250, 241, 0.92);
+  border: 2rpx solid rgba(43, 76, 69, 0.08);
+  border-radius: 24rpx;
+  padding: 22rpx 24rpx;
+}
+
+.scene-label,
+.quick-title,
+.message-role,
+.loading-title,
+.next-title,
+.citation-title {
+  font-weight: 600;
+}
+
+.scene-label {
+  color: #23473f;
+  font-size: 26rpx;
+}
+
+.scene-picker {
+  min-width: 180rpx;
+  text-align: center;
+  padding: 14rpx 22rpx;
+  border-radius: 999rpx;
+  background: #e4f0e5;
+  color: #1d4d42;
+  font-size: 24rpx;
+}
+
+.quick-section {
+  background: rgba(255, 255, 255, 0.66);
+  border-radius: 24rpx;
+  padding: 22rpx;
+  border: 2rpx solid rgba(47, 86, 73, 0.08);
+}
+
+.quick-title {
+  color: #284940;
+  font-size: 26rpx;
+  margin-bottom: 14rpx;
+}
+
+.quick-scroll {
+  white-space: nowrap;
+}
+
+.quick-list {
+  display: inline-flex;
+  gap: 16rpx;
+}
+
+.quick-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 16rpx 22rpx;
+  border-radius: 999rpx;
+  background: #fff8ea;
+  color: #8a4f1e;
+  font-size: 24rpx;
+  border: 2rpx solid rgba(199, 144, 78, 0.18);
+}
+
+.chat-panel {
+  height: 820rpx;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22rpx;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.message.user {
+  align-items: flex-end;
+}
+
+.message.assistant {
+  align-items: flex-start;
+}
+
+.message-role {
+  font-size: 22rpx;
+  color: #5c6f69;
+}
+
+.message-bubble {
+  max-width: 100%;
+  padding: 22rpx 24rpx;
+  border-radius: 24rpx;
+  font-size: 28rpx;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.message.user .message-bubble {
+  background: linear-gradient(135deg, #d28c43 0%, #bd6d23 100%);
+  color: #fff8ee;
+  border-bottom-right-radius: 8rpx;
+}
+
+.message.assistant .message-bubble {
+  background: rgba(255, 255, 255, 0.88);
+  color: #20322d;
+  border: 2rpx solid rgba(35, 70, 62, 0.08);
+  border-bottom-left-radius: 8rpx;
+}
+
+.meta-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+}
+
+.meta-chip {
+  padding: 8rpx 16rpx;
+  border-radius: 999rpx;
+  font-size: 20rpx;
+  color: #1d5548;
+  background: #dcefe8;
+}
+
+.assistant-extra {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.citation-card,
+.loading-card {
+  background: rgba(255, 250, 242, 0.9);
+  border-radius: 20rpx;
+  padding: 18rpx 20rpx;
+  border: 2rpx solid rgba(186, 135, 76, 0.12);
+}
+
+.citation-title {
+  color: #8d571c;
+  font-size: 22rpx;
+  margin-bottom: 6rpx;
+}
+
+.citation-quote,
+.next-action,
+.loading-subtitle {
+  font-size: 24rpx;
+  line-height: 1.6;
+  color: #5b4e42;
+}
+
+.next-title {
+  color: #214840;
+  font-size: 24rpx;
+}
+
+.composer {
+  position: fixed;
+  left: 24rpx;
+  right: 24rpx;
+  bottom: 24rpx;
+  background: rgba(255, 252, 246, 0.96);
+  border-radius: 28rpx;
+  padding: 18rpx;
+  box-shadow: 0 18rpx 36rpx rgba(42, 64, 55, 0.16);
+  border: 2rpx solid rgba(32, 72, 61, 0.08);
+}
+
+.composer-input {
+  width: 100%;
+  min-height: 92rpx;
+  max-height: 240rpx;
+  font-size: 28rpx;
+  color: #1d2d28;
+}
+
+.send-button {
+  margin-top: 16rpx;
+  width: 100%;
+  height: 84rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(135deg, #1d5148 0%, #2a6a60 100%);
+  color: #fff6eb;
+  font-size: 28rpx;
+  font-weight: 600;
+}
